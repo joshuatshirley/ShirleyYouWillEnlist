@@ -1,13 +1,13 @@
 /**
- * Friday-morning weekly EST report, emailed from the PRIVATE roster
- * dashboard project.
+ * Friday-morning weekly EST report, sent by email.
  *
- * Lives beside roster-dashboard.gs in that same private Apps Script
- * project (add it as a second file: Files > + > Script, name it
- * "weekly-report"), NOT in the public results-webhook project. A
- * time-driven trigger runs server-side and only sends an email, so it
- * adds no new web endpoint and nothing about applicants is ever served
- * back to a device. It reuses roster-dashboard.gs's SHEET_ID.
+ * Add it as a second file (Files > + > Script, name it "weekly-report")
+ * in EITHER Apps Script project, the Sheet-bound results-webhook one or
+ * the private roster-dashboard one. Both define the SHEET_NAME, esc()
+ * and formatPhone() this file uses. A time-driven trigger runs
+ * server-side and only sends an email: it adds no web endpoint, doesn't
+ * change either deployment's access level, and nothing about applicants
+ * is ever served back to a device.
  *
  * Setup (one-time):
  *   1. Project Settings (gear) > Time zone: (GMT-05:00) Eastern Time.
@@ -32,6 +32,9 @@
  * station + name.
  */
 
+// Its own copy of the Sheet ID (not roster-dashboard.gs's SHEET_ID), so
+// this file works pasted into either Apps Script project.
+var REPORT_SHEET_ID = "1BftqXMNaw7WurUHmzGtQiUQvFmgnaGe-1Qm_CtW1Tjc";
 var REPORT_EMAIL = "joshua.t.shirley@army.mil";
 var REPORT_DAYS = 7;
 var PRACTICE_SHEET_NAME = "Practice";
@@ -60,7 +63,7 @@ function sendWeeklyReportNow() {
 }
 
 function sendWeeklyReport() {
-  var ss = SpreadsheetApp.openById(SHEET_ID);
+  var ss = SpreadsheetApp.openById(REPORT_SHEET_ID);
   var tz = Session.getScriptTimeZone();
   var end = new Date();
   var start = new Date(end.getTime() - REPORT_DAYS * 24 * 60 * 60 * 1000);
@@ -322,5 +325,5 @@ function buildHtmlWeeklyReport(people, drills, range, tz, hasPracticeTab) {
 }
 
 function reportSheetUrl() {
-  return "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/edit";
+  return "https://docs.google.com/spreadsheets/d/" + REPORT_SHEET_ID + "/edit";
 }

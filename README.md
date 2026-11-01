@@ -23,7 +23,7 @@ whole guide, and it's the only file you need.
 | `manifest.json` | PWA manifest — powers "Add to Home Screen" on iOS. |
 | `apps-script/results-webhook.gs` | A **public** Google Apps Script web app the kiosk POSTs each result to; it appends a row to a Sheet and emails a formatted report. |
 | `apps-script/roster-dashboard.gs` | A **private** ("only myself") web app — a filterable read-only view of that same Sheet. Kept as a separate deployment from the webhook above so the one public, unauthenticated endpoint never has read access to applicant data. |
-| `apps-script/weekly-report.gs` | Second file in the **private** dashboard project. A Friday 0600 time-driven trigger emails a weekly roll-up: who tested, at which station, each test's number and projected AFQT, change over the week, weakest section, and practice drills. Runs server-side only, with no new endpoint. Setup steps are in its header comment. |
+| `apps-script/weekly-report.gs` | Added as a second file in either Apps Script project. A Friday 0600 time-driven trigger emails a weekly roll-up: who tested, at which station, each test's number and projected AFQT, change over the week, weakest section, and practice drills. Runs server-side only, with no new endpoint. Setup steps are in its header comment. |
 | `question-bank/*.json` | Source question pools for test variants 2-5, consumed by `tools/build-test-variants.js`. |
 | `tools/build-test-variants.js` | Node script that merges `question-bank/` into `question-data.js`. Only needed when adding/changing practice-test content. |
 
