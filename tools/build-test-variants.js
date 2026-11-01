@@ -3,10 +3,12 @@
  * Merges question-bank/{wk,ar,pc,mk}_bank.json into question-data.js's
  * window.__EST_STANDALONE__.testVariants.
  *
- * Test 1 (index 0) is always kept as whatever's currently in that file
- * (the hand-curated original set) -- this script only APPENDS new
- * variants built from the bank files, using each bank's "tests" array
- * in order. It does not touch test 1's content.
+ * Output order: tests 1..count are built from each bank's "tests" array
+ * in order (keys "bank1".."bankN"), and the hand-curated original set
+ * (key "original") is kept as-is and always placed LAST. It was Test 1
+ * until 2026-11; it moved to the end because it circulates widely and
+ * many applicants already know its answers. This script never rewrites
+ * its content.
  *
  * Each bank's questions carry their own "n" numbering already (see the
  * schema each generation agent was given); this script trusts that and
@@ -14,7 +16,7 @@
  *
  * Usage: node tools/build-test-variants.js [count]
  *   count: how many additional variants to add from the banks (default 4,
- *          i.e. tests 2-5). Banks may contain more than this many test
+ *          i.e. tests 1-4). Banks may contain more than this many test
  *          arrays (spares); only the first `count` are used from each.
  *
  * After running: re-check question-data.js's syntax (e.g. `node -e
@@ -34,7 +36,7 @@ var COUNT = parseInt(process.argv[2], 10) || 4;
 
 // Each section's fixed metadata (title/minutes/instructions/code) is
 // identical across all variants by design -- only the questions differ.
-// Pulled from test 1 so it never has to be retyped/duplicated here.
+// Pulled from the original test so it never has to be retyped/duplicated here.
 var SECTION_ORDER = ["WK", "AR", "PC", "MK"];
 var BANK_FILES = { WK: "wk_bank.json", AR: "ar_bank.json", PC: "pc_bank.json", MK: "mk_bank.json" };
 
@@ -50,11 +52,12 @@ function main() {
   var data;
   eval("data = " + m[1].replace(/;\s*$/, ""));
 
-  var test1 = data.testVariants[0];
+  var original = data.testVariants.filter(function (v) { return v.key === "original"; })[0];
+  if (!original) throw new Error("No variant with key \"original\" in " + DATA_PATH);
   var metaByCode = {};
-  test1.sections.forEach(function (s) { metaByCode[s.code] = s; });
+  original.sections.forEach(function (s) { metaByCode[s.code] = s; });
   SECTION_ORDER.forEach(function (code) {
-    if (!metaByCode[code]) throw new Error("Test 1 is missing a section with code " + code);
+    if (!metaByCode[code]) throw new Error("The original test is missing a section with code " + code);
   });
 
   var banks = {};
@@ -67,7 +70,7 @@ function main() {
     banks[code] = bank.tests;
   });
 
-  var newVariants = [test1];
+  var newVariants = [];
   for (var i = 0; i < COUNT; i++) {
     var sections = SECTION_ORDER.map(function (code) {
       var meta = metaByCode[code];
@@ -83,8 +86,9 @@ function main() {
         questions: questions
       };
     });
-    newVariants.push({ sections: sections });
+    newVariants.push({ key: "bank" + (i + 1), sections: sections });
   }
+  newVariants.push(original);
 
   data.testVariants = newVariants;
 
@@ -96,10 +100,10 @@ function main() {
   var newSrc = src.slice(0, m.index) + newBlob + src.slice(m.index + m[0].length);
   fs.writeFileSync(DATA_PATH, newSrc, "utf8");
 
-  console.log("Wrote " + newVariants.length + " test variants (1 original + " + COUNT + " generated) to " + DATA_PATH);
+  console.log("Wrote " + newVariants.length + " test variants (" + COUNT + " generated + 1 original, last) to " + DATA_PATH);
   newVariants.forEach(function (v, idx) {
     var counts = v.sections.map(function (s) { return s.code + ":" + s.questions.length; }).join(" ");
-    console.log("  Test " + (idx + 1) + " -- " + counts);
+    console.log("  Test " + (idx + 1) + " (" + v.key + ") -- " + counts);
   });
 }
 

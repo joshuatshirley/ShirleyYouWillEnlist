@@ -4,7 +4,7 @@
 // serving whatever this cache holds until the name changes, so a stale
 // CACHE_NAME means an iPad that's already offline-installed never sees the
 // update even after a new push to main.
-var CACHE_NAME = "florence-est-v23";
+var CACHE_NAME = "florence-est-v24";
 
 var PRECACHE_URLS = [
   "./",

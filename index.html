@@ -1483,6 +1483,7 @@ input.input-error, select.input-error {
       phone: state.phone,
       recruiter: state.recruiter,
       test_number: state.testNumber,
+      test_key: QUESTIONS.key,
       timestamp: new Date().toISOString(),
       sections: {},
       ve_score: results.veScore,
@@ -1625,6 +1626,17 @@ input.input-error, select.input-error {
     });
   }
 
+  // Results saved before the 2026-11 renumbering carry no test_key and use
+  // the old numbering, where the original set was Test 1 and bank sets
+  // were 2-5. It's now bank sets 1-4 and the original as Test 5, so map
+  // old entries onto current numbers. apps-script/weekly-report.gs's
+  // currentTestNumber() does the same for the Sheet; keep the two in sync.
+  function currentTestNumber(entry) {
+    var n = entry.test_number || 1;
+    if (entry.test_key) return n;
+    return n === 1 ? TEST_VARIANTS.length : n - 1;
+  }
+
   // ---------- Screen: Saved scores viewer ----------
   // Entered via the SCORES_ACCESS_LAST/FIRST name combo on the start screen
   // (see startBtn handler). A blank recruiter (dropdown left untouched)
@@ -1689,7 +1701,7 @@ input.input-error, select.input-error {
           el("td", { class: "scores-table-num" }, [String(entry.afqt)])
         ];
         if (showTestCol) {
-          rowCells.push(el("td", { class: "scores-table-num" }, [String(entry.test_number || 1)]));
+          rowCells.push(el("td", { class: "scores-table-num" }, [String(currentTestNumber(entry))]));
         }
         sectionCodes.forEach(function (code) {
           var sec = entry.sections && entry.sections[code];

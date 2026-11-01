@@ -27,11 +27,11 @@
  * existing deployment > Edit (pencil) > New version > Deploy. This
  * keeps the same /exec URL, so the kiosk doesn't need updating.
  *
- * Note on HEADER_ROW: it's only written once, when the sheet is empty
- * (see getOrCreateSheet). If you add a field to a sheet that already
- * has rows, add the matching header cell yourself in row 1 -- new
- * columns are appended at the END of appendResultRow specifically so
- * this is a one-cell addition, not a reorder of existing columns.
+ * Note on HEADER_ROW: the full row is written when the sheet is empty,
+ * and getOrCreateSheet fills in any header cells missing from the end of
+ * an existing sheet's row 1. That's why new columns are only ever
+ * appended at the END of HEADER_ROW and appendResultRow -- never
+ * inserted, which would shift existing columns.
  *
  * Optional "Roster" tab (each recruiter's tested applicants + phone
  * numbers, grouped by recruiter then last name): add a new sheet tab
@@ -84,19 +84,34 @@ var HEADER_ROW = [
   "Phone",
   "Last Name", "First Name",
   "Test Number",
-  "Next Action", "Notes"
+  "Next Action", "Notes",
+  "Test Key"
+];
+
+// Practice drills (the take-home practice page) log here, NOT to the
+// Results tab -- a drill is not a graded EST, and keeping it off Results
+// keeps the Roster QUERY and dashboard limited to real tests. Write-only
+// like everything else on this public endpoint: nothing is ever read
+// back to the device.
+var PRACTICE_SHEET_NAME = "Practice";
+var PRACTICE_HEADER_ROW = [
+  "Timestamp", "Phone", "Last Name", "First Name", "Recruiter",
+  "Section", "Correct", "Total"
 ];
 
 // Two payload shapes hit this same endpoint: a full result (appendResultRow,
 // the default -- old cached kiosk versions never send `type` at all, so the
 // default has to stay "append a result row", not "do nothing") and a
 // recruiter's next-action note for an already-saved result
-// (updateResultNote, data.type === "note").
+// (updateResultNote, data.type === "note"). A third, data.type ===
+// "practice", is a take-home practice drill (appendPracticeRow).
 function doPost(e) {
   try {
     var data = JSON.parse(e.postData.contents);
     if (data.type === "note") {
       updateResultNote(data);
+    } else if (data.type === "practice") {
+      appendPracticeRow(data);
     } else {
       appendResultRow(data);
     }
@@ -162,10 +177,32 @@ function appendResultRow(data) {
     data.phone || "",
     data.last_name || "",
     data.first_name || "",
-    data.test_number || 1
+    data.test_number || 1,
+    // Next Action / Notes are filled in later by updateResultNote; left
+    // blank here so Test Key lands in its own column after them.
+    "", "",
+    data.test_key || ""
   ]);
 
   notifyResult(data);
+}
+
+// No per-drill email -- drills are frequent and low-stakes, so they only
+// show up in the Friday weekly report (weekly-report.gs).
+function appendPracticeRow(data) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(PRACTICE_SHEET_NAME) || ss.insertSheet(PRACTICE_SHEET_NAME);
+  if (sheet.getLastRow() === 0) sheet.appendRow(PRACTICE_HEADER_ROW);
+  sheet.appendRow([
+    data.timestamp || new Date().toISOString(),
+    data.phone || "",
+    data.last_name || "",
+    data.first_name || "",
+    data.recruiter || "",
+    data.section || "",
+    data.correct,
+    data.total
+  ]);
 }
 
 // Best-effort: the row is already saved by the time this runs, so a
@@ -322,6 +359,12 @@ function getOrCreateSheet() {
   }
   if (sheet.getLastRow() === 0) {
     sheet.appendRow(HEADER_ROW);
+  } else if (sheet.getLastColumn() < HEADER_ROW.length) {
+    // An existing sheet predates the newest columns (see the HEADER_ROW
+    // note at the top) -- fill in just the missing header cells.
+    var have = sheet.getLastColumn();
+    sheet.getRange(1, have + 1, 1, HEADER_ROW.length - have)
+      .setValues([HEADER_ROW.slice(have)]);
   }
   return sheet;
 }
