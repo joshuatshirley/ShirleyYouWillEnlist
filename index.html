@@ -706,6 +706,34 @@ input.input-error, select.input-error {
   }
 }
 
+
+/* ---------- Practice mode (local-only question bank) ---------- */
+.practice-sections { display: flex; flex-direction: column; gap: 10px; margin: 18px 0; }
+.practice-section-btn {
+  display: flex; justify-content: space-between; align-items: center;
+  width: 100%; text-align: left;
+  background: #fff; color: var(--ink);
+  border: 1px solid #ccd6e4; border-radius: 8px;
+  padding: 16px 18px; font-size: 1.1rem; cursor: pointer;
+}
+.practice-section-btn:hover { background: #f0f4fa; border-color: var(--accent); }
+.practice-section-btn.suggested { border: 2px solid var(--accent); background: #eef3fb; }
+.practice-section-meta { color: var(--muted); font-size: 0.9rem; }
+.choice.practice-choice { cursor: pointer; }
+.choice.practice-locked { cursor: default; }
+.choice.practice-locked:hover { background: inherit; border-color: #ddd; }
+.choice.practice-correct, .choice.practice-correct:hover { background: #e3f5e3; border-color: var(--status-good); }
+.choice.practice-wrong, .choice.practice-wrong:hover { background: #fbe6e6; border-color: var(--status-critical); }
+.practice-verdict { font-weight: 700; font-size: 1.15rem; margin: 18px 0 6px; }
+.practice-verdict.right { color: var(--status-good); }
+.practice-verdict.wrong { color: var(--status-critical); }
+.explain-box {
+  background: #f6f8fb; border-left: 4px solid var(--accent); border-radius: 6px;
+  padding: 14px 16px; font-size: 1.05rem; line-height: 1.5; white-space: pre-line;
+}
+.practice-review-item { border-top: 1px solid #eee; padding: 14px 0; }
+.practice-review-prompt { white-space: pre-line; font-family: var(--font-serif); margin-bottom: 6px; }
+.practice-review-answer { font-weight: 700; color: var(--status-good); margin-bottom: 6px; }
 </style>
 </head>
 <body>
@@ -715,6 +743,12 @@ input.input-error, select.input-error {
      out keeps this file to markup, styles, and app logic. See that
      file's own header for how it's regenerated. -->
 <script src="./question-data.js"></script>
+<!-- Practice-question bank (licensed Barron's content with explanations).
+     Local-only: local-bank/ is git-ignored and never pushed, so on the
+     public GitHub Pages copy this request 404s, window.__EST_PRACTICE__
+     stays undefined, and every practice button simply doesn't render.
+     Rebuilt by local-bank/build_practice.py. -->
+<script src="./local-bank/practice-data.js"></script>
 <script>
 (function () {
   "use strict";
@@ -728,6 +762,8 @@ input.input-error, select.input-error {
   // the top of <head> -- see the comment there for what to edit when
   // handing this kiosk off to a different station.
   var CONFIG = window.EST_CONFIG;
+  // Optional local-only practice bank; null on the public deployment.
+  var PRACTICE = window.__EST_PRACTICE__ || null;
 
   var RECRUITERS = CONFIG.recruiters;
 
@@ -1005,6 +1041,19 @@ input.input-error, select.input-error {
       renderPreTestHandoff();
     });
     card.appendChild(el("div", { class: "btn-row" }, [startBtn]));
+
+    if (PRACTICE) {
+      var practiceBtn = el("button", { class: "btn-outline" }, ["Practice Questions"]);
+      practiceBtn.addEventListener("click", function () {
+        renderPracticeHome({
+          lastName: lastNameInput.value.trim(),
+          firstName: firstNameInput.value.trim(),
+          phone: phoneInput.value.trim(),
+          recruiter: recruiterSelect.value
+        }, null);
+      });
+      card.appendChild(el("div", { class: "btn-row" }, [practiceBtn]));
+    }
 
     app.appendChild(card);
   }
@@ -1722,6 +1771,282 @@ input.input-error, select.input-error {
     app.appendChild(card);
   }
 
+  // ---------- Practice mode ----------
+  // Untimed drills from the local-only practice bank (see the
+  // local-bank/practice-data.js script tag). Each answer is graded the
+  // moment it's tapped, with the explanation shown right away -- the point
+  // is learning, not a score -- so nothing here touches the graded-test
+  // state or the Results sheet. A finished drill is logged one-way to the
+  // webhook's Practice tab (type: "practice") so the Friday report shows
+  // who studied; nothing is ever read back.
+  var PRACTICE_DRILL_SIZE = 10;
+  var PRACTICE_SEEN_KEY = "est_practice_seen";
+  var PRACTICE_ORDER = ["AR", "MK", "WK", "PC"];
+
+  // Per-device count of how often each question has been served, so drills
+  // rotate through the whole bank instead of repeating the same ten.
+  // localStorage can be unavailable (private mode) -- then every drill is
+  // just a fresh random pick, which is fine.
+  function getPracticeSeen() {
+    try {
+      return JSON.parse(localStorage.getItem(PRACTICE_SEEN_KEY) || "{}") || {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function markPracticeSeen(ids) {
+    var seen = getPracticeSeen();
+    ids.forEach(function (id) { seen[id] = (seen[id] || 0) + 1; });
+    try {
+      localStorage.setItem(PRACTICE_SEEN_KEY, JSON.stringify(seen));
+    } catch (e) {
+      // Storage full or blocked: rotation just stops being remembered.
+    }
+  }
+
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    }
+    return arr;
+  }
+
+  // Least-served questions first, random within each tier.
+  function pickPracticeDrill(code) {
+    var seen = getPracticeSeen();
+    var pool = shuffle(PRACTICE.sections[code].questions.slice());
+    pool.sort(function (a, b) { return (seen[a.id] || 0) - (seen[b.id] || 0); });
+    return pool.slice(0, PRACTICE_DRILL_SIZE);
+  }
+
+  // Lowest-scoring section on a just-finished test (ties go to test order).
+  function weakestSectionCode(results) {
+    var worst = null;
+    QUESTIONS.sections.forEach(function (sec) {
+      var r = results.byCode[sec.code];
+      if (PRACTICE.sections[sec.code] && (!worst || r.pct < worst.pct)) worst = { code: sec.code, pct: r.pct };
+    });
+    return worst && worst.code;
+  }
+
+  function practiceIdentityFromState() {
+    return { lastName: state.lastName, firstName: state.firstName, phone: state.phone, recruiter: state.recruiter };
+  }
+
+  function renderPracticeSuggestion(results) {
+    var code = weakestSectionCode(results);
+    var wrap = el("div", { class: "instructions-box" });
+    if (!code) return wrap;
+    wrap.appendChild(el("div", {}, [
+      "Biggest room to grow: " + PRACTICE.sections[code].name +
+      ". Practice questions show the answer and an explanation right after each one."
+    ]));
+    var btn = el("button", { class: "btn" }, ["Practice " + PRACTICE.sections[code].name]);
+    btn.addEventListener("click", function () {
+      startPracticeDrill(practiceIdentityFromState(), code);
+    });
+    var other = el("button", { class: "btn-outline" }, ["Choose a section"]);
+    other.addEventListener("click", function () {
+      renderPracticeHome(practiceIdentityFromState(), code);
+    });
+    wrap.appendChild(el("div", { class: "btn-row" }, [btn, " ", other]));
+    return wrap;
+  }
+
+  function renderPracticeHome(identity, suggestedCode) {
+    clear(app);
+    setKeyHandler(null);
+    armIdleTimeout();
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["Practice Questions"]));
+    card.appendChild(el("p", { class: "byline" }, [
+      "Untimed. " + PRACTICE_DRILL_SIZE + " questions per round, with the answer and explanation after each one."
+    ]));
+
+    // Name/phone are optional here -- they only label the practice log for
+    // the weekly report. Prefilled when coming from the Start or Results
+    // screen.
+    var phoneInput = null, lastInput = null;
+    if (!identity.phone && !identity.lastName) {
+      card.appendChild(el("label", { class: "field-label" }, ["Last Name (optional):"]));
+      lastInput = el("input", { type: "text", placeholder: "Last name" });
+      card.appendChild(lastInput);
+      card.appendChild(el("label", { class: "field-label" }, ["Phone Number (optional):"]));
+      phoneInput = el("input", { type: "tel", placeholder: "Phone number" });
+      card.appendChild(phoneInput);
+    }
+
+    var seen = getPracticeSeen();
+    var list = el("div", { class: "practice-sections" });
+    PRACTICE_ORDER.forEach(function (code) {
+      var sec = PRACTICE.sections[code];
+      if (!sec) return;
+      var done = sec.questions.filter(function (q) { return seen[q.id]; }).length;
+      var btn = el("button", { class: "practice-section-btn" + (code === suggestedCode ? " suggested" : "") }, [
+        el("span", {}, [sec.name]),
+        el("span", { class: "practice-section-meta" }, [done + " of " + sec.questions.length + " seen"])
+      ]);
+      btn.addEventListener("click", function () {
+        if (lastInput) identity.lastName = lastInput.value.trim();
+        if (phoneInput) identity.phone = phoneInput.value.trim();
+        startPracticeDrill(identity, code);
+      });
+      list.appendChild(btn);
+    });
+    card.appendChild(list);
+
+    var back = el("button", { class: "btn-outline" }, ["Back to Start"]);
+    back.addEventListener("click", renderStart);
+    card.appendChild(el("div", { class: "btn-row" }, [back]));
+    app.appendChild(card);
+  }
+
+  function startPracticeDrill(identity, code) {
+    var drill = { identity: identity, code: code, questions: pickPracticeDrill(code), index: 0, picks: {} };
+    markPracticeSeen(drill.questions.map(function (q) { return q.id; }));
+    renderPracticeQuestion(drill);
+  }
+
+  function renderPracticeQuestion(drill) {
+    clear(app);
+    armIdleTimeout();
+    var q = drill.questions[drill.index];
+    var total = drill.questions.length;
+    var isLast = drill.index === total - 1;
+
+    var card = el("div", { class: "card test-card" });
+    card.appendChild(el("div", { class: "section-header" }, [
+      "Practice: " + PRACTICE.sections[drill.code].name + "  ·  Question " + (drill.index + 1) + " of " + total
+    ]));
+
+    var wrap = el("div", { class: "question question-single" });
+    wrap.appendChild(el("div", { class: "q-prompt" }, [
+      el("span", { class: "q-num" }, [(drill.index + 1) + "."]),
+      q.prompt
+    ]));
+    var list = el("div", { class: "choice-list" });
+    var rows = {};
+    var feedback = el("div", {});
+    var nextBtn = el("button", { class: "btn", style: "display:none" }, [isLast ? "See Results" : "Next →"]);
+
+    function choose(letter) {
+      if (drill.picks[q.id]) return;
+      drill.picks[q.id] = letter;
+      Object.keys(rows).forEach(function (l) {
+        rows[l].classList.add("practice-locked");
+        if (l === q.correct) rows[l].classList.add("practice-correct");
+        else if (l === letter) rows[l].classList.add("practice-wrong");
+      });
+      var right = letter === q.correct;
+      feedback.appendChild(el("div", { class: "practice-verdict " + (right ? "right" : "wrong") }, [
+        right ? "Correct!" : "Not quite. The answer is " + q.correct + ") " + q.choices[q.correct]
+      ]));
+      feedback.appendChild(el("div", { class: "explain-box" }, [q.explanation]));
+      nextBtn.style.display = "";
+      nextBtn.focus();
+    }
+
+    ["A", "B", "C", "D"].forEach(function (letter) {
+      if (!q.choices[letter]) return;
+      var row = el("div", { class: "choice practice-choice", role: "button", tabindex: "0" }, [
+        el("span", { class: "choice-letter" }, [letter + ")"]),
+        el("span", {}, [q.choices[letter]])
+      ]);
+      row.addEventListener("click", function () { choose(letter); });
+      rows[letter] = row;
+      list.appendChild(row);
+    });
+    wrap.appendChild(list);
+    card.appendChild(wrap);
+    card.appendChild(feedback);
+
+    nextBtn.addEventListener("click", function () {
+      if (isLast) {
+        renderPracticeSummary(drill);
+      } else {
+        drill.index++;
+        renderPracticeQuestion(drill);
+      }
+    });
+    card.appendChild(el("div", { class: "nav-row" }, [nextBtn]));
+    app.appendChild(card);
+
+    var numberToLetter = { "1": "A", "2": "B", "3": "C", "4": "D" };
+    setKeyHandler(function (e) {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      var letter = numberToLetter[e.key] || (e.key.length === 1 ? e.key.toUpperCase() : "");
+      if (rows[letter] && !drill.picks[q.id]) {
+        e.preventDefault();
+        choose(letter);
+      } else if (e.key === "Enter" && drill.picks[q.id]) {
+        e.preventDefault();
+        nextBtn.click();
+      }
+    });
+  }
+
+  function renderPracticeSummary(drill) {
+    clear(app);
+    setKeyHandler(null);
+    armIdleTimeout();
+    var missed = drill.questions.filter(function (q) { return drill.picks[q.id] !== q.correct; });
+    var correct = drill.questions.length - missed.length;
+    logPracticeDrill(drill, correct);
+
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["Practice Results"]));
+    card.appendChild(el("p", { class: "byline" }, [PRACTICE.sections[drill.code].name]));
+    var hero = el("div", { class: "hero" });
+    hero.appendChild(el("div", { class: "hero-value" }, [correct + " / " + drill.questions.length]));
+    hero.appendChild(el("div", { class: "hero-label" }, ["Correct"]));
+    card.appendChild(hero);
+
+    if (missed.length) {
+      card.appendChild(el("h2", { class: "subtitle" }, ["Review what you missed"]));
+      missed.forEach(function (q) {
+        card.appendChild(el("div", { class: "practice-review-item" }, [
+          el("div", { class: "practice-review-prompt" }, [q.prompt]),
+          el("div", { class: "practice-review-answer" }, ["Answer: " + q.correct + ") " + q.choices[q.correct]]),
+          el("div", { class: "explain-box" }, [q.explanation])
+        ]));
+      });
+    }
+
+    var again = el("button", { class: "btn" }, ["Another Round"]);
+    again.addEventListener("click", function () { startPracticeDrill(drill.identity, drill.code); });
+    var pick = el("button", { class: "btn-outline" }, ["Choose a section"]);
+    pick.addEventListener("click", function () { renderPracticeHome(drill.identity, drill.code); });
+    var done = el("button", { class: "btn-outline" }, ["Done"]);
+    done.addEventListener("click", renderStart);
+    card.appendChild(el("div", { class: "btn-row" }, [again, " ", pick, " ", done]));
+    app.appendChild(card);
+  }
+
+  // Fire-and-forget like saveRecruiterNote: an unsent practice log isn't
+  // worth queueing or retrying. Skipped when the drill is anonymous, since
+  // an unnamed row tells the weekly report nothing.
+  function logPracticeDrill(drill, correct) {
+    var id = drill.identity;
+    if (!RESULTS_WEBHOOK_URL || (!id.phone && !id.lastName)) return;
+    fetch(RESULTS_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        type: "practice",
+        timestamp: new Date().toISOString(),
+        phone: id.phone || "",
+        last_name: id.lastName || "",
+        first_name: id.firstName || "",
+        recruiter: id.recruiter || "",
+        section: drill.code,
+        correct: correct,
+        total: drill.questions.length
+      })
+    }).catch(function () {});
+  }
+
   // ---------- Screen: Results ----------
   function renderResults() {
     clear(app);
@@ -1784,6 +2109,7 @@ input.input-error, select.input-error {
     ]);
     card.appendChild(overallStat);
 
+    if (PRACTICE) card.appendChild(renderPracticeSuggestion(results));
     card.appendChild(renderM2SCard());
     var noteForm = renderRecruiterNoteForm();
     card.appendChild(noteForm);
