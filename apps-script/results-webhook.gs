@@ -65,7 +65,7 @@
 
 var SHEET_NAME = "Results";
 var SHEET_ID = "1ERX4wPOGAHg5NQ7Sci36z_iWaZtGqWAe-MbkbQbcguo";
-var NOTIFY_EMAIL = "joshua.t.shirley@army.mil";
+var NOTIFY_EMAIL = "joshua.t.shirley4.mil@army.mil";
 
 // Each per-test email also goes to the recruiter the applicant picked on
 // the kiosk. Keys must match the kiosk's EST_CONFIG.recruiters names
@@ -75,12 +75,12 @@ var NOTIFY_EMAIL = "joshua.t.shirley@army.mil";
 // The emails have no link to the Sheet, so a recruiter only sees the
 // results sent to them.
 var RECRUITER_EMAILS = {
-  "Curless SSG": "",
-  "Gatling SFC": "",
-  "Guiler SFC": "",
-  "Recendez SFC": "",
-  "Schultz SFC": "",
-  "Shirley SFC": "joshua.t.shirley@army.mil"
+  "Curless SSG": "james.e.curless.mil@army.mil",
+  "Gatling SFC": "lakisha.r.gatling.mil@army.mil",
+  "Guiler SFC": "christopher.guiler.mil@army.mil",
+  "Recendez SFC": "alex.recendez.mil@army.mil",
+  "Schultz SFC": "nicholas.k.schultz.mil@army.mil",
+  "Shirley SFC": "joshua.t.shirley4.mil@army.mil"
   // NEW RECRUITER ("Aquaman" template): add a comma after the line above,
   // copy this line, remove the //, and set the same "Lastname RANK" you
   // used in index.html's EST_CONFIG.recruiters, plus their email.
