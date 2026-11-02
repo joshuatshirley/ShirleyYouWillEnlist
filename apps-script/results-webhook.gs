@@ -64,6 +64,7 @@
  */
 
 var SHEET_NAME = "Results";
+var SHEET_ID = "1ERX4wPOGAHg5NQ7Sci36z_iWaZtGqWAe-MbkbQbcguo";
 var NOTIFY_EMAIL = "joshua.t.shirley@army.mil";
 
 // Each per-test email also goes to the recruiter the applicant picked on
@@ -89,13 +90,16 @@ var RECRUITER_EMAILS = {
 // Recruiter follow-up codes in each per-test email (followUpCodes):
 // one saves the applicant as a contact, the other opens a text to them
 // from the recruiter's phone. PRACTICE_SITE_URL is the public GitHub
-// Pages address of the kiosk ("?practice" is added to it); leave it ""
-// until the site is up. In the template, {recruiter} = "SFC Shirley",
-// {score} = projected AFQT, {link} = the practice link, {weakest} = their
-// lowest section (Arithmetic Reasoning when it's in a tie).
-var PRACTICE_SITE_URL = "";
-var APPLICANT_TEXT_TEMPLATE = "Hey this is {recruiter}. You got a {score}. Check this link to practice " +
-  "on your own {link} You needed help with {weakest} the most. Focus on that in March2Success.com.";
+// Pages address of the kiosk ("?practice" is added to it). In the
+// template, {recruiter} = "SFC Shirley", {score} = projected AFQT,
+// {link} = the practice link, {weakest} = their lowest section
+// (Arithmetic Reasoning when it's in a tie).
+var PRACTICE_SITE_URL = "https://joshuatshirley.github.io/ShirleyYouWillEnlist/";
+var APPLICANT_TEXT_TEMPLATE =
+  "Hey, this is {recruiter} with the Army! Great job taking the practice ASVAB today — your projected AFQT score is {score}.\n\n" +
+  "You can keep practicing test questions anytime on your phone here:\n" +
+  "{link}\n\n" +
+  "Your biggest area to improve was {weakest}. Be sure to spend extra time on that and set up a free study account at March2Success.com!";
 
 var SECTION_NAMES = {
   WK: "Word Knowledge",
@@ -240,7 +244,7 @@ function hasReady(data) {
 // No per-drill email -- drills are frequent and low-stakes, so they only
 // show up in the Friday weekly report (weekly-report.gs).
 function appendPracticeRow(data) {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = getSpreadsheet();
   var sheet = ss.getSheetByName(PRACTICE_SHEET_NAME) || ss.insertSheet(PRACTICE_SHEET_NAME);
   if (sheet.getLastRow() === 0) sheet.appendRow(PRACTICE_HEADER_ROW);
   sheet.appendRow([
@@ -275,7 +279,7 @@ function notifyResult(data) {
   try {
     var when = Utilities.formatDate(
       data.timestamp ? new Date(data.timestamp) : new Date(),
-      SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone(),
+      getSpreadsheet().getSpreadsheetTimeZone(),
       "yyyy MMM dd HH:mm"
     ).toUpperCase();
     var lastName = data.last_name || "";
@@ -452,9 +456,9 @@ function weakestSectionForText(sections) {
 }
 
 function applicantTextMessage(data) {
-  var link = PRACTICE_SITE_URL
-    ? PRACTICE_SITE_URL.split("?")[0].split("#")[0] + "?practice."
-    : "(practice link not set up yet).";
+  var baseUrl = PRACTICE_SITE_URL ? PRACTICE_SITE_URL.split("?")[0].split("#")[0].trim() : "";
+  if (baseUrl && !baseUrl.endsWith("/")) baseUrl += "/";
+  var link = baseUrl ? (baseUrl + "?practice") : "(practice link not set up yet)";
   return APPLICANT_TEXT_TEMPLATE
     .replace("{recruiter}", recruiterDisplay(data.recruiter))
     .replace("{score}", String(data.afqt))
@@ -565,8 +569,19 @@ function formatPhone(phone) {
   return phone;
 }
 
+function getSpreadsheet() {
+  if (SHEET_ID) {
+    try {
+      return SpreadsheetApp.openById(SHEET_ID);
+    } catch (err) {
+      Logger.log("openById failed, falling back to getActiveSpreadsheet: " + err);
+    }
+  }
+  return SpreadsheetApp.getActiveSpreadsheet();
+}
+
 function getOrCreateSheet() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = getSpreadsheet();
   var sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) {
     sheet = ss.insertSheet(SHEET_NAME);
