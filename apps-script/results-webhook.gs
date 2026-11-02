@@ -305,11 +305,16 @@ function notifyResult(data) {
     if (codes.text) plainLines.push("", "Text to send: " + codes.text);
     var body = plainLines.join("\n");
 
-    MailApp.sendEmail(to, subject, body, {
+    var emailOptions = {
       htmlBody: buildHtmlReport(data, when, testNumber) + codes.html,
       inlineImages: codes.images,
       name: "Florence EST Kiosk"
-    });
+    };
+    if (codes.vcardBlob) {
+      emailOptions.attachments = [codes.vcardBlob];
+    }
+
+    MailApp.sendEmail(to, subject, body, emailOptions);
   } catch (err) {
     Logger.log("notifyResult failed: " + err);
   }
@@ -493,25 +498,49 @@ function followUpCodes(data, testNumber) {
   var text = digits ? applicantTextMessage(data) : "";
   if (typeof qrcode === "undefined") {
     Logger.log("qrcode.gs is missing from this project; emails go out without QR codes.");
-    return { html: "", images: {}, text: text };
+    return { html: "", images: {}, text: text, vcardBlob: null };
   }
-  var images = { qrSave: qrImage(applicantVcard(data, testNumber), "save-applicant") };
+  var vcard = applicantVcard(data, testNumber);
+  var images = { qrSave: qrImage(vcard, "save-applicant") };
   if (text) images.qrText = qrImage("SMSTO:+1" + digits + ":" + text, "text-applicant");
 
-  function cell(cid, label, sub) {
+  var vcardBlob = digits
+    ? Utilities.newBlob(vcard, "text/vcard", (((data.first_name || "") + "_" + (data.last_name || "Applicant")).trim() || "applicant").replace(/[^a-zA-Z0-9_-]/g, "_") + ".vcf")
+    : null;
+
+  var saveHref = digits ? ("tel:+1" + digits) : "";
+  var textHref = (digits && text) ? ("sms:+1" + digits + "?body=" + encodeURIComponent(text)) : "";
+
+  function cell(cid, label, sub, href, actionLabel) {
+    var imgTag = "<img src=\"cid:" + cid + "\" width=\"180\" height=\"180\" alt=\"" + esc(label) + " QR code\" style=\"display:block;border:0;margin:0 auto;\">";
+    var imgHtml = href
+      ? "<a href=\"" + esc(href) + "\" style=\"text-decoration:none;display:block;\">" + imgTag + "</a>"
+      : imgTag;
+    var titleHtml = href
+      ? "<a href=\"" + esc(href) + "\" style=\"color:#0b57d0;text-decoration:none;font-weight:700;\">" + esc(label) + "</a>"
+      : esc(label);
+    var btnHtml = "";
+    if (href && actionLabel) {
+      btnHtml = "<div style=\"margin-top:8px;\">" +
+        "<a href=\"" + esc(href) + "\" style=\"display:inline-block;padding:6px 14px;background:#221f20;color:#ffcc01;text-decoration:none;font-size:13px;font-weight:700;border-radius:4px;\">" +
+        esc(actionLabel) + "</a></div>";
+    }
     return "<td align=\"center\" valign=\"top\" style=\"padding:8px;width:50%;\">" +
-      "<img src=\"cid:" + cid + "\" width=\"180\" height=\"180\" alt=\"" + esc(label) + " QR code\" style=\"display:block;\">" +
-      "<div style=\"font-size:14px;font-weight:700;margin-top:6px;\">" + esc(label) + "</div>" +
-      "<div style=\"font-size:12px;color:#555;\">" + esc(sub) + "</div></td>";
+      imgHtml +
+      "<div style=\"font-size:14px;font-weight:700;margin-top:6px;\">" + titleHtml + "</div>" +
+      "<div style=\"font-size:12px;color:#555;\">" + esc(sub) + "</div>" +
+      btnHtml +
+      "</td>";
   }
+
   var html = "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"max-width:480px;margin-top:20px;border-top:1px solid #eee;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;\">" +
     "<tr><td colspan=\"2\" style=\"padding:14px 4px 0;font-size:16px;font-weight:700;\">Recruiter follow-up</td></tr>" +
-    "<tr><td colspan=\"2\" style=\"padding:2px 4px 6px;font-size:13px;color:#555;\">Scan with your phone camera.</td></tr><tr>" +
-    cell("qrSave", "Save applicant", digits ? formatPhone(digits) : "No phone number given") +
-    (text ? cell("qrText", "Text the applicant", "Opens a text with their score and practice link")
+    "<tr><td colspan=\"2\" style=\"padding:2px 4px 6px;font-size:13px;color:#555;\">Scan with your phone camera, or tap if opening on your phone.</td></tr><tr>" +
+    cell("qrSave", "Save applicant", digits ? (formatPhone(digits) + (vcardBlob ? " · vCard attached" : "")) : "No phone number given", saveHref, "Save / Call") +
+    (text ? cell("qrText", "Text the applicant", "Opens a text with their score and practice link", textHref, "Send text")
           : "<td style=\"width:50%;\"></td>") +
     "</tr></table>";
-  return { html: html, images: images, text: text };
+  return { html: html, images: images, text: text, vcardBlob: vcardBlob };
 }
 
 function esc(value) {
