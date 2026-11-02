@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "AR-001",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 1,
+    "prompt": "The Hamiltons bought a table that was marked $400. On the installment plan, they made a down payment equal to 25 percent of the marked price, plus 12 monthly payments of $30 each. How much more than the marked price did they pay by buying it this way?",
+    "choices": {
+      "A": "$25",
+      "B": "$50",
+      "C": "$60",
+      "D": "$460"
+    },
+    "correct": "C",
+    "explanation": "The down payment was 25 percent (or 1/4) of the marked price.\n$400 × (1/4) = $100 (down payment)\n$30 × 12 = $360 (sum of monthly payments)\n$360 + $100 = $460 (cost on installment plan)\n$460 − $400 = $60 (extra cost on installment)",
+    "topic": "money-interest",
+    "status": "fixed",
+    "check_note": "Book said the down payment was 25 percent 'of the total payment'; it is 25 percent of the marked price ($400). Corrected that phrase; numbers unchanged."
+  },
+  {
+    "id": "AR-002",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 2,
+    "prompt": "A scientist planted 120 seeds, of which 90 sprouted. What percentage of the seeds failed to sprout?",
+    "choices": {
+      "A": "25%",
+      "B": "24%",
+      "C": "30%",
+      "D": "75%"
+    },
+    "correct": "A",
+    "explanation": "The number of seeds that failed to sprout was\n120 − 90 = 30\nThe percentage of seeds that failed to sprout was\n30/120 = 1/4 = 25%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-003",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 3,
+    "prompt": "An airplane traveled 1,000 miles in 2 hours and 30 minutes. What was the average rate or speed, in miles per hour, for the trip?",
+    "choices": {
+      "A": "200 miles per hour",
+      "B": "300 miles per hour",
+      "C": "400 miles per hour",
+      "D": "500 miles per hour"
+    },
+    "correct": "C",
+    "explanation": "To find the average rate of speed, divide the distance covered (1,000 miles) by the time spent traveling (2 1/2 or 2.5 hours).\nClear the decimal in the divisor.\n1,000 ÷ 2.5 = 10,000 ÷ 25 = 400 miles per hour",
+    "topic": "rate-time-distance",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-004",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 4,
+    "prompt": "What is the value of this expression?\n(0.05 × 4) ÷ 0.1",
+    "choices": {
+      "A": "20",
+      "B": "2",
+      "C": "0.2",
+      "D": "0.02"
+    },
+    "correct": "B",
+    "explanation": "Solve by multiplying first and then dividing. Clear the decimal in the divisor.\n(0.05 × 4) ÷ 0.1 = 0.20 ÷ 0.1 = 2 ÷ 1 = 2",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-005",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 5,
+    "prompt": "Mackenzie’s bank balance was $2,674. Her next four transactions were as follows:\n−$348, +$765, +$802, −$518\nWhat was her bank balance after the fourth transaction had posted?",
+    "choices": {
+      "A": "$5,107",
+      "B": "$4,241",
+      "C": "$3,475",
+      "D": "$3,375"
+    },
+    "correct": "D",
+    "explanation": "Find the sum of the deposits and the sum of the withdrawals.\n$765 + $802 = $1,567 (deposits)\n$348 + $518 = $866 (withdrawals)\nFind the difference between deposits and withdrawals.\n$1,567 − $866 = $701 (overall gain)\nAdd this gain to the original balance.\n$701 + $2,674 = $3,375 (new balance)",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-006",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 6,
+    "prompt": "A snack bar sold 12 1/2 gallons of milk at 35 cents a pint. How much did the snack bar receive for the milk?",
+    "choices": {
+      "A": "$33.60",
+      "B": "$34.00",
+      "C": "$35.00",
+      "D": "$32.20"
+    },
+    "correct": "C",
+    "explanation": "Change 12 1/2 gallons into pints (8 pints = 1 gallon).\n12 1/2 × 8 = (25/2) × 8 = 100 (pints)\nMultiply the cost of 1 pint by 100.\n$0.35 × 100 = $35",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-007",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 7,
+    "prompt": "A square measures 9 feet on a side. If each side of the square is increased by 3 feet, how many square feet are added to the area?",
+    "choices": {
+      "A": "144 square feet",
+      "B": "81 square feet",
+      "C": "60 square feet",
+      "D": "63 square feet"
+    },
+    "correct": "D",
+    "explanation": "Multiply one side of a square by itself to find the area. Thus 9 feet × 9 feet = 81 square feet. By adding 3 feet to each side of the 9-foot square, you produce a 12-foot square. Thus 12 feet × 12 feet = 144 square feet. Find the difference between the areas of the two squares: 144 − 81 = 63 square feet.",
+    "topic": "geometry-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-008",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 8,
+    "prompt": "What is the average of 1/4 and 1/6?",
+    "choices": {
+      "A": "5/24",
+      "B": "7/24",
+      "C": "5/12",
+      "D": "1/5"
+    },
+    "correct": "A",
+    "explanation": "First, change both fractions to a common denominator (12) and add them.\n1/4 = 3/12 and 1/6 = 2/12\n3/12 + 2/12 = 5/12\nTo get the average, divide the sum by 2.\n(5/12) ÷ 2 = (5/12) × (1/2) = 5/24",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-009",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 9,
+    "prompt": "Travis’ salary was increased from $260 per week to $290 per week. What was the increase in his salary to the nearest percent?",
+    "choices": {
+      "A": "12%",
+      "B": "11%",
+      "C": "10%",
+      "D": "9%"
+    },
+    "correct": "A",
+    "explanation": "First find the salary increase.\n$290 − $260 = $30 (amount of increase)\nTo find the percentage of increase, use the original salary as the base and carry the division out to three decimal places.\n(increase) ÷ (original salary) = $30 ÷ $260 = 3.000 ÷ 26 = 0.115\nRounded to the nearest hundredth, 0.115 is 0.12. 0.12 = 12 percent",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-010",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 10,
+    "prompt": "If 1 pound, 12 ounces of fish costs $2.24, what is the cost of the fish per pound?",
+    "choices": {
+      "A": "$1.20",
+      "B": "$1.28",
+      "C": "$1.24",
+      "D": "$1.40"
+    },
+    "correct": "B",
+    "explanation": "Express the total weight of the fish in ounces.\n1 pound = 16 ounces\n16 ounces + 12 ounces = 28 ounces\nFind the cost of 1 ounce and multiply it by 16 to find the cost of 1 pound.\n$2.24 ÷ 28 = $0.08 (cost of 1 ounce)\n$0.08 × 16 = $1.28 (cost of 1 pound)",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-011",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 11,
+    "prompt": "A front lawn measures 25 feet in length and 15 feet in width. The back lawn of the same house measures 50 feet in length and 30 feet in width. What is the ratio of the area of the front lawn to the area of the back lawn?",
+    "choices": {
+      "A": "1:2",
+      "B": "2:3",
+      "C": "3:4",
+      "D": "1:4"
+    },
+    "correct": "D",
+    "explanation": "Find the area of each lawn.\n25 feet × 15 feet = 375 square feet (front lawn)\n50 feet × 30 feet = 1,500 square feet (back lawn)\nTo find the ratio, divide one area by the other.\n(front lawn) ÷ (back lawn) = 375 ÷ 1,500 = 1/4\nThe ratio of the front lawn to the back lawn is 1:4.",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-012",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 12,
+    "prompt": "The price of a used car was increased from $6,400 to $7,200. What was the percentage increase?",
+    "choices": {
+      "A": "10%",
+      "B": "11.25%",
+      "C": "12.5%",
+      "D": "15%"
+    },
+    "correct": "C",
+    "explanation": "Find the amount of the price increase. $7,200 − $6,400 = $800\nTo find the rate of increase, use the original price as your base.\n(increase) ÷ (original price) = $800 ÷ $6,400 = 1/8\n1/8 = 12 1/2% (rate of increase)",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-013",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 13,
+    "prompt": "What is the next term in this series: 3 1/2, 2 1/4, 13 1/4, 12, _______?",
+    "choices": {
+      "A": "1 1/4",
+      "B": "10 3/4",
+      "C": "23",
+      "D": "14 1/2"
+    },
+    "correct": "C",
+    "explanation": "Find the relationship between each pair of numbers in the series. Thus\n(3 1/2; 2 1/4) 3 1/2 − 1 1/4 = 2 1/4\n(2 1/4; 13 1/4) 2 1/4 + 11 = 13 1/4\n(13 1/4; 12) 13 1/4 − 1 1/4 = 12\nThe pattern so far is −1 1/4, +11, −1 1/4. To continue the series, add 11 to the fourth number in the series: 12 + 11 = 23.",
+    "topic": "number-sense",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-014",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 14,
+    "prompt": "A movie theater opens at 10:00 A.M. and closes at 11:30 P.M. If a complete showing of a movie takes 2 hours and 15 minutes, how many complete showings are given at the movie theater each day?",
+    "choices": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
+    "correct": "B",
+    "explanation": "Find the number of hours the movie house is open. From 10:00 A.M. to 10:00 P.M. is 12 hours. From 10:00 P.M. to 11:30 P.M. is 1 1/2 hours.\n12 + 1 1/2 = 13 1/2 hours\nDivide this total by the length of time for a complete showing of the movie (2 hours and 15 minutes, or 2 1/4 hours).\n13 1/2 ÷ 2 1/4 =\n(27/2) ÷ (9/4) =\n(27/2) × (4/9) = 6 (showings)",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-015",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 15,
+    "prompt": "At a concert, orchestra seats sell for $20 each, and balcony seats sell for $10 each. If 324 orchestra seats were occupied, and the box office collected $10,000, how many balcony seats were sold?",
+    "choices": {
+      "A": "375",
+      "B": "352",
+      "C": "330",
+      "D": "310"
+    },
+    "correct": "B",
+    "explanation": "Find the amount taken in for orchestra seats.\n324 × $20 = $6,480\nOut of $10,000, the remaining amount came from balcony seats.\n$10,000 − $6,480 = $3,520\nDivide this amount by $10 to find the number of balcony seat tickets that were sold.\n$3,520 ÷ $10 = 352 balcony seats",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-016",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 16,
+    "prompt": "In a certain city, taxicab fare is $0.80 for the first 1/4 mile, and $0.20 for each additional 1/4 mile. How far, in miles, can a passenger travel for $5.00?",
+    "choices": {
+      "A": "5 miles",
+      "B": "4 1/4 miles",
+      "C": "5 1/2 miles",
+      "D": "5 3/4 miles"
+    },
+    "correct": "C",
+    "explanation": "Since the first 1/4 mile costs $0.80, this leaves $4.20 for the balance of the trip. At $0.20 for each additional 1/4 mile, find the number of 1/4 miles that $4.20 will cover.\n(Clear the decimal in the divisor.)\n$4.20 ÷ $0.20 =\n4.2 ÷ 0.2 =\n42 ÷ 2 = 21 additional 1/4 miles\nAdd the first 1/4 mile (at $0.80) to this total.\n21 + 1 = 22 (1/4 miles)\nChange the 1/4 miles to miles.\n22 ÷ 4 = 5 1/2 (miles for $5)",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-017",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 17,
+    "prompt": "A scale blueprint drawing of a building has a scale of 1 inch to 40 feet. How many inches on the drawing represent an actual distance of 175 feet?",
+    "choices": {
+      "A": "4 1/8",
+      "B": "4 3/8",
+      "C": "4 1/2",
+      "D": "4 3/4"
+    },
+    "correct": "B",
+    "explanation": "Divide the actual distance by the number of feet (40) represented by 1 inch.\n175 feet ÷ 40 feet = 175/40 = 4 15/40 = 4 3/8 (inches)",
+    "topic": "ratio-proportion",
+    "status": "fixed",
+    "check_note": "Prompt said '175 feet on the blueprint'; reworded to 'an actual distance of 175 feet' (175 ft is the real distance, not a drawing length). Explanation line made complete (175/40 = 4 15/40 = 4 3/8)."
+  },
+  {
+    "id": "AR-018",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 18,
+    "prompt": "The wholesale list price of a watch is $50. A dealer bought a shipment of watches at a discount of 20 percent and sold the watches at 10 percent above the wholesale list price. What was the profit on each watch?",
+    "choices": {
+      "A": "$8",
+      "B": "$10",
+      "C": "$12",
+      "D": "$15"
+    },
+    "correct": "D",
+    "explanation": "Find the discounted price paid by the dealer.\n$50 × 20% =\n$50 × 0.2 = $10 (discount)\n$50 − $10 = $40 (price paid by dealer)\nThen find the dealer’s selling price based on an increase over the original wholesale list price.\n$50 × 10% =\n$50 × 0.1 = $5 (increase over list price)\n$50 + $5 = $55 (dealer’s selling price)\nFinally, find the dealer’s profit.\n$55 − $40 = $15 (dealer’s profit)",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-019",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 19,
+    "prompt": "The minute hand of a clock is missing, but the hour hand is on the 11-minute mark. What time was it when the clock broke?",
+    "choices": {
+      "A": "5 minutes after 11",
+      "B": "11 minutes after 12",
+      "C": "12 minutes after 2",
+      "D": "20 minutes after 1"
+    },
+    "correct": "C",
+    "explanation": "When the hour hand is on the 10-minute mark, it is actually on the number 2 (for 2 o’clock). The hour hand advances to a new minute mark every 12 minutes of actual time. Thus, when the hour hand stopped at the 11-minute mark, it was 12 minutes after 2.",
+    "topic": "number-sense",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-020",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 20,
+    "prompt": "During a season a professional basketball player tried 320 shots and made 272 of them. What percentage of the shots tried were successful?",
+    "choices": {
+      "A": "85%",
+      "B": "80%",
+      "C": "75%",
+      "D": "70%"
+    },
+    "correct": "A",
+    "explanation": "Divide the number of successful shots by the total number of shots the player tried. Change your answer to percent.\n272/320 = 34/40 = 17/20\n17/20 = 0.85 = 85%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-021",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 21,
+    "prompt": "A painter and a helper spent 3 days painting a house. The painter received twice as much as the helper. If the two men were paid $375 total for the job, how much did the painter receive?",
+    "choices": {
+      "A": "$175",
+      "B": "$200",
+      "C": "$225",
+      "D": "$250"
+    },
+    "correct": "D",
+    "explanation": "Let x equal the amount the helper receives. Let 2x equal the amount the painter receives. Write an equation to show that, together, they receive $375 for painting the house.\n2x + x = $375\nCombine the similar terms, and then divide both sides of the equation by the number with x. (This is to undo the multiplication.)\n3x = $375\nx = $125 (the helper’s wages)\n2x = $250 (what the painter receives)",
+    "topic": "algebra-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-022",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 22,
+    "prompt": "What is the difference between a 50% discount and a discount of 33 1/3%?",
+    "choices": {
+      "A": "0.17",
+      "B": "1/3",
+      "C": "0.25",
+      "D": "1/6"
+    },
+    "correct": "D",
+    "explanation": "Find the difference between the two percentages.\n50% − 33 1/3% = 16 2/3%\nDivide the answer by 100 percent to change it to a simple fraction.\n16 2/3% = (50/3) ÷ 100 = 50/300 = 1/6\n(0.17 is only a rounded value of 1/6, so the exact answer is 1/6.)",
+    "topic": "fractions-decimals",
+    "status": "fixed",
+    "check_note": "Book explanation gave no arithmetic; added the steps (50% − 33 1/3% = 16 2/3% = 1/6). Noted that choice A (0.17) is only a rounded value of 1/6, so D is the exact answer."
+  },
+  {
+    "id": "AR-023",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 23,
+    "prompt": "What is the value of 3a^2 − 2a + 5 when a = 4?",
+    "choices": {
+      "A": "43",
+      "B": "45",
+      "C": "61",
+      "D": "21"
+    },
+    "correct": "B",
+    "explanation": "To solve, substitute the number value for the letter and do the arithmetic operations.\n3a^2 − 2a + 5\n= (3 × a^2) − (2 × a) + 5\n= (3 × 4^2) − (2 × 4) + 5\n= (3 × 16) − 8 + 5\n= 48 − 8 + 5\n= 40 + 5 = 45",
+    "topic": "algebra-word",
+    "status": "fixed",
+    "check_note": "Book work wrote (2 + a) instead of (2 × a) for the 2a term; corrected those lines (result 45 unchanged)."
+  },
+  {
+    "id": "AR-024",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 24,
+    "prompt": "The following table gives the annual premiums for a life insurance policy based on the age of the holder when the policy is taken out.\nAge in Years | Premium per $1,000\n22 | $18\n30 | $22\n38 | $28\n46 | $38\nOver 20 years, how much is saved by taking out a $1,000 policy at age 30, rather than at age 46?",
+    "choices": {
+      "A": "$16",
+      "B": "$32",
+      "C": "$320",
+      "D": "$400"
+    },
+    "correct": "C",
+    "explanation": "Find the annual difference between the premium paid by someone who is 30 and the premium paid by someone who is 46.\n$38 − $22 = $16\nMultiply the answer by 20 to find the total amount saved over 20 years by taking out a policy at an early age.\n$16 × 20 = $320 saved",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-025",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 25,
+    "prompt": "A chair was marked for sale at $240. This sale price was 25 percent less than the original price. What was the original price?",
+    "choices": {
+      "A": "$300",
+      "B": "$280",
+      "C": "$320",
+      "D": "$60"
+    },
+    "correct": "C",
+    "explanation": "On sale, the chair is 25% less than the original price. In other words, the sale price is a fraction of the original price.\n100% − 25% = 75% (or 3/4) of the original price\nIf x equals the original price, then the sale price can be written as an equation.\n(3/4)x = $240\nTo solve for x, divide each side of the equation by 3/4. (This is to undo the multiplication.)\n(3/4)x ÷ (3/4) = $240 ÷ (3/4)\n(3/4)x × (4/3) = $240 × (4/3)\nx = $320 (original price)",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-026",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 26,
+    "prompt": "What is the quotient when 0.675 is divided by 0.9?",
+    "choices": {
+      "A": "7.5",
+      "B": "0.075",
+      "C": "75",
+      "D": "0.75"
+    },
+    "correct": "D",
+    "explanation": "The quotient is the answer in division. Clear the decimal in the divisor before doing the arithmetic: move the decimal point one place to the right in both numbers.\n0.675 ÷ 0.9 = 6.75 ÷ 9 = 0.75",
+    "topic": "fractions-decimals",
+    "status": "fixed",
+    "check_note": "Book explanation gave no arithmetic; added the decimal-clearing step and result (6.75 ÷ 9 = 0.75)."
+  },
+  {
+    "id": "AR-027",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 27,
+    "prompt": "On May 15, an electric meter read 5,472 kilowatt-hours. The following month, on June 15, the meter read 5,687 kilowatt-hours. The utility charges the following rates for electric service.\nFirst 10 kilowatt-hours—$2.48\nNext 45 kilowatt-hours—$0.16 per kilowatt-hour\nNext 55 kilowatt-hours—$0.12 per kilowatt-hour\nMore than 110 kilowatt-hours—$0.07 per kilowatt-hour\nWhat was the total charge for the kilowatt-hours consumed during the month from May 15 to June 15?",
+    "choices": {
+      "A": "$22.53",
+      "B": "$23.63",
+      "C": "$22.63",
+      "D": "$24.43"
+    },
+    "correct": "B",
+    "explanation": "For the month between May 15 and June 15, the meter showed that the electric usage was\n5,687 − 5,472 = 215 (kilowatt-hours)\nThe first 10 kilowatt-hours cost: $2.48\nThe next 45 kilowatt-hours cost $0.16 per kilowatt-hour: $7.20\nThe next 55 kilowatt-hours cost $0.12 per kilowatt-hour: $6.60\nAll usage over the first 110 kilowatt-hours was charged at a lower rate. Thus, 215 − 110, or 105 kilowatt-hours cost $0.07 per kilowatt-hour: $7.35\nTOTAL bill for the month: $23.63",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-028",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 28,
+    "prompt": "What is the difference between the square of 49 and the square of 31?",
+    "choices": {
+      "A": "18",
+      "B": "1.4322",
+      "C": "1,440",
+      "D": "2,056"
+    },
+    "correct": "C",
+    "explanation": "To square a number, multiply it by itself.\n49^2 = 49 × 49 = 2,401\n31^2 = 31 × 31 = 961\n2,401 − 961 = 1,440 (difference)",
+    "topic": "number-sense",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-029",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 29,
+    "prompt": "A rectangular auditorium contains x rows, with y seats in each row. What is the number of seats in the auditorium?",
+    "choices": {
+      "A": "xy",
+      "B": "x + y",
+      "C": "x − y",
+      "D": "y − x"
+    },
+    "correct": "A",
+    "explanation": "To find the number of seats in the auditorium, multiply the number of rows (x) by the number of seats in each row (y). This is expressed as xy.",
+    "topic": "algebra-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-030",
+    "section": "AR",
+    "source": "Diagnostic",
+    "n": 30,
+    "prompt": "When a certain number is divided by 15, the quotient is 8 and the remainder is 7. What is the number?",
+    "choices": {
+      "A": "127",
+      "B": "8 1/2",
+      "C": "3 3/5",
+      "D": "77"
+    },
+    "correct": "A",
+    "explanation": "One way of checking a division example is to multiply the quotient (the answer) by the divisor. After multiplying, add the remainder (if there was one in the division answer). Thus\n15 (divisor) × 8 (quotient) = 120\n120 + 7 (remainder) = 127 (original number)",
+    "topic": "number-sense",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-031",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 1,
+    "prompt": "You need 8 barrels of water to sprinkle 1/2 mile of roadway. How many barrels of water do you need to sprinkle 3 1/2 miles of roadway?",
+    "choices": {
+      "A": "7",
+      "B": "15",
+      "C": "50",
+      "D": "56"
+    },
+    "correct": "D",
+    "explanation": "You need 8 barrels of water to sprinkle 1/2 mile. You need 16 barrels of water to sprinkle 1 mile. You need 3 × 16 (or 48) barrels to sprinkle 3 miles. You need 48 + 8 (or 56) barrels to sprinkle 3 1/2 miles.",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-032",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 2,
+    "prompt": "A snapshot 8 inches long and 6 inches wide is to be enlarged so that its length will be 12 inches. How many inches wide will the enlarged snapshot be?",
+    "choices": {
+      "A": "8 inches",
+      "B": "6 inches",
+      "C": "9 inches",
+      "D": "10 inches"
+    },
+    "correct": "C",
+    "explanation": "Since the picture and its enlargement are similar, the lengths have the same ratio as the widths.\n(length of picture) / (length of enlargement) = (width of picture) / (width of enlargement)\n8/12 = 6/x\nTo solve this, cross-multiply the measurements, using x for the one you don’t know.\n8 × x = 12 × 6 = 72\nx = 72/8 = 9 inches (width)",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-033",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 3,
+    "prompt": "Travis Lee has an ordinary life insurance policy with a face value of $10,000. At his age, the annual premium is $24.00 per $1,000. What is the total premium paid for this policy every 6 months?",
+    "choices": {
+      "A": "$100",
+      "B": "$120",
+      "C": "$240",
+      "D": "$400"
+    },
+    "correct": "B",
+    "explanation": "There are 10 units of $1,000 in $10,000. Thus, Travis Lee pays 10 × $24 (or $240) each year in premiums. That means that every 6 months,\nTravis Lee pays 1/2 of $240, or $120.",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-034",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 4,
+    "prompt": "If 2 lbs. of cottage cheese cost $3.20, what is the cost of a 3-ounce portion of cottage cheese?",
+    "choices": {
+      "A": "$0.30",
+      "B": "$0.20",
+      "C": "$0.25",
+      "D": "$0.15"
+    },
+    "correct": "A",
+    "explanation": "There are 16 ounces in 1 pound. Therefore, if 2 pounds of cottage cheese costs $3.20, then 1 pound of cottage cheese costs $1.60. 1 ounce costs $1.60 ÷ 16 (or $0.10). 3 ounces cost 3 × $0.10 (or $0.30).",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-035",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 5,
+    "prompt": "Mr. Green drove for 12 hours at a speed of 55 miles per hour. If his car covered 22 miles for each gallon of gas used, how many gallons of gas did he use?",
+    "choices": {
+      "A": "32 gallons",
+      "B": "34 gallons",
+      "C": "36 gallons",
+      "D": "30 gallons"
+    },
+    "correct": "D",
+    "explanation": "To find the distance Mr. Green drove, multiply the hours by the miles per hour. Thus,\n12 × 55 = 660 (distance covered)\nTo find the number of gallons he used, divide the distance by the miles per gallon. Thus,\n660 ÷ 22 = 30 (gallons used)",
+    "topic": "rate-time-distance",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-036",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 6,
+    "prompt": "Max earns $7.50 per hour. If he works from 8:45 A.M. until 5:15 P.M., with one hour off for lunch, how much does he earn in one day?",
+    "choices": {
+      "A": "$58.50",
+      "B": "$56.25",
+      "C": "$55.00",
+      "D": "$53.75"
+    },
+    "correct": "B",
+    "explanation": "From 8:45 A.M. to 4:45 P.M. is 8 hours. From 4:45 P.M. to 5:15 P.M. is 1/2 hour. Subtract Max’s lunch hour.\n8 1/2 − 1 = 7 1/2 (or 7.5 hours)\nMultiply his work hours by his hourly rate.\n7.5 × $7.50 = $56.25 (day’s salary)",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-037",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 7,
+    "prompt": "If 5 shirts and 3 ties cost $52 and each tie costs $4, what is the cost of a shirt?",
+    "choices": {
+      "A": "$6",
+      "B": "$8",
+      "C": "$10",
+      "D": "$7.50"
+    },
+    "correct": "B",
+    "explanation": "Find the cost of 3 ties: 3 × $4 = $12. Find the cost of the shirts alone:\n$52 − $12 = $40\nFind the cost of 1 shirt:\n$40 ÷ 5 = $8",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-038",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 8,
+    "prompt": "What is the fifth term in the series: 5; 2; 9; 6; ____?",
+    "choices": {
+      "A": "16",
+      "B": "15",
+      "C": "14",
+      "D": "13"
+    },
+    "correct": "D",
+    "explanation": "Find the relationship between each pair of numbers in the series. Thus,\n(5; 2) 5 − 3 = 2\n(2; 9) 2 + 7 = 9\n(9; 6) 9 − 3 = 6\nThe pattern so far is −3, +7, −3. To continue the series, add 7 to the fourth number in the series:\n6 + 7 = 13",
+    "topic": "number-sense",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-039",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 9,
+    "prompt": "In a theater audience of 500 people, 80 percent were adults. How many children were in the audience?",
+    "choices": {
+      "A": "20",
+      "B": "50",
+      "C": "100",
+      "D": "125"
+    },
+    "correct": "C",
+    "explanation": "If 80 percent of the audience were adults, then the percentage of children was\n100% − 80% = 20% (0.2)\nTo find the number of children, multiply\n500 × 0.2 = 100.0 = 100 children",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-040",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 10,
+    "prompt": "A table usually sells for $240, but because it is slightly damaged, the store manager lets it go for $210. What is the percentage of reduction?",
+    "choices": {
+      "A": "12 1/2%",
+      "B": "14 2/7%",
+      "C": "16 2/3%",
+      "D": "18 3/4%"
+    },
+    "correct": "A",
+    "explanation": "Find the amount of reduction by subtracting.\n$240 − $210 = $30\nTo find the percentage of reduction, divide it by the original price.\n(reduction) $30 ÷ (original price) $240 = 1/8 = 12 1/2%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-041",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 11,
+    "prompt": "Mr. and Mrs. Clifton bought a home for $55,000. It was assessed at 80 percent of the purchase price. If the real estate tax was $4.74 per $100, how much realty tax did the Cliftons pay?",
+    "choices": {
+      "A": "$2,085.60",
+      "B": "$1,985.60",
+      "C": "$2,607.00",
+      "D": "$285.60"
+    },
+    "correct": "A",
+    "explanation": "Multiply the cost of the home by the assessment rate.\n$55,000 × 80% =\n$55,000 × 0.8 = $44,000 (assessed value)\nThe realty tax is $4.74 for each $100 in $44,000.\n$44,000 ÷ 100 = 440 (hundreds)\n$4.74 × 440 = $2,085.60 (tax)",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-042",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 12,
+    "prompt": "A scale on a map is 1 inch to 50 miles. On the map, two cities are 2 1/2 inches apart. What is the actual distance between the two cities?",
+    "choices": {
+      "A": "75 miles",
+      "B": "100 miles",
+      "C": "225 miles",
+      "D": "125 miles"
+    },
+    "correct": "D",
+    "explanation": "If 1 inch equals 50 miles, then 2 1/2 inches equal 2 1/2 times 50.\n50 × (5/2) = 125 (miles)",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-043",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 13,
+    "prompt": "A shipment of 2,200 pounds of fertilizer is packed in 40-ounce bags. How many bags are needed for the shipment?",
+    "choices": {
+      "A": "800",
+      "B": "880",
+      "C": "780",
+      "D": "640"
+    },
+    "correct": "B",
+    "explanation": "One pound equals 16 ounces. Find the number of ounces in 2,200 pounds by multiplying.\n2,200 × 16 = 35,200 (ounces)\nFind the number of 40-ounce bags needed to pack 35,200 ounces by dividing.\n35,200 ÷ 40 = 880 (bags)",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-044",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 14,
+    "prompt": "A television priced at $400 was reduced 25 percent during a weekend sale. In addition, there was a 10 percent discount for paying cash. What was the cash price of the set during the sale?",
+    "choices": {
+      "A": "$130",
+      "B": "$260",
+      "C": "$270",
+      "D": "$320"
+    },
+    "correct": "C",
+    "explanation": "Find the first reduction and the weekend sale price. (25% = 1/4)\n$400 × (1/4) = $100 (first reduction)\n$400 − $100 = $300 (weekend sale price)\nUse this weekend sale price to find the reduction for paying cash and the final price. (10% = 0.1)\n$300 × 0.1 = $30 (second reduction)\n$300 − $30 = $270 (cash price)",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-045",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 15,
+    "prompt": "In a store four clerks each receive $255.00 per week, while two part-timers each earn $120.00. What is the average weekly salary paid these six workers?",
+    "choices": {
+      "A": "$200.00",
+      "B": "$210.00",
+      "C": "$187.50",
+      "D": "$190.00"
+    },
+    "correct": "B",
+    "explanation": "Find the combined salaries of the four clerks.\n$255 × 4 = $1,020\nFind the combined salaries of the part-timers.\n$120 × 2 = $240\nAdd both totals and divide by 6 for the average.\n$1,020 + $240 = $1,260\n$1,260 ÷ 6 = $210 (average salary)",
+    "topic": "averages",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-046",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 16,
+    "prompt": "The perimeter of a rectangle is 40 feet. If the length is 15 feet, 6 inches, what is the width of the rectangle?",
+    "choices": {
+      "A": "4 feet, 6 inches",
+      "B": "9 feet, 6 inches",
+      "C": "5 feet, 6 inches",
+      "D": "5 feet"
+    },
+    "correct": "A",
+    "explanation": "The perimeter of a rectangle is equal to the sum of two lengths and two widths. If 15 feet, 6 inches (15 1/2 feet) equal 1 length, then\n2 × 15 1/2 = 31 feet (2 lengths)\n40 − 31 = 9 feet (both widths)\n9 ÷ 2 = 4 1/2 feet (1 width)\n4 1/2 feet = 4 feet, 6 inches",
+    "topic": "geometry-word",
+    "status": "fixed",
+    "check_note": "Added final step converting 4 1/2 feet to 4 feet, 6 inches so the work matches the answer choice."
+  },
+  {
+    "id": "AR-047",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 17,
+    "prompt": "What is the result of dividing 0.675 by 0.9?",
+    "choices": {
+      "A": "7.5",
+      "B": "0.075",
+      "C": "75",
+      "D": "0.75"
+    },
+    "correct": "D",
+    "explanation": "Before dividing by a decimal, clear the decimal point in both the divisor and the dividend.\n0.675 ÷ 0.9 = 6.75 ÷ 9 = 0.75",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-048",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 18,
+    "prompt": "Two planes leave the same airport traveling in opposite directions. One is flying at the rate of 340 miles per hour, the other at 260 miles per hour. In how many hours will the two planes be 3,000 miles apart?",
+    "choices": {
+      "A": "5 hours",
+      "B": "4 hours",
+      "C": "6 hours",
+      "D": "10 hours"
+    },
+    "correct": "A",
+    "explanation": "In the first hour, the two planes will be a combined distance of 340 miles plus 260 miles apart. Thus,\n340 + 260 = 600 miles apart in 1 hour\nFind how many hours it will take them to be 3,000 miles apart by dividing.\n3,000 ÷ 600 = 5 (hours)",
+    "topic": "rate-time-distance",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-049",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 19,
+    "prompt": "What is the cost of 5 feet, 3 inches of plastic material that sells for $8.00 per foot?",
+    "choices": {
+      "A": "$14.00",
+      "B": "$42.00",
+      "C": "$23.00",
+      "D": "$21.12"
+    },
+    "correct": "B",
+    "explanation": "Multiply the cost per foot by the length of the material.\n12 inches equal 1 foot.\n3 inches equal 1/4 foot.\n5 feet, 3 inches equal 5 1/4 feet (or 5.25 feet)\n$8 × 5.25 = $42",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-050",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 20,
+    "prompt": "If one gallon of milk costs $3.84, what is the cost of three pints?",
+    "choices": {
+      "A": "$1.44",
+      "B": "$2.82",
+      "C": "$2.04",
+      "D": "$1.96"
+    },
+    "correct": "A",
+    "explanation": "Find the cost of 1 pint. (There are 8 pints in 1 gallon.)\n$3.84 ÷ 8 = $0.48\nFind the cost of 3 pints.\n$0.48 × 3 = $1.44",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-051",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 21,
+    "prompt": "A man left $72,000 to his wife and son. The ratio of the wife’s share to the son’s share was 5:3. How much did his wife receive?",
+    "choices": {
+      "A": "$27,000",
+      "B": "$14,000",
+      "C": "$45,000",
+      "D": "$54,000"
+    },
+    "correct": "C",
+    "explanation": "Begin by letting x equal 1 share of the inheritance. According to the ratio, the widow received 5 shares (5x), and the son received 3 shares (3x). Together, they inherited $72,000. This can be written as an equation:\n5x + 3x = $72,000\nSolve for x by combining similar terms.\n8x = $72,000\nx = $9,000 (one share)\nMultiply the value of 1 share by the number of shares the mother received.\n5x = $45,000 (mother’s share)",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-052",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 22,
+    "prompt": "A recipe calls for 2 1/2 ounces of chocolate and 1/2 cup of corn syrup. If only 2 ounces of chocolate are available, how much corn syrup should be used?",
+    "choices": {
+      "A": "1/2 cup",
+      "B": "1/3 cup",
+      "C": "2/5 cup",
+      "D": "3/10 cup"
+    },
+    "correct": "C",
+    "explanation": "The recipe uses 1/2 cup of corn syrup for 2 1/2 ounces of chocolate.\nFind the corn syrup needed per ounce of chocolate:\n(1/2) ÷ 2 1/2 = (1/2) ÷ (5/2) = (1/2) × (2/5) = 1/5 cup per ounce\nMultiply by the 2 ounces available:\n2 × (1/5) = 2/5 cup of corn syrup\nCheck with a proportion: (2 1/2)/2 = (1/2)/x, so 2.5x = 1 and x = 2/5",
+    "topic": "ratio-proportion",
+    "status": "fixed",
+    "check_note": "Book's proportion work (dividing fractions into 1/(2x), then 10x = 4) was correct but hard to follow; replaced with a unit-rate solution plus a short proportion check. Same answer, 2/5 cup."
+  },
+  {
+    "id": "AR-053",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 23,
+    "prompt": "A ship sails x miles the first day, y miles the second day, and z miles the third day. What was the average distance covered per day?",
+    "choices": {
+      "A": "xyz/3",
+      "B": "(x + y + z)/3",
+      "C": "3xyz",
+      "D": "none of these"
+    },
+    "correct": "B",
+    "explanation": "To find the average of three numbers, divide their sum by 3.\nx + y + z (sum of three numbers)\n(x + y + z)/3 (sum of numbers divided by 3)",
+    "topic": "averages",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-054",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 24,
+    "prompt": "A man invests $6,000 at 5 percent annual interest. How much more must he invest at 6 percent annual interest so that his annual income from both investments is $900?",
+    "choices": {
+      "A": "$3,000",
+      "B": "$5,000",
+      "C": "$8,000",
+      "D": "$10,000"
+    },
+    "correct": "D",
+    "explanation": "First find the income he gets on the $6,000 at 5 percent annual interest.\n$6,000 × 0.05 = $300.00 (income)\nNext find how much more interest he wants to earn in a year.\n$900 − $300 = $600 (additional interest)\nThis $600 will equal 6 percent of the amount (x) he has to invest. Write this as an equation.\n$600 = 0.06 times x\n$600 = 0.06x\nTo solve for x, divide each side of the equation by 0.06. (Clear the decimal in the divisor.)\n$600 ÷ 0.06 = $60,000 ÷ 6\nx = $10,000 (new amount needed)",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-055",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 25,
+    "prompt": "Which of these is an example of similar figures?",
+    "choices": {
+      "A": "a plane and a scale model of that plane",
+      "B": "a pen and a pencil",
+      "C": "a motorcycle and a car",
+      "D": "an equilateral triangle and a right triangle"
+    },
+    "correct": "A",
+    "explanation": "Two figures are similar if they have the same shape. They may or may not have the same size. A plane and a scale model of that plane have the same shape and are therefore similar.",
+    "topic": "geometry-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-056",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 26,
+    "prompt": "Find the numerical value of 5a^2b − 3ab^2 if a = 7 and b = 4.",
+    "choices": {
+      "A": "846",
+      "B": "644",
+      "C": "488",
+      "D": "224"
+    },
+    "correct": "B",
+    "explanation": "Solve by substituting number values for letters and then doing the arithmetic operations.\n5a^2b − 3ab^2\n= (5 × a^2 × b) − (3 × a × b^2)\n= (5 × 7^2 × 4) − (3 × 7 × 4^2)\n= (5 × 49 × 4) − (3 × 7 × 16)\n= 980 − 336 = 644",
+    "topic": "algebra-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-057",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 27,
+    "prompt": "If the circumference of a circle is divided by the length of its diameter, what is the result?",
+    "choices": {
+      "A": "2",
+      "B": "27",
+      "C": "π",
+      "D": "7"
+    },
+    "correct": "C",
+    "explanation": "The formula for the circumference (C) of a circle can be written in terms of its radius (R) or its diameter (D).\nC = 2 × R × π (or) C = D × π\nThus, if you divide the circumference of a circle by its diameter, you are left with π.\nC ÷ D = (D × π) ÷ D\nC ÷ D = π",
+    "topic": "geometry-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-058",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 28,
+    "prompt": "A businesswoman spends 1/5 of her income for office rent, and 3/8 of the remainder of her income for salaries. What part of her income does she spend for salaries?",
+    "choices": {
+      "A": "23/40",
+      "B": "3/10",
+      "C": "1/2",
+      "D": "3/4"
+    },
+    "correct": "B",
+    "explanation": "If the businesswoman spends 1/5 of her income for office rent, she has 4/5 of her income left.\n5/5 − 1/5 = 4/5 (remainder)\nShe then spends 3/8 of the remainder on salaries.\n(4/5) × (3/8) = 12/40 = 3/10 (salaries)",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-059",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 29,
+    "prompt": "Using the following formula, find the value of C when F = 50.\nC = (5/9)(F − 32)",
+    "choices": {
+      "A": "10",
+      "B": "18",
+      "C": "90",
+      "D": "40"
+    },
+    "correct": "A",
+    "explanation": "Solve by substituting the number value for F and then doing the arithmetic operations.\nC = (5/9)(F − 32)\nC = (5/9)(50 − 32)\nC = (5/9) × 18\nC = 10",
+    "topic": "algebra-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-060",
+    "section": "AR",
+    "source": "Practice Exam One",
+    "n": 30,
+    "prompt": "What is the average of these temperature readings, taken on a cold day last winter?\n6:00 A.M. | −12 degrees\n7:00 A.M. | −7 degrees\n8:00 A.M. | −2 degrees\n9:00 A.M. | 0 degrees\n10:00 A.M. | 16 degrees",
+    "choices": {
+      "A": "0 degrees",
+      "B": "2 degrees",
+      "C": "−1 degree",
+      "D": "−3 degrees"
+    },
+    "correct": "C",
+    "explanation": "To obtain the average, add the five temperatures and divide the total by 5.\nAdd: −12 + (−7) + (−2) + 0 + 16\n= −21 + 16\n= −5\nDivide: −5 ÷ 5 = −1 degree",
+    "topic": "averages",
+    "status": "book_error",
+    "check_note": "Table lists the 10:00 A.M. reading as 16 degrees, but the book's solution used 6 degrees (sum −15, average −3, key D). With the table as printed, the sum is −5 and the average is −1 degree, so the key is changed from D to C and the work rewritten. If the printed table actually reads 6 degrees (extraction error), revert the prompt to 6 and the key to D."
+  }
+]

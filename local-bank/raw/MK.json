@@ -1,0 +1,1714 @@
+[
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 1,
+  "prompt": "Which of the following is the smallest prime number greater than 200?",
+  "choices": {
+   "A": "201",
+   "B": "205",
+   "C": "211",
+   "D": "214"
+  },
+  "correct": "C",
+  "explanation": "A prime number is a number larger than 1 that has only itself and 1 as factors. (It can be evenly divided only by itself and by 1.) 201 is divisible by 3; 205 is divisible by 5; 211, however, is a prime number.",
+  "after_choices": [],
+  "id": "MK-001"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 2,
+  "prompt": "If 40 percent is equal to the fraction [[img:e0051-01.jpg]] , what is the value of x?",
+  "choices": {
+   "A": "0.4",
+   "B": "15",
+   "C": "1,200",
+   "D": "12"
+  },
+  "correct": "D",
+  "explanation": "Change 40 percent to a decimal and write an equation to solve for x.\n[[img:e0081-01.jpg]]\nMultiply both sides by 30. You are “undoing” the division.",
+  "after_choices": [],
+  "id": "MK-002"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 3,
+  "prompt": "The expression “5 factorial” equals",
+  "choices": {
+   "A": "125.",
+   "B": "120.",
+   "C": "25.",
+   "D": "10."
+  },
+  "correct": "B",
+  "explanation": "The product of all integers from 1 to x is called the x factorial. The product of all numbers from 1 to 5 is 5 factorial. Thus\n[[img:e0081-02.jpg]]\nThe expression “5 factorial” is equal to 120.",
+  "after_choices": [],
+  "id": "MK-003"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 4,
+  "prompt": "What is the result of subtracting 3x^2 – 5x – 1 from 8x^2 + 2x – 9?",
+  "choices": {
+   "A": "5x^2 – 3x – 10",
+   "B": "–5x^2 – 3x – 10",
+   "C": "5x^2 + 7x – 8",
+   "D": "–5x^2 – 7x + 8"
+  },
+  "correct": "C",
+  "explanation": "To subtract one polynomial from another, you change the signs of the terms in the subtrahend. First write the example as a subtraction in arithmetic.\n(From) 8x^2 + 2x – 9\n(Take) 3x^2 – 5x – 1\nThen change the signs of the terms in the bottom row (the subtrahend) and combine terms that are alike.\n[[img:e0081-03.jpg]]",
+  "after_choices": [],
+  "id": "MK-004"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 5,
+  "prompt": "What is the meaning of the statement –30 < –5?",
+  "choices": {
+   "A": "30 is greater than 5.",
+   "B": "30 is less than minus 5.",
+   "C": "Negative 30 is less than negative 5.",
+   "D": "Negative 30 is greater than negative 5."
+  },
+  "correct": "C",
+  "explanation": "In deciding whether a number is greater or less than another, it helps to use a number line.\n[[img:f0082-01.jpg]]\nOn the number line above, –5 is to the left of 0 and is, therefore, less than 0. But –30 is to the left of –5. This makes –30 less than –5. The < sign is a symbol of inequality, meaning “less than.” The statement (–30 < –5) means “negative 30 is less than negative 5.”",
+  "after_choices": [],
+  "id": "MK-005"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 6,
+  "prompt": "Solve for x: 8x – 2 – 5x = 8",
+  "choices": {
+   "A": "x = 1.3",
+   "B": "[[img:e0052-01.jpg]]",
+   "C": "[[img:e0052-02.jpg]]",
+   "D": "x = –7"
+  },
+  "correct": "C",
+  "explanation": "To solve for x, combine all similar terms, and set the equation equal to zero.\n(8x – 5x) + (–2 – 8) = 0\nDo the operations inside the parentheses.\n3x – 10 = 0\nNext, add 10 to each side. You are undoing the subtraction.\n[[img:e0082-04.jpg]]\nFinally, divide each side by 3 to find the value of x. You are undoing the multiplication.",
+  "after_choices": [],
+  "id": "MK-006"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 7,
+  "prompt": "Maddalyn has $500 in a bank account. Every week, she writes out a check for $50. If she doesn’t make any new deposits, what will her bank account hold x weeks from now?",
+  "choices": {
+   "A": "$500 + $50x",
+   "B": "$500 – $50x",
+   "C": "$550 – x",
+   "D": "$500 + $50 + x"
+  },
+  "correct": "B",
+  "explanation": "In x weeks, she will make out checks for x times $50, or $50x. To find out how much she still has after writing these checks, she would subtract $50x from $500. Thus her bank account will hold $500 – $50x.",
+  "after_choices": [],
+  "id": "MK-007"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 8,
+  "prompt": "When the temperature is 20°C, what is it on the Fahrenheit (F) scale? Use the following formula:\n[[img:e0052-03.jpg]]",
+  "choices": {
+   "A": "[[img:e0052-04.jpg]]",
+   "B": "78 degrees",
+   "C": "[[img:e0052-05.jpg]]",
+   "D": "68 degrees"
+  },
+  "correct": "D",
+  "explanation": "Use the formula\n[[img:e0082-05.jpg]]\nSubstitute 20 degrees for C.\n[[img:e0082-06.jpg]]",
+  "after_choices": [],
+  "id": "MK-008"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 9,
+  "prompt": "The perimeter of a rectangle is 38 inches. If the length is 3 inches more than the width, find the width.",
+  "choices": {
+   "A": "[[img:e0052-06.jpg]]",
+   "B": "8 inches",
+   "C": "11 inches",
+   "D": "[[img:e0052-07.jpg]]"
+  },
+  "correct": "B",
+  "explanation": "The perimeter of a rectangle is the sum of its four sides. If x equals its width, then x + 3 equals the length. (The length is 3 inches more than the width.) From this, you can write an equation to find the perimeter. (Use the formula 2w + 2l = P.)\nx + x + (x + 3) + (x + 3) = 38\nTo solve for x, combine similar terms.\n[[img:e0082-08.jpg]]",
+  "after_choices": [],
+  "id": "MK-009"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 10,
+  "prompt": "Find the square root of 85 to the nearest tenth.",
+  "choices": {
+   "A": "9.1",
+   "B": "9.2",
+   "C": "9.3",
+   "D": "9.4"
+  },
+  "correct": "B",
+  "explanation": "One way to solve this is to square each of the suggested answers to see which is close to 85. Thus\n[[img:e0082-09.jpg]]\nThe squares of 9.2 and 9.3 are near 85. Find the difference between the square of each of these numbers and 85.\n[[img:e0083-02.jpg]]\nThe square of 9.2 is closer to 85 than the square of 9.3. Therefore, the square root of 85, to the nearest tenth, is 9.2.",
+  "after_choices": [],
+  "id": "MK-010"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 11,
+  "prompt": "If 5x = 30, then x is equal to",
+  "choices": {
+   "A": "150",
+   "B": "25",
+   "C": "6",
+   "D": "0.6"
+  },
+  "correct": "C",
+  "explanation": "The statement 5x = 30 means “5 times a certain number is equal to 30.” To find the number, divide each side by 5. This is to undo the multiplication.\n[[img:e0083-03.jpg]]",
+  "after_choices": [],
+  "id": "MK-011"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 12,
+  "prompt": "What is the product of (a – 5) and (a + 3)?",
+  "choices": {
+   "A": "a^2 – 15",
+   "B": "a^2 + 2a – 15",
+   "C": "a^2 – 2a – 15",
+   "D": "a^2 – 2"
+  },
+  "correct": "C",
+  "explanation": "Set this up as a multiplication example in arithmetic. Remember that when you multiply terms with unlike signs, the product has a minus sign.\n[[img:e0083-04.jpg]]",
+  "after_choices": [],
+  "id": "MK-012"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 13,
+  "prompt": "Solve for z: 3z – 5 + 2z = 25 – 5z",
+  "choices": {
+   "A": "z = 0",
+   "B": "z = 3",
+   "C": "z = –3",
+   "D": "no solution"
+  },
+  "correct": "B",
+  "explanation": "Begin by combining like terms.\n[[img:e0083-05.jpg]]\nNext add 5z to each side to eliminate the –5z from the right side.\n[[img:e0083-06.jpg]]\nNow add 5 to each side to undo the remaining subtraction.\n[[img:e0083-07.jpg]]",
+  "after_choices": [],
+  "id": "MK-013"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 14,
+  "prompt": "A park commissioner designs a new playground in the shape of a pentagon. If he plans to have a fountain at every corner of the park, how many fountains will there be?",
+  "choices": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  },
+  "correct": "B",
+  "explanation": "A pentagon is a five-sided figure. If the park commissioner places a fountain at every corner of the park, there will be five fountains.",
+  "after_choices": [],
+  "id": "MK-014"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 15,
+  "prompt": "If one of the angles of a right triangle is 30 degrees, what are the other two angles?",
+  "choices": {
+   "A": "30 degrees, 120 degrees",
+   "B": "60 degrees, 45 degrees",
+   "C": "60 degrees, 90 degrees",
+   "D": "45 degrees, 90 degrees"
+  },
+  "correct": "C",
+  "explanation": "Every right triangle contains an angle of 90 degrees. This particular right triangle also has an angle of 30 degrees. To find the third angle, subtract the sum of these two angles from 180 degrees.\n180 – (30 + 90) = 180 – 120 = 60 degrees in the third angle\nThe other two angles are 60 and 90 degrees.",
+  "after_choices": [],
+  "id": "MK-015"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 16,
+  "prompt": "What is the value of x in the equation [[img:e0052-08.jpg]] ?",
+  "choices": {
+   "A": "x = 14",
+   "B": "[[img:e0052-09.jpg]]",
+   "C": "x = 9",
+   "D": "x = 5"
+  },
+  "correct": "A",
+  "explanation": "To solve for x in this equation, multiply both sides by 2. This is to undo the division.\n[[img:e0083-08.jpg]]",
+  "after_choices": [],
+  "id": "MK-016"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 17,
+  "prompt": "Divide 15a^3b^2c by 5abc.",
+  "choices": {
+   "A": "10abc",
+   "B": "3abc",
+   "C": "5a^2b^2",
+   "D": "3a^2b"
+  },
+  "correct": "D",
+  "explanation": "Divide only similar terms. First divide numbers, then letters. When dividing powers of a letter, just subtract the exponents.\n[[img:e0084-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-017"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 18,
+  "prompt": "Two circles have the same center. If their radii are 7 inches and 10 inches, find the area that is part of the larger circle but not the smaller one.",
+  "choices": {
+   "A": "3 square inches",
+   "B": "17 square inches",
+   "C": "51π square inches",
+   "D": "70π square inches"
+  },
+  "correct": "C",
+  "explanation": "The formula for the area of a circle is π × r^2. Find the area of the larger circle first.\nπ × 10^2 = 100π square inches\nThen find the area of the smaller circle.\nπ × 7^2 = 49π square inches\nTo find the part of the larger circle that the smaller one doesn’t touch, subtract the two areas.\n100 – 49 = 51π square inches",
+  "after_choices": [],
+  "id": "MK-018"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 19,
+  "prompt": "Amanda’s average grade on a set of five tests was 88 percent. She can remember only that the first four grades were 78 percent, 86 percent, 96 percent, and 94 percent. What was the grade on her fifth test?",
+  "choices": {
+   "A": "88",
+   "B": "86",
+   "C": "84",
+   "D": "82"
+  },
+  "correct": "B",
+  "explanation": "The easiest way to solve this is to form an equation using x as the unknown grade.\n[[img:e0084-05.jpg]]\nMultiply both sides by 5. This is to undo the division.\n[[img:e0084-06.jpg]]\nSimplify both sides of the equation.\n[[img:e0084-07.jpg]]",
+  "after_choices": [],
+  "id": "MK-019"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 20,
+  "prompt": "How many cubic yards of concrete are needed to make a cement floor that is 9 feet by 12 feet by 6 inches thick?",
+  "choices": {
+   "A": "2 cubic yards",
+   "B": "18 cubic yards",
+   "C": "54 cubic yards",
+   "D": "648 cubic yards"
+  },
+  "correct": "A",
+  "explanation": "First change all measurements to yards.\n9 feet = 3 yards; 12 feet = 4 yards;\n6 inches [[img:e0084-08.jpg]] yard\nTo find the volume of the concrete, multiply the length by the width by the height.\n[[img:e0084-09.jpg]]",
+  "after_choices": [],
+  "id": "MK-020"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 21,
+  "prompt": "A wildlife preserve is laid out in the shape of a perfect circle whose radius is 14 miles. The lions’ territory in this preserve is shaped like a wedge and has a fence around it. Two inner sides of a fence meet at a 90-degree angle in the center of the preserve. How much territory do the lions have?",
+  "choices": {
+   "A": "140 square miles",
+   "B": "[[img:e0053-01.jpg]] square miles",
+   "C": "210 square miles",
+   "D": "154 square miles"
+  },
+  "correct": "D",
+  "explanation": "First find the area of the entire wildlife preserve. Since it is a circle, use the formula for the area of a circle. (Area equals π times the square of the radius.)\n[[img:e0084-10.jpg]]\nThe lions’ territory is a wedge formed by a 90-degree angle at the center of the circle. Since a circle has 360 degrees, we can find the part of the preserve inhabited by lions.\n[[img:e0085-01.jpg]]\nNext find what this equals in square miles.\n[[img:e0085-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-021"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 22,
+  "prompt": "Find the value of (–3)^4 + (–2)^4 + (–1)^4.",
+  "choices": {
+   "A": "98",
+   "B": "–98",
+   "C": "–21",
+   "D": "21"
+  },
+  "correct": "A",
+  "explanation": "Solve by doing each arithmetic operation and combining answers. Remember that the product of two negative or two positive numbers is a positive number. The product of a negative and a positive number is negative.\n[[img:e0085-03.jpg]]",
+  "after_choices": [],
+  "id": "MK-022"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 23,
+  "prompt": "A cylindrical can has a radius of 7 inches and a height of 15 inches. How many gallons of milk can it hold? (There are 231 cubic inches in a gallon.)",
+  "choices": {
+   "A": "15 gallons",
+   "B": "14 gallons",
+   "C": "140 gallons",
+   "D": "10 gallons"
+  },
+  "correct": "D",
+  "explanation": "To find the volume (V) of a cylinder, multiply π times the square of the radius (r) times the height (h).\n[[img:e0085-04.jpg]]\nTo find the number of gallons this cylinder will hold, divide its volume by 231.\n2,310 ÷ 231 = 10 gallons",
+  "after_choices": [],
+  "id": "MK-023"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 24,
+  "prompt": "A 10-foot-high ladder is resting against an 8-foot-high wall surrounding a tennis court. If the top of the ladder is exactly even with the top of the wall, how far is the base of the ladder from the wall?",
+  "choices": {
+   "A": "18 feet",
+   "B": "6 feet",
+   "C": "12 feet",
+   "D": "9 feet"
+  },
+  "correct": "B",
+  "explanation": "The wall, the ladder, and the ground in the tennis court form a right triangle. The ladder is on a slant, and is opposite the right angle formed by the wall and the ground. In this position, the ladder is the “hypotenuse” of the right triangle. In geometry, the Pythagorean Theorem states that the square of the hypotenuse (c^2) equals the sum of the squares of the other two sides (a^2 + b^2).\nThus, a^2 + b^2 = c^2\n8^2 + x^2 = 10^2\nSolve by doing the arithmetic operations, and by clearing one side of the equation for x^2.\n[[img:e0085-06.jpg]]\nThen find the square root of x^2 and of 36.\nx = 6\nThe base of the ladder is 6 feet from the wall.",
+  "after_choices": [],
+  "id": "MK-024"
+ },
+ {
+  "section": "MK",
+  "source": "Diagnostic",
+  "n": 25,
+  "prompt": "Ten ounces of liquid contain 20 percent fruit juice and 80 percent water. The mixture is diluted by adding 40 additional ounces of water. What is the percentage of fruit juice in the new solution?",
+  "choices": {
+   "A": "4%",
+   "B": "10%",
+   "C": "20%",
+   "D": "40%"
+  },
+  "correct": "A",
+  "explanation": "First find how many ounces of the original mixture were fruit juice.\n10 × 20% = 10 × .2 = 2 ounces\nNext find the total number of ounces in the new mixture.\n[[img:e0086-01.jpg]]\nThen find what part of the new mixture is fruit juice, and convert it to a percentage.\n[[img:e0086-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-025"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 1,
+  "prompt": "If a – 4 = 8, then a is equal to",
+  "choices": {
+   "A": "12.",
+   "B": "4.",
+   "C": "22.",
+   "D": "13."
+  },
+  "correct": "A",
+  "explanation": "This equation means “some number, when decreased by 4, is equal to 8.”\na – 4 = 8\nTo arrive at a true statement for a, we want to eliminate the –4 on the left side of the equation. We do this by adding 4. (This is, essentially, undoing the subtraction.) We then add 4 to the other side so that the statement remains an equation—i.e., the two sides remain equal, even when they are restated.\n(a – 4) + 4 = 8 + 4\nBy simplifying both sides, we isolate a and thus find the solution.\na = 12",
+  "after_choices": [],
+  "id": "MK-026"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 2,
+  "prompt": "If x > y and y > z, which of the following statements is true?",
+  "choices": {
+   "A": "x = z",
+   "B": "x < z",
+   "C": "x > z",
+   "D": "y + z = x"
+  },
+  "correct": "C",
+  "explanation": "This is practically right out of the math textbook. The Transitive Property of Inequality—a postulate or assumption we use as a basis for how math works—says that if a > b and b > c, then a > c.",
+  "after_choices": [],
+  "id": "MK-027"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 3,
+  "prompt": "The town of Yeehaw has a public pool in the shape of a hexagon. If the town parks manager wants to put a lifeguard on each side of the pool, how many lifeguards will he need to hire?",
+  "choices": {
+   "A": "four",
+   "B": "five",
+   "C": "six",
+   "D": "eight"
+  },
+  "correct": "C",
+  "explanation": "Since a hexagon is a six-sided figure, the town will need six lifeguards.",
+  "after_choices": [],
+  "id": "MK-028"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 4,
+  "prompt": "The paint that Amanda is using to paint Maddalyn’s room comes in two sizes, small (16 ounces) and large (one gallon/64 ounces). The only size paint can left at the hardware store is the small size. If she used up an entire large can painting 3/4 of Maddalyn’s room, how many small cans does she need to buy to finish painting?",
+  "choices": {
+   "A": "one",
+   "B": "two",
+   "C": "three",
+   "D": "four"
+  },
+  "correct": "B",
+  "explanation": "There are several ways to approach this problem. Let’s set the small size can as x, and the amount of paint needed to complete painting the room as y. We know that the large can of paint that Amanda already used up is equal to four of the smaller cans, and we know that she finished 3/4 of the room. So, to put what we know into an equation looks like this:\n[[img:e0436-01.jpg]]\nFrom here, we need to find out how much paint (i.e., how many small 16-ounce cans) it will take to finish painting the room. Stated differently, we need to find out what it takes to get to 1y, which is [[img:e0436-02.jpg]] . Since the quantity on the right side of the equation that we’ve already set up is three times the amount that we want to find, we’ll divide both sides by 3 to get\n[[img:e0436-03.jpg]]\nTherefore, Amanda needs to buy two more of the small paint cans, since it will take 4/3 or [[img:e0436-04.jpg]] cans.",
+  "after_choices": [],
+  "id": "MK-029"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 5,
+  "prompt": "Solve the following equation for x: 4x + 2 = –14.",
+  "choices": {
+   "A": "x = –6",
+   "B": "x = – 4",
+   "C": "x = 4",
+   "D": "x = –12"
+  },
+  "correct": "B",
+  "explanation": "First, subtract 2 from each side of the equation in order to eliminate the “+2” from the left side. This will get you closer to finding what x is.\n[[img:e0436-05.jpg]]\nNow divide each side by 4 to find x. (You are undoing the multiplication.)\n[[img:e0436-06.jpg]]",
+  "after_choices": [],
+  "id": "MK-030"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 6,
+  "prompt": "A writer has gotten five of his short stories published so far. These five stories are 20 percent of all the stories he has written. How many total stories has he written?",
+  "choices": {
+   "A": "15",
+   "B": "22",
+   "C": "25",
+   "D": "40"
+  },
+  "correct": "C",
+  "explanation": "The five stories that the writer has gotten published are 20 percent of the total stories that he’s written. The total stories that he’s written—the number we’re looking for—is 100 percent, so first we need to figure out what it will take to get from 20 to 100. To do that, divide 100 by 20:\n[[img:e0436-07.jpg]]\nSo we can see that doing the opposite of this operation—multiplying 20 times 5—will give us the 100 percent we are seeking.\nNow, multiply the writer’s five published stories (20 percent) likewise by 5 to see what that 100 percent consists of:\n5 × 5 = 25\nThe total number of stories that the writer has completed is 25.",
+  "after_choices": [],
+  "id": "MK-031"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 7,
+  "prompt": "One of the equal angles of an isosceles triangle is 50 degrees. What is the angle opposite the unequal side?",
+  "choices": {
+   "A": "50 degrees",
+   "B": "80 degrees",
+   "C": "130 degrees",
+   "D": "140 degrees"
+  },
+  "correct": "B",
+  "explanation": "In an isosceles triangle, two of the sides are equal, which means that the angles opposite them are equal, too. If one is 50 degrees, then so is the other one. To find the angle opposite the unequal side, begin by adding the equal angles.\n50 + 50 = 100 degrees\nTo find the third angle, subtract this amount from 180 (the total number of degrees in the angles of any triangle):\n180 – 100 = 80 degrees (third angle)",
+  "after_choices": [],
+  "id": "MK-032"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 8,
+  "prompt": "40 percent of 20 is 20 percent of what number?",
+  "choices": {
+   "A": "10",
+   "B": "20",
+   "C": "40",
+   "D": "80"
+  },
+  "correct": "C",
+  "explanation": "You could transform the word problem into a mathematical equation like this:\n[[img:e0437-01.jpg]]\nHowever, you don’t have to go through all that work if you pay attention to the numerical relationships in the problem: a certain percentage of a number will be half that percentage of twice that number.",
+  "after_choices": [],
+  "id": "MK-033"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 9,
+  "prompt": "Which of the following is a cone?",
+  "choices": {
+   "A": "The Great Pyramid of Cheops",
+   "B": "The Washington Monument",
+   "C": "a dunce cap",
+   "D": "an entire pencil"
+  },
+  "correct": "C",
+  "explanation": "A cone is a solid (i.e., three-dimensional) object that has a circular base and one vertex. A dunce cap, once used to make fun of someone because they didn’t know the answer to a school question, here serves as the answer itself. You might consider the writing end of a pencil as a cone, but here it specifies the entire pencil.",
+  "after_choices": [],
+  "id": "MK-034"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 10,
+  "prompt": "10 percent of 25 percent of 750 is",
+  "choices": {
+   "A": "3.00",
+   "B": "18.75",
+   "C": "187.5",
+   "D": "300.0"
+  },
+  "correct": "B",
+  "explanation": "First, find 25 percent of 750 by multiplying 0.25 × 750 = 187.50. Next, multiply 0.1 by 187.50, which equals 18.75.",
+  "after_choices": [],
+  "id": "MK-035"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 11,
+  "prompt": "An equilateral triangle has the same perimeter as a square whose sides each measure 15 inches. What is the length of one side of the triangle?",
+  "choices": {
+   "A": "9 inches",
+   "B": "12 inches",
+   "C": "20 inches",
+   "D": "30 inches"
+  },
+  "correct": "C",
+  "explanation": "The perimeter of a square is four times the length of an individual side. Therefore, the perimeter of this square is 4 × 15 inches or 60 inches. The equilateral triangle has the same perimeter as the square. Since the three sides of an equilateral triangle are equal, divide by 3 to find the length of one side of the triangle.\n60 inches ÷ 3 = 20 inches",
+  "after_choices": [],
+  "id": "MK-036"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 12,
+  "prompt": "Which of the following is not a prime number?",
+  "choices": {
+   "A": "3",
+   "B": "17",
+   "C": "37",
+   "D": "39"
+  },
+  "correct": "D",
+  "explanation": "A prime number is one which can only be divided by itself and 1. The number 39 can be divided by both 3 and 13, as well as 1 and itself.",
+  "after_choices": [],
+  "id": "MK-037"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 13,
+  "prompt": "A round armored vehicle hatch is 18 inches in diameter. It has connected to it a circular hatch cover that measures 20 inches across at the middle. How much greater is the area of the hatch cover than the area of the hatch?",
+  "choices": {
+   "A": "19π square inches",
+   "B": "20π square inches",
+   "C": "40π square inches",
+   "D": "100π square inches"
+  },
+  "correct": "A",
+  "explanation": "First, find the area of the hatch cover. Since its diameter is 20 inches, its radius is 10 inches and therefore its area is π(10)^2 = 100π square inches. The diameter of the hatch itself (i.e., the hole) is 18 inches, so its radius is 9 inches and its area is π(9)^2 = 81π square inches. Therefore, the area of the hatch cover is 100π – 81π = 19π square inches larger than that of the hatch itself.",
+  "after_choices": [],
+  "id": "MK-038"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 14,
+  "prompt": "If the area of a triangle is 45 square inches and its base is 9 inches, what is the length of the altitude to that base?",
+  "choices": {
+   "A": "5 inches",
+   "B": "10 inches",
+   "C": "18 inches",
+   "D": "22.5 inches"
+  },
+  "correct": "B",
+  "explanation": "The altitude to the base of the triangle is just another way of saying the height of a triangle. The formula to find the area of a triangle is 1/2 bh, or one-half the triangle’s base multiplied by its height. So, if the triangle’s area is 45 square inches and its base is 9 inches, we can find the height like this:\n[[img:e0438-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-039"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 15,
+  "prompt": "What is the value of (3)(–7)(2)(–4)?",
+  "choices": {
+   "A": "16",
+   "B": "–46",
+   "C": "–84",
+   "D": "168"
+  },
+  "correct": "D",
+  "explanation": "To find the product of more than two numbers, work with only two numbers at a time. If both of these numbers are positive, their product is positive. If both numbers are negative, their product is positive, but if only one is negative, the product is negative.\n[[img:e0438-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-040"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 16,
+  "prompt": "If x = –7, then 2x^2 – 3x + 10 =",
+  "choices": {
+   "A": "3",
+   "B": "–67",
+   "C": "106",
+   "D": "129"
+  },
+  "correct": "D",
+  "explanation": "Since we are given the value of x, all that’s necessary is to “plug and chug” (but watch your order of operations and positive and negative signs!):\n[[img:e0438-03.jpg]]",
+  "after_choices": [],
+  "id": "MK-041"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 17,
+  "prompt": "(x^3)^4 =",
+  "choices": {
+   "A": "x^7",
+   "B": "x^12",
+   "C": "x^1",
+   "D": "x^–1"
+  },
+  "correct": "B",
+  "explanation": "Exponents that are combined in this way should be multiplied.",
+  "after_choices": [],
+  "id": "MK-042"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 18,
+  "prompt": "What is the reciprocal of 7/4 ?",
+  "choices": {
+   "A": "4/7",
+   "B": "[[img:e0405-02a.jpg]]",
+   "C": "[[img:e0405-02.jpg]]",
+   "D": "28"
+  },
+  "correct": "A",
+  "explanation": "The reciprocal of a fraction is obtained by transposing the numerator and the denominator, i.e., by inverting the fraction.",
+  "after_choices": [],
+  "id": "MK-043"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 19,
+  "prompt": "What is the fraction [[img:e0405-03.jpg]] when it is changed to a percentage?",
+  "choices": {
+   "A": "60.67%",
+   "B": "66.67%",
+   "C": "75.00%",
+   "D": "80.00%"
+  },
+  "correct": "B",
+  "explanation": "With a fraction that has double-digit numerators and denominators, the first thing to do is try to simplify the fraction to make it easier to work with. In this case, we can quickly see that both 12 and 18 are divisible by 2, 3, and 6. If we divide both by the largest number by which they are divisible, we’ll get the simplest form of the fraction—so dividing both by 6 gives us the simplest form of the fraction, 2/3 . Now, to make it a percentage, multiply the numerator only by 100 and then do the division implied by the fraction—in other words, divide 200 by 3. The result we get is a repeating decimal, [[img:e0438-05.jpg]] or, to round off, 66.67 percent.",
+  "after_choices": [],
+  "id": "MK-044"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 20,
+  "prompt": "What is the value of (–15)^2?",
+  "choices": {
+   "A": "–30",
+   "B": "–225",
+   "C": "225",
+   "D": "2,250"
+  },
+  "correct": "C",
+  "explanation": "This is very simple, but you still have to pay attention or the sign will trip you up. Square (multiply by itself) – 15 and you are calculating – 15 × – 15 = 225. The simple (but sometimes overlooked) thing here is to remember that a negative number multiplied by another negative number is a positive number.",
+  "after_choices": [],
+  "id": "MK-045"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 21,
+  "prompt": "What is the perimeter of the square shown below?\n[[img:f0405-01.jpg]]",
+  "choices": {
+   "A": "10 centimeters",
+   "B": "20 inches",
+   "C": "25 centimeters",
+   "D": "20 centimeters"
+  },
+  "correct": "D",
+  "explanation": "The formula for the perimeter of a square is 4l, where l is the length of one side: 4 × 5 = 20. The thing to watch out for here is the unit of measurement, which is in centimeters.",
+  "after_choices": [],
+  "id": "MK-046"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 22,
+  "prompt": "In the right triangle shown below, what is the length of side AC?\n[[img:f0405-02.jpg]]",
+  "choices": {
+   "A": "4 inches",
+   "B": "5 inches",
+   "C": "6 inches",
+   "D": "7 inches"
+  },
+  "correct": "B",
+  "explanation": "Solve this problem using the Pythagorean Theorem, which states that, for a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. Here, we have the length of sides AB (3 in) and BC (4 in). Squaring them gives us 9 and 16, respectively, and adding those together gives us 25, the square root of which is 5.",
+  "after_choices": [],
+  "id": "MK-047"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 23,
+  "prompt": "Factor the expression a^2 – 81.",
+  "choices": {
+   "A": "(a + 9)(a + 9)",
+   "B": "(a – 9)(a – 9)",
+   "C": "(a + 9)(a – 9)",
+   "D": "2a(81)"
+  },
+  "correct": "C",
+  "explanation": "There are three big things you need to pay attention to in doing this problem. First, a multiplied by a equals a^2. Next, notice that you have an easily found square root of 81: 9. And last, notice that there is a minus or negative sign in the expression—this means that the term in one factor will be a plus sign and the other a minus sign. Taking all these into account gives you the factors (a + 9)(a – 9).",
+  "after_choices": [],
+  "id": "MK-048"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 24,
+  "prompt": "Round off 3,191.785 to the nearest hundredth.",
+  "choices": {
+   "A": "3,200",
+   "B": "3,191.8",
+   "C": "3,191.79",
+   "D": "3,191.78"
+  },
+  "correct": "C",
+  "explanation": "The “nearest hundredth” means having two digits to the right of the decimal point. Since the thousandths number is 5, the rule is that we round up, so the correct answer is 3,191.79.",
+  "after_choices": [],
+  "id": "MK-049"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam One",
+  "n": 25,
+  "prompt": "Solve the following inequality.\nx + 3 > 5",
+  "choices": {
+   "A": "x = 2",
+   "B": "x > 2",
+   "C": "x – 5 > 3",
+   "D": "x – 3 > 8"
+  },
+  "correct": "B",
+  "explanation": "The expression (x + 3 > 5) is a statement of inequality, meaning that x plus 3 is greater than 5, not equal to it. To solve this inequality, subtract 3 from both sides of the statement.\n[[img:e0439-01.jpg]]\nTherefore, the statement of inequality is true for any value of x that is greater than 2. Try it with 4, for example.\n[[img:e0439-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-050"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 1,
+  "prompt": "Solve for x : 2x + 6 = 12 – x.",
+  "choices": {
+   "A": "6",
+   "B": "9",
+   "C": "2",
+   "D": "3"
+  },
+  "correct": "C",
+  "explanation": "First isolate all terms containing x on one side of the equation and all terms not containing x on the other side. To do this, add x to both sides of the equation and also subtract 6 from both sides of the equation. Remember to change the sign of any term when it is moved from one side of the equation to the other.\n[[img:e0492-01.jpg]]\nDivide each side of the equation by 3 to undo the multiplication of 3 by x.\n[[img:e0492-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-051"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 2,
+  "prompt": "From 8x^2 – 7x subtract 2x – 3x^2.",
+  "choices": {
+   "A": "11x^2 – 9x",
+   "B": "5x^2 – 5x",
+   "C": "6x^2 – 4x",
+   "D": "10x^2 – 10x"
+  },
+  "correct": "A",
+  "explanation": "Write the binomial to be subtracted underneath the binomial from which it is to be subtracted, placing similar terms in the same columns.\n[[img:e0493-01.jpg]]\nChange the signs of the terms in the bottom row (the subtrahend) and combine the similar terms in each column.\n[[img:e0493-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-052"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 3,
+  "prompt": "What is the product of 2x^3y and (3x^2y – 4)?",
+  "choices": {
+   "A": "6x^5y^2 – 4",
+   "B": "6x^5y^2 – 8x^3y",
+   "C": "6x^6y^2 – 8x^3y",
+   "D": "6x^6y – 8x^3y"
+  },
+  "correct": "B",
+  "explanation": "Multiply 3x^2y by 2x^3y and also multiply –4 by 2x^3y. To multiply 3x^2y by 2x^3y, first multiply their numerical factors.\n3 × 2 = 6\nTo multiply powers of the same letter, add the exponents.\nRemember that y stands for y^1.\nThus, x^2 × x^3 = x^5 and y × y = y^2.\n2x^3y × (3x^2y – 4) = 6x^5y^2 – 8x^3y",
+  "after_choices": [],
+  "id": "MK-053"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 4,
+  "prompt": "A worker can do 1/3 of a job by herself in one day, and her helper can do 1/5 of the job by himself in one day. What portion of the job can they do if they work together for one day?",
+  "choices": {
+   "A": "1/4",
+   "B": "8/15",
+   "C": "1/8",
+   "D": "2/15"
+  },
+  "correct": "B",
+  "explanation": "Add the portions that each one does.\n[[img:e0493-03.jpg]]\nTo add fractions, they must have a common denominator. The least common denominator for 3 and 5 is 15, the smallest number into which they both divide evenly.\nChange 1/3 and 1/5 to equivalent fractions having 15 as their denominator. Fractions with the same denominator may be added by adding their numerators.\n[[img:e0493-04.jpg]]",
+  "after_choices": [],
+  "id": "MK-054"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 5,
+  "prompt": "A length of chain is 5 feet, 3 inches long. If a piece 3 feet, 9 inches in length is cut from the chain, what is the length of the remaining piece?",
+  "choices": {
+   "A": "2 feet, 6 inches",
+   "B": "1 foot, 1 inch",
+   "C": "1 foot, 4 inches",
+   "D": "1 foot, 6 inches"
+  },
+  "correct": "D",
+  "explanation": "Subtract the length of the piece to be cut off.\n[[img:e0493-05a.jpg]]\nSince we cannot subtract 9 inches from 3 inches, we borrow 1 foot from the 5 feet and convert it to 12 inches; thus 5 feet, 3 inches becomes 4 feet, 15 inches.\n[[img:e0493-05.jpg]]",
+  "after_choices": [],
+  "id": "MK-055"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 6,
+  "prompt": "In a regular hexagon, all the angles are equal and one of them is 120 degrees.^.What is the sum of all the angles of the regular hexagon?",
+  "choices": {
+   "A": "240 degrees",
+   "B": "480 degrees",
+   "C": "720 degrees",
+   "D": "360 degrees"
+  },
+  "correct": "C",
+  "explanation": "A hexagon is a polygon having 6 sides. If it has 6 sides, it must also have 6 angles.\nThe sum of the 6 equal angles is 6 times the size of one of them.\n6 × 120° = 720°",
+  "after_choices": [],
+  "id": "MK-056"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 7,
+  "prompt": "What is the product of (3a – 2) and (a + 3)?",
+  "choices": {
+   "A": "4a + 1",
+   "B": "3a^2 – 6",
+   "C": "3a^2 – 2a – 6",
+   "D": "3a^2 + 7a – 6"
+  },
+  "correct": "D",
+  "explanation": "Set up the product like a multiplication example in arithmetic. Multiply each term of (3a – 2) by a and write the results as the first line of partial products. Remember that the product of a positive number and a negative number is negative. Next multiply each term of (3a – 2) by + 3 and write the results as the second line of partial products. Add the partial products as you do in arithmetic to get the final answer.\n[[img:e0494-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-057"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 8,
+  "prompt": "If x = 3, what is the value of |x – 7|?",
+  "choices": {
+   "A": "4",
+   "B": "– 4",
+   "C": "10",
+   "D": "– 10"
+  },
+  "correct": "A",
+  "explanation": "Substitute 3 for x in the given expression.\n|x – 7| becomes |3 – 7| or |–4|\n|–4| stands for the absolute value of –4. The absolute value of a number is its value without regard to sign. Thus, |+4| equals 4, and |–4| also equals 4.",
+  "after_choices": [],
+  "id": "MK-058"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 9,
+  "prompt": "Solve the following system of equations for\n[[img:e0462-01.jpg]]",
+  "choices": {
+   "A": "18",
+   "B": "4",
+   "C": "3",
+   "D": "6"
+  },
+  "correct": "B",
+  "explanation": "To solve these equations for x, we must eliminate y. First multiply both sides of the first equation by 2.\n[[img:e0494-02.jpg]]\nAdding the original second equation to the new form of the first equation will eliminate y.\n[[img:e0494-03.jpg]]\nDivide both sides of the equation by 7 to undo the multiplication of x by 7.\n[[img:e0494-04.jpg]]",
+  "after_choices": [],
+  "id": "MK-059"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 10,
+  "prompt": "How many feet are there in a length of y yards and i inches?",
+  "choices": {
+   "A": "3y + i",
+   "B": "3y + 12i",
+   "C": "[[img:e0462-02.jpg]]",
+   "D": "[[img:e0462-03.jpg]]"
+  },
+  "correct": "D",
+  "explanation": "Convert all units of measure to inches.\nIn 1 yard, there are 36 inches, so in y yards there are y times as many, or 36y. The total length of y yards and i inches, expressed in inches, is 36y + i inches.\nThere are 12 inches in 1 foot. To find the number of feet in 36y + i inches, divide 36y + i by 12.\nThe goal is to find an equation with\n[[img:e0494-05.jpg]]",
+  "after_choices": [],
+  "id": "MK-060"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 11,
+  "prompt": "Solve the following formula for\n[[img:e0462-04.jpg]]",
+  "choices": {
+   "A": "[[img:e0462-05.jpg]]",
+   "B": "[[img:e0462-06.jpg]]",
+   "C": "[[img:e0462-08.jpg]]",
+   "D": "[[img:e0462-09.jpg]]"
+  },
+  "correct": "A",
+  "explanation": "F alone on one side and all other letters and numbers on the other side. Begin by multiplying both sides of the formula by 9 to get rid of the fraction.\n[[img:e0494-06.jpg]]\nNext remove the parentheses by multiplying each term inside them by 5.\n[[img:e0494-07.jpg]]\nTo isolate the term containing F on one side of the equation, add 160 to both sides of the equation.\n[[img:e0495-01.jpg]]\nTo get an expression for F alone, divide both sides of the equation by 5.\n[[img:e0495-02.jpg]]\nThe equation may be transposed to read\n[[img:e0495-03.jpg]]",
+  "after_choices": [],
+  "id": "MK-061"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 12,
+  "prompt": "A woman travels 3 miles directly east and then travels 4 miles directly north. How many miles is she from her starting point?",
+  "choices": {
+   "A": "7 miles",
+   "B": "5 miles",
+   "C": "25 miles",
+   "D": "[[img:e0462-10.jpg]]"
+  },
+  "correct": "B",
+  "explanation": "The path directly east forms a right angle with the path directly north. The distance from the starting point is measured on the third side (or hypotenuse) of the right triangle, which contains the paths to the east and to the north.\nThe Pythagorean Theorem states that in any right triangle, the square of the hypotenuse (c^2) equals the sum of the square of the other two sides, a^2 + b^2.\n[[img:e0495-04.jpg]]\nPerform the arithmetic operations.\n[[img:e0495-05.jpg]]\nTo find c, take the square root of both sides of the equation. The square root of a number is another number which, when multiplied by itself, equals the original number. Thus, the square root of 25 is 5, and the square root of c^2 is c.\nc = 5",
+  "after_choices": [],
+  "id": "MK-062"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 13,
+  "prompt": "A line is drawn perpendicular to the base of an equilateral triangle at one of the vertices of a triangle. Find the number of degrees in the angle made by the perpendicular and the other side of the triangle that contains this vertex.",
+  "choices": {
+   "A": "30 degrees",
+   "B": "45 degrees",
+   "C": "60 degrees",
+   "D": "90 degrees"
+  },
+  "correct": "A",
+  "explanation": "The line perpendicular to the base of the triangle makes a right angle with the base; a right angle contains 90 degrees.\nAn equilateral triangle has 3 equal sides and 3 equal angles. Since the sum of all three angles of any triangle is 180 degrees, each angle of an equilateral triangle is [[img:e0495-06.jpg]] or 60 degrees.\nThe 60-degree angle must be subtracted from the 90-degree angle to find the angle formed by the perpendicular and the other side of the triangle.\n90° – 60° = 30°",
+  "after_choices": [],
+  "id": "MK-063"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 14,
+  "prompt": "Solve the following inequality: x – 6 ≤ 5",
+  "choices": {
+   "A": "x ≤ 1",
+   "B": "x ≤ 11",
+   "C": "x ≥ 11",
+   "D": "x < 11"
+  },
+  "correct": "B",
+  "explanation": "The inequality, x – 5 ≤ 5, is a statement that x minus 6 is less than or equal to 5. To solve this inequality, isolate x on one side of it by adding 6 to both sides.\n[[img:e0495-07.jpg]]\nThe solution states that the inequality is true if x has any value less than or equal to 11. For example, suppose x = 9. Substitute 9 for x in the original inequality:\n[[img:e0496-01.jpg]]\nNow, let’s test the solution, which states that the inequality is true if x has any value less than or equal to 11. For example, suppose x = 9. Substitute 9 for x in the original inequality:\n[[img:e0496-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-064"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 15,
+  "prompt": "A fence that had been installed around a rectangular field 40 feet long and 36 feet wide is torn down. The entire fence is then reused to completely enclose a square field. What is the length in feet of a side of the square field?",
+  "choices": {
+   "A": "76 feet",
+   "B": "19 feet",
+   "C": "42 feet",
+   "D": "38 feet"
+  },
+  "correct": "D",
+  "explanation": "If the same fence fits around the rectangle and the square field, then their perimeters are equal. The perimeter of a rectangle is the sum of the lengths of its four sides.\nP = 40 + 36 + 40 + 36 = 152 feet\nThe perimeter of a square is the sum of its four equal sides. Therefore, the length of one side is the perimeter divided by 4.\n152 ÷ 4 = 38 feet",
+  "after_choices": [],
+  "id": "MK-065"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 16,
+  "prompt": "A cereal manufacturer packages breakfast cereal in individual-sized boxes measuring 2 inches by 3 inches by 4 inches. The same product is also packaged in large family-sized boxes measuring 3 inches by 8 inches by 12 inches. The contents of how many of the individual-sized boxes would be required to fill one family-sized box?",
+  "choices": {
+   "A": "6",
+   "B": "12",
+   "C": "10",
+   "D": "8"
+  },
+  "correct": "B",
+  "explanation": "The volume of a rectangular box is equal to the length times the width times the height.\nThe volume of one individual-sized box = 3 × 2 × 4 = 24 cubic inches.\nThe volume of one family-sized box = 8 × 3 × 12 = 8 × 36 = 288 cubic inches.\nDivide the volume of the larger box by the volume of the smaller box.\n288 ÷ 24 = 12",
+  "after_choices": [],
+  "id": "MK-066"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 17,
+  "prompt": "A wheel has a diameter of 14 inches. How many inches will the wheel roll along the ground during one rotation? (Use [[img:e0463-01.jpg]] as the value of π.)",
+  "choices": {
+   "A": "44 inches",
+   "B": "22 inches",
+   "C": "14 inches",
+   "D": "28 inches"
+  },
+  "correct": "A",
+  "explanation": "Rotation of a wheel as it rolls on the ground has the effect of “laying out” its circumference along the ground. One rotation will move the wheel along by a distance equal to the circumference. The circumference, C, of a circle is given by the formula C = 2 × π × R, where R is the radius, or by the formula C = π × D, where D is the diameter. If the first formula is used, R can be computed since the radius is one-half the diameter. However, it is easier in this case to use the second formula since we are given the diameter.\n[[img:e0496-03.jpg]]",
+  "after_choices": [],
+  "id": "MK-067"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 18,
+  "prompt": "In a right triangle whose hypotenuse has a length of 21 feet, the sine of one of the angles is 3/7 . What is the length in feet of the side opposite this angle?",
+  "choices": {
+   "A": "6 feet",
+   "B": "14 feet",
+   "C": "9 feet",
+   "D": "10 feet"
+  },
+  "correct": "C",
+  "explanation": "The sine of an angle in a right triangle is the ratio of the length of the side opposite the angle to the length of the hypotenuse. If the unknown length is x, the ratio of x to the length of the hypotenuse must be the same as the ratio 3/7 .\n[[img:e0496-04.jpg]]\nTo solve for x in this proportion, cross-multiply.\n[[img:e0496-05.jpg]]\nTo undo the multiplication of 7 by x, divide both sides of the equation by 7.\n[[img:e0496-06.jpg]]",
+  "after_choices": [],
+  "id": "MK-068"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 19,
+  "prompt": "Find the value of –x^4 if x = –0.1.",
+  "choices": {
+   "A": "–0.1",
+   "B": "0.0001",
+   "C": "–0.0001",
+   "D": "–0.4"
+  },
+  "correct": "C",
+  "explanation": "–x^4 means –(x)(x)(x)(x).\nSubstitute 0.1 for x.\n–x^4 = –(0.1)(0.1)(0.1)(0.1)\nTo multiply (0.1)(0.1)(0.1)(0.1), remember that the number of decimal places in the product is the total of the number of decimal places in the numbers being multiplied together.\n–x^4 = –0.0001",
+  "after_choices": [],
+  "id": "MK-069"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 20,
+  "prompt": "Under the terms of a federal subsidy, a real estate developer is required to rent at least 30 percent of the apartments she builds to low-income families. If she plans on having 108 low-income apartments, what is the maximum number of apartments of all types that she can build?",
+  "choices": {
+   "A": "360",
+   "B": "252",
+   "C": "324",
+   "D": "396"
+  },
+  "correct": "A",
+  "explanation": "Change 30 percent to a decimal and let x represent the total number of apartments; 30 percent of x is 108.\n0.30x = 108 or 0.3x = 108\nClear the decimals by multiplying both sides of the equation by 10.\n[[img:e0497-01.jpg]]\nUndo the multiplication of 3 by x by dividing both sides of the equation by 3.\n[[img:e0497-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-070"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 21,
+  "prompt": "A student has grades of 60 on each of two tests and a grade of 70 on a third test. What grade must he get on a fourth test to raise his average to 75?",
+  "choices": {
+   "A": "95",
+   "B": "85",
+   "C": "100",
+   "D": "He cannot achieve a 75 average."
+  },
+  "correct": "D",
+  "explanation": "Let x equal the grade on the fourth test. The average is obtained by dividing the sum of the four grades by 4.\n[[img:e0497-03.jpg]]\nTo remove the fraction, multiply both sides of the equation by 4.\n[[img:e0497-04.jpg]]\nTo isolate x on one side, subtract 190 from both sides of the equation.\n[[img:e0497-05.jpg]]\nHe would need a grade of 110 on the fourth test, which is impossible.",
+  "after_choices": [],
+  "id": "MK-071"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 22,
+  "prompt": "A motorist travels for 3 hours at 40 miles per hour and then travels for 2 more hours at 50 miles per hour. What is her average rate of speed in miles per hour for the entire trip?",
+  "choices": {
+   "A": "45 miles per hour",
+   "B": "44 miles per hour",
+   "C": "43 miles per hour",
+   "D": "90 miles per hour"
+  },
+  "correct": "B",
+  "explanation": "First find the distance traveled.\nDistance traveled is found by multiplying rate of speed by time.\n3 hours × 40 miles per hour = 120 miles\n2 hours × 50 miles per hour = 100 miles\nThe entire trip was 120 miles + 100 miles, or 220 miles.\nThe total time was 3 hours + 2 hours, or 5 hours.\nThe average rate of speed is obtained by dividing the total distance by the total time.\n220 miles ÷ 5 hours = 44 miles per hour",
+  "after_choices": [],
+  "id": "MK-072"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 23,
+  "prompt": "A radar device is capable of detecting objects within the area around it up to a radius of 10 miles. If it is used to cover a 36 degree angular portion of this area, how many square miles of area will it cover?\n(Use 3.14 as the value of π.)",
+  "choices": {
+   "A": "360 square miles",
+   "B": "6.28 square miles",
+   "C": "31.4 square miles",
+   "D": "3.6 square miles"
+  },
+  "correct": "C",
+  "explanation": "The radar is capable of covering a complete circle whose radius is 10 miles. First find the area of this circle, using the formula A = π × R^2, where R is the radius. A = 3.14 × 10^2 = 3.14 × 100 = 314 square miles.\nThere are 360 degrees of rotation in the complete circle. If the radar is used to cover a portion of this, it covers [[img:e0498-01.jpg]] or 1/10 of the complete circle.\n[[img:e0498-02.jpg]]",
+  "after_choices": [],
+  "id": "MK-073"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 24,
+  "prompt": "Solve for x: x^2 + 2x = 15.",
+  "choices": {
+   "A": "x = 3, x = 5",
+   "B": "x = –3, x = 5",
+   "C": "x = –5, x = 3",
+   "D": "x = –15, x = 1"
+  },
+  "correct": "C",
+  "explanation": "To solve a quadratic equation like x^2 + 2x = 15, first move all terms to the same side of the equation so that they equal 0 on the other side.\nx^2 + 2x – 15 = 0\nFind the two binomial factors that would multiply to produce the polynomial on the left side. The factors of the first term, x^2, are x and x. Use them as the first term in each of the binomial factors.\n[[img:e0498-03a.jpg]]\nNow find the two numbers that would multiply together to give 15. They could be 15 and 1 or 5 and 3. Remember that when multiplying the two binomials together, 12x must result for the middle term. This suggests that +5x and –3x were added to give +2x. Therefore, +5 and –3 are the factors to choose for –15.\n(x + 5)(x – 3) = 0\nThe equation is now in a form in which the product of two factors equals 0. This is possible if either one or both of the factors equals 0.\n[[img:e0498-03.jpg]]\nThese results may be checked by substituting them in the original equation.\n[[img:e0498-04.jpg]]",
+  "after_choices": [],
+  "id": "MK-074"
+ },
+ {
+  "section": "MK",
+  "source": "Practice Exam Two",
+  "n": 25,
+  "prompt": "12 quarts of a radiator coolant contains 25 percent antifreeze and 75 percent water. How many quarts of water must be added to change the mixture to one containing 20 percent antifreeze?",
+  "choices": {
+   "A": "1 quart",
+   "B": "2 quarts",
+   "C": "3 quarts",
+   "D": "4 quarts"
+  },
+  "correct": "C",
+  "explanation": "First find the number of quarts of antifreeze in the original mixture.\n0.25 × 12 or [[img:e0498-07.jpg]] quarts of antifreeze\nLet x equal the number of quarts of water to be added. The total mixture will now be 12 + x quarts; 20 percent of the new total mixture will be the 3 quarts of antifreeze still present in the mixture.\n0.20(12 + x) = 3 or 0.2(12 + x) = 3\nRemove the parentheses by multiplying each term inside by .2.\n2.4 + 0.2x = 3\nClear decimals by multiplying each term in the equation by 10.\n[[img:e0498-05.jpg]]\nIsolate the term containing x by subtracting 24 from both sides of the equation.\n[[img:e0498-06.jpg]]\nUndo the multiplication of 2 by x by dividing both sides of the equation by 2.\n[[img:e0499-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-075"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 1,
+  "prompt": "The expression “4 factorial” or “4!” means",
+  "choices": {
+   "A": "16.",
+   "B": "1/24 .",
+   "C": "256.",
+   "D": "24."
+  },
+  "correct": "D",
+  "explanation": "A factorial is the product of all the positive integers from 1 to a given number. The expression “4 factorial” or 4! means 1 × 2 × 3 × 4 = 24.",
+  "after_choices": [],
+  "id": "MK-076"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 2,
+  "prompt": "An F/A-18E Super Hornet is flying a circular or “racetrack” orbit around a 4,000-meter-high mountaintop. Assuming that the pilot flies a perfectly circular course and that it is 40 kilometers from the mountaintop to the outer edge of his racetrack, what is the distance in kilometers he travels during each orbit? (use [[img:e0522-01.jpg]] )",
+  "choices": {
+   "A": "13 kilometers",
+   "B": "25 kilometers",
+   "C": "126 kilometers",
+   "D": "251 kilometers"
+  },
+  "correct": "D",
+  "explanation": "The formula for the circumference of a circle is:\nd (diameter) × π = circumference\nThe pilot flies in a circle with a radius of 40 km and therefore a diameter of 80 kilometers.\n[[img:e0533-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-077"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 3,
+  "prompt": "The reciprocal of 7 to the nearest thousandth is",
+  "choices": {
+   "A": "0.143.",
+   "B": "1.428.",
+   "C": "14.",
+   "D": "21."
+  },
+  "correct": "A",
+  "explanation": "The reciprocal of any number is 1 over that number. The reciprocal of 7 to the nearest thousandth is [[img:e0533-02.jpg]] .",
+  "after_choices": [],
+  "id": "MK-078"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 4,
+  "prompt": "The second digit of the square of 525 is",
+  "choices": {
+   "A": "2.",
+   "B": "5.",
+   "C": "6.",
+   "D": "7."
+  },
+  "correct": "D",
+  "explanation": "The square of any number is that number times itself. The square of 525 is\n[[img:e0533-03.jpg]]\nTherefore the second digit of the square of 525 is 7.",
+  "after_choices": [],
+  "id": "MK-079"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 5,
+  "prompt": "The area of a square with an outside perimeter measurement of 40 yards is",
+  "choices": {
+   "A": "100 square feet.",
+   "B": "180 square yards.",
+   "C": "300 square feet.",
+   "D": "300 square yards."
+  },
+  "correct": "C",
+  "explanation": "The area of a square with four sides of length s is s × s or s^2. A square with a perimeter of 40 yards has four sides where length = 10 yards. This means that the area of this square is 10 yd × 10 yd = 100 square yards. Since this is not one of the choices, let’s convert it to square feet:\n[[img:e0533-04.jpg]]",
+  "after_choices": [],
+  "id": "MK-080"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 6,
+  "prompt": "Solve the following equations for x.\n[[img:e0523-01.jpg]]",
+  "choices": {
+   "A": "[[img:e0523-02.jpg]]",
+   "B": "x = 4.5",
+   "C": "x = 9",
+   "D": "x = 7"
+  },
+  "correct": "D",
+  "explanation": "To solve these equations for x, start by finding a way to get rid of y: multiply both sides of the second equation by 2.\n[[img:e0533-05.jpg]]\nThen add the new form of the second equation to the first equation and solve for x.\n[[img:e0534-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-081"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 7,
+  "prompt": "Find the square root of 85 correct to the nearest tenth.",
+  "choices": {
+   "A": "9.1",
+   "B": "9.2",
+   "C": "9.3",
+   "D": "9.4"
+  },
+  "correct": "B",
+  "explanation": "One way to solve this is to square each of the possible answers to see which one is closest to 85.\n[[img:e0534-02.jpg]]\nThe squares of 9.2 and 9.3 are closer to 85 than the squares of 9.1, 9.4, or 9.5. Now find the difference between the square of each of the closest numbers and 85.\n[[img:e0534-03.jpg]]\nThe square of 9.2 is closer to 85 than the square of 9.3. Therefore, the square root of 85 to the nearest tenth is 9.2.",
+  "after_choices": [],
+  "id": "MK-082"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 8,
+  "prompt": "Solve for x: 8x – 2 – 5x = 8",
+  "choices": {
+   "A": "x = 1.3",
+   "B": "[[img:e0523-03.jpg]]",
+   "C": "[[img:e0523-04.jpg]]",
+   "D": "x = 7.0"
+  },
+  "correct": "B",
+  "explanation": "To solve for x, combine all similar terms and set the equation equal to 0.\n(8x – 5x) + (– 2 – 8) = 0\nDo the operations inside the parentheses first.\n[[img:e0534-04.jpg]]\nNext, add 10 to each side to undo the subtraction.\n[[img:e0534-05.jpg]]\nFinally, divide each side by 3 to find the value of x. You are undoing the multiplication to find the value of a single x.\n[[img:e0534-06.jpg]]",
+  "after_choices": [],
+  "id": "MK-083"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 9,
+  "prompt": "2(a – b) + 4(a + 3b) =",
+  "choices": {
+   "A": "6a – 10b",
+   "B": "6a + 2b",
+   "C": "8a^2 + 2b^2",
+   "D": "6a + 10b"
+  },
+  "correct": "D",
+  "explanation": "Clear the parentheses by multiplying (a – b) by 2 and (a + 3b) by 4. Line up similar terms and add.\n[[img:e0534-07.jpg]]",
+  "after_choices": [],
+  "id": "MK-084"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 10,
+  "prompt": "Which of the following is the smallest prime number greater than 200?",
+  "choices": {
+   "A": "201",
+   "B": "205",
+   "C": "211",
+   "D": "214"
+  },
+  "correct": "C",
+  "explanation": "A prime number is a number larger than 1 that has only itself and 1 as factors—i.e., it can be evenly divided only by itself and 1. 201 is divisible by 3. 205 is divisible by 5. 211, however, is a prime number.",
+  "after_choices": [],
+  "id": "MK-085"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 11,
+  "prompt": "If a is a negative number, and ab is a positive number, then which of the following must be true?",
+  "choices": {
+   "A": "b is greater than a.",
+   "B": "a is greater than b.",
+   "C": "b is negative.",
+   "D": "b is positive."
+  },
+  "correct": "C",
+  "explanation": "The product of a negative number and a positive number is always negative. The result of multiplying (product) two negative numbers is always a positive number. Since ab is positive and a is negative, b must be negative, too.",
+  "after_choices": [],
+  "id": "MK-086"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 12,
+  "prompt": "What is the product of (a + 2)(a – 5)(a + 3)?",
+  "choices": {
+   "A": "a^3 + 2a^2 + 15a – 30",
+   "B": "a^3 + 6a^2 – 49",
+   "C": "a^3 – 19a – 30",
+   "D": "a^3 + 2a^2 – 15a + 30"
+  },
+  "correct": "C",
+  "explanation": "Set this up as a two-stage multiplication problem. Remember that when you multiply terms with opposite signs, the product is negative (i.e., it has a minus sign).\n[[img:e0535-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-087"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 13,
+  "prompt": "Solve for z: 3z – 5 + 2z = 25 – 5z",
+  "choices": {
+   "A": "z = 1",
+   "B": "z = 3",
+   "C": "z = –3",
+   "D": "z = 0"
+  },
+  "correct": "B",
+  "explanation": "Begin by combining like terms.\n[[img:e0535-02.jpg]]\nNext, add 5z to each side, to eliminate the –5z from the right side.\n[[img:e0535-03.jpg]]\nNow, add 5 to each side to cancel out the remaining subtraction.\n[[img:e0535-04.jpg]]",
+  "after_choices": [],
+  "id": "MK-088"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 14,
+  "prompt": "An architect has won a contract to place a memorial sculpture at each of the corners of the Pentagon in Washington, D.C. How many sculptures will there be?",
+  "choices": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "8"
+  },
+  "correct": "B",
+  "explanation": "A pentagon is a five-sided figure, which therefore has five corners. If the architect places a sculpture at each corner, there will be five sculptures.",
+  "after_choices": [],
+  "id": "MK-089"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 15,
+  "prompt": "If one of the angles of a right triangle is 30 degrees, what are the measurements of the other two angles?",
+  "choices": {
+   "A": "30 degrees, 120 degrees",
+   "B": "60 degrees, 45 degrees",
+   "C": "60 degrees, 90 degrees",
+   "D": "45 degrees, 90 degrees"
+  },
+  "correct": "C",
+  "explanation": "Every right triangle contains an angle of 90 degrees. This particular right triangle also has an angle of 30 degrees. To find the third angle, subtract the sum of these two angles from 180 degrees.\n[[img:e0535-05.jpg]]\nThe other two angles are 60 and 90 degrees.",
+  "after_choices": [],
+  "id": "MK-090"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 16,
+  "prompt": "Factor x^2 – 11x + 30.",
+  "choices": {
+   "A": "(x – 6), (x – 5)",
+   "B": "(x + 6), (x – 5)",
+   "C": "(x – 10), (x – 1)",
+   "D": "(x – 3), (x + 10)"
+  },
+  "correct": "A",
+  "explanation": "Find the factors of the first term in the trinomial—the factors of x^2 are x and x.\n[[img:e0535-06.jpg]]\nThen, look at the last factor in the trinomial—in this case, it has a plus sign. This means that both factors of the trinomial are either positive or negative. Which one, though? Since we see that the middle term (–11x) has a minus sign, both factors must have minus signs.\n[[img:e0535-07.jpg]]\nThe next step is to find the factors of 30. There are several numbers you can multiply to get 30—30 × 1, 10 × 3, 15 × 2, etc. However, the two multipliers that you use have to also combine somehow to give you the middle term, which is 11. When 5 and 6 are multiplied, they give you 30; when they’re added, they give you 11. We know the factors have minus signs, so the factors of 30 are actually –6 and –5.\n(x – 6) (x – 5)",
+  "after_choices": [],
+  "id": "MK-091"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 17,
+  "prompt": "Solve [[img:e0523-05.jpg]]",
+  "choices": {
+   "A": "10abc",
+   "B": "3abc",
+   "C": "5a^2b^2",
+   "D": "3a^2b"
+  },
+  "correct": "D",
+  "explanation": "Divide only similar terms. First divide numbers, then letters. When dividing powers of a letter (variable), just subtract the exponents.\n[[img:e0536-01.jpg]]",
+  "after_choices": [],
+  "id": "MK-092"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 18,
+  "prompt": "Two circles have the same center. If their radii are 7 centimeters and 10 centimeters, find the area that is part of the larger circle but not part of the smaller one.",
+  "choices": {
+   "A": "3 square centimeters",
+   "B": "17 square centimeters",
+   "C": "51 (π) square centimeters",
+   "D": "71 (π) square centimeters"
+  },
+  "correct": "C",
+  "explanation": "The formula for the area of a circle is π × r^2. Find the area of the larger circle first.\nπ × 10^2 = 100(π) square inches\nThen find the area of the smaller circle.\nπ × 7^2 = 49(π) square inches\nTo find the part of the larger circle that the smaller one doesn’t touch, subtract the smaller area from the larger one.\n100 – 49 = 51(π) square inches",
+  "after_choices": [],
+  "id": "MK-093"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 19,
+  "prompt": "Amanda took five midterm tests for five different college classes; her average for all five tests was 88. That night at home, she could remember only her first four scores: 78, 86, 94, and 96. What was her score on the fifth test?",
+  "choices": {
+   "A": "82",
+   "B": "86",
+   "C": "84",
+   "D": "88"
+  },
+  "correct": "B",
+  "explanation": "The simplest way to solve this is to form an equation with x as the unknown grade.\n[[img:e0536-02.jpg]]\nMultiply both sides by 5. This will cancel out the division so you will no longer have a fraction to deal with, but instead whole numbers.\n[[img:e0536-03.jpg]]\nSimplify both sides of the equation.\n[[img:e0536-04.jpg]]",
+  "after_choices": [],
+  "id": "MK-094"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 20,
+  "prompt": "How many cubic yards of concrete are needed to make a cement floor that measures 9′ × 12′ × 6″?",
+  "choices": {
+   "A": "2 cubic yards",
+   "B": "18 cubic yards",
+   "C": "54 cubic yards",
+   "D": "210 cubic yards"
+  },
+  "correct": "A",
+  "explanation": "First, change all measurements to yards.\n[[img:e0536-04a.jpg]]\nTo find the volume of the concrete (the volume of a rectangle), multiply the length times the width times the height.\n[[img:e0536-05.jpg]]",
+  "after_choices": [],
+  "id": "MK-095"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 21,
+  "prompt": "A new wildlife preserve is laid out in a perfect circle with a radius of 14 kilometers. The lion habitat is shaped like a wedge and has an 8-foot-high razor wire fence around it. Two inner sides of the fence meet at a 90-degree angle in the center of the base. How much ground space (area) does the lion habitat have?",
+  "choices": {
+   "A": "140 square kilometers",
+   "B": "3.5 square kilometers",
+   "C": "210 square kilometers",
+   "D": "154 square kilometers"
+  },
+  "correct": "D",
+  "explanation": "First, find the area of the entire new wildlife preserve. Since the preserve is in the shape of a circle, use the formula for the area of a circle (area = π times the square of the radius or A = π × r^2).\n[[img:e0537-01.jpg]]\nThe lion habitat area is a wedge formed by a 90-degree angle at the center of the circle.\n[[img:f0537-01.jpg]]\nSince a circle has 360 degrees, we can find the part of the preserve that belongs to the lion habitat.\n[[img:e0537-02.jpg]]\n(reduce the fraction to simplest terms)\nNext find what this fraction of the whole equals in square kilometers.\n[[img:e0537-03.jpg]]",
+  "after_choices": [],
+  "id": "MK-096"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 22,
+  "prompt": "Factor 6x^2 + 3xy.",
+  "choices": {
+   "A": "2x (3x – y)",
+   "B": "x^2 + 3y",
+   "C": "x + 3y",
+   "D": "3x (2x + y)"
+  },
+  "correct": "D",
+  "explanation": "Find the highest common factor that will divide into the numerical coefficients, 6 and 3, which is 3. Then find the highest literal factor that will divide into x^2 and xy, which is x (note that y is not contained in the first term at all). The next step is to divide the highest common factor, 3x, into 6x^2 + 3xy to find the remaining factor. Thereby we see that the factors are 3x (2x + y).",
+  "after_choices": [],
+  "id": "MK-097"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 23,
+  "prompt": "A cylindrical container has a radius of 7″ and a height of 15″. How many gallons of hydraulic fluid can it hold? (There are 231 cubic inches in a gallon.)",
+  "choices": {
+   "A": "15 gallons",
+   "B": "14 gallons",
+   "C": "140 gallons",
+   "D": "10 gallons"
+  },
+  "correct": "D",
+  "explanation": "To find the volume (V) of a cylinder, multiply π times the square of the radius (r) times the height (h).\n[[img:e0537-04.jpg]]\nTo find the number of gallons this cylinder will hold, divide its volume by 231.\n2,310 ÷ 231 = 10 gallons",
+  "after_choices": [],
+  "id": "MK-098"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 24,
+  "prompt": "A 10-foot-high ladder is resting against an 8-foot-high wall around a recreation area. If the top of the ladder is exactly even with the top of the wall, how far is the base of the ladder from the wall?",
+  "choices": {
+   "A": "18 feet",
+   "B": "6 feet",
+   "C": "12 feet",
+   "D": "9 feet"
+  },
+  "correct": "B",
+  "explanation": "The wall, the ladder, and the ground in the recreation area form a right triangle. The ladder is on a slant and is opposite the right angle formed by the wall and the ground. In this position, the ladder is the “hypotenuse” of the right triangle. In geometry, the Pythagorean Theorem states that the square of the hypotenuse (c^2) of a right triangle equals the sum of the squares of the other two sides (a^2 1 b^2). Thus, a^2 1 b^2 5 c^2.\n8^2 1 b^2 = 10^2\nSolve by doing the arithmetic operations and by clearing one side of the equation for b^2.\n[[img:e0538-01.jpg]]\nThen find the square root of b^2 and of 36.\nb 5 6\nThe base of the ladder is 6 feet away from the wall.",
+  "after_choices": [],
+  "id": "MK-099"
+ },
+ {
+  "section": "MK",
+  "source": "AFQT Focus Exam",
+  "n": 25,
+  "prompt": "A cook is mixing fruit juice from concentrate for a catered event. Ten ounces of liquid contain 20 percent fruit juice and 80 percent water. He then further dilutes the mixture by adding 40 additional ounces of water. What is the percent of fruit juice in the new solution?",
+  "choices": {
+   "A": "4%",
+   "B": "10%",
+   "C": "14%",
+   "D": "18%"
+  },
+  "correct": "A",
+  "explanation": "First find how many ounces of the original mixture were fruit juice.\n10 3 20% 5 10 3 0.2 5 2 ounces\nNext, find the total number of ounces in the new mixture.\n10 1 40 5 50 ounces\nThen find what part of the new mixture is fruit juice and convert that to a percentage.\n[[img:e0538-02.jpg]]",
+  "after_choices": [
+   "ANSWER KEY",
+   "AFQT Focus Exam",
+   "Arithmetic Reasoning",
+   "1.C",
+   "2.B",
+   "3.C",
+   "4.B",
+   "5.B",
+   "6.D",
+   "7.B",
+   "8.B",
+   "9.A",
+   "10.D",
+   "11.D",
+   "12.D",
+   "13.C",
+   "14.D",
+   "15.A",
+   "16.C",
+   "17.D",
+   "18.A",
+   "19.B",
+   "20.C",
+   "21.A",
+   "22.D",
+   "23.D",
+   "24.C",
+   "25.D",
+   "26.B",
+   "27.C",
+   "28.B",
+   "29.A",
+   "30.D",
+   "Word Knowledge",
+   "1.B",
+   "2.C",
+   "3.A",
+   "4.A",
+   "5.B",
+   "6.B",
+   "7.D",
+   "8.C",
+   "9.A",
+   "10.A",
+   "11.B",
+   "12.D",
+   "13.A",
+   "14.B",
+   "15.D",
+   "16.A",
+   "17.D",
+   "18.A",
+   "19.C",
+   "20.D",
+   "21.C",
+   "22.D",
+   "23.C",
+   "24.A",
+   "25.C",
+   "26.B",
+   "27.C",
+   "28.D",
+   "29.A",
+   "30.A",
+   "31.D",
+   "32.B",
+   "33.B",
+   "34.C",
+   "35.C",
+   "Paragraph Comprehension",
+   "1.C",
+   "2.C",
+   "3.B",
+   "4.D",
+   "5.C",
+   "6.D",
+   "7.B",
+   "8.D",
+   "9.B",
+   "10.C",
+   "11.B",
+   "12.C",
+   "13.C",
+   "14.D",
+   "15.C",
+   "Mathematics Knowledge",
+   "1.D",
+   "2.D",
+   "3.A",
+   "4.D",
+   "5.C",
+   "6.D",
+   "7.B",
+   "8.B",
+   "9.D",
+   "10.C",
+   "11.C",
+   "12.C",
+   "13.B",
+   "14.B",
+   "15.C",
+   "16.A",
+   "17.D",
+   "18.C",
+   "19.B",
+   "20.A",
+   "21.D",
+   "22.D",
+   "23.D",
+   "24.B",
+   "25.A"
+  ],
+  "id": "MK-100"
+ }
+]

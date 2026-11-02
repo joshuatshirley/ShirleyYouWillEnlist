@@ -160,7 +160,11 @@ function groupTestsByPerson(rows) {
       latestAfqt: Number(latest["AFQT"]),
       change: p.tests.length > 1 ? Number(latest["AFQT"]) - Number(p.tests[0]["AFQT"]) : null,
       weakest: weakestSection(latest),
-      nextAction: latest["Next Action"] || ""
+      nextAction: latest["Next Action"] || "",
+      // Readiness answers from their latest test (blank on older rows).
+      ready: latest["Ready (1-10)"] === undefined ? "" : latest["Ready (1-10)"],
+      notTenReasons: latest["Not-10 Reasons"] || "",
+      makeItTen: latest["What Would Make It 10"] || ""
     };
   }).sort(function (a, b) {
     return a.recruiter.localeCompare(b.recruiter) || a.lastName.localeCompare(b.lastName);
@@ -231,7 +235,10 @@ function buildPlainReport(people, drills, range, tz) {
     }
     lines.push(displayName(p) + "  " + p.phone + "  Latest AFQT " + p.latestAfqt +
       (p.change !== null ? " (" + fmtChange(p.change) + ")" : "") +
-      (p.weakest ? "  Weakest: " + REPORT_SECTIONS[p.weakest.code] + " " + p.weakest.pct + "%" : ""));
+      (p.weakest ? "  Weakest: " + REPORT_SECTIONS[p.weakest.code] + " " + p.weakest.pct + "%" : "") +
+      (p.ready !== "" ? "  Ready " + p.ready + "/10" : ""));
+    if (p.notTenReasons) lines.push("    Why not a 10: " + p.notTenReasons);
+    if (p.makeItTen) lines.push("    What would make it a 10: " + p.makeItTen);
     p.tests.forEach(function (t) {
       lines.push("    " + fmtDateTime(parseTimestamp(t["Timestamp"]), tz) + "  Test " + currentTestNumber(t) + "  AFQT " + t["AFQT"]);
     });
@@ -276,7 +283,8 @@ function buildHtmlWeeklyReport(people, drills, range, tz, hasPracticeTab) {
     html += "<h3 style=\"margin:20px 0 6px;font-size:17px;color:#1e4d8c;\">" + esc(station) + "</h3>" +
       "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\"><tr>" +
       "<th style=\"" + head + "\">Applicant</th><th style=\"" + head + "\">Tests this week</th>" +
-      "<th style=\"" + head + "\">Latest AFQT</th><th style=\"" + head + "\">Weakest section</th></tr>";
+      "<th style=\"" + head + "\">Latest AFQT</th><th style=\"" + head + "\">Weakest section</th>" +
+      "<th style=\"" + head + "\">Ready to join</th></tr>";
     people.filter(function (p) { return p.recruiter === station; }).forEach(function (p) {
       var testLines = p.tests.map(function (t) {
         return esc(fmtDateTime(parseTimestamp(t["Timestamp"]), tz)) + " &middot; Test " + currentTestNumber(t) + " &middot; <b>" + esc(t["AFQT"]) + "</b>";
@@ -290,6 +298,7 @@ function buildHtmlWeeklyReport(people, drills, range, tz, hasPracticeTab) {
         "<td style=\"" + cell + "\">" + testLines + "</td>" +
         "<td style=\"" + cell + "font-size:18px;font-weight:700;color:#1e4d8c;\">" + esc(p.latestAfqt) + change + "</td>" +
         "<td style=\"" + cell + "\">" + (p.weakest ? esc(REPORT_SECTIONS[p.weakest.code]) + " (" + p.weakest.pct + "%)" : "&mdash;") + "</td>" +
+        "<td style=\"" + cell + "\">" + readinessCell(p) + "</td>" +
         "</tr>";
     });
     html += "</table>";
@@ -321,6 +330,16 @@ function buildHtmlWeeklyReport(people, drills, range, tz, hasPracticeTab) {
 
   html += "<p style=\"margin:24px 0 0;font-size:14px;\"><a href=\"" + reportSheetUrl() + "\" style=\"color:#1e4d8c;\">Open results sheet &#8599;</a></p>" +
     "</td></tr></table>";
+  return html;
+}
+
+// Latest test's readiness rating plus the applicant's reasons, escaped
+// since they typed some of it.
+function readinessCell(p) {
+  if (p.ready === "") return "&mdash;";
+  var html = "<b>" + esc(p.ready) + " / 10</b>";
+  if (p.notTenReasons) html += "<br><span style=\"color:#555;\">Why not 10: " + esc(p.notTenReasons) + "</span>";
+  if (p.makeItTen) html += "<br><span style=\"color:#555;\">Make it 10: " + esc(p.makeItTen) + "</span>";
   return html;
 }
 

@@ -1,0 +1,43 @@
+{
+ "_about": "Final decisions applied by build_practice.py on top of verified/*.json. exclude: left out of the practice bank (ambiguous: a wrong choice is as defensible as the key). patch: field overrides.",
+ "exclude": {
+  "PC-028": "Passage says the old thinking 'is gone' (supports B) but book keys C 'partly changed'; genuinely ambiguous.",
+  "WK-025": "cliche: 'commonplace'/'banality' as defensible as keyed 'platitude'.",
+  "WK-036": "opulence: 'affluence' as defensible as keyed 'luxury'.",
+  "WK-049": "miasma: several choices fit a noxious vapor.",
+  "WK-050": "paragon: 'ideal' as defensible as keyed 'model'."
+ },
+ "patch": {
+  "MK-080": {
+   "choices": {
+    "A": "100 square feet",
+    "B": "180 square yards",
+    "C": "900 square feet",
+    "D": "300 square yards"
+   },
+   "correct": "C",
+   "explanation": "The area of a square with four sides of length s is s × s, or s^2. A square with a perimeter of 40 yards has four sides of length 40 ÷ 4 = 10 yards, so its area is 10 yd × 10 yd = 100 square yards.\nTo convert to square feet, remember that 1 square yard = 3 ft × 3 ft = 9 square feet (not 3).\n100 square yards × 9 = 900 square feet.\nWatch out: multiplying by 3 instead of 9 gives 300, which is a common mistake.",
+   "_why": "Book keyed C = 300 sq ft (multiplied by 3, not 9); no choice was correct. Choice C corrected to 900 square feet."
+  },
+  "MK-033": {
+   "explanation": "Turn the word problem into an equation:\n0.40 × 20 = 0.20x\n8 = 0.20x\nx = 8 ÷ 0.20 = 40\nShortcut: 20% is half of 40%, so to get the same result from half the percentage you need twice the number. 40% of 20 = 20% of 40 (both equal 8).",
+   "_why": "Garbled shortcut sentence; added the 8 = 0.20x step."
+  },
+  "MK-091": {
+   "explanation": "The first term is x^2, so each factor starts with x:\n(x    )(x    )\nThe last term, +30, is positive, so both numbers in the factors have the same sign. The middle term, −11x, is negative, so both signs are minus:\n(x −    )(x −    )\nNow find two numbers that multiply to 30 and add to 11: 5 and 6 (5 × 6 = 30, 5 + 6 = 11).\n(x − 6)(x − 5)\nCheck: (x − 6)(x − 5) = x^2 − 5x − 6x + 30 = x^2 − 11x + 30.",
+   "_why": "'last factor' -> 'last term'; sign wording; added a check."
+  },
+  "AR-009": {
+   "explanation": "Increase = $290 − $260 = $30. Percent increase = increase / original salary = 30/260 = 0.1154 (to four places). 0.1154 rounded to the nearest hundredth is 0.12, so the increase is about 12%.",
+   "_why": "Blind re-check: Double rounding: truncates 30/260 to 0.115 then rounds 0.115 to 0.12, which is a borderline/confusing rounding step; the true quotient 0.1154 should be shown."
+  },
+  "AR-118": {
+   "explanation": "From 6:15 P.M. to 6:15 A.M. is 12 hours. From 6:15 A.M. to 7:00 A.M. is 45 minutes. Total run time = 12 hours 45 minutes = 12.75 hours. One tank lasts 75 minutes = 75/60 = 1.25 hours. Number of fillings = 12.75 / 1.25 = 10.2 (equivalently 765 minutes / 75 minutes = 10.2).",
+   "_why": "Blind re-check: Missing step: states total time of 12 hours 45 minutes without showing how 6:15 P.M. to 7:00 A.M. is computed or converting 75 minutes to 1.25 hours."
+  },
+  "AR-051": {
+   "explanation": "Begin by letting x equal 1 share of the inheritance. According to the ratio, the wife received 5 shares (5x), and the son received 3 shares (3x). Together, they inherited $72,000. This can be written as an equation:\n5x + 3x = $72,000\nSolve for x by combining similar terms.\n8x = $72,000\nx = $9,000 (one share)\nMultiply the value of 1 share by the number of shares the wife received.\n5x = $45,000 (wife’s share)",
+   "_why": "Explanation called the wife 'widow'/'mother'; prompt says wife."
+  }
+ }
+}

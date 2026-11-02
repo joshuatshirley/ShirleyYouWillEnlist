@@ -1,0 +1,1082 @@
+[
+ {
+  "id": "AR-001",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-002",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-003",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-004",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-005",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-006",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-007",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-008",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-009",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": false,
+  "issue": "Double rounding: truncates 30/260 to 0.115 then rounds 0.115 to 0.12, which is a borderline/confusing rounding step; the true quotient 0.1154 should be shown.",
+  "suggested_explanation": "Increase = $290 - $260 = $30. Percent increase = increase / original salary = 30/260 = 0.1154 (to four places). 0.1154 rounded to the nearest hundredth is 0.12, so the increase is about 12%."
+ },
+ {
+  "id": "AR-010",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-011",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-012",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-013",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-014",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-015",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-016",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-017",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-018",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-019",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-020",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-021",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-022",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-023",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-024",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-025",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-026",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-027",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-028",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-029",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-030",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-031",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-032",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-033",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-034",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-035",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-036",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-037",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-038",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-039",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-040",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-041",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-042",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-043",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-044",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-045",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-046",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-047",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-048",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-049",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-050",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-051",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Explanation calls the wife 'the widow' and 'the mother'; prompt says 'wife'. Math correct.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-052",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-053",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-054",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-055",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-056",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-057",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-058",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-059",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-060",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-061",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-062",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-063",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-064",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-065",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-066",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-067",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-068",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-069",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-070",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-071",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-072",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-073",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-074",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-075",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-076",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-077",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-078",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-079",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-080",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-081",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-082",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-083",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-084",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-085",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-086",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-087",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-088",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-089",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-090",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-091",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Relies on assuming sex and residence are independent; explanation states this reasonably ('you could reasonably expect').",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-092",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-093",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-094",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Prompt mixes addresses and residents; explanation notes the one-address-per-resident assumption.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-095",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-096",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-097",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-098",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-099",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-100",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Exact value is $2.18; key $2.20 is nearest choice. Explanation handles this correctly.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-101",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-102",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-103",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-104",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-105",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-106",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-107",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-108",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-109",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-110",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-111",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-112",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-113",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-114",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-115",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-116",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-117",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-118",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": false,
+  "issue": "Missing step: states total time of 12 hours 45 minutes without showing how 6:15 P.M. to 7:00 A.M. is computed or converting 75 minutes to 1.25 hours.",
+  "suggested_explanation": "From 6:15 P.M. to 6:15 A.M. is 12 hours. From 6:15 A.M. to 7:00 A.M. is 45 minutes. Total run time = 12 hours 45 minutes = 12.75 hours. One tank lasts 75 minutes = 75/60 = 1.25 hours. Number of fillings = 12.75 / 1.25 = 10.2 (equivalently 765 minutes / 75 minutes = 10.2)."
+ },
+ {
+  "id": "AR-119",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "AR-120",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ }
+]

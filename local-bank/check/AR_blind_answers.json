@@ -1,0 +1,722 @@
+[
+ {
+  "id": "AR-001",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-002",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-003",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-004",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-005",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-006",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-007",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-008",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-009",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-010",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-011",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-012",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-013",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-014",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-015",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-016",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-017",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-018",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-019",
+  "answer": "C",
+  "confidence": "low",
+  "flag": "Odd wording ('hour hand on the 11-minute mark'); intended 2:12 since hour hand moves 5 marks/hour."
+ },
+ {
+  "id": "AR-020",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-021",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-022",
+  "answer": "D",
+  "confidence": "high",
+  "flag": "A (0.17) is a rounded form of the same value as D (1/6); D is exact."
+ },
+ {
+  "id": "AR-023",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-024",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-025",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-026",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-027",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-028",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-029",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-030",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-031",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-032",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-033",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-034",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-035",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-036",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-037",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-038",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-039",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-040",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-041",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-042",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-043",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-044",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-045",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-046",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-047",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-048",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-049",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-050",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-051",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-052",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-053",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-054",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-055",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-056",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-057",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-058",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-059",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-060",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-061",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-062",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-063",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-064",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-065",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-066",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-067",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-068",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-069",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-070",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-071",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-072",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-073",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-074",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-075",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-076",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-077",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-078",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-079",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-080",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-081",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-082",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-083",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-084",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-085",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-086",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-087",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-088",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-089",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-090",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-091",
+  "answer": "C",
+  "confidence": "low",
+  "flag": "Relies on unstated assumption that sex and residence are independent."
+ },
+ {
+  "id": "AR-092",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-093",
+  "answer": "C",
+  "confidence": "high",
+  "flag": "Prompt says 'over the age of 3' then asks '3 years old or older'; minor wording mismatch."
+ },
+ {
+  "id": "AR-094",
+  "answer": "B",
+  "confidence": "low",
+  "flag": "Mixes 'addresses' and 'residents'; assumes one address per resident."
+ },
+ {
+  "id": "AR-095",
+  "answer": "B",
+  "confidence": "high",
+  "flag": "Asks 'how many people' but answers are percentages; 21.6% rounds to 22%."
+ },
+ {
+  "id": "AR-096",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-097",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-098",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-099",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-100",
+  "answer": "D",
+  "confidence": "low",
+  "flag": "Exact value $2.18; $2.20 is only the nearest choice (no 'about' in prompt)."
+ },
+ {
+  "id": "AR-101",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-102",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-103",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-104",
+  "answer": "D",
+  "confidence": "high",
+  "flag": "Assumes 10% tip share applies to tips only (not wages); otherwise no matching choice."
+ },
+ {
+  "id": "AR-105",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-106",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-107",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-108",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-109",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-110",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-111",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-112",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-113",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-114",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-115",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-116",
+  "answer": "B",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-117",
+  "answer": "C",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-118",
+  "answer": "B",
+  "confidence": "high",
+  "flag": "Fractional 'times filled' (10.2) is odd for a count; 11 fills would actually be needed."
+ },
+ {
+  "id": "AR-119",
+  "answer": "A",
+  "confidence": "high",
+  "flag": ""
+ },
+ {
+  "id": "AR-120",
+  "answer": "D",
+  "confidence": "high",
+  "flag": ""
+ }
+]

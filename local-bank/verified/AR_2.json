@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "AR-061",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 1,
+    "prompt": "Mr. Winter bought a $500 TV that was marked at a 15 percent discount. He made a down payment of $65 and agreed to pay the balance in 12 equal monthly installments. How much was each installment?",
+    "choices": {
+      "A": "$25.00",
+      "B": "$30.00",
+      "C": "$42.50",
+      "D": "$360.00"
+    },
+    "correct": "B",
+    "explanation": "The discount is 15 percent (or 0.15) of the marked price.\n$500 × 0.15 = $75\nThe cost is $500 − $75 = $425. Subtract the down payment to find the balance due.\n$425 − $65 = $360\nEach installment is 1/12 of $360.\n$360 ÷ 12 = $30",
+    "topic": "money-interest",
+    "status": "fixed",
+    "check_note": "Explanation said each installment is 1/2 of $360; corrected to 1/12."
+  },
+  {
+    "id": "AR-062",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 2,
+    "prompt": "A farmer uses two gallons of insecticide concentrate to spray each 1/4 acre of his land. How many gallons of the concentrate will he need to spray 10 1/2 acres?",
+    "choices": {
+      "A": "80",
+      "B": "80 1/4",
+      "C": "82",
+      "D": "84"
+    },
+    "correct": "D",
+    "explanation": "2 gallons will cover 1/4 acre.\n4 × 2 gallons, or 8 gallons, will cover 1 acre.\n10 × 8 gallons, or 80 gallons, will cover 10 acres.\nSince 2 gallons cover 1/4 acre, 2 × 2 gallons, or 4 gallons, cover 1/2 acre. 80 gallons + 4 gallons, or 84 gallons, will cover 10 1/2 acres.",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-063",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 3,
+    "prompt": "An engineering drawing on a sheet of paper that measures 12 inches wide by 18 inches long is to be enlarged so that the length is 45 inches. How many inches wide will the enlarged drawing be?",
+    "choices": {
+      "A": "30 inches",
+      "B": "39 inches",
+      "C": "66 inches",
+      "D": "33 inches"
+    },
+    "correct": "A",
+    "explanation": "The drawing and its enlargement will be similar. Therefore the lengths and widths will be in proportion.\n(length of original) / (length of enlargement) = (width of original) / (width of enlargement)\n18/45 = 12/x (x = width of enlargement)\nReduce 18/45 by dividing the numerator and denominator by 9.\n2/5 = 12/x\nTo solve, cross-multiply the measurements.\n2 × x = 5 × 12 = 60\nx = 60/2\nx = 30 inches",
+    "topic": "ratio-proportion",
+    "status": "fixed",
+    "check_note": "Final step image read x = 3; corrected to x = 60/2 = 30 inches."
+  },
+  {
+    "id": "AR-064",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 4,
+    "prompt": "In a quality control test at a factory, of 280 products inspected at random, 266 were found to be acceptable. What percentage of the items inspected were found acceptable?",
+    "choices": {
+      "A": "66%",
+      "B": "95%",
+      "C": "5%",
+      "D": "86%"
+    },
+    "correct": "B",
+    "explanation": "Divide the number of acceptable products by the total number inspected. Then change your answer to a percentage.\n266/280 = 133/140 = 19/20\n19/20 = 95/100 = 0.95 = 95%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-065",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 5,
+    "prompt": "A candy store sells 3 lbs. of a candy mix for $4.80. What is the price of a 5-oz. bag of this mix?",
+    "choices": {
+      "A": "$1.00",
+      "B": "$2.40",
+      "C": "$0.25",
+      "D": "$0.50"
+    },
+    "correct": "D",
+    "explanation": "If 3 lbs. of candy cost $4.80, then 1 lb. costs $4.80 ÷ 3, or $1.60. There are 16 oz. in 1 lb.\n1 oz. of the mix costs $1.60 ÷ 16 = $0.10\n5 oz. cost 5 × $0.10 = $0.50",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-066",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 6,
+    "prompt": "The perimeter of a square is 13 feet, 8 inches. What is the length of one side of the square?",
+    "choices": {
+      "A": "3 feet, 2 inches",
+      "B": "3 feet, 5 inches",
+      "C": "3 feet, 3 inches",
+      "D": "3 feet, 6 inches"
+    },
+    "correct": "B",
+    "explanation": "The perimeter of a square is the sum of the lengths of all four sides. But the four sides of a square are all equal in length.\nThe length of one side = 13 feet, 8 inches ÷ 4.\nChange 1 foot to 12 inches so that 13 feet, 8 inches becomes 12 feet, 20 inches.\n12 feet, 20 inches ÷ 4 = 3 feet, 5 inches",
+    "topic": "geometry-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-067",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 7,
+    "prompt": "A military unit has 360 members, and 20 percent are officers. How many members of the unit are enlisted personnel?",
+    "choices": {
+      "A": "90",
+      "B": "270",
+      "C": "72",
+      "D": "288"
+    },
+    "correct": "D",
+    "explanation": "If 20 percent of the unit are officers, then the percent of enlisted men is\n100% − 20% = 80%\nTo find the number of enlisted men, multiply the total number by 80 percent.\n360 × 0.80 = 288.00 = 288 enlisted men",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-068",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 8,
+    "prompt": "Kate earns $8.50 per hour with time and a half paid for overtime in excess of 8 hours on any one day. One day she worked 10 hours. How much did she earn on that day?",
+    "choices": {
+      "A": "$85.00",
+      "B": "$117.50",
+      "C": "$97.75",
+      "D": "$93.50"
+    },
+    "correct": "D",
+    "explanation": "Her overtime is 10 hours − 8 hours regular work = 2 hours. 2 hours at “time and a half” is paid as\n2 × 1 1/2 hours, or 2 × 3/2 hours, or 6/2 hours, or 3 hours.\n8 hours + 3 hours = 11 hours of pay.\n11 × $8.50 = $93.50",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-069",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 9,
+    "prompt": "What is the next term in the series: 2 1/4, 3 3/4, 3 1/4, 4 3/4, ____?",
+    "choices": {
+      "A": "4 1/4",
+      "B": "6 1/4",
+      "C": "5 1/4",
+      "D": "3 1/4"
+    },
+    "correct": "A",
+    "explanation": "Find the relationship between each pair of numbers in the series. Thus,\n2 1/4 to 3 3/4: 2 1/4 + 1 1/2 = 3 3/4\n3 3/4 to 3 1/4: 3 3/4 − 1/2 = 3 1/4\n3 1/4 to 4 3/4: 3 1/4 + 1 1/2 = 4 3/4\nThe pattern so far is\n+1 1/2, −1/2, +1 1/2,...\nTo continue the series, subtract 1/2 from the fourth member of the series.\n4 3/4 − 1/2 = 4 1/4",
+    "topic": "number-sense",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-070",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 10,
+    "prompt": "Tickets for movie admission for adults are $4.00 each, but half-price is charged for children. If 265 adult tickets were sold and the box office collected $1,200, how many children’s tickets were sold?",
+    "choices": {
+      "A": "70",
+      "B": "35",
+      "C": "280",
+      "D": "140"
+    },
+    "correct": "A",
+    "explanation": "Find the amount collected for adult tickets.\n265 × $4 = $1,060\nThe rest of the $1,200 came from the sale of children's tickets.\n$1,200 − $1,060 = $140\nChildren's tickets are half price: $4 ÷ 2 = $2 each.\n$140 ÷ $2 = 70 tickets",
+    "topic": "algebra-word",
+    "status": "fixed",
+    "check_note": "Added missing step $1,200 − $1,060 = $140 and the $2 child price."
+  },
+  {
+    "id": "AR-071",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 11,
+    "prompt": "A woman budgets her income so that she spends 1/4 of it for rent and 2/5 of the remainder for food. What part of the total income does she budget for food?",
+    "choices": {
+      "A": "1/10",
+      "B": "1/5",
+      "C": "3/20",
+      "D": "3/10"
+    },
+    "correct": "D",
+    "explanation": "If she budgets 1/4 of her income for rent, she has 3/4 of her income left.\n1 − 1/4 = 3/4 (remainder)\nShe then budgets 2/5 of this remainder for food.\n2/5 × 3/4 = 6/20 = 3/10 (food)",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-072",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 12,
+    "prompt": "A survey of a small group of people found that 3 of them each watched 2 hours of TV per day. Two of them watched 1 hour per day, and 1 watched 4 hours per day. What is the average number of hours of TV watched by members of this group?",
+    "choices": {
+      "A": "1 1/3 hours",
+      "B": "2 2/3 hours",
+      "C": "2 hours",
+      "D": "3 hours"
+    },
+    "correct": "C",
+    "explanation": "The three people who watched two hours each watched a total of 3 × 2 hours, or 6 hours. The 2 who watched 1 hour each watched a total of 2 × 1 hours, or 2 hours; 1 watched for 4 hours.\nAdd the numbers of hours watched.\n6 + 2 + 4 = 12 hours (total time spent).\nAdd the number of people.\n3 + 2 + 1 = 6 persons were in the group. Divide the total time spent by the number of persons in the group to find the average number of hours one person watches. 12 hours ÷ 6 persons = 2 hours per person average.",
+    "topic": "averages",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-073",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 13,
+    "prompt": "What is the cost of 3 yards, 2 feet of an upholstery edging material that costs $9 per yard?",
+    "choices": {
+      "A": "$30",
+      "B": "$36",
+      "C": "$29",
+      "D": "$33"
+    },
+    "correct": "D",
+    "explanation": "Multiply the cost per yard by the length of the material in yards.\n3 feet = 1 yard, so 2 feet = 2/3 yard.\n3 yards, 2 feet = 3 2/3 yards = 11/3 yards.\n$9 × 11/3 = 99/3 = $33",
+    "topic": "measurement-conversion",
+    "status": "fixed",
+    "check_note": "Garbled step '$9 × 3 2/3 = 9/1 = 11/3 = $33' rewritten as $9 × 11/3 = $33."
+  },
+  {
+    "id": "AR-074",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 14,
+    "prompt": "A partnership agreement calls for the two partners to share the profits of their business in the ratio 4:5. If the profit for the year is $63,000, what is the share paid to the partner who gets the smaller portion?",
+    "choices": {
+      "A": "$28,000",
+      "B": "$7,000",
+      "C": "$35,000",
+      "D": "$15,750"
+    },
+    "correct": "A",
+    "explanation": "Let x represent one of the 9 shares in which the profit must be divided. According to the ratio agreed on, the smaller partner’s share is 4x and the larger partner’s share is 5x. Together the shares must add up to the $63,000 profit. This can be written as an equation.\n4x + 5x = 63,000\nSolve by combining similar terms.\n9x = 63,000\nx = 7,000 (one share)\nMultiply the value of 1 share by the number of shares the smaller partner is to get\n4x = 4 × 7,000 = $28,000",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-075",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 15,
+    "prompt": "A courier leaves an office driving at an average rate of 30 miles per hour but forgets part of the material he was supposed to take with him. An hour later, a second courier is dispatched with the missing material and is instructed to overtake the first courier in 2 hours more. How fast must the second courier travel?",
+    "choices": {
+      "A": "90 miles per hour",
+      "B": "60 miles per hour",
+      "C": "45 miles per hour",
+      "D": "40 miles per hour"
+    },
+    "correct": "C",
+    "explanation": "The first courier will travel for 1 hour + 2 hours, or a total of 3 hours, before he is overtaken. Traveling 30 miles per hour for 3 hours will take the first courier 30 × 3 or 90 miles away.\nThe second courier must travel the 90 miles in 2 hours. Therefore, he must travel at a rate of 90 ÷ 2 or 45 miles per hour.",
+    "topic": "rate-time-distance",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-076",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 16,
+    "prompt": "A merchant buys radios listed wholesale for $60 a piece at a 25 percent discount. He sells these radios at a 20 percent markup above the original wholesale price. What is his profit on each radio?",
+    "choices": {
+      "A": "$9.00",
+      "B": "$27.00",
+      "C": "$12.00",
+      "D": "$18.00"
+    },
+    "correct": "B",
+    "explanation": "Find the discounted price paid by the merchant.\n$60 × 25% = $60 × 0.25 = $15 (discount)\n$60 − $15 = $45 (price paid by the merchant)\nNext find the merchant’s selling price, based on an increase of 20 percent over the original wholesale price.\n$60 × 20% = $60 × 0.20, or $60 × 1/5 = $12 (increase over wholesale price)\n$60 + $12 = $72 (merchant's selling price)\nFinally, find the merchant’s profit.\n$72 − $45 = $27",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-077",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 17,
+    "prompt": "An airplane travels a distance of x miles in y hours. What is its average rate of speed in miles per hour?",
+    "choices": {
+      "A": "xy/y",
+      "B": "x/y",
+      "C": "y/x",
+      "D": "(x + y)/2"
+    },
+    "correct": "B",
+    "explanation": "To find the rate of speed when the distance and the time are known, divide the distance, x, by the time, y.\nx divided by y is expressed as x/y.",
+    "topic": "rate-time-distance",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-078",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 18,
+    "prompt": "The cost of sending a telegram is $1.50 for the first 10 words and $0.05 for each additional word. How many words can be sent by telegram for $4.00?",
+    "choices": {
+      "A": "50",
+      "B": "60",
+      "C": "81",
+      "D": "90"
+    },
+    "correct": "B",
+    "explanation": "Since the first 10 words cost $1.50, the balance is left for the cost of the remaining words.\n$4.00 − $1.50 = $2.50\nTo find the number of words $2.50 will pay for at $0.05 per word, divide $2.50 by $0.05.\n$2.50 ÷ $0.05 = 250 ÷ 5 (clearing decimals)\n250 ÷ 5 = 50 words\n50 words added to the first 10 words makes a total of 60 words.",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-079",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 19,
+    "prompt": "A mapmaker is told to prepare a map with a scale of 1 inch to 40 miles. If the actual distance between two points is 110 miles, how far apart should the mapmaker show them on the map?",
+    "choices": {
+      "A": "7 inches",
+      "B": "3 1/2 inches",
+      "C": "2 1/2 inches",
+      "D": "2 3/4 inches"
+    },
+    "correct": "D",
+    "explanation": "Since 1 inch represents 40 miles, divide 110 miles by 40 miles to find the number of inches required to represent it.\n110 ÷ 40 = 110/40 = 11/4 = 2 3/4 inches",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-080",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 20,
+    "prompt": "In the town of Hampshire, houses are assessed at 75 percent of the purchase price. If Mr. Johnson buys a house in Hampshire for $80,000 and real estate taxes are $4.83 per $100 of assessed valuation, how much realty tax must he pay?",
+    "choices": {
+      "A": "$2,898",
+      "B": "$3,864",
+      "C": "$600",
+      "D": "$604.83"
+    },
+    "correct": "A",
+    "explanation": "Multiply the purchase price of the home by the assessment rate to find the assessed value.\n$80,000 × 75% = $80,000 × 3/4\n= (80,000/1) × (3/4) = (20,000/1) × (3/1)\n= $60,000 (assessed value)\nFind the number of hundreds in the assessed value.\n60,000 ÷ 100 = 600 (hundreds)\nMultiply the number of hundreds by the tax rate.\n600 × $4.83 = $2,898.00 (tax)",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-081",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 21,
+    "prompt": "The ingredients in a cake recipe include 4 1/2 cups of flour and 3/4 cup of sugar. It is desired to make a cake that will require only 1/4 cup of sugar. How much flour should be used?",
+    "choices": {
+      "A": "1 1/4 cups",
+      "B": "1 1/2 cups",
+      "C": "4 cups",
+      "D": "1 3/4 cups"
+    },
+    "correct": "B",
+    "explanation": "Set up a proportion.\n(recipe sugar) / (sugar actually used) = (recipe flour) / (flour actually used)\n(3/4 cup) / (1/4 cup) = (4 1/2 cups) / (x cups), or (3/4)/(1/4) = (9/2)/x\nSimplify each side of the proportion.\n3/4 ÷ 1/4 = 3/4 × 4/1 = 3/1\n9/2 ÷ x/1 = 9/2 × 1/x = 9/(2x)\nSo 3/1 = 9/(2x)\nSolve the proportion by cross-multiplying.\n6x = 9\nDivide each side of the equation by 6 to find the value of x.\nx = 9/6 = 1 1/2 cups of flour",
+    "topic": "ratio-proportion",
+    "status": "fixed",
+    "check_note": "Choice B extracted as '1 cups' (fraction lost); restored to '1 1/2 cups', matching the keyed answer and explanation."
+  },
+  {
+    "id": "AR-082",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 22,
+    "prompt": "When the tolls on a bridge were increased, the traffic declined from 1,200 cars crossing per day to 1,044. What was the percentage of the decline in traffic?",
+    "choices": {
+      "A": "87%",
+      "B": "156%",
+      "C": "13%",
+      "D": "15%"
+    },
+    "correct": "C",
+    "explanation": "Find the amount of the decline by subtracting.\n1,200 − 1,044 = 156\nTo find the percent of decline, divide the amount of the decline by the original number of cars crossing the bridge.\n156 ÷ 1,200 = 156/1,200 = 13/100 = 13%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-083",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 23,
+    "prompt": "If a two-gallon bucket of liquid floor polish costs $19.20, how much should a one-quart can cost?",
+    "choices": {
+      "A": "$4.80",
+      "B": "$2.40",
+      "C": "$1.20",
+      "D": "$0.60"
+    },
+    "correct": "B",
+    "explanation": "First find the cost of 1 gallon. If 2 gallons cost $19.20, 1 gallon will cost $19.20 ÷ 2 or $9.60.\nThere are 4 quarts in 1 gallon. Divide the cost of 1 gallon by 4 to find the cost of 1 quart.\n$9.60 ÷ 4 = $2.40",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-084",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 24,
+    "prompt": "A man takes a trip in which he first drives for 3 hours at 50 miles per hour. He then drives for 2 hours more at 55 miles per hour. If his car gets 20 miles per gallon, how many gallons of gas did he use for the trip?",
+    "choices": {
+      "A": "10 gallons",
+      "B": "9.5 gallons",
+      "C": "26 gallons",
+      "D": "13 gallons"
+    },
+    "correct": "D",
+    "explanation": "Find the distance he drove on each leg of the trip by multiplying the rate in miles per hour by the time in hours.\n50 × 3 = 150 miles\n55 × 2 = 110 miles\nAdd the two distances to get the total distance he traveled.\n150 + 110 miles = 260 miles\nDivide the total distance traveled by the number of miles per gallon of gas to get the amount of gas used.\n260 ÷ 20 = 13 gallons",
+    "topic": "rate-time-distance",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-085",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 25,
+    "prompt": "A woman has $5,000 invested at 8 percent annual interest. At what rate must she invest an additional $10,000 so that her annual income from both investments is equivalent to 9 percent of her total investment?",
+    "choices": {
+      "A": "10%",
+      "B": "10.5%",
+      "C": "9%",
+      "D": "9.5%"
+    },
+    "correct": "D",
+    "explanation": "First find the income from the $5,000 invested at 8 percent.\n$5,000 × 0.08 = $400.00\nNext find the income desired from the total investment of $15,000.\n$15,000 × 0.09 = $1,350.00\nSubtract the income from the first investment to find out how much income she must get from the second.\n$1,350 − $400 = $950\nDivide the income, $950, by the investment, $10,000, to find the rate of interest.\n$950 ÷ $10,000 = 950/10,000 = 95/1,000 = 0.095, or 9.5 percent",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-086",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 26,
+    "prompt": "The fuel tank of a gasoline generator contains sufficient capacity to operate the generator for 1 hour and 20 minutes. How many times must the fuel tank be filled to run the generator from 9:15 A.M. to 3:55 P.M.?",
+    "choices": {
+      "A": "5",
+      "B": "6",
+      "C": "4 1/2",
+      "D": "4"
+    },
+    "correct": "A",
+    "explanation": "Find the number of hours the generator operates.\nFrom 9:15 A.M. to 3:15 P.M. is 6 hours.\nFrom 3:15 P.M. to 3:55 P.M. is 40 minutes (or 2/3 of an hour).\n6 hours + 40 minutes = 6 2/3 hours.\nDivide the total time run by the time provided by one fuel tank filling\n(1 hour, 20 minutes, or 1 1/3 hours).\n6 2/3 ÷ 1 1/3 = 20/3 × 3/4 = 5 fillings",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-087",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 27,
+    "prompt": "A nursery employee mixes 10 pounds of hardy grass seed worth $1.20 per pound with 8 pounds of premium grass seed worth $3.00 per pound. At what price per pound should she sell the mixture?",
+    "choices": {
+      "A": "$2.10",
+      "B": "$2.00",
+      "C": "$1.90",
+      "D": "$2.50"
+    },
+    "correct": "B",
+    "explanation": "Find the total value of each kind of seed in the mixture.\n10 pounds at $1.20 per pound is worth 10 × $1.20, or $12.00.\n8 pounds at $3.00 per pound is worth 8 × $3.00, or $24.00.\nAdd the values of each kind to get the total value of the mixture.\n$12.00 + $24.00 = $36.00\nDivide the total value of the mixture by the total number of pounds, 18, to get price per pound.\n$36.00 ÷ 18 = $2.00 per pound",
+    "topic": "averages",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-088",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 28,
+    "prompt": "What is the value of (0.02 × 3) / 0.001?",
+    "choices": {
+      "A": "60",
+      "B": "6",
+      "C": "0.6",
+      "D": "0.06"
+    },
+    "correct": "A",
+    "explanation": "First multiply out the numerator.\n(0.02 × 3) / 0.001 = 0.06 / 0.001\nClear the decimal in the divider by moving the decimal point in both numerator and denominator three places to the right.\n0.06 / 0.001 = 60/1 = 60",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-089",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 29,
+    "prompt": "Find the numerical value of 1 + 5xy^2 − 3x^2y if x = 3 and y = 2.",
+    "choices": {
+      "A": "25",
+      "B": "18",
+      "C": "739",
+      "D": "7"
+    },
+    "correct": "D",
+    "explanation": "Substitute the number values for the letters and then do the arithmetic operations.\n1 + 5xy^2 − 3x^2y\n= 1 + (5 × x × y^2) − (3 × x^2 × y)\n= 1 + (5 × 3 × 2^2) − (3 × 3^2 × 2)\n= 1 + (5 × 3 × 4) − (3 × 9 × 2)\n= 1 + 60 − 54 = 7",
+    "topic": "algebra-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-090",
+    "section": "AR",
+    "source": "Practice Exam Two",
+    "n": 30,
+    "prompt": "Using the formula I = √(P/R), find the value of I when P = 48 and R = 3.",
+    "choices": {
+      "A": "12",
+      "B": "8",
+      "C": "4",
+      "D": "4/3"
+    },
+    "correct": "C",
+    "explanation": "Substitute the number values for P and R.\nI = √(P/R)\nI = √(48/3)\nI = √16\nThe square root of 16 is the number that when multiplied by itself is 16; therefore √16 = 4.\nI = 4",
+    "topic": "algebra-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-091",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 1,
+    "prompt": "At Chez Marie, one-fifth of the patrons are male and one-fourth of the patrons are from out of town. What proportion would you expect to be both male and from out of town?",
+    "choices": {
+      "A": "1/4",
+      "B": "1/9",
+      "C": "1/20",
+      "D": "1/25"
+    },
+    "correct": "C",
+    "explanation": "If one-fifth of all patrons are male, then you could reasonably expect one-fifth of the out-of-town patrons to be male. One-fifth of one-fourth is 1/20 (1/5 × 1/4 = 1/20).",
+    "topic": "probability-counting",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-092",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 2,
+    "prompt": "There are 124 certified nursing assistants and 36 registered nurses working at a hospital. What percentage of the workforce are registered nurses?",
+    "choices": {
+      "A": "18.7%",
+      "B": "22.5%",
+      "C": "36.0%",
+      "D": "41.3%"
+    },
+    "correct": "B",
+    "explanation": "First, find the total number of people in the workforce by adding both groups together: 124 + 36 = 160. Then, because a percentage is the proportion of 100, multiply the number of RNs by 100 (36 × 100 = 3,600)—this will set you up to get the actual percentage after the next step. Now, divide\n3,600 by the total number of people in the population: 3,600 ÷ 160 = 22.5.\nThe percentage of RNs in the workforce is 22.5 percent.",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-093",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 3,
+    "prompt": "Of a thousand dogs at a dog show, 54 percent were male. Among these males, 4 out of 5 were over the age of 3. How many of the dogs were males 3 years old or older?",
+    "choices": {
+      "A": "216",
+      "B": "332",
+      "C": "432",
+      "D": "540"
+    },
+    "correct": "C",
+    "explanation": "If 54 percent of a thousand dogs were male, then we are talking about 540 male dogs to start with (1,000 × 0.54 = 540). Among those males, we are told, 4 out of 5 are over age three. If we convert that to a percentage so that we can work with it more easily, that means the denominator must be 100. Multiplying anything by one (or any of its forms) is still the number that we started with, so 4/5 × 20/20 = 80/100 (20/20 is a restated form of 1, so the amount we are talking about is the same, just stated in a different form). Simplifying 80/100 gives us 8/10 or 0.8. Multiplying 540 × 0.8 = 432, so we now know that there were 432 male dogs over the age of 3 at the dog show.",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-094",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 4,
+    "prompt": "A mail carrier can deliver mail to 800 addresses in one day. In the city of Woodway, there are 36,800 residents. How many mail carriers must be hired to deliver mail to all of the Woodway citizens each day?",
+    "choices": {
+      "A": "36",
+      "B": "46",
+      "C": "92",
+      "D": "138"
+    },
+    "correct": "B",
+    "explanation": "To find the number of required mail carriers, divide 36,800 by 800 to get 46. The city needs 46 mail carriers.\n(Note: the book treats each resident as one delivery address.)",
+    "topic": "number-sense",
+    "status": "book_error",
+    "check_note": "Prompt mixes addresses (carrier capacity: 800 addresses/day) with residents (36,800 residents); 46 assumes one resident per address. Keyed B kept as the intended answer."
+  },
+  {
+    "id": "AR-095",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 5,
+    "prompt": "A heart attack victim can be saved 90 percent of the time if a defibrillator is used within 5 minutes of the heart attack’s onset. Of the people who have heart attacks, defibrillators are nearby 40 percent of the time, but they are only used 60 percent of the time even when they are available. How many people who suffer a heart attack are saved because of the use of a defibrillator?",
+    "choices": {
+      "A": "20%",
+      "B": "22%",
+      "C": "42%",
+      "D": "30%"
+    },
+    "correct": "B",
+    "explanation": "A person is saved by a defibrillator only if all three things happen: a defibrillator is nearby (40%), it is actually used (60% of those times), and the patient survives (90% of those times).\nMultiply the three rates:\n0.4 × 0.6 = 0.24 (24% of victims have a defibrillator used on them)\n0.24 × 0.9 = 0.216\n0.216 = 21.6%, which rounds to about 22% of heart attack victims saved by the use of a defibrillator.",
+    "topic": "probability-counting",
+    "status": "fixed",
+    "check_note": "Book called the 36% figure 'survivors' (it is not); rewrote as a clean product 0.4 × 0.6 × 0.9 = 0.216 ≈ 22%."
+  },
+  {
+    "id": "AR-096",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 6,
+    "prompt": "A college student scored 74, 97, 88, 83, and 86 on his physics tests during the course of the semester. His professor will drop the lowest test grade to compute each student’s average for the semester. What is the student’s final average in the class?",
+    "choices": {
+      "A": "82.0%",
+      "B": "85.6%",
+      "C": "86.0%",
+      "D": "88.5%"
+    },
+    "correct": "D",
+    "explanation": "First, drop the lowest grade (74), leaving you to add the remaining scores (97 + 88 + 83 + 86 = 354) and then divide that total by the total number of scores (which is now four, not five) (354 ÷ 4 = 88.5 percent), resulting in a final average of 88.5% for the semester.",
+    "topic": "averages",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-097",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 7,
+    "prompt": "The manufacturer’s suggested retail price of the new Guzzler 300 SEV (Sport Everything Vehicle) went from $22,399 last year to $23,999 for this year’s model. About what percentage increase was this?",
+    "choices": {
+      "A": "2.07%",
+      "B": "7.1%",
+      "C": "9.3%",
+      "D": "11.4%"
+    },
+    "correct": "B",
+    "explanation": "First, find the amount of the price increase.\n$23,999 − $22,399 = $1,600\nMultiply the amount of the increase ($1,600) by 100 (this sets you up for your final answer to be the percentage that you need, without having to convert it in some way), then divide by last year’s price:\n1,600 × 100 = 160,000\n160,000 ÷ 22,399 ≈ 7.1\nThe price increase was about 7.1 percent.",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-098",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 8,
+    "prompt": "The Midway Panthers high school football quarterback attempted 82 passes and completed 57 of them while the team ran up a 8-1 record. What was his completion percentage?",
+    "choices": {
+      "A": "30.4%",
+      "B": "69.5%",
+      "C": "43.8%",
+      "D": "81.7%"
+    },
+    "correct": "B",
+    "explanation": "Multiply the number of completed passes by 100, then divide it by the number of attempted passes. The result will be the percentage.\n57 × 100 = 5,700\n5,700 ÷ 82 ≈ 69.5, or 69.5%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-099",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 9,
+    "prompt": "Mackenzie has a 20-year term life insurance policy for $100,000. The annual premium is $12.00 per thousand. What is the total premium paid for this policy every 6 months?",
+    "choices": {
+      "A": "$600",
+      "B": "$1,200",
+      "C": "$100",
+      "D": "$2,400"
+    },
+    "correct": "A",
+    "explanation": "There are 100 units of $1,000 in $100,000. Thus, Mackenzie pays 100 × $12 (or $1,200) every year in premiums, or $100 every month. Therefore, every 6 months, Mackenzie pays 1/2 of $1,200 (or six times $100), which equals $600.",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-100",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 10,
+    "prompt": "The deli in the local super grocery store sells 2 pounds of smoked deli turkey breast for $13.98. What would the cost be of a 5-ounce portion?",
+    "choices": {
+      "A": "$0.44",
+      "B": "$0.87",
+      "C": "$1.40",
+      "D": "$2.20"
+    },
+    "correct": "D",
+    "explanation": "There are 16 ounces in 1 pound. If 2 pounds of turkey cost $13.98, then 1 pound costs $13.98 ÷ 2 = $6.99.\n1 ounce costs $6.99 ÷ 16 ≈ $0.437\n5 ounces cost 5 × $6.99 ÷ 16 = $34.95 ÷ 16 ≈ $2.18\nThe closest choice is $2.20. (Rounding 1 ounce to $0.44 first gives 5 × $0.44 = $2.20.)",
+    "topic": "measurement-conversion",
+    "status": "fixed",
+    "check_note": "Book's rounded $0.44/oz gives $2.20; exact cost is about $2.18. Explanation now shows exact value and notes $2.20 is the closest choice."
+  },
+  {
+    "id": "AR-101",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 11,
+    "prompt": "Jonathan gets a bonus check and goes to the haberdasher’s outlet. He finds that five shirts and four ties cost $173 and each tie costs $12. What is the cost of one shirt?",
+    "choices": {
+      "A": "$15.00",
+      "B": "$22.60",
+      "C": "$19.22",
+      "D": "$25.00"
+    },
+    "correct": "D",
+    "explanation": "Find the cost of four ties:\n4 × $12 = $48\nFind the cost of the shirts alone:\n$173 − $48 = $125\nFind the cost of one shirt:\n$125 ÷ 5 = $25.00",
+    "topic": "algebra-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-102",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 12,
+    "prompt": "A regional waste disposal expediter company wants to calculate a price to charge for their new Super-Duper Dumpster. In order to do that, the operations manager needs to calculate the volume of the new container. What is the volume of the container if it is 23 feet long, 15 feet wide, and 11 feet high?",
+    "choices": {
+      "A": "2,530 square feet",
+      "B": "3,450 cubic feet",
+      "C": "3,795 square feet",
+      "D": "3,795 cubic feet"
+    },
+    "correct": "D",
+    "explanation": "The formula for the volume of an object with parallel sides and right-angle corners is\nVolume = length l × width w × height h, or l × w × h\n23 ft × 15 ft × 11 ft = 3,795 cu ft (\"cubic feet\")",
+    "topic": "geometry-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-103",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 13,
+    "prompt": "A college football player’s parents spent $119 on tickets for family and friends to attend a conference playoff game. If the general admission tickets were $7 and $10, and they bought an equal number of both kinds of tickets, how many $7 tickets did they buy?",
+    "choices": {
+      "A": "4",
+      "B": "5",
+      "C": "7",
+      "D": "11"
+    },
+    "correct": "C",
+    "explanation": "Let x be the number of tickets bought at each price (remember, the parents bought the same number of both kinds of tickets). So,\n7x + 10x = 119\nNow combine the terms and continue solving the equation for x.\n17x = 119\n17x/17 = 119/17\nx = 7",
+    "topic": "algebra-word",
+    "status": "fixed",
+    "check_note": "Explanation referred to 'the sister'; the prompt says the parents bought the tickets."
+  },
+  {
+    "id": "AR-104",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 14,
+    "prompt": "While working her way through college, Amanda earns an average of $22 an hour in tips as a supervising waitress at the best steak restaurant in town. If her hourly wage is $2.50 and she has to pay a 10 percent tip share to the hostesses and busboys, how much does she take home at the end of a day where she worked from 10:30 A.M. to 5:30 P.M.?",
+    "choices": {
+      "A": "$32.90",
+      "B": "$121.11",
+      "C": "$138.60",
+      "D": "$156.10"
+    },
+    "correct": "D",
+    "explanation": "First, calculate the amount of Amanda’s hourly wages for a shift of 10:30 A.M. to 5:30 P.M., which is 7 hours.\n7 × $2.50 = $17.50\nNext, calculate the amount of Amanda’s tips for her 7-hour shift.\n7 × $22 = $154\nNow, calculate the amount of her tips she has to share with the busboys and hostesses.\n$154 × 0.10 = $15.40\nNow add everything up.\nWages: $17.50\nTips: + $154.00\nTip share: − $15.40\nNet pay: $156.10",
+    "topic": "money-interest",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-105",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 15,
+    "prompt": "The local performing arts troupe saw, before the curtain went up, that 76 percent of a 500-seat theater was occupied, and that three-quarters of those attending were adults. How many children were seated in the theater?",
+    "choices": {
+      "A": "95",
+      "B": "100",
+      "C": "76",
+      "D": "285"
+    },
+    "correct": "A",
+    "explanation": "First, calculate the number of total attendees by multiplying the total seats available by the percentage.\n500 × 0.76 = 380\nSince “three-quarters” (75 percent) of those attending were adults, that means that one-quarter or 25 percent were children (which is the final result we are trying to find). Therefore, multiply the number of total attendees by the percentage of children to find out how many children saw the performance.\n380 × 0.25 = 95 children",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-106",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 16,
+    "prompt": "While home one weekend from college, Jonathan spent 4 hours studying, 1 hour playing with the dogs, 30 minutes doing his laundry, and 2 hours watching TV. What percentage of his time was spent studying?",
+    "choices": {
+      "A": "46.6%",
+      "B": "50.0%",
+      "C": "53.3%",
+      "D": "57.1%"
+    },
+    "correct": "C",
+    "explanation": "Add all the blocks of time together.\n4 + 1 + 0.5 + 2 = 7.5 hours total\nNow multiply the time spent studying (4 hours) by 100 and divide it by the total time.\n4 × 100 = 400\n400 ÷ 7.5 ≈ 53.3%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-107",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 17,
+    "prompt": "Mrs. D. found a chandelier for the dining room for $1,400. However, since the model had been discontinued and the display had no factory packaging material, the store manager discounted the price to $1,150. What was the percentage of the reduction?",
+    "choices": {
+      "A": "1.78%",
+      "B": "13.0%",
+      "C": "15.0%",
+      "D": "17.9%"
+    },
+    "correct": "D",
+    "explanation": "Subtract the discounted price from the original price.\n$1,400 − $1,150 = $250\nNow multiply the amount of the discount by 100 and divide it by the original price.\n$250 × 100 = 25,000\n25,000 ÷ 1,400 = 17.857... ≈ 17.9%",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-108",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 18,
+    "prompt": "To complete the decoration of her new home, Kate bought a rectangular Persian rug that measured 45 feet around its outer edge. If the long sides measure 15 feet each, how long is each short side of the rug?",
+    "choices": {
+      "A": "7.5 feet",
+      "B": "10 feet",
+      "C": "12.5 feet",
+      "D": "15 feet"
+    },
+    "correct": "A",
+    "explanation": "The formula for the perimeter of a rectangle is\nP = 2l + 2w\nIf the long sides of the rug measure 15 feet each, then both long sides together equal 30 feet. Subtract the length of both long sides from the total perimeter measurement.\n45 − (2 × 15) = 45 − 30 = 15 feet\nNow we have the part of the perimeter made up by the two short sides, but we need to divide it by 2 to get the length of each short side.\n15 ft ÷ 2 = 7.5 feet",
+    "topic": "geometry-word",
+    "status": "fixed",
+    "check_note": "Perimeter formula printed as P = 2l × 2w; corrected to P = 2l + 2w."
+  },
+  {
+    "id": "AR-109",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 19,
+    "prompt": "While working in the Floors ‘R’ Us suburban store, four customer service representatives each receive $320 a week, while two sales managers each earn $12 per hour plus an average $100 per day commission. What is the total weekly compensation paid to these six employees for a 5-day, 40-hour work week?",
+    "choices": {
+      "A": "$2,420",
+      "B": "$3,240",
+      "C": "$2,260",
+      "D": "$4,520"
+    },
+    "correct": "B",
+    "explanation": "First add up the wages made by the four customer service reps.\n$320 × 4 = $1,280\nNow calculate how much the two sales managers make each week.\n2 sales managers × [($12 per hour × 40 hr) + (5 days per week × $100)]\n= 2 × ($480 + $500)\n= 2 × $980 = $1,960 per week\nNow add the pay for the four customer service reps to the pay for the two sales managers.\n$1,280 + $1,960 = $3,240",
+    "topic": "money-interest",
+    "status": "fixed",
+    "check_note": "Explanation called the two sales managers 'sales reps' (a different group); corrected wording."
+  },
+  {
+    "id": "AR-110",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 20,
+    "prompt": "The USS Texas (SSN 775) sails x miles the first day, y miles the second day, and z miles the third day. What is the formula for the average number of miles sailed per day?",
+    "choices": {
+      "A": "3xyz",
+      "B": "3 · (x + y + z)",
+      "C": "(x + y + z) ÷ 3",
+      "D": "(x + y + z)"
+    },
+    "correct": "C",
+    "explanation": "To find an average, add the values for each day together and then divide by the total number of days: (x + y + z) ÷ 3.",
+    "topic": "averages",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-111",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 21,
+    "prompt": "If a train can travel 500 miles in 5 hours, how far can it travel in 15 minutes?",
+    "choices": {
+      "A": "25 miles",
+      "B": "30 miles",
+      "C": "57 miles",
+      "D": "125 miles"
+    },
+    "correct": "A",
+    "explanation": "First find the number of miles per hour the train travels.\n500 miles ÷ 5 hours = 100 miles per hour (mph)\n15 minutes is 15/60 = 1/4 of an hour.\n100 mph × 1/4 hour = 25 miles\n(Or: 100 miles ÷ 60 minutes = 5/3 miles per minute, and 5/3 × 15 = 25 miles.)",
+    "topic": "rate-time-distance",
+    "status": "fixed",
+    "check_note": "Rounded 1.67 mi/min × 15 = 25.05, not 25; replaced with exact 100 mph × 1/4 hr = 25."
+  },
+  {
+    "id": "AR-112",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 22,
+    "prompt": "Which one of these pairs of objects is an example of similar figures, mathematically speaking?",
+    "choices": {
+      "A": "a right triangle and an isosceles triangle",
+      "B": "a motorcycle and a sidecar",
+      "C": "a bicycle and a motorcycle",
+      "D": "an airplane and a scale model of that airplane"
+    },
+    "correct": "D",
+    "explanation": "Two figures are similar in the mathematical sense if they have the same shape; they may or may not have the same size. An airplane and a scale model of that plane have the same shape and are therefore similar.",
+    "topic": "geometry-word",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-113",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 23,
+    "prompt": "Upon his death, a man’s life insurance policies paid $750,000 to his wife and three children. The policies were set up to pay the wife and children in the ratio of 5:1:1:1. How much did the children receive altogether?",
+    "choices": {
+      "A": "$150,000",
+      "B": "$200,000",
+      "C": "$250,000",
+      "D": "$281,250"
+    },
+    "correct": "D",
+    "explanation": "Start by letting x equal one share of the insurance money. According to the ratio, the wife received five shares (5x) and the children received one share (x) apiece for a total of eight shares. Divide the total amount by the total number of shares.\n$750,000 ÷ 8 = $93,750 per share\nNow multiply the amount of each share by the total number of shares received by the children.\n$93,750 × 3 = $281,250",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-114",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 24,
+    "prompt": "Although the table of organization and equipment specifies that an infantry rifle company has a total 131 soldiers authorized, B Company (Bulldogs), 3rd Battalion, 144th Infantry Regiment has only 125 total soldiers assigned, of whom 4 percent are officers. How many enlisted soldiers are assigned to the company?",
+    "choices": {
+      "A": "114",
+      "B": "123",
+      "C": "120",
+      "D": "121"
+    },
+    "correct": "C",
+    "explanation": "If 4 percent of the unit are officers, then the percent of enlisted men is\n100% − 4% = 96%\nTo find the number of enlisted men, multiply the total number by 96 percent or 0.96.\n125 total soldiers × 0.96 = 120 enlisted soldiers",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-115",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 25,
+    "prompt": "James, the high-tech electronics store owner, makes a deal to buy 20 DVD players for the listed wholesale price of $80 apiece, but receives a 25 percent discount because he is a frequent customer of the wholesale dealer. Being a shrewd entrepreneur, he then sells these DVD players at a 20 percent markup above the original wholesale price. What is his profit on each DVD player?",
+    "choices": {
+      "A": "$16",
+      "B": "$720",
+      "C": "$20",
+      "D": "$36"
+    },
+    "correct": "D",
+    "explanation": "First find the discount received from the wholesale dealer for each DVD player by multiplying the listed price by the discount percentage.\n$80 × 0.25 = $20\nNow find the final price per DVD player paid to the wholesale dealer.\n$80 − $20 = $60\nNow find the retail markup by multiplying the markup percentage by the original wholesale price.\n$80 × 0.20 = $16\nNow find the retail price for which the store owner sells the DVD players by adding the markup amount to the listed wholesale price.\n$80 + $16 = $96\nTo find the profit, subtract the price paid to the wholesale dealer from the retail price.\n$96 − $60 = $36 profit per DVD player",
+    "topic": "percent",
+    "status": "fixed",
+    "check_note": "Final step said 'subtract the retail price from the price paid' (backwards); corrected wording."
+  },
+  {
+    "id": "AR-116",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 26,
+    "prompt": "A mapmaker is told to prepare a map with a scale of 1 inch = 50 miles. If the actual ground distance between two points is 120 miles, how far apart should the mapmaker show them on the map?",
+    "choices": {
+      "A": "0.4 inch",
+      "B": "2.4 inches",
+      "C": "1.2 inches",
+      "D": "4.8 inches"
+    },
+    "correct": "B",
+    "explanation": "Since 1 inch represents 50 miles, divide the ground distance (120 miles) by the scale (50 miles to the inch) to find the number of inches required to represent 120 miles.\n120 ÷ 50 = 2.4 inches",
+    "topic": "ratio-proportion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-117",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 27,
+    "prompt": "In the city of Hewitt, houses are assessed for tax purposes at 80 percent of the purchase price. If Mr. Thomas buys a house in Hewitt for $120,000 and real estate taxes are $4.75 per $100 of assessed valuation, how much property tax must he pay per year?",
+    "choices": {
+      "A": "$3,648",
+      "B": "$5,472",
+      "C": "$4,560",
+      "D": "$4,845"
+    },
+    "correct": "C",
+    "explanation": "Multiply the purchase price of the home by the assessment rate to find the assessed value.\n120,000 × 0.80 = $96,000 (assessed value)\nFind the number of hundreds in the assessed value.\n$96,000 ÷ 100 = 960 (hundreds)\nMultiply the number of hundreds by the tax rate.\n960 × $4.75 = $4,560 (property tax)",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-118",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 28,
+    "prompt": "Travis’ hunting lodge does not have electrical lines run to it, but it does have a gasoline generator that powers the lights, heater, and stove. The fuel tank of the generator holds enough to run the generator for 75 minutes. About how many times must the fuel tank be filled to run the generator from 6:15 P.M. to 7:00 A.M.?",
+    "choices": {
+      "A": "9.4",
+      "B": "10.2",
+      "C": "10.8",
+      "D": "11.5"
+    },
+    "correct": "B",
+    "explanation": "First find the total time needed to run the generator = 12 hours and 45 minutes or 12.75 hours. Now divide the total time needed to run the generator by the amount of time each tank of fuel will last.\n12.75 ÷ 1.25 = 10.2 tanks of fuel",
+    "topic": "measurement-conversion",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-119",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 29,
+    "prompt": "When a stretch of Loop 1 was converted from non-paid to a toll road, the traffic declined from 11,200 cars per day to 10,044. What was the percent of the decline in traffic?",
+    "choices": {
+      "A": "10.3%",
+      "B": "11.5%",
+      "C": "10.1%",
+      "D": "8.9%"
+    },
+    "correct": "A",
+    "explanation": "First find the amount of the decline in traffic.\n11,200 cars − 10,044 = 1,156 fewer cars per day\nNow multiply the amount of traffic decrease by 100 and then divide it by the amount of original traffic. This will yield the percentage decrease without further calculation.\n1,156 × 100 = 115,600\n115,600 ÷ 11,200 ≈ 10.3% decrease",
+    "topic": "percent",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "AR-120",
+    "section": "AR",
+    "source": "AFQT Focus Exam",
+    "n": 30,
+    "prompt": "Mr. Lee is a high-tech cutlery salesman. On a sales trip, he first drives for two hours at 70 miles per hour. He then drives for another one and a half hours at 65 miles per hour. If his car gets 25 miles per gallon on the highway in this speed range, how many gallons of gas did he use for the trip?",
+    "choices": {
+      "A": "5.4 gallons",
+      "B": "8.2 gallons",
+      "C": "8.4 gallons",
+      "D": "9.5 gallons"
+    },
+    "correct": "D",
+    "explanation": "First calculate the distances driven during the two legs of the trip.\nLeg 1: 2 hours × 70 mph = 140 miles\nLeg 2: 1.5 hours × 65 mph = 97.5 miles\n140 miles + 97.5 miles = 237.5 miles\nNow divide the total distance traveled by the car’s gas mileage rate.\n237.5 miles ÷ 25 mpg = 9.5 gallons",
+    "topic": "rate-time-distance",
+    "status": "ok",
+    "check_note": ""
+  }
+]

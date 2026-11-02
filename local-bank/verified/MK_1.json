@@ -1,0 +1,902 @@
+[
+  {
+    "id": "MK-001",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 1,
+    "prompt": "Which of the following is the smallest prime number greater than 200?",
+    "choices": {
+      "A": "201",
+      "B": "205",
+      "C": "211",
+      "D": "214"
+    },
+    "correct": "C",
+    "explanation": "A prime number is a number larger than 1 that has only itself and 1 as factors. (It can be evenly divided only by itself and by 1.) 201 is divisible by 3; 205 is divisible by 5; 211, however, is a prime number.",
+    "topic": "number-properties",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-002",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 2,
+    "prompt": "If 40 percent is equal to the fraction x/30, what is the value of x?",
+    "choices": {
+      "A": "0.4",
+      "B": "15",
+      "C": "1,200",
+      "D": "12"
+    },
+    "correct": "D",
+    "explanation": "Change 40 percent to a decimal and write an equation to solve for x.\n0.4 = x/30\nMultiply both sides by 30. You are “undoing” the division.\n0.4 × 30 = x\nx = 12",
+    "topic": "fractions-decimals",
+    "status": "fixed",
+    "check_note": "Added the final step (0.4 × 30 = 12) that the book left implied."
+  },
+  {
+    "id": "MK-003",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 3,
+    "prompt": "The expression “5 factorial” equals",
+    "choices": {
+      "A": "125",
+      "B": "120",
+      "C": "25",
+      "D": "10"
+    },
+    "correct": "B",
+    "explanation": "The product of all integers from 1 to x is called the x factorial. The product of all numbers from 1 to 5 is 5 factorial. Thus\n(5)(4)(3)(2)(1) = 20(3)(2)(1)\n= 60(2)(1)\n= 120(1) = 120\nThe expression “5 factorial” is equal to 120.",
+    "topic": "number-properties",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-004",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 4,
+    "prompt": "What is the result of subtracting 3x^2 – 5x – 1 from 8x^2 + 2x – 9?",
+    "choices": {
+      "A": "5x^2 – 3x – 10",
+      "B": "–5x^2 – 3x – 10",
+      "C": "5x^2 + 7x – 8",
+      "D": "–5x^2 – 7x + 8"
+    },
+    "correct": "C",
+    "explanation": "To subtract one polynomial from another, you change the signs of the terms in the subtrahend. First write the example as a subtraction in arithmetic.\n(From) 8x^2 + 2x – 9\n(Take) 3x^2 – 5x – 1\nThen change the signs of the terms in the bottom row (the subtrahend) and combine terms that are alike.\n8x^2 + 2x – 9\n+ (–3x^2 + 5x + 1)\n= 5x^2 + 7x – 8",
+    "topic": "algebra-polynomials-factoring",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-005",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 5,
+    "prompt": "What is the meaning of the statement –30 < –5?",
+    "choices": {
+      "A": "30 is greater than 5",
+      "B": "30 is less than minus 5",
+      "C": "Negative 30 is less than negative 5",
+      "D": "Negative 30 is greater than negative 5"
+    },
+    "correct": "C",
+    "explanation": "In deciding whether a number is greater or less than another, it helps to use a number line.\n(A number line marked from –30 on the left to 30 on the right in steps of 5: –30, –25, –20, –15, –10, –5, 0, 5, 10, 15, 20, 25, 30.)\nOn the number line above, –5 is to the left of 0 and is, therefore, less than 0. But –30 is to the left of –5. This makes –30 less than –5. The < sign is a symbol of inequality, meaning “less than.” The statement (–30 < –5) means “negative 30 is less than negative 5.”",
+    "topic": "inequalities",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-006",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 6,
+    "prompt": "Solve for x: 8x – 2 – 5x = 8",
+    "choices": {
+      "A": "x = 1.3",
+      "B": "x = 2 1/2",
+      "C": "x = 3 1/3",
+      "D": "x = –7"
+    },
+    "correct": "C",
+    "explanation": "To solve for x, combine all similar terms, and set the equation equal to zero.\n(8x – 5x) + (–2 – 8) = 0\nDo the operations inside the parentheses.\n3x – 10 = 0\nNext, add 10 to each side. You are undoing the subtraction.\n3x – 10 + 10 = 0 + 10\n3x = 10\nFinally, divide each side by 3 to find the value of x. You are undoing the multiplication.\nx = 10/3 = 3 1/3",
+    "topic": "algebra-linear",
+    "status": "fixed",
+    "check_note": "Added the missing final result x = 10/3 = 3 1/3."
+  },
+  {
+    "id": "MK-007",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 7,
+    "prompt": "Maddalyn has $500 in a bank account. Every week, she writes out a check for $50. If she doesn’t make any new deposits, what will her bank account hold x weeks from now?",
+    "choices": {
+      "A": "$500 + $50x",
+      "B": "$500 – $50x",
+      "C": "$550 – x",
+      "D": "$500 + $50 + x"
+    },
+    "correct": "B",
+    "explanation": "In x weeks, she will make out checks for x times $50, or $50x. To find out how much she still has after writing these checks, she would subtract $50x from $500. Thus her bank account will hold $500 – $50x.",
+    "topic": "algebra-linear",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-008",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 8,
+    "prompt": "When the temperature is 20°C, what is it on the Fahrenheit (F) scale? Use the following formula:\n°F = ((9/5) × °C) + 32",
+    "choices": {
+      "A": "93 3/5 degrees",
+      "B": "78 degrees",
+      "C": "62 3/5 degrees",
+      "D": "68 degrees"
+    },
+    "correct": "D",
+    "explanation": "Use the formula\nF = ((9/5) × C) + 32\nSubstitute 20 degrees for C.\nF = ((9/5) × 20) + 32\nF = 36 + 32 = 68 degrees",
+    "topic": "algebra-linear",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-009",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 9,
+    "prompt": "The perimeter of a rectangle is 38 inches. If the length is 3 inches more than the width, find the width.",
+    "choices": {
+      "A": "17 1/2 inches",
+      "B": "8 inches",
+      "C": "11 inches",
+      "D": "14 1/2 inches"
+    },
+    "correct": "B",
+    "explanation": "The perimeter of a rectangle is the sum of its four sides. If x equals its width, then x + 3 equals the length. (The length is 3 inches more than the width.) From this, you can write an equation to find the perimeter. (Use the formula 2w + 2l = P.)\nx + x + (x + 3) + (x + 3) = 38\nTo solve for x, combine similar terms.\n4x + 6 = 38\n4x = 38 – 6\n4x = 32\nx = 8 (inches)",
+    "topic": "geometry-area-perimeter",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-010",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 10,
+    "prompt": "Find the square root of 85 to the nearest tenth.",
+    "choices": {
+      "A": "9.1",
+      "B": "9.2",
+      "C": "9.3",
+      "D": "9.4"
+    },
+    "correct": "B",
+    "explanation": "One way to solve this is to square each of the suggested answers to see which is close to 85. Thus\n9.1 × 9.1 = 82.81\n9.2 × 9.2 = 84.64\n9.3 × 9.3 = 86.49\n9.4 × 9.4 = 88.36\nThe squares of 9.2 and 9.3 are near 85. Find the difference between the square of each of these numbers and 85.\n(9.2): 85.00 – 84.64 = 0.36\n(9.3): 86.49 – 85.00 = 1.49\nThe square of 9.2 is closer to 85 than the square of 9.3. Therefore, the square root of 85, to the nearest tenth, is 9.2.",
+    "topic": "exponents-roots",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-011",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 11,
+    "prompt": "If 5x = 30, then x is equal to",
+    "choices": {
+      "A": "150",
+      "B": "25",
+      "C": "6",
+      "D": "0.6"
+    },
+    "correct": "C",
+    "explanation": "The statement 5x = 30 means “5 times a certain number is equal to 30.” To find the number, divide each side by 5. This is to undo the multiplication.\n5x/5 = 30/5\nx = 6",
+    "topic": "algebra-linear",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-012",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 12,
+    "prompt": "What is the product of (a – 5) and (a + 3)?",
+    "choices": {
+      "A": "a^2 – 15",
+      "B": "a^2 + 2a – 15",
+      "C": "a^2 – 2a – 15",
+      "D": "a^2 – 2"
+    },
+    "correct": "C",
+    "explanation": "Set this up as a multiplication example in arithmetic. Remember that when you multiply terms with unlike signs, the product has a minus sign.\n(a – 5) × (a + 3):\na × (a – 5) = a^2 – 5a\n3 × (a – 5) = 3a – 15\nSum: a^2 – 5a + 3a – 15 = a^2 – 2a – 15",
+    "topic": "algebra-polynomials-factoring",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-013",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 13,
+    "prompt": "Solve for z: 3z – 5 + 2z = 25 – 5z",
+    "choices": {
+      "A": "z = 0",
+      "B": "z = 3",
+      "C": "z = –3",
+      "D": "no solution"
+    },
+    "correct": "B",
+    "explanation": "Begin by combining like terms.\n3z – 5 + 2z = 25 – 5z\n5z – 5 = 25 – 5z\nNext add 5z to each side to eliminate the –5z from the right side.\n5z – 5 + 5z = 25 – 5z + 5z\n10z – 5 = 25\nNow add 5 to each side to undo the remaining subtraction, then divide both sides by 10.\n10z – 5 + 5 = 25 + 5\n10z = 30\nz = 3",
+    "topic": "algebra-linear",
+    "status": "fixed",
+    "check_note": "Explanation now states the divide-by-10 step that produced z = 3."
+  },
+  {
+    "id": "MK-014",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 14,
+    "prompt": "A park commissioner designs a new playground in the shape of a pentagon. If he plans to have a fountain at every corner of the park, how many fountains will there be?",
+    "choices": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "correct": "B",
+    "explanation": "A pentagon is a five-sided figure. If the park commissioner places a fountain at every corner of the park, there will be five fountains.",
+    "topic": "geometry-angles-lines",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-015",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 15,
+    "prompt": "If one of the angles of a right triangle is 30 degrees, what are the other two angles?",
+    "choices": {
+      "A": "30 degrees, 120 degrees",
+      "B": "60 degrees, 45 degrees",
+      "C": "60 degrees, 90 degrees",
+      "D": "45 degrees, 90 degrees"
+    },
+    "correct": "C",
+    "explanation": "Every right triangle contains an angle of 90 degrees. This particular right triangle also has an angle of 30 degrees. To find the third angle, subtract the sum of these two angles from 180 degrees.\n180 – (30 + 90) = 180 – 120 = 60 degrees in the third angle\nThe other two angles are 60 and 90 degrees.",
+    "topic": "geometry-angles-lines",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-016",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 16,
+    "prompt": "What is the value of x in the equation x/2 = 7?",
+    "choices": {
+      "A": "x = 14",
+      "B": "x = 3 1/2",
+      "C": "x = 9",
+      "D": "x = 5"
+    },
+    "correct": "A",
+    "explanation": "To solve for x in this equation, multiply both sides by 2. This is to undo the division.\n2 × (x/2) = 2 × 7\nx = 14",
+    "topic": "algebra-linear",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-017",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 17,
+    "prompt": "Divide 15a^3b^2c by 5abc.",
+    "choices": {
+      "A": "10abc",
+      "B": "3abc",
+      "C": "5a^2b^2",
+      "D": "3a^2b"
+    },
+    "correct": "D",
+    "explanation": "Divide only similar terms. First divide numbers, then letters. When dividing powers of a letter, just subtract the exponents.\n(15a^3b^2c)/(5abc) = (15/5) × (a^3/a) × (b^2/b) × (c/c) = 3a^2b",
+    "topic": "algebra-polynomials-factoring",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-018",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 18,
+    "prompt": "Two circles have the same center. If their radii are 7 inches and 10 inches, find the area that is part of the larger circle but not the smaller one.",
+    "choices": {
+      "A": "3 square inches",
+      "B": "17 square inches",
+      "C": "51π square inches",
+      "D": "70π square inches"
+    },
+    "correct": "C",
+    "explanation": "The formula for the area of a circle is π × r^2. Find the area of the larger circle first.\nπ × 10^2 = 100π square inches\nThen find the area of the smaller circle.\nπ × 7^2 = 49π square inches\nTo find the part of the larger circle that the smaller one doesn’t touch, subtract the two areas.\n100π – 49π = 51π square inches",
+    "topic": "geometry-circles",
+    "status": "fixed",
+    "check_note": "Corrected sloppy line \"100 – 49 = 51π\" to \"100π – 49π = 51π\"."
+  },
+  {
+    "id": "MK-019",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 19,
+    "prompt": "Amanda’s average grade on a set of five tests was 88 percent. She can remember only that the first four grades were 78 percent, 86 percent, 96 percent, and 94 percent. What was the grade on her fifth test?",
+    "choices": {
+      "A": "88",
+      "B": "86",
+      "C": "84",
+      "D": "82"
+    },
+    "correct": "B",
+    "explanation": "The easiest way to solve this is to form an equation using x as the unknown grade.\n(78 + 86 + 96 + 94 + x)/5 = 88\n(354 + x)/5 = 88\nMultiply both sides by 5. This is to undo the division.\n5 × (354 + x)/5 = 88 × 5\nSimplify both sides of the equation.\n354 + x = 440\nx = 440 – 354\nx = 86 (grade)",
+    "topic": "probability-statistics",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-020",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 20,
+    "prompt": "How many cubic yards of concrete are needed to make a cement floor that is 9 feet by 12 feet by 6 inches thick?",
+    "choices": {
+      "A": "2 cubic yards",
+      "B": "18 cubic yards",
+      "C": "54 cubic yards",
+      "D": "648 cubic yards"
+    },
+    "correct": "A",
+    "explanation": "First change all measurements to yards.\n9 feet = 3 yards; 12 feet = 4 yards;\n6 inches = 1/6 yard\nTo find the volume of the concrete, multiply the length by the width by the height.\n3 × 4 × 1/6 = 12 × 1/6\n= 2 cubic yards",
+    "topic": "geometry-volume",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-021",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 21,
+    "prompt": "A wildlife preserve is laid out in the shape of a perfect circle whose radius is 14 miles. The lions’ territory in this preserve is shaped like a wedge and has a fence around it. Two inner sides of a fence meet at a 90-degree angle in the center of the preserve. How much territory do the lions have? (Use π ≈ 22/7.)",
+    "choices": {
+      "A": "140 square miles",
+      "B": "3 1/2 square miles",
+      "C": "210 square miles",
+      "D": "154 square miles"
+    },
+    "correct": "D",
+    "explanation": "First find the area of the entire wildlife preserve. Since it is a circle, use the formula for the area of a circle. (Area equals π times the square of the radius.)\nA = π × r^2\n≈ (22/7) × (14)^2 = (22/7) × 196\n= 22 × 28\n= 616 square miles\nThe lions’ territory is a wedge formed by a 90-degree angle at the center of the circle. Since a circle has 360 degrees, we can find the part of the preserve inhabited by lions.\n90/360 = 1/4\nNext find what this equals in square miles.\n1/4 × 616 = 154 square miles\n(With the exact value of π, the area is 1/4 × 196π = 49π ≈ 153.9 square miles, which rounds to 154.)",
+    "topic": "geometry-circles",
+    "status": "fixed",
+    "check_note": "Prompt now says to use π ≈ 22/7 (the 154 answer depends on it); explanation notes exact value 49π ≈ 153.9."
+  },
+  {
+    "id": "MK-022",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 22,
+    "prompt": "Find the value of (–3)^4 + (–2)^4 + (–1)^4.",
+    "choices": {
+      "A": "98",
+      "B": "–98",
+      "C": "–21",
+      "D": "21"
+    },
+    "correct": "A",
+    "explanation": "Solve by doing each arithmetic operation and combining answers. Remember that the product of two negative or two positive numbers is a positive number. The product of a negative and a positive number is negative.\n(–3)^4 = (–3)(–3)(–3)(–3) = 81\n(–2)^4 = (–2)(–2)(–2)(–2) = 16\n(–1)^4 = (–1)(–1)(–1)(–1) = 1\n81 + 16 + 1 = 98",
+    "topic": "exponents-roots",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-023",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 23,
+    "prompt": "A cylindrical can has a radius of 7 inches and a height of 15 inches. How many gallons of milk can it hold? (There are 231 cubic inches in a gallon.) (Use π ≈ 22/7.)",
+    "choices": {
+      "A": "15 gallons",
+      "B": "14 gallons",
+      "C": "140 gallons",
+      "D": "10 gallons"
+    },
+    "correct": "D",
+    "explanation": "To find the volume (V) of a cylinder, multiply π times the square of the radius (r) times the height (h).\nV = π × r^2 × h\nV ≈ (22/7) × 7 × 7 × 15\nV = 154 × 15\nV = 2,310 cubic inches (volume)\nTo find the number of gallons this cylinder will hold, divide its volume by 231.\n2,310 ÷ 231 = 10 gallons",
+    "topic": "geometry-volume",
+    "status": "fixed",
+    "check_note": "Prompt now says to use π ≈ 22/7, which the explanation relies on to get exactly 2,310 cubic inches."
+  },
+  {
+    "id": "MK-024",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 24,
+    "prompt": "A 10-foot-high ladder is resting against an 8-foot-high wall surrounding a tennis court. If the top of the ladder is exactly even with the top of the wall, how far is the base of the ladder from the wall?",
+    "choices": {
+      "A": "18 feet",
+      "B": "6 feet",
+      "C": "12 feet",
+      "D": "9 feet"
+    },
+    "correct": "B",
+    "explanation": "The wall, the ladder, and the ground in the tennis court form a right triangle. The ladder is on a slant, and is opposite the right angle formed by the wall and the ground. In this position, the ladder is the “hypotenuse” of the right triangle. In geometry, the Pythagorean Theorem states that the square of the hypotenuse (c^2) equals the sum of the squares of the other two sides (a^2 + b^2).\nThus, a^2 + b^2 = c^2\n8^2 + x^2 = 10^2\nSolve by doing the arithmetic operations, and by clearing one side of the equation for x^2.\n64 + x^2 = 100\nx^2 = 100 – 64\nx^2 = 36\nThen find the square root of x^2 and of 36.\nx = 6\nThe base of the ladder is 6 feet from the wall.",
+    "topic": "geometry-angles-lines",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-025",
+    "section": "MK",
+    "source": "Diagnostic",
+    "n": 25,
+    "prompt": "Ten ounces of liquid contain 20 percent fruit juice and 80 percent water. The mixture is diluted by adding 40 additional ounces of water. What is the percentage of fruit juice in the new solution?",
+    "choices": {
+      "A": "4%",
+      "B": "10%",
+      "C": "20%",
+      "D": "40%"
+    },
+    "correct": "A",
+    "explanation": "First find how many ounces of the original mixture were fruit juice.\n10 × 20% = 10 × .2 = 2 ounces\nNext find the total number of ounces in the new mixture.\n10 + 40 = 50 ounces\nThen find what part of the new mixture is fruit juice, and convert it to a percentage.\n2/50 = 4/100 = 4%",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-026",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 1,
+    "prompt": "If a – 4 = 8, then a is equal to",
+    "choices": {
+      "A": "12",
+      "B": "4",
+      "C": "22",
+      "D": "13"
+    },
+    "correct": "A",
+    "explanation": "This equation means “some number, when decreased by 4, is equal to 8.”\na – 4 = 8\nTo arrive at a true statement for a, we want to eliminate the –4 on the left side of the equation. We do this by adding 4. (This is, essentially, undoing the subtraction.) We then add 4 to the other side so that the statement remains an equation—i.e., the two sides remain equal, even when they are restated.\n(a – 4) + 4 = 8 + 4\nBy simplifying both sides, we isolate a and thus find the solution.\na = 12",
+    "topic": "algebra-linear",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-027",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 2,
+    "prompt": "If x > y and y > z, which of the following statements is true?",
+    "choices": {
+      "A": "x = z",
+      "B": "x < z",
+      "C": "x > z",
+      "D": "y + z = x"
+    },
+    "correct": "C",
+    "explanation": "This is practically right out of the math textbook. The Transitive Property of Inequality—a postulate or assumption we use as a basis for how math works—says that if a > b and b > c, then a > c.",
+    "topic": "inequalities",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-028",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 3,
+    "prompt": "The town of Yeehaw has a public pool in the shape of a hexagon. If the town parks manager wants to put a lifeguard on each side of the pool, how many lifeguards will he need to hire?",
+    "choices": {
+      "A": "four",
+      "B": "five",
+      "C": "six",
+      "D": "eight"
+    },
+    "correct": "C",
+    "explanation": "Since a hexagon is a six-sided figure, the town will need six lifeguards.",
+    "topic": "geometry-angles-lines",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-029",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 4,
+    "prompt": "The paint that Amanda is using to paint Maddalyn’s room comes in two sizes, small (16 ounces) and large (one gallon/64 ounces). The only size paint can left at the hardware store is the small size. If she used up an entire large can painting 3/4 of Maddalyn’s room, how many small cans does she need to buy to finish painting?",
+    "choices": {
+      "A": "one",
+      "B": "two",
+      "C": "three",
+      "D": "four"
+    },
+    "correct": "B",
+    "explanation": "The large can holds 64 ounces, which is the same as 4 small (16-ounce) cans. That much paint covered 3/4 of the room.\nSo 4 small cans = 3/4 of the room.\nThe part still to paint is 1 – 3/4 = 1/4 of the room, which is one-third of the 3/4 already painted. Divide the paint by 3:\n4 ÷ 3 = 4/3 = 1 1/3 small cans for the last 1/4 of the room.\nAmanda can't buy part of a can, so she must buy 2 small cans.",
+    "topic": "fractions-decimals",
+    "status": "fixed",
+    "check_note": "Rewrote explanation: book went from \"4x = (3/4)y\" to \"(4/3)x = y\", which is wrong (dividing by 3 gives (4/3)x = (1/4)y) and confusing; now a direct 4 cans per 3/4 room -> 1 1/3 cans -> buy 2."
+  },
+  {
+    "id": "MK-030",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 5,
+    "prompt": "Solve the following equation for x: 4x + 2 = –14.",
+    "choices": {
+      "A": "x = –6",
+      "B": "x = –4",
+      "C": "x = 4",
+      "D": "x = –12"
+    },
+    "correct": "B",
+    "explanation": "First, subtract 2 from each side of the equation in order to eliminate the “+2” from the left side. This will get you closer to finding what x is.\n4x + 2 – 2 = –14 – 2\n4x = –16\nNow divide each side by 4 to find x. (You are undoing the multiplication.)\n4x/4 = –16/4\nx = –4",
+    "topic": "algebra-linear",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-031",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 6,
+    "prompt": "A writer has gotten five of his short stories published so far. These five stories are 20 percent of all the stories he has written. How many total stories has he written?",
+    "choices": {
+      "A": "15",
+      "B": "22",
+      "C": "25",
+      "D": "40"
+    },
+    "correct": "C",
+    "explanation": "The five stories that the writer has gotten published are 20 percent of the total stories that he’s written. The total stories that he’s written—the number we’re looking for—is 100 percent, so first we need to figure out what it will take to get from 20 to 100. To do that, divide 100 by 20:\n100/20 = 5\nSo we can see that doing the opposite of this operation—multiplying 20 times 5—will give us the 100 percent we are seeking.\nNow, multiply the writer’s five published stories (20 percent) likewise by 5 to see what that 100 percent consists of:\n5 × 5 = 25\nThe total number of stories that the writer has completed is 25.",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-032",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 7,
+    "prompt": "One of the equal angles of an isosceles triangle is 50 degrees. What is the angle opposite the unequal side?",
+    "choices": {
+      "A": "50 degrees",
+      "B": "80 degrees",
+      "C": "130 degrees",
+      "D": "140 degrees"
+    },
+    "correct": "B",
+    "explanation": "In an isosceles triangle, two of the sides are equal, which means that the angles opposite them are equal, too. If one is 50 degrees, then so is the other one. To find the angle opposite the unequal side, begin by adding the equal angles.\n50 + 50 = 100 degrees\nTo find the third angle, subtract this amount from 180 (the total number of degrees in the angles of any triangle):\n180 – 100 = 80 degrees (third angle)",
+    "topic": "geometry-angles-lines",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-033",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 8,
+    "prompt": "40 percent of 20 is 20 percent of what number?",
+    "choices": {
+      "A": "10",
+      "B": "20",
+      "C": "40",
+      "D": "80"
+    },
+    "correct": "C",
+    "explanation": "You could transform the word problem into a mathematical equation like this:\n0.40 × 20 = 0.20x\n(0.40 × 20)/0.20 = x\n40 = x\nHowever, you don’t have to go through all that work if you pay attention to the numerical relationships in the problem: a certain percentage of a number will be half that percentage of twice that number.",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-034",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 9,
+    "prompt": "Which of the following is a cone?",
+    "choices": {
+      "A": "The Great Pyramid of Cheops",
+      "B": "The Washington Monument",
+      "C": "a dunce cap",
+      "D": "an entire pencil"
+    },
+    "correct": "C",
+    "explanation": "A cone is a solid (i.e., three-dimensional) object that has a circular base and one vertex. A dunce cap, once used to make fun of someone because they didn’t know the answer to a school question, here serves as the answer itself. You might consider the writing end of a pencil as a cone, but here it specifies the entire pencil.",
+    "topic": "geometry-volume",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-035",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 10,
+    "prompt": "10 percent of 25 percent of 750 is",
+    "choices": {
+      "A": "3.00",
+      "B": "18.75",
+      "C": "187.5",
+      "D": "300.0"
+    },
+    "correct": "B",
+    "explanation": "First, find 25 percent of 750 by multiplying 0.25 × 750 = 187.50. Next, multiply 0.1 by 187.50, which equals 18.75.",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-036",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 11,
+    "prompt": "An equilateral triangle has the same perimeter as a square whose sides each measure 15 inches. What is the length of one side of the triangle?",
+    "choices": {
+      "A": "9 inches",
+      "B": "12 inches",
+      "C": "20 inches",
+      "D": "30 inches"
+    },
+    "correct": "C",
+    "explanation": "The perimeter of a square is four times the length of an individual side. Therefore, the perimeter of this square is 4 × 15 inches or 60 inches. The equilateral triangle has the same perimeter as the square. Since the three sides of an equilateral triangle are equal, divide by 3 to find the length of one side of the triangle.\n60 inches ÷ 3 = 20 inches",
+    "topic": "geometry-area-perimeter",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-037",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 12,
+    "prompt": "Which of the following is not a prime number?",
+    "choices": {
+      "A": "3",
+      "B": "17",
+      "C": "37",
+      "D": "39"
+    },
+    "correct": "D",
+    "explanation": "A prime number is one which can only be divided by itself and 1. The number 39 can be divided by both 3 and 13, as well as 1 and itself.",
+    "topic": "number-properties",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-038",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 13,
+    "prompt": "A round armored vehicle hatch is 18 inches in diameter. It has connected to it a circular hatch cover that measures 20 inches across at the middle. How much greater is the area of the hatch cover than the area of the hatch?",
+    "choices": {
+      "A": "19π square inches",
+      "B": "20π square inches",
+      "C": "40π square inches",
+      "D": "100π square inches"
+    },
+    "correct": "A",
+    "explanation": "First, find the area of the hatch cover. Since its diameter is 20 inches, its radius is 10 inches and therefore its area is π(10)^2 = 100π square inches. The diameter of the hatch itself (i.e., the hole) is 18 inches, so its radius is 9 inches and its area is π(9)^2 = 81π square inches. Therefore, the area of the hatch cover is 100π – 81π = 19π square inches larger than that of the hatch itself.",
+    "topic": "geometry-circles",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-039",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 14,
+    "prompt": "If the area of a triangle is 45 square inches and its base is 9 inches, what is the length of the altitude to that base?",
+    "choices": {
+      "A": "5 inches",
+      "B": "10 inches",
+      "C": "18 inches",
+      "D": "22.5 inches"
+    },
+    "correct": "B",
+    "explanation": "The altitude to the base of the triangle is just another way of saying the height of a triangle. The formula to find the area of a triangle is 1/2 bh, or one-half the triangle’s base multiplied by its height. So, if the triangle’s area is 45 square inches and its base is 9 inches, we can find the height like this:\n45 = (1/2)(9)h\n45/9 = (1/2)h\n5 inches = (1/2)h\n2(5) = 2((1/2)h)\n10 inches = h",
+    "topic": "geometry-area-perimeter",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-040",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 15,
+    "prompt": "What is the value of (3)(–7)(2)(–4)?",
+    "choices": {
+      "A": "16",
+      "B": "–46",
+      "C": "–84",
+      "D": "168"
+    },
+    "correct": "D",
+    "explanation": "To find the product of more than two numbers, work with only two numbers at a time. If both of these numbers are positive, their product is positive. If both numbers are negative, their product is positive, but if only one is negative, the product is negative.\n(3)(–7)(2)(–4)\n= (–21)(2)(–4)\n= (–42)(–4)\n= 168",
+    "topic": "number-properties",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-041",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 16,
+    "prompt": "If x = –7, then 2x^2 – 3x + 10 =",
+    "choices": {
+      "A": "3",
+      "B": "–67",
+      "C": "106",
+      "D": "129"
+    },
+    "correct": "D",
+    "explanation": "Since we are given the value of x, all that’s necessary is to “plug and chug” (but watch your order of operations and positive and negative signs!):\n2x^2 – 3x + 10\n= 2(–7)^2 – 3(–7) + 10\n= 2(–7)(–7) – 3(–7) + 10\n= 2(49) – 3(–7) + 10\n= 98 + 21 + 10\n= 129",
+    "topic": "order-of-operations",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-042",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 17,
+    "prompt": "(x^3)^4 =",
+    "choices": {
+      "A": "x^7",
+      "B": "x^12",
+      "C": "x^1",
+      "D": "x^–1"
+    },
+    "correct": "B",
+    "explanation": "Exponents that are combined in this way should be multiplied. (x^3)^4 = x^(3 × 4) = x^12.",
+    "topic": "exponents-roots",
+    "status": "fixed",
+    "check_note": "Added the worked step (x^3)^4 = x^(3×4) = x^12; book gave only the rule."
+  },
+  {
+    "id": "MK-043",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 18,
+    "prompt": "What is the reciprocal of 7/4?",
+    "choices": {
+      "A": "4/7",
+      "B": "1 3/4",
+      "C": "4 1/7",
+      "D": "28"
+    },
+    "correct": "A",
+    "explanation": "The reciprocal of a fraction is obtained by transposing the numerator and the denominator, i.e., by inverting the fraction.",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-044",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 19,
+    "prompt": "What is the fraction 12/18 when it is changed to a percentage?",
+    "choices": {
+      "A": "60.67%",
+      "B": "66.67%",
+      "C": "75.00%",
+      "D": "80.00%"
+    },
+    "correct": "B",
+    "explanation": "With a fraction that has double-digit numerators and denominators, the first thing to do is try to simplify the fraction to make it easier to work with. In this case, we can quickly see that both 12 and 18 are divisible by 2, 3, and 6. If we divide both by the largest number by which they are divisible, we’ll get the simplest form of the fraction—so dividing both by 6 gives us the simplest form of the fraction, 2/3. Now, to make it a percentage, multiply the numerator only by 100 and then do the division implied by the fraction—in other words, divide 200 by 3. The result we get is a repeating decimal, 66.666... (the 6s repeat forever) or, to round off, 66.67 percent.",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-045",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 20,
+    "prompt": "What is the value of (–15)^2?",
+    "choices": {
+      "A": "–30",
+      "B": "–225",
+      "C": "225",
+      "D": "2,250"
+    },
+    "correct": "C",
+    "explanation": "This is very simple, but you still have to pay attention or the sign will trip you up. Square (multiply by itself) –15 and you are calculating –15 × –15 = 225. The simple (but sometimes overlooked) thing here is to remember that a negative number multiplied by another negative number is a positive number.",
+    "topic": "exponents-roots",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-046",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 21,
+    "prompt": "What is the perimeter of a square whose sides are each 5 centimeters long?",
+    "choices": {
+      "A": "10 centimeters",
+      "B": "20 inches",
+      "C": "25 centimeters",
+      "D": "20 centimeters"
+    },
+    "correct": "D",
+    "explanation": "The formula for the perimeter of a square is 4l, where l is the length of one side: 4 × 5 = 20. The thing to watch out for here is the unit of measurement, which is in centimeters.",
+    "topic": "geometry-area-perimeter",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-047",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 22,
+    "prompt": "In right triangle ABC, the right angle is at B. Side AB is 3 inches and side BC is 4 inches. What is the length of side AC?",
+    "choices": {
+      "A": "4 inches",
+      "B": "5 inches",
+      "C": "6 inches",
+      "D": "7 inches"
+    },
+    "correct": "B",
+    "explanation": "Solve this problem using the Pythagorean Theorem, which states that, for a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. Here, we have the length of sides AB (3 in) and BC (4 in). Squaring them gives us 9 and 16, respectively, and adding those together gives us 25, the square root of which is 5.",
+    "topic": "geometry-angles-lines",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-048",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 23,
+    "prompt": "Factor the expression a^2 – 81.",
+    "choices": {
+      "A": "(a + 9)(a + 9)",
+      "B": "(a – 9)(a – 9)",
+      "C": "(a + 9)(a – 9)",
+      "D": "2a(81)"
+    },
+    "correct": "C",
+    "explanation": "There are three big things you need to pay attention to in doing this problem. First, a multiplied by a equals a^2. Next, notice that you have an easily found square root of 81: 9. And last, notice that there is a minus or negative sign in the expression—this means that the term in one factor will be a plus sign and the other a minus sign. Taking all these into account gives you the factors (a + 9)(a – 9).",
+    "topic": "algebra-polynomials-factoring",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-049",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 24,
+    "prompt": "Round off 3,191.785 to the nearest hundredth.",
+    "choices": {
+      "A": "3,200",
+      "B": "3,191.8",
+      "C": "3,191.79",
+      "D": "3,191.78"
+    },
+    "correct": "C",
+    "explanation": "The “nearest hundredth” means having two digits to the right of the decimal point. Since the thousandths number is 5, the rule is that we round up, so the correct answer is 3,191.79.",
+    "topic": "fractions-decimals",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "MK-050",
+    "section": "MK",
+    "source": "Practice Exam One",
+    "n": 25,
+    "prompt": "Solve the following inequality.\nx + 3 > 5",
+    "choices": {
+      "A": "x = 2",
+      "B": "x > 2",
+      "C": "x – 5 > 3",
+      "D": "x – 3 > 8"
+    },
+    "correct": "B",
+    "explanation": "The expression (x + 3 > 5) is a statement of inequality, meaning that x plus 3 is greater than 5, not equal to it. To solve this inequality, subtract 3 from both sides of the statement.\nx + 3 > 5\nx + 3 – 3 > 5 – 3\nx > 2\nTherefore, the statement of inequality is true for any value of x that is greater than 2. Try it with 4, for example.\n4 + 3 > 5\n7 > 5, a true statement",
+    "topic": "inequalities",
+    "status": "ok",
+    "check_note": ""
+  }
+]

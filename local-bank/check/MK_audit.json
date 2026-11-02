@@ -1,0 +1,902 @@
+[
+ {
+  "id": "MK-001",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Minor: explanation rules out 201 and 205 but never mentions 214 (even). MK-085 covers it.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-002",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-003",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-004",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-005",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-006",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-007",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-008",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-009",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-010",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Minor: comparing squares is a heuristic; rigorous check is 9.25^2 = 85.5625 > 85, so rounds to 9.2. Answer correct.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-011",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-012",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-013",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-014",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-015",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-016",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-017",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-018",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-019",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-020",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-021",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-022",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-023",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-024",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-025",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-026",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-027",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-028",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-029",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-030",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-031",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-032",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-033",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Minor wording: closing shortcut sentence is garbled (p% of n equals (p/2)% of 2n). Math correct.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-034",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-035",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-036",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-037",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-038",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-039",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-040",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-041",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-042",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-043",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-044",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-045",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-046",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-047",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-048",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-049",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-050",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-051",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-052",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-053",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-054",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-055",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-056",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-057",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-058",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-059",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-060",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-061",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-062",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-063",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-064",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-065",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-066",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-067",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-068",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-069",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-070",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Minor missing step: does not say why 360 is the maximum (108 must be at least 30% of total, so total <= 108/0.3 = 360).",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-071",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-072",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-073",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-074",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-075",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-076",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-077",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Minor: silently treats 40 km as the horizontal radius and ignores the 4,000 m height (distractor); could say so.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-078",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-079",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-080",
+  "blind_answer": "A",
+  "key": "C",
+  "agree": false,
+  "explanation_ok": false,
+  "issue": "No correct choice. Side = 40/4 = 10 yd, area = 100 sq yd = 900 sq ft. Key C (300 sq ft) is wrong (uses 3 sq ft per sq yd), and the explanation itself says none of the choices match, so it contradicts the keyed answer. Fix the choices: e.g. change A to \"100 square yards\" (or C to \"900 square feet\") and rekey.",
+  "suggested_explanation": "The perimeter of a square is 4 times one side, so each side is 40 / 4 = 10 yards. The area of a square is s^2 = 10 yd x 10 yd = 100 square yards. (In square feet: 1 square yard = 3 ft x 3 ft = 9 square feet, so 100 x 9 = 900 square feet. A common mistake is to multiply by 3 instead of 9, which gives 300.) The area is 100 square yards. [Requires a choice reading 100 square yards (or 900 square feet) to be added and keyed.]"
+ },
+ {
+  "id": "MK-081",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-082",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-083",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-084",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-085",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-086",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-087",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-088",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-089",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-090",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-091",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "Minor wording: \"last factor\" should be \"last term\"; middle term is -11 not 11; \"both factors are either positive or negative\" means same sign. Math correct.",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-092",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-093",
+  "blind_answer": "C",
+  "key": "C",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-094",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-095",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-096",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-097",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-098",
+  "blind_answer": "D",
+  "key": "D",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-099",
+  "blind_answer": "B",
+  "key": "B",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ },
+ {
+  "id": "MK-100",
+  "blind_answer": "A",
+  "key": "A",
+  "agree": true,
+  "explanation_ok": true,
+  "issue": "",
+  "suggested_explanation": ""
+ }
+]

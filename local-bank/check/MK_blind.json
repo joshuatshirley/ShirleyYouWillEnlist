@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "MK-001",
+  "prompt": "Which of the following is the smallest prime number greater than 200?",
+  "choices": {
+   "A": "201",
+   "B": "205",
+   "C": "211",
+   "D": "214"
+  }
+ },
+ {
+  "id": "MK-002",
+  "prompt": "If 40 percent is equal to the fraction x/30, what is the value of x?",
+  "choices": {
+   "A": "0.4",
+   "B": "15",
+   "C": "1,200",
+   "D": "12"
+  }
+ },
+ {
+  "id": "MK-003",
+  "prompt": "The expression “5 factorial” equals",
+  "choices": {
+   "A": "125",
+   "B": "120",
+   "C": "25",
+   "D": "10"
+  }
+ },
+ {
+  "id": "MK-004",
+  "prompt": "What is the result of subtracting 3x^2 – 5x – 1 from 8x^2 + 2x – 9?",
+  "choices": {
+   "A": "5x^2 – 3x – 10",
+   "B": "–5x^2 – 3x – 10",
+   "C": "5x^2 + 7x – 8",
+   "D": "–5x^2 – 7x + 8"
+  }
+ },
+ {
+  "id": "MK-005",
+  "prompt": "What is the meaning of the statement –30 < –5?",
+  "choices": {
+   "A": "30 is greater than 5",
+   "B": "30 is less than minus 5",
+   "C": "Negative 30 is less than negative 5",
+   "D": "Negative 30 is greater than negative 5"
+  }
+ },
+ {
+  "id": "MK-006",
+  "prompt": "Solve for x: 8x – 2 – 5x = 8",
+  "choices": {
+   "A": "x = 1.3",
+   "B": "x = 2 1/2",
+   "C": "x = 3 1/3",
+   "D": "x = –7"
+  }
+ },
+ {
+  "id": "MK-007",
+  "prompt": "Maddalyn has $500 in a bank account. Every week, she writes out a check for $50. If she doesn’t make any new deposits, what will her bank account hold x weeks from now?",
+  "choices": {
+   "A": "$500 + $50x",
+   "B": "$500 – $50x",
+   "C": "$550 – x",
+   "D": "$500 + $50 + x"
+  }
+ },
+ {
+  "id": "MK-008",
+  "prompt": "When the temperature is 20°C, what is it on the Fahrenheit (F) scale? Use the following formula:\n°F = ((9/5) × °C) + 32",
+  "choices": {
+   "A": "93 3/5 degrees",
+   "B": "78 degrees",
+   "C": "62 3/5 degrees",
+   "D": "68 degrees"
+  }
+ },
+ {
+  "id": "MK-009",
+  "prompt": "The perimeter of a rectangle is 38 inches. If the length is 3 inches more than the width, find the width.",
+  "choices": {
+   "A": "17 1/2 inches",
+   "B": "8 inches",
+   "C": "11 inches",
+   "D": "14 1/2 inches"
+  }
+ },
+ {
+  "id": "MK-010",
+  "prompt": "Find the square root of 85 to the nearest tenth.",
+  "choices": {
+   "A": "9.1",
+   "B": "9.2",
+   "C": "9.3",
+   "D": "9.4"
+  }
+ },
+ {
+  "id": "MK-011",
+  "prompt": "If 5x = 30, then x is equal to",
+  "choices": {
+   "A": "150",
+   "B": "25",
+   "C": "6",
+   "D": "0.6"
+  }
+ },
+ {
+  "id": "MK-012",
+  "prompt": "What is the product of (a – 5) and (a + 3)?",
+  "choices": {
+   "A": "a^2 – 15",
+   "B": "a^2 + 2a – 15",
+   "C": "a^2 – 2a – 15",
+   "D": "a^2 – 2"
+  }
+ },
+ {
+  "id": "MK-013",
+  "prompt": "Solve for z: 3z – 5 + 2z = 25 – 5z",
+  "choices": {
+   "A": "z = 0",
+   "B": "z = 3",
+   "C": "z = –3",
+   "D": "no solution"
+  }
+ },
+ {
+  "id": "MK-014",
+  "prompt": "A park commissioner designs a new playground in the shape of a pentagon. If he plans to have a fountain at every corner of the park, how many fountains will there be?",
+  "choices": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  }
+ },
+ {
+  "id": "MK-015",
+  "prompt": "If one of the angles of a right triangle is 30 degrees, what are the other two angles?",
+  "choices": {
+   "A": "30 degrees, 120 degrees",
+   "B": "60 degrees, 45 degrees",
+   "C": "60 degrees, 90 degrees",
+   "D": "45 degrees, 90 degrees"
+  }
+ },
+ {
+  "id": "MK-016",
+  "prompt": "What is the value of x in the equation x/2 = 7?",
+  "choices": {
+   "A": "x = 14",
+   "B": "x = 3 1/2",
+   "C": "x = 9",
+   "D": "x = 5"
+  }
+ },
+ {
+  "id": "MK-017",
+  "prompt": "Divide 15a^3b^2c by 5abc.",
+  "choices": {
+   "A": "10abc",
+   "B": "3abc",
+   "C": "5a^2b^2",
+   "D": "3a^2b"
+  }
+ },
+ {
+  "id": "MK-018",
+  "prompt": "Two circles have the same center. If their radii are 7 inches and 10 inches, find the area that is part of the larger circle but not the smaller one.",
+  "choices": {
+   "A": "3 square inches",
+   "B": "17 square inches",
+   "C": "51π square inches",
+   "D": "70π square inches"
+  }
+ },
+ {
+  "id": "MK-019",
+  "prompt": "Amanda’s average grade on a set of five tests was 88 percent. She can remember only that the first four grades were 78 percent, 86 percent, 96 percent, and 94 percent. What was the grade on her fifth test?",
+  "choices": {
+   "A": "88",
+   "B": "86",
+   "C": "84",
+   "D": "82"
+  }
+ },
+ {
+  "id": "MK-020",
+  "prompt": "How many cubic yards of concrete are needed to make a cement floor that is 9 feet by 12 feet by 6 inches thick?",
+  "choices": {
+   "A": "2 cubic yards",
+   "B": "18 cubic yards",
+   "C": "54 cubic yards",
+   "D": "648 cubic yards"
+  }
+ },
+ {
+  "id": "MK-021",
+  "prompt": "A wildlife preserve is laid out in the shape of a perfect circle whose radius is 14 miles. The lions’ territory in this preserve is shaped like a wedge and has a fence around it. Two inner sides of a fence meet at a 90-degree angle in the center of the preserve. How much territory do the lions have? (Use π ≈ 22/7.)",
+  "choices": {
+   "A": "140 square miles",
+   "B": "3 1/2 square miles",
+   "C": "210 square miles",
+   "D": "154 square miles"
+  }
+ },
+ {
+  "id": "MK-022",
+  "prompt": "Find the value of (–3)^4 + (–2)^4 + (–1)^4.",
+  "choices": {
+   "A": "98",
+   "B": "–98",
+   "C": "–21",
+   "D": "21"
+  }
+ },
+ {
+  "id": "MK-023",
+  "prompt": "A cylindrical can has a radius of 7 inches and a height of 15 inches. How many gallons of milk can it hold? (There are 231 cubic inches in a gallon.) (Use π ≈ 22/7.)",
+  "choices": {
+   "A": "15 gallons",
+   "B": "14 gallons",
+   "C": "140 gallons",
+   "D": "10 gallons"
+  }
+ },
+ {
+  "id": "MK-024",
+  "prompt": "A 10-foot-high ladder is resting against an 8-foot-high wall surrounding a tennis court. If the top of the ladder is exactly even with the top of the wall, how far is the base of the ladder from the wall?",
+  "choices": {
+   "A": "18 feet",
+   "B": "6 feet",
+   "C": "12 feet",
+   "D": "9 feet"
+  }
+ },
+ {
+  "id": "MK-025",
+  "prompt": "Ten ounces of liquid contain 20 percent fruit juice and 80 percent water. The mixture is diluted by adding 40 additional ounces of water. What is the percentage of fruit juice in the new solution?",
+  "choices": {
+   "A": "4%",
+   "B": "10%",
+   "C": "20%",
+   "D": "40%"
+  }
+ },
+ {
+  "id": "MK-026",
+  "prompt": "If a – 4 = 8, then a is equal to",
+  "choices": {
+   "A": "12",
+   "B": "4",
+   "C": "22",
+   "D": "13"
+  }
+ },
+ {
+  "id": "MK-027",
+  "prompt": "If x > y and y > z, which of the following statements is true?",
+  "choices": {
+   "A": "x = z",
+   "B": "x < z",
+   "C": "x > z",
+   "D": "y + z = x"
+  }
+ },
+ {
+  "id": "MK-028",
+  "prompt": "The town of Yeehaw has a public pool in the shape of a hexagon. If the town parks manager wants to put a lifeguard on each side of the pool, how many lifeguards will he need to hire?",
+  "choices": {
+   "A": "four",
+   "B": "five",
+   "C": "six",
+   "D": "eight"
+  }
+ },
+ {
+  "id": "MK-029",
+  "prompt": "The paint that Amanda is using to paint Maddalyn’s room comes in two sizes, small (16 ounces) and large (one gallon/64 ounces). The only size paint can left at the hardware store is the small size. If she used up an entire large can painting 3/4 of Maddalyn’s room, how many small cans does she need to buy to finish painting?",
+  "choices": {
+   "A": "one",
+   "B": "two",
+   "C": "three",
+   "D": "four"
+  }
+ },
+ {
+  "id": "MK-030",
+  "prompt": "Solve the following equation for x: 4x + 2 = –14.",
+  "choices": {
+   "A": "x = –6",
+   "B": "x = –4",
+   "C": "x = 4",
+   "D": "x = –12"
+  }
+ },
+ {
+  "id": "MK-031",
+  "prompt": "A writer has gotten five of his short stories published so far. These five stories are 20 percent of all the stories he has written. How many total stories has he written?",
+  "choices": {
+   "A": "15",
+   "B": "22",
+   "C": "25",
+   "D": "40"
+  }
+ },
+ {
+  "id": "MK-032",
+  "prompt": "One of the equal angles of an isosceles triangle is 50 degrees. What is the angle opposite the unequal side?",
+  "choices": {
+   "A": "50 degrees",
+   "B": "80 degrees",
+   "C": "130 degrees",
+   "D": "140 degrees"
+  }
+ },
+ {
+  "id": "MK-033",
+  "prompt": "40 percent of 20 is 20 percent of what number?",
+  "choices": {
+   "A": "10",
+   "B": "20",
+   "C": "40",
+   "D": "80"
+  }
+ },
+ {
+  "id": "MK-034",
+  "prompt": "Which of the following is a cone?",
+  "choices": {
+   "A": "The Great Pyramid of Cheops",
+   "B": "The Washington Monument",
+   "C": "a dunce cap",
+   "D": "an entire pencil"
+  }
+ },
+ {
+  "id": "MK-035",
+  "prompt": "10 percent of 25 percent of 750 is",
+  "choices": {
+   "A": "3.00",
+   "B": "18.75",
+   "C": "187.5",
+   "D": "300.0"
+  }
+ },
+ {
+  "id": "MK-036",
+  "prompt": "An equilateral triangle has the same perimeter as a square whose sides each measure 15 inches. What is the length of one side of the triangle?",
+  "choices": {
+   "A": "9 inches",
+   "B": "12 inches",
+   "C": "20 inches",
+   "D": "30 inches"
+  }
+ },
+ {
+  "id": "MK-037",
+  "prompt": "Which of the following is not a prime number?",
+  "choices": {
+   "A": "3",
+   "B": "17",
+   "C": "37",
+   "D": "39"
+  }
+ },
+ {
+  "id": "MK-038",
+  "prompt": "A round armored vehicle hatch is 18 inches in diameter. It has connected to it a circular hatch cover that measures 20 inches across at the middle. How much greater is the area of the hatch cover than the area of the hatch?",
+  "choices": {
+   "A": "19π square inches",
+   "B": "20π square inches",
+   "C": "40π square inches",
+   "D": "100π square inches"
+  }
+ },
+ {
+  "id": "MK-039",
+  "prompt": "If the area of a triangle is 45 square inches and its base is 9 inches, what is the length of the altitude to that base?",
+  "choices": {
+   "A": "5 inches",
+   "B": "10 inches",
+   "C": "18 inches",
+   "D": "22.5 inches"
+  }
+ },
+ {
+  "id": "MK-040",
+  "prompt": "What is the value of (3)(–7)(2)(–4)?",
+  "choices": {
+   "A": "16",
+   "B": "–46",
+   "C": "–84",
+   "D": "168"
+  }
+ },
+ {
+  "id": "MK-041",
+  "prompt": "If x = –7, then 2x^2 – 3x + 10 =",
+  "choices": {
+   "A": "3",
+   "B": "–67",
+   "C": "106",
+   "D": "129"
+  }
+ },
+ {
+  "id": "MK-042",
+  "prompt": "(x^3)^4 =",
+  "choices": {
+   "A": "x^7",
+   "B": "x^12",
+   "C": "x^1",
+   "D": "x^–1"
+  }
+ },
+ {
+  "id": "MK-043",
+  "prompt": "What is the reciprocal of 7/4?",
+  "choices": {
+   "A": "4/7",
+   "B": "1 3/4",
+   "C": "4 1/7",
+   "D": "28"
+  }
+ },
+ {
+  "id": "MK-044",
+  "prompt": "What is the fraction 12/18 when it is changed to a percentage?",
+  "choices": {
+   "A": "60.67%",
+   "B": "66.67%",
+   "C": "75.00%",
+   "D": "80.00%"
+  }
+ },
+ {
+  "id": "MK-045",
+  "prompt": "What is the value of (–15)^2?",
+  "choices": {
+   "A": "–30",
+   "B": "–225",
+   "C": "225",
+   "D": "2,250"
+  }
+ },
+ {
+  "id": "MK-046",
+  "prompt": "What is the perimeter of a square whose sides are each 5 centimeters long?",
+  "choices": {
+   "A": "10 centimeters",
+   "B": "20 inches",
+   "C": "25 centimeters",
+   "D": "20 centimeters"
+  }
+ },
+ {
+  "id": "MK-047",
+  "prompt": "In right triangle ABC, the right angle is at B. Side AB is 3 inches and side BC is 4 inches. What is the length of side AC?",
+  "choices": {
+   "A": "4 inches",
+   "B": "5 inches",
+   "C": "6 inches",
+   "D": "7 inches"
+  }
+ },
+ {
+  "id": "MK-048",
+  "prompt": "Factor the expression a^2 – 81.",
+  "choices": {
+   "A": "(a + 9)(a + 9)",
+   "B": "(a – 9)(a – 9)",
+   "C": "(a + 9)(a – 9)",
+   "D": "2a(81)"
+  }
+ },
+ {
+  "id": "MK-049",
+  "prompt": "Round off 3,191.785 to the nearest hundredth.",
+  "choices": {
+   "A": "3,200",
+   "B": "3,191.8",
+   "C": "3,191.79",
+   "D": "3,191.78"
+  }
+ },
+ {
+  "id": "MK-050",
+  "prompt": "Solve the following inequality.\nx + 3 > 5",
+  "choices": {
+   "A": "x = 2",
+   "B": "x > 2",
+   "C": "x – 5 > 3",
+   "D": "x – 3 > 8"
+  }
+ },
+ {
+  "id": "MK-051",
+  "prompt": "Solve for x : 2x + 6 = 12 − x.",
+  "choices": {
+   "A": "6",
+   "B": "9",
+   "C": "2",
+   "D": "3"
+  }
+ },
+ {
+  "id": "MK-052",
+  "prompt": "From 8x^2 − 7x subtract 2x − 3x^2.",
+  "choices": {
+   "A": "11x^2 − 9x",
+   "B": "5x^2 − 5x",
+   "C": "6x^2 − 4x",
+   "D": "10x^2 − 10x"
+  }
+ },
+ {
+  "id": "MK-053",
+  "prompt": "What is the product of 2x^3y and (3x^2y − 4)?",
+  "choices": {
+   "A": "6x^5y^2 − 4",
+   "B": "6x^5y^2 − 8x^3y",
+   "C": "6x^6y^2 − 8x^3y",
+   "D": "6x^6y − 8x^3y"
+  }
+ },
+ {
+  "id": "MK-054",
+  "prompt": "A worker can do 1/3 of a job by herself in one day, and her helper can do 1/5 of the job by himself in one day. What portion of the job can they do if they work together for one day?",
+  "choices": {
+   "A": "1/4",
+   "B": "8/15",
+   "C": "1/8",
+   "D": "2/15"
+  }
+ },
+ {
+  "id": "MK-055",
+  "prompt": "A length of chain is 5 feet, 3 inches long. If a piece 3 feet, 9 inches in length is cut from the chain, what is the length of the remaining piece?",
+  "choices": {
+   "A": "2 feet, 6 inches",
+   "B": "1 foot, 1 inch",
+   "C": "1 foot, 4 inches",
+   "D": "1 foot, 6 inches"
+  }
+ },
+ {
+  "id": "MK-056",
+  "prompt": "In a regular hexagon, all the angles are equal and one of them is 120 degrees. What is the sum of all the angles of the regular hexagon?",
+  "choices": {
+   "A": "240 degrees",
+   "B": "480 degrees",
+   "C": "720 degrees",
+   "D": "360 degrees"
+  }
+ },
+ {
+  "id": "MK-057",
+  "prompt": "What is the product of (3a − 2) and (a + 3)?",
+  "choices": {
+   "A": "4a + 1",
+   "B": "3a^2 − 6",
+   "C": "3a^2 − 2a − 6",
+   "D": "3a^2 + 7a − 6"
+  }
+ },
+ {
+  "id": "MK-058",
+  "prompt": "If x = 3, what is the value of |x − 7|?",
+  "choices": {
+   "A": "4",
+   "B": "−4",
+   "C": "10",
+   "D": "−10"
+  }
+ },
+ {
+  "id": "MK-059",
+  "prompt": "Solve the following system of equations for x:\n3x + y = 13\nx − 2y = 2",
+  "choices": {
+   "A": "18",
+   "B": "4",
+   "C": "3",
+   "D": "6"
+  }
+ },
+ {
+  "id": "MK-060",
+  "prompt": "How many feet are there in a length of y yards and i inches?",
+  "choices": {
+   "A": "3y + i",
+   "B": "3y + 12i",
+   "C": "(y + 12i)/3",
+   "D": "(36y + i)/12"
+  }
+ },
+ {
+  "id": "MK-061",
+  "prompt": "Solve the following formula for F: C = (5/9)(F − 32).",
+  "choices": {
+   "A": "F = (9/5)C + 32",
+   "B": "F = (5/9)C + 32",
+   "C": "F = (9C + 32)/5",
+   "D": "F = (9/5)C + 288"
+  }
+ },
+ {
+  "id": "MK-062",
+  "prompt": "A woman travels 3 miles directly east and then travels 4 miles directly north. How many miles is she from her starting point?",
+  "choices": {
+   "A": "7 miles",
+   "B": "5 miles",
+   "C": "25 miles",
+   "D": "3 1/2 miles"
+  }
+ },
+ {
+  "id": "MK-063",
+  "prompt": "A line is drawn perpendicular to the base of an equilateral triangle at one of the vertices of the triangle. Find the number of degrees in the angle made by the perpendicular and the other side of the triangle that contains this vertex.",
+  "choices": {
+   "A": "30 degrees",
+   "B": "45 degrees",
+   "C": "60 degrees",
+   "D": "90 degrees"
+  }
+ },
+ {
+  "id": "MK-064",
+  "prompt": "Solve the following inequality: x − 6 ≤ 5",
+  "choices": {
+   "A": "x ≤ 1",
+   "B": "x ≤ 11",
+   "C": "x ≥ 11",
+   "D": "x < 11"
+  }
+ },
+ {
+  "id": "MK-065",
+  "prompt": "A fence that had been installed around a rectangular field 40 feet long and 36 feet wide is torn down. The entire fence is then reused to completely enclose a square field. What is the length in feet of a side of the square field?",
+  "choices": {
+   "A": "76 feet",
+   "B": "19 feet",
+   "C": "42 feet",
+   "D": "38 feet"
+  }
+ },
+ {
+  "id": "MK-066",
+  "prompt": "A cereal manufacturer packages breakfast cereal in individual-sized boxes measuring 2 inches by 3 inches by 4 inches. The same product is also packaged in large family-sized boxes measuring 3 inches by 8 inches by 12 inches. The contents of how many of the individual-sized boxes would be required to fill one family-sized box?",
+  "choices": {
+   "A": "6",
+   "B": "12",
+   "C": "10",
+   "D": "8"
+  }
+ },
+ {
+  "id": "MK-067",
+  "prompt": "A wheel has a diameter of 14 inches. How many inches will the wheel roll along the ground during one rotation? (Use 22/7 as the value of π.)",
+  "choices": {
+   "A": "44 inches",
+   "B": "22 inches",
+   "C": "14 inches",
+   "D": "28 inches"
+  }
+ },
+ {
+  "id": "MK-068",
+  "prompt": "In a right triangle whose hypotenuse has a length of 21 feet, the sine of one of the angles is 3/7. What is the length in feet of the side opposite this angle?",
+  "choices": {
+   "A": "6 feet",
+   "B": "14 feet",
+   "C": "9 feet",
+   "D": "10 feet"
+  }
+ },
+ {
+  "id": "MK-069",
+  "prompt": "Find the value of −x^4 if x = −0.1.",
+  "choices": {
+   "A": "−0.1",
+   "B": "0.0001",
+   "C": "−0.0001",
+   "D": "−0.4"
+  }
+ },
+ {
+  "id": "MK-070",
+  "prompt": "Under the terms of a federal subsidy, a real estate developer is required to rent at least 30 percent of the apartments she builds to low-income families. If she plans on having 108 low-income apartments, what is the maximum number of apartments of all types that she can build?",
+  "choices": {
+   "A": "360",
+   "B": "252",
+   "C": "324",
+   "D": "396"
+  }
+ },
+ {
+  "id": "MK-071",
+  "prompt": "A student has grades of 60 on each of two tests and a grade of 70 on a third test. What grade must he get on a fourth test to raise his average to 75?",
+  "choices": {
+   "A": "95",
+   "B": "85",
+   "C": "100",
+   "D": "He cannot achieve a 75 average."
+  }
+ },
+ {
+  "id": "MK-072",
+  "prompt": "A motorist travels for 3 hours at 40 miles per hour and then travels for 2 more hours at 50 miles per hour. What is her average rate of speed in miles per hour for the entire trip?",
+  "choices": {
+   "A": "45 miles per hour",
+   "B": "44 miles per hour",
+   "C": "43 miles per hour",
+   "D": "90 miles per hour"
+  }
+ },
+ {
+  "id": "MK-073",
+  "prompt": "A radar device is capable of detecting objects within the area around it up to a radius of 10 miles. If it is used to cover a 36 degree angular portion of this area, how many square miles of area will it cover?\n(Use 3.14 as the value of π.)",
+  "choices": {
+   "A": "360 square miles",
+   "B": "6.28 square miles",
+   "C": "31.4 square miles",
+   "D": "3.6 square miles"
+  }
+ },
+ {
+  "id": "MK-074",
+  "prompt": "Solve for x: x^2 + 2x = 15.",
+  "choices": {
+   "A": "x = 3, x = 5",
+   "B": "x = −3, x = 5",
+   "C": "x = −5, x = 3",
+   "D": "x = −15, x = 1"
+  }
+ },
+ {
+  "id": "MK-075",
+  "prompt": "12 quarts of a radiator coolant contains 25 percent antifreeze and 75 percent water. How many quarts of water must be added to change the mixture to one containing 20 percent antifreeze?",
+  "choices": {
+   "A": "1 quart",
+   "B": "2 quarts",
+   "C": "3 quarts",
+   "D": "4 quarts"
+  }
+ },
+ {
+  "id": "MK-076",
+  "prompt": "The expression “4 factorial” or “4!” means",
+  "choices": {
+   "A": "16",
+   "B": "1/24",
+   "C": "256",
+   "D": "24"
+  }
+ },
+ {
+  "id": "MK-077",
+  "prompt": "An F/A-18E Super Hornet is flying a circular or “racetrack” orbit around a 4,000-meter-high mountaintop. Assuming that the pilot flies a perfectly circular course and that it is 40 kilometers from the mountaintop to the outer edge of his racetrack, what is the distance in kilometers he travels during each orbit? (Use π = 22/7.)",
+  "choices": {
+   "A": "13 kilometers",
+   "B": "25 kilometers",
+   "C": "126 kilometers",
+   "D": "251 kilometers"
+  }
+ },
+ {
+  "id": "MK-078",
+  "prompt": "The reciprocal of 7 to the nearest thousandth is",
+  "choices": {
+   "A": "0.143",
+   "B": "1.428",
+   "C": "14",
+   "D": "21"
+  }
+ },
+ {
+  "id": "MK-079",
+  "prompt": "The second digit of the square of 525 is",
+  "choices": {
+   "A": "2",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  }
+ },
+ {
+  "id": "MK-080",
+  "prompt": "The area of a square with an outside perimeter measurement of 40 yards is",
+  "choices": {
+   "A": "100 square feet",
+   "B": "180 square yards",
+   "C": "300 square feet",
+   "D": "300 square yards"
+  }
+ },
+ {
+  "id": "MK-081",
+  "prompt": "Solve the following equations for x.\n5x + 4y = 27\nx − 2y = 11",
+  "choices": {
+   "A": "x = 5/3",
+   "B": "x = 4.5",
+   "C": "x = 9",
+   "D": "x = 7"
+  }
+ },
+ {
+  "id": "MK-082",
+  "prompt": "Find the square root of 85 correct to the nearest tenth.",
+  "choices": {
+   "A": "9.1",
+   "B": "9.2",
+   "C": "9.3",
+   "D": "9.4"
+  }
+ },
+ {
+  "id": "MK-083",
+  "prompt": "Solve for x: 8x − 2 − 5x = 8",
+  "choices": {
+   "A": "x = 1.3",
+   "B": "x = 3 1/3",
+   "C": "x = 2 1/2",
+   "D": "x = 7.0"
+  }
+ },
+ {
+  "id": "MK-084",
+  "prompt": "2(a − b) + 4(a + 3b) =",
+  "choices": {
+   "A": "6a − 10b",
+   "B": "6a + 2b",
+   "C": "8a^2 + 2b^2",
+   "D": "6a + 10b"
+  }
+ },
+ {
+  "id": "MK-085",
+  "prompt": "Which of the following is the smallest prime number greater than 200?",
+  "choices": {
+   "A": "201",
+   "B": "205",
+   "C": "211",
+   "D": "214"
+  }
+ },
+ {
+  "id": "MK-086",
+  "prompt": "If a is a negative number, and ab is a positive number, then which of the following must be true?",
+  "choices": {
+   "A": "b is greater than a.",
+   "B": "a is greater than b.",
+   "C": "b is negative.",
+   "D": "b is positive."
+  }
+ },
+ {
+  "id": "MK-087",
+  "prompt": "What is the product of (a + 2)(a − 5)(a + 3)?",
+  "choices": {
+   "A": "a^3 + 2a^2 + 15a − 30",
+   "B": "a^3 + 6a^2 − 49",
+   "C": "a^3 − 19a − 30",
+   "D": "a^3 + 2a^2 − 15a + 30"
+  }
+ },
+ {
+  "id": "MK-088",
+  "prompt": "Solve for z: 3z − 5 + 2z = 25 − 5z",
+  "choices": {
+   "A": "z = 1",
+   "B": "z = 3",
+   "C": "z = −3",
+   "D": "z = 0"
+  }
+ },
+ {
+  "id": "MK-089",
+  "prompt": "An architect has won a contract to place a memorial sculpture at each of the corners of the Pentagon in Washington, D.C. How many sculptures will there be?",
+  "choices": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "8"
+  }
+ },
+ {
+  "id": "MK-090",
+  "prompt": "If one of the angles of a right triangle is 30 degrees, what are the measurements of the other two angles?",
+  "choices": {
+   "A": "30 degrees, 120 degrees",
+   "B": "60 degrees, 45 degrees",
+   "C": "60 degrees, 90 degrees",
+   "D": "45 degrees, 90 degrees"
+  }
+ },
+ {
+  "id": "MK-091",
+  "prompt": "Factor x^2 − 11x + 30.",
+  "choices": {
+   "A": "(x − 6), (x − 5)",
+   "B": "(x + 6), (x − 5)",
+   "C": "(x − 10), (x − 1)",
+   "D": "(x − 3), (x + 10)"
+  }
+ },
+ {
+  "id": "MK-092",
+  "prompt": "Simplify: (15a^3b^2c)/(5abc)",
+  "choices": {
+   "A": "10abc",
+   "B": "3abc",
+   "C": "5a^2b^2",
+   "D": "3a^2b"
+  }
+ },
+ {
+  "id": "MK-093",
+  "prompt": "Two circles have the same center. If their radii are 7 centimeters and 10 centimeters, find the area that is part of the larger circle but not part of the smaller one.",
+  "choices": {
+   "A": "3 square centimeters",
+   "B": "17 square centimeters",
+   "C": "51π square centimeters",
+   "D": "71π square centimeters"
+  }
+ },
+ {
+  "id": "MK-094",
+  "prompt": "Amanda took five midterm tests for five different college classes; her average for all five tests was 88. That night at home, she could remember only her first four scores: 78, 86, 94, and 96. What was her score on the fifth test?",
+  "choices": {
+   "A": "82",
+   "B": "86",
+   "C": "84",
+   "D": "88"
+  }
+ },
+ {
+  "id": "MK-095",
+  "prompt": "How many cubic yards of concrete are needed to make a cement floor that measures 9′ × 12′ × 6″?",
+  "choices": {
+   "A": "2 cubic yards",
+   "B": "18 cubic yards",
+   "C": "54 cubic yards",
+   "D": "210 cubic yards"
+  }
+ },
+ {
+  "id": "MK-096",
+  "prompt": "A new wildlife preserve is laid out in a perfect circle with a radius of 14 kilometers. The lion habitat is shaped like a wedge and has an 8-foot-high razor wire fence around it. Two inner sides of the fence are radii that meet at a 90-degree angle at the center of the circle. How much ground space (area) does the lion habitat have? (Use π = 22/7.)",
+  "choices": {
+   "A": "140 square kilometers",
+   "B": "3.5 square kilometers",
+   "C": "210 square kilometers",
+   "D": "154 square kilometers"
+  }
+ },
+ {
+  "id": "MK-097",
+  "prompt": "Factor 6x^2 + 3xy.",
+  "choices": {
+   "A": "2x (3x − y)",
+   "B": "x^2 + 3y",
+   "C": "x + 3y",
+   "D": "3x (2x + y)"
+  }
+ },
+ {
+  "id": "MK-098",
+  "prompt": "A cylindrical container has a radius of 7″ and a height of 15″. How many gallons of hydraulic fluid can it hold? (There are 231 cubic inches in a gallon. Use π = 22/7.)",
+  "choices": {
+   "A": "15 gallons",
+   "B": "14 gallons",
+   "C": "140 gallons",
+   "D": "10 gallons"
+  }
+ },
+ {
+  "id": "MK-099",
+  "prompt": "A 10-foot-high ladder is resting against an 8-foot-high wall around a recreation area. If the top of the ladder is exactly even with the top of the wall, how far is the base of the ladder from the wall?",
+  "choices": {
+   "A": "18 feet",
+   "B": "6 feet",
+   "C": "12 feet",
+   "D": "9 feet"
+  }
+ },
+ {
+  "id": "MK-100",
+  "prompt": "A cook is mixing fruit juice from concentrate for a catered event. Ten ounces of liquid contain 20 percent fruit juice and 80 percent water. He then further dilutes the mixture by adding 40 additional ounces of water. What is the percent of fruit juice in the new solution?",
+  "choices": {
+   "A": "4%",
+   "B": "10%",
+   "C": "14%",
+   "D": "18%"
+  }
+ }
+]

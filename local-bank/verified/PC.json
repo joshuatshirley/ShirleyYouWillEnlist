@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "PC-001",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 1,
+    "prompt": "Twenty-five percent of all household burglaries can be attributed to unlocked windows or doors. Crime is the result of opportunity plus desire.\n\nTo prevent crime, it is each individual’s responsibility to",
+    "choices": {
+      "A": "provide the opportunity",
+      "B": "provide the desire",
+      "C": "prevent the opportunity",
+      "D": "prevent the desire"
+    },
+    "correct": "C",
+    "explanation": "The passage says crime is the result of opportunity plus desire, and that unlocked windows or doors (an opportunity) account for a quarter of burglaries. What an individual can control is the opportunity, so each person should prevent it; preventing the desire (D) is not something the passage puts on the individual.",
+    "topic": "inference",
+    "status": "fixed",
+    "check_note": "Explanation only restated the answer; rewrote to cite the opportunity-plus-desire sentence."
+  },
+  {
+    "id": "PC-002",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 2,
+    "prompt": "From a building designer’s standpoint, three things that make a home livable are the client, the building site, and the amount of money the client has to spend.\n\nAccording to the passage, to make a home livable",
+    "choices": {
+      "A": "the prospective piece of land makes little difference",
+      "B": "it can be built on any piece of land",
+      "C": "the design must fit the owner’s income and the site",
+      "D": "the design must fit the designer’s income"
+    },
+    "correct": "C",
+    "explanation": "The passage names three things that make a home livable: the client, the building site, and the amount of money the client has to spend. So the design must fit both the owner's budget and the site. A and B fail because the site is one of the three factors, and D wrongly makes it the designer's income.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Explanation only restated the answer; rewrote to cite the three-factor sentence."
+  },
+  {
+    "id": "PC-003",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 3,
+    "prompt": "Family camping has been described as the “biggest single growth industry in the booming travel/leisure market.” Camping ranges from backpacking to living in motor homes with complete creature comforts. It is both an end in itself and a magic carpet to a wide variety of other forms of outdoor recreation.\n\nIt can be inferred from the passage that the LEAST luxurious form of camping is",
+    "choices": {
+      "A": "backpacking",
+      "B": "travel trailers",
+      "C": "truck campers",
+      "D": "motor homes"
+    },
+    "correct": "A",
+    "explanation": "The selection describes a range of camping styles, from backpacking to motor homes with complete creature comforts, so backpacking can be inferred to be the least luxurious.",
+    "topic": "inference",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-004",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 4,
+    "prompt": "Most drivers try to drive safely. A major part of safe driving is driving at the right speed. But what is the “right” speed? Is it 20 miles per hour, or 35, or 60? That question may be hard to answer. On some city streets and in heavy traffic, 20 miles per hour could be too fast, even if it’s within the posted speed limit. On a superhighway, 35 miles per hour could be too slow. Of course, a good driver must follow the speed limit, but he must also use good judgment. The right speed will vary depending on the number of cars, the road surface and its condition, and the driver’s visibility.\n\nThe general theme of this passage is that a good driver",
+    "choices": {
+      "A": "drives at 35 miles an hour",
+      "B": "adjusts to different driving conditions",
+      "C": "always drives at the same speed",
+      "D": "always follows the speed limit"
+    },
+    "correct": "B",
+    "explanation": "According to the selection, the right speed varies depending on the number of cars, the road surface, and the visibility, so a driver should adjust to different driving conditions.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-005",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 5,
+    "prompt": "Gardening can be an easygoing hobby, a scientific pursuit, an opportunity for exercise and fresh air, a significant source of food to help balance the family budget, a means of expression in art and beauty, an applied experiment in green plant growth, or all of these things together.\n\nAll of the following are made possible by gardening according to the passage EXCEPT",
+    "choices": {
+      "A": "relaxation",
+      "B": "exercise",
+      "C": "experimentation",
+      "D": "hard work"
+    },
+    "correct": "D",
+    "explanation": "Hard work is the only term in the list not mentioned in the passage.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-006",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 6,
+    "prompt": "About three-fourths of the surface of the earth is water. Of the 336 million cubic miles of water, most (97.2 percent) is found in the oceans and is salty. Glaciers hold another 2 percent of the total. Less than 1 percent (0.8 percent) is available as freshwater for people to use—and much of that is not near people who need it.\n\nThe amount of freshwater available for people to use is",
+    "choices": {
+      "A": "97.2%",
+      "B": "0.8%",
+      "C": "2%",
+      "D": "75%"
+    },
+    "correct": "B",
+    "explanation": "The selection states that less than 1 percent (0.8 percent) is available as freshwater for people to use.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-007",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 7,
+    "prompt": "Early settlers in the United States made the most of the herring fishing season. When spring came, the fish arrived in great numbers in the rivers. No nets or hooks were needed. Men used what was called a pinfold, a large circular pen built in shallow water. It was made by driving stakes closely together in the floor of the river.\n\nA pinfold was made with",
+    "choices": {
+      "A": "hooks and nets",
+      "B": "only nets",
+      "C": "stakes driven into the river bottom",
+      "D": "fishing rods"
+    },
+    "correct": "C",
+    "explanation": "A pinfold is described in the passage as a large circular pen made by driving stakes close together in the floor of the river.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-008",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 8,
+    "prompt": "The powers of the United States government are divided. The legislative branch, composed of the two houses of Congress (the House of Representatives and the Senate), makes the laws. The executive branch, made up of the president and the heads of the different departments, puts the laws into effect. The judicial branch, made up of the courts, tries cases when laws are broken. The idea behind this organization is to prevent one part or branch of government from having too much power relative to the other branches.\n\nAs a result of the divided powers of government,",
+    "choices": {
+      "A": "Congress rules the United States",
+      "B": "the president rules the United States",
+      "C": "power is shared",
+      "D": "no branch has power"
+    },
+    "correct": "C",
+    "explanation": "The division of powers prevents one part or branch of government from having all the power; therefore, power is shared.",
+    "topic": "inference",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-009",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 9,
+    "prompt": "A narcotic is a drug that, in proper doses, relieves pain and induces profound sleep, but which, in poisonous doses, induces stupor, coma, or convulsions. Narcotics tend to be habit-forming and, in many instances, repeated doses lead to addiction.\n\nA proper dose of narcotic induces",
+    "choices": {
+      "A": "coma",
+      "B": "convulsions",
+      "C": "deep sleep",
+      "D": "stupor"
+    },
+    "correct": "C",
+    "explanation": "The passage states that a proper dose of narcotic relieves pain and induces profound sleep.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-010",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 10,
+    "prompt": "Because nitrogen, phosphorus, and potassium are used by plants in large amounts, these nutrients are likely to be deficient in the soil. When you buy a fertilizer, therefore, you generally buy it for its content of these materials.\n\nUnfertilized soil naturally deficient in nitrogen, phosphoric oxide, and potash probably lacks these nutrients because",
+    "choices": {
+      "A": "they are not soluble",
+      "B": "manufacturers do not recommend them to gardeners",
+      "C": "they are rare elements never found in the earth",
+      "D": "plants use them up in large quantities"
+    },
+    "correct": "D",
+    "explanation": "The passage mentions that nitrogen, phosphorus, and potassium are used by plants in large amounts.",
+    "topic": "inference",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-011",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 11,
+    "prompt": "Where does pollution come from? It comes from a wide variety of sources, including furnaces, smokestacks, incinerators, power-generating stations, industrial plants, dirt and dust caused by tearing down old buildings and putting up new ones, ordinary street dirt, restaurants that emit smoke and odors, cars, buses, trucks, planes, and coal- or diesel-burning motor ships. Sixty percent of pollution is caused by motor vehicle exhausts, while another thirty percent is due to industry.\n\nMost air pollution is caused by",
+    "choices": {
+      "A": "industry and incinerators",
+      "B": "cars, trucks, and buses",
+      "C": "airplanes",
+      "D": "smokestacks of buildings"
+    },
+    "correct": "B",
+    "explanation": "The passage mentions that 60 percent of pollution is caused by motor vehicle exhausts, so the choice is B—cars, trucks, and buses.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-012",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 12,
+    "prompt": "The use of sunglasses as an aid to vision is important. For the most part, the eye is a daytime instrument: It requires light to work properly. However, too much bright light and glare can create discomfort; as a result the eyes blink, squint, get tears, or have trouble seeing well. Sunglasses help by keeping much of this bright light and glare from reaching the eyes.\n\nThe main purpose of sunglasses is to",
+    "choices": {
+      "A": "hide the eyes",
+      "B": "screen out harmful rays of the sun",
+      "C": "remove the need for regular glasses",
+      "D": "protect the eyes from dirt"
+    },
+    "correct": "B",
+    "explanation": "Since too much bright light can create discomfort for the eyes and create difficulty in seeing well, the main purpose of sunglasses is to screen out harmful rays.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-013",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 13,
+    "prompt": "Would you like to be good at a trade? Would you like to know a skill that pays well? One sure way to skill, good pay, and regular work is to train on the job. This is called apprentice training. While it is not the only way to learn, apprentice training has good points. You can earn while you learn. You will know the skill “from the ground up,” and you can advance on the job.\n\nApprentice training is described here by discussing",
+    "choices": {
+      "A": "both sides",
+      "B": "the good side",
+      "C": "the bad side",
+      "D": "a specific trade"
+    },
+    "correct": "B",
+    "explanation": "The selection mentions the good points of apprentice training but none of the negative points.",
+    "topic": "purpose-tone",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-014",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 14,
+    "prompt": "When you work at a job covered by Social Security, you and your employer contribute equal amounts. Your portion of the tax is taken from your wages or paycheck before you receive it. This is called a deduction.\n\nWhich of these statements is true according to the passage?",
+    "choices": {
+      "A": "Total tax rate is retirement rate plus insurance rate",
+      "B": "Insurance rates are higher than retirement rates",
+      "C": "Money taken from your pay is called a deduction",
+      "D": "Only your employer contributes to Social Security"
+    },
+    "correct": "C",
+    "explanation": "The selection does not deal with insurance rates, tax rates, or retirement rates. It defines what a deduction from your paycheck is.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-015",
+    "section": "PC",
+    "source": "Diagnostic",
+    "n": 15,
+    "prompt": "Nucleic acids are found in all living organisms, from viruses to humans. Their name refers to their discovery in the nuclei of white blood cells and fish sperm by Swiss physiologist Johann Miescher in 1869. However, it is now well established that nucleic acids occur outside the cell nucleus as well.\n\nNucleic acids are found",
+    "choices": {
+      "A": "only in cells of humans",
+      "B": "only in viruses",
+      "C": "in all living cells",
+      "D": "only in white blood cells"
+    },
+    "correct": "C",
+    "explanation": "The first sentence states that nucleic acids are found in all living organisms, from the simplest living things to the most complex.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-016",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 1,
+    "prompt": "The duty of a lighthouse keeper is to keep the light burning no matter what happens, so that ships will be warned of the presence of dangerous rocks.\n\nIf a shipwreck should occur near the lighthouse, even though he would like to aid in the rescue of its crew and passengers, the lighthouse keeper must",
+    "choices": {
+      "A": "stay at his light",
+      "B": "rush to their aid",
+      "C": "turn out the light",
+      "D": "quickly sound the siren"
+    },
+    "correct": "A",
+    "explanation": "The first sentence states that the duty of the lighthouse keeper is to keep the light burning no matter what happens.",
+    "topic": "inference",
+    "status": "fixed",
+    "check_note": "Separated passage from stem (was run together)."
+  },
+  {
+    "id": "PC-017",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 2,
+    "prompt": "In certain areas water is so scarce that every attempt is made to conserve it. For instance, for one oasis in the Sahara Desert the amount of water necessary for each date palm tree has been carefully determined.\n\nHow much water is each tree given?",
+    "choices": {
+      "A": "no water at all",
+      "B": "exactly the amount required",
+      "C": "water only if it is healthy",
+      "D": "water on alternate days"
+    },
+    "correct": "B",
+    "explanation": "The second sentence mentions that the exact amount of water needed has been carefully determined.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-018",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 3,
+    "prompt": "Plants should be gradually “hardened” or toughened for two weeks before being moved outdoors. This is done by withholding water and lowering the temperature. Hardening slows down the plants’ rate of growth to prepare them to withstand such conditions as chilling, drying winds, or high temperatures.\n\nYou toughen a seedling",
+    "choices": {
+      "A": "by putting it in a cooler environment",
+      "B": "by putting it in a 6-inch pot",
+      "C": "by watering it thoroughly",
+      "D": "by using ready-made peat pellets"
+    },
+    "correct": "A",
+    "explanation": "“Hardening” or toughening seedlings is accomplished by reducing the water the seedlings get and lowering the temperature.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-019",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 4,
+    "prompt": "At depths of several miles inside the earth, the weight of rocks causes great pressure. This rock pressure, as well as other forces, sometimes causes rocks to break and slip. Faults (great cracks) form. When slippage occurs, shock waves are felt and can be detected with seismographs thousands of miles away.\n\nThe most frequent cause of major earthquakes is",
+    "choices": {
+      "A": "faulting",
+      "B": "folding",
+      "C": "landslides",
+      "D": "submarine currents"
+    },
+    "correct": "A",
+    "explanation": "Earthquakes occur when rock layers break and slip, forming cracks or faults.",
+    "topic": "inference",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-020",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 5,
+    "prompt": "A leaf can catch sunlight and turn this energy into food which is stored in a tree or plant. To run this factory the leaf must have air, water, and sunlight. By a chemical process called photosynthesis, the leaf combines the air and water with the energy of the sun.\n\nThe process of photosynthesis",
+    "choices": {
+      "A": "combines air, water, and sun to make food",
+      "B": "makes leaves grow in fancy shapes",
+      "C": "causes water to form in clouds",
+      "D": "is a physical process"
+    },
+    "correct": "A",
+    "explanation": "The last sentence says that by photosynthesis \"the leaf combines the air and water with the energy of the sun,\" and the first sentence says this energy is turned into food. D fails because the passage calls it a chemical process, not a physical one.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Explanation only restated the answer; added passage citation and why D fails."
+  },
+  {
+    "id": "PC-021",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 6,
+    "prompt": "Most telephone sales are made by reputable persons who try to sell in an honest manner. These persons use the telephone as an aid to business, and they know success depends on being fair and reasonable. The opposite of reputable salesmen are overaggressive talkers who try to force you to make up your mind quickly.\n\nThe word reputable is closest in meaning to",
+    "choices": {
+      "A": "reasonable",
+      "B": "trusted",
+      "C": "friendly",
+      "D": "aggressive"
+    },
+    "correct": "B",
+    "explanation": "Reputable sellers are described as honest and fair, and they are contrasted with \"overaggressive talkers,\" so reputable means having a good reputation, or trusted. \"Reasonable\" (A) describes how they act, not what the word means, and \"aggressive\" (D) is the opposite.",
+    "topic": "vocabulary-in-context",
+    "status": "fixed",
+    "check_note": "Explanation too thin; rewrote with context clues and the tempting distractor."
+  },
+  {
+    "id": "PC-022",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 7,
+    "prompt": "When someone in your family suffers a minor burn, reach for an ice cube fast. Place it directly over the burn until the sting is gone when the cube is removed. Ice is great first aid for burns and kills the pain. Afterward you’ll be amazed to discover there is very little swelling, blisters probably won’t appear, and healing will be much faster.\n\nThe topic sentence or key idea in this paragraph is that",
+    "choices": {
+      "A": "ice prevents burn blisters",
+      "B": "ice cubes remove the pain",
+      "C": "ice is great first aid for burns",
+      "D": "ice reduces swelling"
+    },
+    "correct": "C",
+    "explanation": "The main idea of the selection is that ice can relieve many of the effects of a burn and is therefore great first aid.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-023",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 8,
+    "prompt": "A stranger meets you and shows you some cash he has just “found.” He wants to divide it with you. He says that you must show your “good faith” and put up some of your own money. When you agree to give him your money, the stranger finds some reason to leave for a while. Do you see him again? Not likely; you have just been swindled.\n\nThe main theme of this passage is",
+    "choices": {
+      "A": "do not speak to strangers",
+      "B": "be careful of “get-rich-quick” plans",
+      "C": "how to make money",
+      "D": "do not believe strangers"
+    },
+    "correct": "B",
+    "explanation": "The main idea of the selection is to warn you to be careful of “get-rich-quick” plans.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-024",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 9,
+    "prompt": "Statistically, by far the most common types of home accidents are falls. Each year over 15,000 Americans meet death in this way, within the four walls of their homes or in yards around their houses. Nine out of 10 of the victims are over 65, but people of all ages experience serious injuries as a result of home falls.\n\nFalls most frequently result in death for",
+    "choices": {
+      "A": "children",
+      "B": "adults under 35",
+      "C": "all age groups",
+      "D": "adults older than 65"
+    },
+    "correct": "D",
+    "explanation": "The third sentence mentions that nine out of 10 victims of fatal falls are older than 65.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-025",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 10,
+    "prompt": "“Gray water” is slightly used water—the water you have collected at the bottom of the tub after you have showered or the rinse water from the washing machine. It is still useful, and we cannot afford to let it go down the drain.\n\nWhich of the following is an example of gray water?",
+    "choices": {
+      "A": "carbonated water",
+      "B": "rainwater",
+      "C": "soapy water",
+      "D": "tap water"
+    },
+    "correct": "C",
+    "explanation": "“Gray water” is defined as slightly used water. The only choice that represents “used” water is soapy water.",
+    "topic": "inference",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-026",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 11,
+    "prompt": "Glaciers are frozen masses of snow and ice. As the weight of the snow increases each year, the lower layers become hard-packed like ice. The weight also causes the glacier to move slowly downhill. Speeds of glaciers are usually figured in inches per day rather than miles per hour.\n\nA glacier moves as a result of its",
+    "choices": {
+      "A": "speed",
+      "B": "weight",
+      "C": "temperature",
+      "D": "layers"
+    },
+    "correct": "B",
+    "explanation": "The third sentence specifies that a glacier moves because of its weight.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-027",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 12,
+    "prompt": "It is time to get this country moving again. No American wants to stand by and see this country go the other way. The men who have been elected are no longer in touch. A fresh point of view, new ideas, and more action are needed. The voters should finally wake up and give power to those who will make changes.\n\nThis passage tries to make you believe that",
+    "choices": {
+      "A": "changes are needed",
+      "B": "no changes are needed",
+      "C": "changes will never happen",
+      "D": "no action is needed"
+    },
+    "correct": "A",
+    "explanation": "Every sentence of the selection expresses disapproval of the present state of things and implies that changes are needed.",
+    "topic": "purpose-tone",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-028",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 13,
+    "prompt": "Up until a few years ago most parents, teachers, baby doctors, and coaches felt that right was right. There was even an old wives’ tale that left-handed people did not learn as well. But, I’m happy to report, this right-thinking is gone. Today parents and teachers understand left-handedness, and our number is rising.\n\nThe main idea of this passage is that the feelings about left-handedness",
+    "choices": {
+      "A": "have not changed at all",
+      "B": "have completely changed",
+      "C": "have partly changed",
+      "D": "will not change"
+    },
+    "correct": "B",
+    "explanation": "The passage says people once believed \"right was right,\" then states, \"this right-thinking is gone,\" and that parents and teachers now understand left-handedness. Saying the old belief is gone means the feelings have changed. A and D contradict the passage.",
+    "topic": "main-idea",
+    "status": "book_error",
+    "check_note": "Book key C (\"partly changed\") argues from \"our number is rising,\" which says nothing about how many people changed their views; the passage plainly says the old thinking \"is gone.\" B is better supported, though C stays arguable because only parents and teachers are named as having changed."
+  },
+  {
+    "id": "PC-029",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 14,
+    "prompt": "According to Newton’s Third Law, for each action there is an equal and opposite reaction. You can illustrate the principle by blowing up a rubber balloon and then allowing the air to escape. Notice that the balloon moves forward as the air escapes in the opposite direction.\n\nWhich of the following describes Newton’s Third Law?",
+    "choices": {
+      "A": "an object at rest",
+      "B": "gravitational force",
+      "C": "falling bodies",
+      "D": "action equals reaction"
+    },
+    "correct": "D",
+    "explanation": "According to the first sentence, Newton’s Third Law is that to each action there is an equal and opposite reaction, or action equals reaction.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-030",
+    "section": "PC",
+    "source": "Practice Exam One",
+    "n": 15,
+    "prompt": "Water is a good conductor of sound waves. If you were swimming underwater while someone struck two rocks together underwater 10 feet away, you would be surprised at how loud the sound was. The U.S. Navy makes use of this knowledge in detecting enemy submarines.\n\nOf the following, which is the best restatement of the main idea?",
+    "choices": {
+      "A": "Fish cannot hear ordinary sounds",
+      "B": "Sound waves become compressed in very deep water",
+      "C": "Water is a good conductor of sound waves",
+      "D": "Submarines cannot detect sound waves"
+    },
+    "correct": "C",
+    "explanation": "The first sentence, and main idea of the paragraph, states that water is a good conductor of sound waves.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-031",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 1,
+    "prompt": "Professional drivers, people who drive trucks and buses for a living, have a low opinion of the average motorist. They complain that the average driver does not maintain proper speed, changes lanes without signaling, and stops without warning.\n\nThe topic sentence or key idea in this paragraph is that",
+    "choices": {
+      "A": "professional drivers do not think much of the average driver",
+      "B": "people who drive trucks are professional drivers",
+      "C": "the average driver is not a good driver",
+      "D": "the average driver does not like professional drivers"
+    },
+    "correct": "A",
+    "explanation": "The main idea of this paragraph is given in the first sentence, which states that professional drivers have a low opinion of the average motorist.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-032",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 2,
+    "prompt": "The trees stood quietly under the dark gray clouds. Their bare branches shuddered as the cold wind slipped around them. Sailing along on the wind a few birds flew to shelter. No other animals were to be seen.\n\nIn this paragraph the word shuddered means:",
+    "choices": {
+      "A": "fell",
+      "B": "shook",
+      "C": "cracked",
+      "D": "remained still"
+    },
+    "correct": "B",
+    "explanation": "The bare branches \"shuddered as the cold wind slipped around them,\" so the wind was moving them; shuddered means shook. \"Remained still\" (D) contradicts the wind moving the branches, and nothing says they fell or cracked.",
+    "topic": "vocabulary-in-context",
+    "status": "fixed",
+    "check_note": "Explanation only restated the answer; rewrote with the context clue."
+  },
+  {
+    "id": "PC-033",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 3,
+    "prompt": "Many think of the log cabin as a New England invention. Others feel it was first made by the pioneers who crossed the Appalachian Mountains. According to one authority, the log cabin was introduced to America by the Swedes. The area around the Delaware River was settled by Swedes and Finns. These two European peoples were first to use the log cabin.\n\nAccording to this passage, the log cabin was introduced to this country by",
+    "choices": {
+      "A": "New England colonists",
+      "B": "Swedes and Finns",
+      "C": "Appalachian Mountain pioneers",
+      "D": "the English"
+    },
+    "correct": "B",
+    "explanation": "The paragraph clearly states that the Swedes and Finns “these two European peoples” were the first to use log cabins.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-034",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 4,
+    "prompt": "Down the gently drifting stream, the boat glided softly. Soft breezes and warm sun bathed him. The fishing pole lay unused. The floppy hat shaded his half-closed eyes and much of his face. Only his lower features, framed in a pleasant smile, could be seen.\n\nThis passage describes a man who is",
+    "choices": {
+      "A": "sad",
+      "B": "active",
+      "C": "contented",
+      "D": "exhilarated"
+    },
+    "correct": "C",
+    "explanation": "The tone or mood of this passage is one of contentment. The man is described as at rest with a smile on his face.",
+    "topic": "purpose-tone",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-035",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 5,
+    "prompt": "Would you like to be good at a trade? Would you like to know a skill that pays well? One sure way to skill, good pay, and regular work is to train on the job. This is called apprentice training. While it is not the only way to learn, apprentice training has good points. You can earn while you learn, can learn the skill “from the ground up,” and can advance on the job.\n\nApprentice training is described in this paragraph by",
+    "choices": {
+      "A": "discussing both sides",
+      "B": "discussing only the good side",
+      "C": "discussing only the bad side",
+      "D": "comparing it to other types of training"
+    },
+    "correct": "B",
+    "explanation": "This paragraph points out the favorable or good points about apprentice training. It does not discuss any negative or bad points, and it does not compare it to any other type of training.",
+    "topic": "purpose-tone",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-036",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 6,
+    "prompt": "Move into a house with six closets and all of them will be jammed in a short time. Move into a house with 15 closets and the same thing will happen. In short, we never have enough closets, no matter how many closets we have. But there’s one thing we can do: we can make better use of the space within a closet.\n\nThe author of this paragraph suggests that we",
+    "choices": {
+      "A": "should build more closets in houses",
+      "B": "never have enough things to fill the closets",
+      "C": "usually fill every closet in the house",
+      "D": "make the best use of space within a closet"
+    },
+    "correct": "D",
+    "explanation": "The author says we will fill every closet no matter how many we have, then gives the one thing we can do: \"make better use of the space within a closet.\" That recommendation is what the author suggests we do. C restates the problem the author describes, not the suggestion.",
+    "topic": "main-idea",
+    "status": "book_error",
+    "check_note": "Book key C (\"usually fill every closet\") is also stated in the passage, so C and D are both supported; \"suggests that we\" points to the author's recommendation in the last sentence, so D is the better answer."
+  },
+  {
+    "id": "PC-037",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 7,
+    "prompt": "There is a big difference between a classical and a reactionary. The person who favors new ideas, tries to change, and looks for new ways is more free or liberated. On the other hand, a person may look back or want to return to the way things used to be. This person does not like progress and resents change.\n\nThe word reactionary can be used to describe a person who",
+    "choices": {
+      "A": "looks ahead to the future",
+      "B": "looks back to the past",
+      "C": "favors new ideas",
+      "D": "likes change"
+    },
+    "correct": "B",
+    "explanation": "A reactionary person looks to the past. The paragraph describes a classical, using the key words liberated and free. The words on the other hand tell you that the description is about to shift from one way to another.",
+    "topic": "vocabulary-in-context",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-038",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 8,
+    "prompt": "This forest must be preserved. These trees have stood against natural forces for over a hundred years. Within the area wildlife flourishes and the streams are clear and sparkling. Thousands of people can find pleasure through camping or walking in a spot of unspoiled nature. The beauty and peace of this forest can renew the spirit of many a person.\n\nThis passage was probably written by a",
+    "choices": {
+      "A": "lumber company spokesperson",
+      "B": "religious society",
+      "C": "house-building company",
+      "D": "conservation group"
+    },
+    "correct": "D",
+    "explanation": "You can infer from the passage that a conservation group wrote it. A lumber company or house-building company would more likely want to cut down the forest to use the lumber in its businesses. There is no reason to think that a religious group wrote the paragraph.",
+    "topic": "purpose-tone",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-039",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 9,
+    "prompt": "There has been enough talk. The problem has been studied from every viewpoint. The figures add up to the need for the bridge. When the bonds are approved their cost will be met by future tolls. All groups favor this and no property owners will be hurt by it. The time for action has come.\n\nAccording to this paragraph, the next logical step would be to",
+    "choices": {
+      "A": "build the bridge",
+      "B": "pass a law to raise the money",
+      "C": "decide how to collect the tolls",
+      "D": "have a meeting of property owners"
+    },
+    "correct": "B",
+    "explanation": "The “time for action” phrase suggests that the bridge should be built, but the paragraph makes it clear that official action—approval of bonds—must be taken first.",
+    "topic": "sequence",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-040",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 10,
+    "prompt": "Lightning is a gigantic spark, a tremendous release of energy between earth and cloud. The shorter the gap between earth and cloud, the greater the chances of discharge. Thus, lightning tends to favor objects that thrust above the surrounding terrain. This might mean you sitting in a boat or the lone tree on the golf course.\n\nLightning is described as",
+    "choices": {
+      "A": "man-made energy",
+      "B": "a bolt from heaven",
+      "C": "a release of electrical energy",
+      "D": "a poorly understood phenomenon"
+    },
+    "correct": "C",
+    "explanation": "The paragraph describes lightning as a “spark” and as a “release of energy.”",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-041",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 11,
+    "prompt": "Every large city has problems of traffic and people trying to use transportation. The problem is at its worst in the two hours before 9 A.M. and the two hours after 4 P.M. So many businesses, stores, and companies start work and end work at the same time. This becomes a very great problem in the downtown business centers with their many-storied skyscrapers and their thousands of workers.\n\nThe morning transportation rush starts at",
+    "choices": {
+      "A": "9 A.M",
+      "B": "7 A.M",
+      "C": "8 A.M",
+      "D": "6 A.M"
+    },
+    "correct": "B",
+    "explanation": "The paragraph clearly states that the morning rush hour starts two hours before 9 A.M.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Fixed broken join \"manystoried\" -> \"many-storied\"."
+  },
+  {
+    "id": "PC-042",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 12,
+    "prompt": "A vision care technician assists the patient in frame selection and fitting and provides instruction in the use of contact lenses. Such a technician works with children in visual training programs and assists with testing for corneal curvature, visual acuity, and eye pressure.\n\nThe word acuity means",
+    "choices": {
+      "A": "cuteness",
+      "B": "strength",
+      "C": "sharpness",
+      "D": "pressure"
+    },
+    "correct": "C",
+    "explanation": "Acuity means sharpness. If you do not know the meaning of the word, you can figure it out from the context. You can immediately eliminate choice A; you can eliminate D because pressure is referred to in the phrase “eye pressure.” You must then choose between strength and sharpness, and in terms of the subject of this passage—vision—sharpness is more accurate.",
+    "topic": "vocabulary-in-context",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-043",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 13,
+    "prompt": "An agricultural research scientist wishes to test the germination power of a particular strain of wheat. That is, he wants to know what proportion of the seeds will grow to maturity. He picks one seed at random from a bunch of wheat and that particular grain of wheat produces a strong and healthy stalk of wheat.\n\nWe can conclude from this experiment that",
+    "choices": {
+      "A": "the rest of the seeds are the same",
+      "B": "this seed is the only healthy one",
+      "C": "more seeds must be tested",
+      "D": "it was an accident that this seed was good"
+    },
+    "correct": "C",
+    "explanation": "The scientist wants to know what proportion of the seeds will grow, but he tested only one seed. One result cannot tell you about the rest of the seeds (A) or show this one is the only good one (B), so more seeds must be tested.",
+    "topic": "inference",
+    "status": "fixed",
+    "check_note": "Explanation too thin; tied it to \"what proportion\" and the single-seed test."
+  },
+  {
+    "id": "PC-044",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 14,
+    "prompt": "Most breads and cereals are well-liked, fit easily into meal plan, and cost little per serving. These foods, with whole-grain or enriched bread as examples, provide good food value. Mostly they give food energy, but they also supply vitamins and minerals. According to a recent survey, bread and cereal products provided 40 percent of the thiamine (a B vitamin) and 30 percent of the iron needed daily by a person.\n\nWhat percent of the daily needs of a B vitamin come from bread and cereals?",
+    "choices": {
+      "A": "30 percent",
+      "B": "more than half",
+      "C": "40 percent",
+      "D": "70 percent"
+    },
+    "correct": "C",
+    "explanation": "The last sentence states that bread and cereal provide 40 percent of the daily need for thiamine, one of the B vitamins.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-045",
+    "section": "PC",
+    "source": "Practice Exam Two",
+    "n": 15,
+    "prompt": "In the many years before 1800 there was a great fear of plague and other illnesses. Most of the problem came from poor medical knowledge and no scientific way to fight the diseases. People knew the results of plague would be suffering and death. Naturally they tried to stay away from infection or they tried to keep the danger away from them.\n\nThe main reason for the fear of plague before 1800 was",
+    "choices": {
+      "A": "crowded cities and seaports",
+      "B": "little medical or scientific knowledge",
+      "C": "long time needed for quarantine",
+      "D": "difficulty in avoiding infection"
+    },
+    "correct": "B",
+    "explanation": "The second sentence states that most problems came from poor medical knowledge and lack of ways to fight disease.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-046",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 1,
+    "prompt": "The first American Army Ranger unit of World War II was formed in North Ireland in the spring of 1942. Over 2,000 soldiers volunteered from the recently arrived 1st Armored and 34th Infantry divisions. Stringent medical examinations, long foot marches, strenuous physical conditioning, and other tests eliminated many volunteers. Those who remained were interviewed by First Ranger Battalion commander Major William O. Darby; volunteers were seldom sure they were answering his questions correctly. By June 19, 1942, the 500 or so volunteers who remained were the initial nucleus of what would become one of America’s most elite and legendary fighting forces.\n\nAccording to this passage, what eliminated many volunteers from the Rangers?",
+    "choices": {
+      "A": "Major Darby’s questioning",
+      "B": "medical exams, short road marches, and parachutist training",
+      "C": "strenuous physical conditioning, foot marches, and medical exams",
+      "D": "the battalion commander’s interviews, medical exams, and map reading"
+    },
+    "correct": "C",
+    "explanation": "The passage states that “stringent medical examinations, long foot marches, strenuous physical conditioning, and other tests eliminated many volunteers.” It also implies that Major Darby’s interview questions possibly eliminated even more volunteers, but it does not say so. The passage says nothing about parachutist training or map reading.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-047",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 2,
+    "prompt": "The first American Army Ranger unit of World War II was formed in North Ireland in the spring of 1942. Over 2,000 soldiers volunteered from the recently arrived 1st Armored and 34th Infantry divisions. Stringent medical examinations, long foot marches, strenuous physical conditioning, and other tests eliminated many volunteers. Those who remained were interviewed by First Ranger Battalion commander Major William O. Darby; volunteers were seldom sure they were answering his questions correctly. By June 19, 1942, the 500 or so volunteers who remained were the initial nucleus of what would become one of America’s most elite and legendary fighting forces.\n\nAccording to the passage, where did the volunteers come from?",
+    "choices": {
+      "A": "North Ireland",
+      "B": "the 1st and 34th Infantry Divisions",
+      "C": "the 1st Armored Division and 34th Infantry Division",
+      "D": "the First Ranger Battalion"
+    },
+    "correct": "C",
+    "explanation": "The passage states that the volunteers came from the “recently arrived 1st Armored and 34th Infantry Divisions.”",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Copied in the shared passage from PC-046 and removed the \"question 1\" reference from the stem."
+  },
+  {
+    "id": "PC-048",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 3,
+    "prompt": "The Greek mythological deities most often found in art are all ultimately the offspring of Earth (Gaia in Greek, Ge in Latin) and heaven (Ouranos/Uranus). They produced 12 Titans, including Ocean (Okeanos/Oceanus) and his youngest brother Kronos (Saturn for the Latin-speaking Romans). Kronos castrated his father so he could rule in his place, married his sister Rhea, and then swallowed all his children right after their birth so that none of them could overthrow him. When Zeus (Jupiter) was born, Rhea fed Kronos a stone wrapped in clothes instead of the baby. When Zeus was grown, he forced Kronos to vomit up his siblings, and together they overthrew their father and the other Titans, ruling the world from Greece’s highest peak, Mount Olympus. The later 12 Olympian gods and goddesses appear far more often in Greek art than do Gaia, Ouranos, and the Titans—and not only in Greek, Etruscan, and Roman times, but also in the Middle Ages, the Renaissance, and even up to the present.\n\nWhich Greek mythological deities are found most often in art?",
+    "choices": {
+      "A": "Gaia and Kronos",
+      "B": "Zeus and his siblings",
+      "C": "Rhea and her children",
+      "D": "the 12 Titans who ruled from Mount Olympus"
+    },
+    "correct": "B",
+    "explanation": "The last sentence says the later 12 Olympian gods and goddesses appear far more often in art than Gaia, Ouranos, and the Titans. The Olympians are Zeus and the siblings he freed from Kronos. D fails because the Titans were overthrown; it was Zeus's group that ruled from Mount Olympus.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Explanation only restated the answer; added the supporting sentence and why D fails."
+  },
+  {
+    "id": "PC-049",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 4,
+    "prompt": "The Greek mythological deities most often found in art are all ultimately the offspring of Earth (Gaia in Greek, Ge in Latin) and heaven (Ouranos/Uranus). They produced 12 Titans, including Ocean (Okeanos/Oceanus) and his youngest brother Kronos (Saturn for the Latin-speaking Romans). Kronos castrated his father so he could rule in his place, married his sister Rhea, and then swallowed all his children right after their birth so that none of them could overthrow him. When Zeus (Jupiter) was born, Rhea fed Kronos a stone wrapped in clothes instead of the baby. When Zeus was grown, he forced Kronos to vomit up his siblings, and together they overthrew their father and the other Titans, ruling the world from Greece’s highest peak, Mount Olympus. The later 12 Olympian gods and goddesses appear far more often in Greek art than do Gaia, Ouranos, and the Titans—and not only in Greek, Etruscan, and Roman times, but also in the Middle Ages, the Renaissance, and even up to the present.\n\nAccording to the passage, who swallowed Zeus to avoid being overthrown?",
+    "choices": {
+      "A": "Rhea",
+      "B": "Kronos",
+      "C": "Saturn",
+      "D": "no one"
+    },
+    "correct": "D",
+    "explanation": "No one swallowed Zeus—Rhea, his mother, tricked Kronos by feeding him a stone wrapped in clothes instead of the infant Zeus.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Copied in the shared passage from PC-048 and removed the \"question 3\" reference from the stem."
+  },
+  {
+    "id": "PC-050",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 5,
+    "prompt": "The infantry is the main land combat force and core fighting strength of the Army. Junior infantry officers are expected to be proficient in leadership and small unit tactics; technically competent with weapons and a variety of high-tech equipment; physically fit; and most of all, have the integrity and character to perform under physical and mental pressure. A leader must exhibit self-discipline, initiative, confidence, and intelligence to be able to confidently lead soldiers while earning loyalty and trust. Leaders must often make decisions quickly, focusing on completing the mission successfully while still taking care of their soldiers. Leaders of all ranks and specialties are judged by their ability to make decisions on their own and bear ultimate moral responsibility for those decisions.\n\nWhat qualities must a leader have in order to earn loyalty and trust?",
+    "choices": {
+      "A": "self-discipline, technical competence, and creativity",
+      "B": "intelligence, confidence, caring, and proficiency",
+      "C": "initiative, self-discipline, intelligence, and confidence",
+      "D": "decision-making ability, technical confidence, and responsibility"
+    },
+    "correct": "C",
+    "explanation": "The passage states, “A leader must exhibit self-discipline, initiative, confidence, and intelligence to be able to confidently lead soldiers while earning loyalty and trust.”",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-051",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 6,
+    "prompt": "Church design during the Middle Ages set the stage for ecclesiastical architecture from the Renaissance to the present. The typical western European Christian church had a “basilican” plan, an evolution from the Roman columnar hall or basilica. One of the earliest and most famous of the churches was the original St. Peter’s in Rome, Italy, begun about 320 A.D. Typical of early Christian church design, it was rectangular, had a simple timber roof, a wide central area called a nave, two aisles on each side parallel to the nave and marked off by columns, and ending on the far end from the doors in a semicircular area called an apse. St. Peter’s also had an area perpendicular to the nave called a transept. The intersection of the nave and transept is called the crossing. The basilican church design went through many changes in the thousand years after the construction of Old St. Peter’s (which was completely rebuilt starting in the 15th century), but the basics remained the same.\n\nHow did Christian church design change from the fourth to the 15th century?",
+    "choices": {
+      "A": "added additional aisles",
+      "B": "added a transept",
+      "C": "was completely rebuilt",
+      "D": "remained essentially the same"
+    },
+    "correct": "D",
+    "explanation": "Even though the basilican church design went through many changes in the thousand years after the construction of Old St. Peter’s, the basics remained the same.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-052",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 7,
+    "prompt": "Church design during the Middle Ages set the stage for ecclesiastical architecture from the Renaissance to the present. The typical western European Christian church had a “basilican” plan, an evolution from the Roman columnar hall or basilica. One of the earliest and most famous of the churches was the original St. Peter’s in Rome, Italy, begun about 320 A.D. Typical of early Christian church design, it was rectangular, had a simple timber roof, a wide central area called a nave, two aisles on each side parallel to the nave and marked off by columns, and ending on the far end from the doors in a semicircular area called an apse. St. Peter’s also had an area perpendicular to the nave called a transept. The intersection of the nave and transept is called the crossing. The basilican church design went through many changes in the thousand years after the construction of Old St. Peter’s (which was completely rebuilt starting in the 15th century), but the basics remained the same.\n\nAccording to the passage, what is a transept?",
+    "choices": {
+      "A": "the intersection of the nave and the crossing",
+      "B": "an area at right angles to the nave",
+      "C": "an area perpendicular to the apse",
+      "D": "an area parallel to the aisles"
+    },
+    "correct": "B",
+    "explanation": "The transept was an area perpendicular to the nave.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Copied in the shared passage from PC-051 and removed the \"question 6\" reference from the stem."
+  },
+  {
+    "id": "PC-053",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 8,
+    "prompt": "All nations must confront the central economic questions of what to produce, how to produce, and for whom to produce it. However, the nations of the world approach these central issues with vastly different production possibilities. The United States, Canada, Brazil, and China each has more than three million acres of land, which gives those countries far more production possibilities than Dominica, Tonga, Malta, or Liechtenstein, which all have less than 500 acres of land apiece. Populations vary widely—China, with well over 1.3 billion people, has four and a half times the population of the United States and almost 38 thousand times that of Liechtenstein. Decision-making mechanisms also run the gamut, from highly centralized (North Korea, Cuba, Iran, Burma) to mostly free-market (Ireland, New Zealand, Singapore, the United States, and even Liechtenstein). Everyone has their own approach, based on these factors, their heritage and culture, and other factors.\n\nWhat factors affecting national production does the passage mention?",
+    "choices": {
+      "A": "amount of land, size of population, planning approach, and culture",
+      "B": "size of the country, type of population, decision-making structure",
+      "C": "geography, population, market forces, and national security",
+      "D": "size of the country and its population, decision-making approach, and culture"
+    },
+    "correct": "D",
+    "explanation": "The passage mentions the size of the country, the size of its population, its decision-making approach, and its culture. It also mentions that there are other factors, but does not say what they are.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-054",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 9,
+    "prompt": "All nations must confront the central economic questions of what to produce, how to produce, and for whom to produce it. However, the nations of the world approach these central issues with vastly different production possibilities. The United States, Canada, Brazil, and China each has more than three million acres of land, which gives those countries far more production possibilities than Dominica, Tonga, Malta, or Liechtenstein, which all have less than 500 acres of land apiece. Populations vary widely—China, with well over 1.3 billion people, has four and a half times the population of the United States and almost 38 thousand times that of Liechtenstein. Decision-making mechanisms also run the gamut, from highly centralized (North Korea, Cuba, Iran, Burma) to mostly free-market (Ireland, New Zealand, Singapore, the United States, and even Liechtenstein). Everyone has their own approach, based on these factors, their heritage and culture, and other factors.\n\nAccording to the passage, what are the central economic issues that all countries have to face?",
+    "choices": {
+      "A": "land, population, planning approach, and culture",
+      "B": "what to produce, how to produce it, and for whom to produce it",
+      "C": "centralized vs. decentralized decision making",
+      "D": "production possibilities, land, and population"
+    },
+    "correct": "B",
+    "explanation": "All nations must confront the central economic questions of what to produce, how to produce it, and for whom to produce it.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Copied in the shared passage from PC-053 and removed the \"question 8\" reference from the stem."
+  },
+  {
+    "id": "PC-055",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 10,
+    "prompt": "There are several different varieties of quarks. First, there are six “flavors” (that have been discovered so far, anyway), which we call up, down, strange, charmed, bottom, and top. Each flavor comes in three “colors,” red, green, and blue. (It’s important to note that these terms are just arbitrary labels: quarks are much smaller than the wavelength of visible light and so do not have any color in the normal sense. It’s just that modern physicists no longer restrict themselves to Greek or Latin in order to name things.) A proton or neutron is made up of three quarks, one of each color. A proton contains two “up” quarks and one “down” quark; a neutron has two “down” and one “up.”\n\nAccording to the passage, how many different “flavors” of quarks are there?",
+    "choices": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "12"
+    },
+    "correct": "C",
+    "explanation": "The passage states that there are six different “flavors” of quarks.",
+    "topic": "stated-detail",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-056",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 11,
+    "prompt": "The War of 1812 was in some ways one of the most unfortunate events in American history. For one thing, it was needless—the British Orders in Council that had caused the worst irritation on the part of the still-young United States were being unconditionally repealed just as Congress declared war. For another, the United States suffered from internal divisions of the most serious type. While the South and West favored war, New York and New England were generally against it; toward the end of the relatively and mercifully brief conflict, important New England groups went to the very edge of disloyalty. Third, the war was far from glorious for the United States in a military sense. The American army was in terrible shape to fight.\n\nWhy does the author of the passage believe that the War of 1812 was an unfortunate event?",
+    "choices": {
+      "A": "It lasted too long and the American army and navy were not ready to fight",
+      "B": "It was unnecessary, Americans were divided in their support, and their army was unready",
+      "C": "The British declared war before the American army was ready to fight, and the war lasted too long",
+      "D": "British descendants in New England were against it, and the army was in bad shape"
+    },
+    "correct": "B",
+    "explanation": "The passage lists three reasons why the War of 1812 was an unfortunate event. First, the British acts that contributed to friction between the two countries were being repealed just as the American Congress declared war; second, the United States was seriously divided about supporting the war; and third, the American army was unprepared for the war.",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-057",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 12,
+    "prompt": "During the Battle of the Bulge, the French town of Bastogne was occupied by the American 101st Airborne Division to control the vital crossroads there. The division was surrounded by the German Army as it tried to sweep to the port of Antwerp. After several days of determined resistance by the Americans holding the crossroads town, four Germans under a flag of truce approached the lines of the 327th Infantry Regiment on the outskirts of the town. The message they carried demanded the surrender of the encircled town within two hours. The surrender demand was soon delivered to acting division commander Brig. Gen. Anthony C. McAuliffe as he was about to leave his headquarters to congratulate the defenders of a roadblock who had driven off a heavy attack. He dropped the message on the floor, said “Nuts,” and left. When he returned, his staff reminded him of the message, which he at first had not taken seriously. McAuliffe asked his staff what they thought the reply should be. One officer said, “That first remark of yours would be hard to beat.” So the message delivered to the Germans read, “To the German Commander: Nuts! The American Commander.” The confused German major asked if this was affirmative or negative. He was told by the regimental commander that it was “decidedly not affirmative.”\n\nWhy was the 101st Airborne Division holding out at Bastogne?",
+    "choices": {
+      "A": "to protect the vital nut and berry agricultural center at Bastogne",
+      "B": "to set up a roadblock",
+      "C": "to deny the Germans an important crossroads",
+      "D": "to keep the Germans from reaching the crossroads at Antwerp"
+    },
+    "correct": "C",
+    "explanation": "The first sentence says the 101st occupied Bastogne \"to control the vital crossroads there,\" which keeps that crossroads from the Germans. D fails because Antwerp was the port the Germans were heading for, not the crossroads, and the roadblock (B) was only one position in the defense.",
+    "topic": "stated-detail",
+    "status": "fixed",
+    "check_note": "Explanation only restated the answer; added citation and why B and D fail."
+  },
+  {
+    "id": "PC-058",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 13,
+    "prompt": "During the Battle of the Bulge, the French town of Bastogne was occupied by the American 101st Airborne Division to control the vital crossroads there. The division was surrounded by the German Army as it tried to sweep to the port of Antwerp. After several days of determined resistance by the Americans holding the crossroads town, four Germans under a flag of truce approached the lines of the 327th Infantry Regiment on the outskirts of the town. The message they carried demanded the surrender of the encircled town within two hours. The surrender demand was soon delivered to acting division commander Brig. Gen. Anthony C. McAuliffe as he was about to leave his headquarters to congratulate the defenders of a roadblock who had driven off a heavy attack. He dropped the message on the floor, said “Nuts,” and left. When he returned, his staff reminded him of the message, which he at first had not taken seriously. McAuliffe asked his staff what they thought the reply should be. One officer said, “That first remark of yours would be hard to beat.” So the message delivered to the Germans read, “To the German Commander: Nuts! The American Commander.” The confused German major asked if this was affirmative or negative. He was told by the regimental commander that it was “decidedly not affirmative.”\n\nAccording to the passage, what news did the German major have to take back to his commander?",
+    "choices": {
+      "A": "The Americans would surrender within two hours",
+      "B": "The Americans would surrender, but not within two hours",
+      "C": "The Americans would not surrender",
+      "D": "The passage is not clear"
+    },
+    "correct": "C",
+    "explanation": "The German major who approached the American lines with the German surrender demand had to tell his commander that the Americans would not surrender. The passage states that the American slang reply was clarified for the German officer as “decidedly not affirmative.”",
+    "topic": "inference",
+    "status": "fixed",
+    "check_note": "Copied in the shared passage from PC-057 and removed the \"question 12\" reference from the stem."
+  },
+  {
+    "id": "PC-059",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 14,
+    "prompt": "The “zero tolerance on fighting” policy some of our schools have instituted sounds wonderful at first, but it’s actually a smokescreen that lets school and district leaders avoid tough decisions while teaching kids the wrong lessons. The biggest problem happens when the student who is attacked gets the same punishment as the one who started the fight—unless he doesn’t fight back and lets himself get pummeled. It is morally wrong to teach our kids that the attacked person is as much in the wrong as the attacker. The correct solution, instead, is balanced judgment by administrators, backed up by a determination to tell parents the truth. Parents also have the obligation to recognize that their little angel may not be perfect, and not to sue the school because a teacher or principal told them an unpleasant truth.\n\nThe author of this passage believes that",
+    "choices": {
+      "A": "“zero tolerance on fighting” policies sound wonderful",
+      "B": "zero tolerance policies call for sound judgment by school administrators",
+      "C": "parents should sue school personnel who tell them something they don’t want to hear",
+      "D": "the student who defends himself should be viewed differently than the attacker"
+    },
+    "correct": "D",
+    "explanation": "The author of this passage believes that the student who defends himself should be viewed differently than the attacker. The passage states, “The biggest problem happens when the student who is attacked gets the same punishment as the one who started the fight,” and “it is morally wrong to teach our kids that the attacked person is as much in the wrong as the attacker.”",
+    "topic": "main-idea",
+    "status": "ok",
+    "check_note": ""
+  },
+  {
+    "id": "PC-060",
+    "section": "PC",
+    "source": "AFQT Focus Exam",
+    "n": 15,
+    "prompt": "It is either exceptionally naïve or depressingly cynical to equate an analysis of incomplete facts—even an analysis that turns out to be completely wrong—with knowing untruths (otherwise known as “lies”). Military, political, and economic intelligence—information about a known or potential adversary or competitor—is especially open to gaps, misinterpretation, and other confusion. Perfect information seldom if ever exists even in non-adversarial situations, much less when an adversary is actively trying to deny you the facts—or sell you the wrong ones. The quest for perfectly complete and accurate information results in analysis paralysis: the inability to make a decision until you have all the information, which is never going to happen.\n\nAccording to this passage, the reader can infer that the author",
+    "choices": {
+      "A": "likes to make decisions based on 100 percent accurate information",
+      "B": "knows that complete information will usually be available eventually",
+      "C": "believes that acting on incomplete information is often necessary",
+      "D": "supports a search for a non-adversarial interpretation"
+    },
+    "correct": "C",
+    "explanation": "According to this passage, the reader can infer that the author believes that acting on incomplete information is often necessary. The passage states that “the quest for perfectly complete . . . information results in . . . the inability to make a decision until you have all the information, which is never going to happen [emphasis added].” Therefore, we can conclude that the author believes the opposite, giving us our answer.",
+    "topic": "inference",
+    "status": "ok",
+    "check_note": ""
+  }
+]

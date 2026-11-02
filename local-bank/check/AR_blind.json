@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "AR-001",
+  "prompt": "The Hamiltons bought a table that was marked $400. On the installment plan, they made a down payment equal to 25 percent of the marked price, plus 12 monthly payments of $30 each. How much more than the marked price did they pay by buying it this way?",
+  "choices": {
+   "A": "$25",
+   "B": "$50",
+   "C": "$60",
+   "D": "$460"
+  }
+ },
+ {
+  "id": "AR-002",
+  "prompt": "A scientist planted 120 seeds, of which 90 sprouted. What percentage of the seeds failed to sprout?",
+  "choices": {
+   "A": "25%",
+   "B": "24%",
+   "C": "30%",
+   "D": "75%"
+  }
+ },
+ {
+  "id": "AR-003",
+  "prompt": "An airplane traveled 1,000 miles in 2 hours and 30 minutes. What was the average rate or speed, in miles per hour, for the trip?",
+  "choices": {
+   "A": "200 miles per hour",
+   "B": "300 miles per hour",
+   "C": "400 miles per hour",
+   "D": "500 miles per hour"
+  }
+ },
+ {
+  "id": "AR-004",
+  "prompt": "What is the value of this expression?\n(0.05 × 4) ÷ 0.1",
+  "choices": {
+   "A": "20",
+   "B": "2",
+   "C": "0.2",
+   "D": "0.02"
+  }
+ },
+ {
+  "id": "AR-005",
+  "prompt": "Mackenzie’s bank balance was $2,674. Her next four transactions were as follows:\n−$348, +$765, +$802, −$518\nWhat was her bank balance after the fourth transaction had posted?",
+  "choices": {
+   "A": "$5,107",
+   "B": "$4,241",
+   "C": "$3,475",
+   "D": "$3,375"
+  }
+ },
+ {
+  "id": "AR-006",
+  "prompt": "A snack bar sold 12 1/2 gallons of milk at 35 cents a pint. How much did the snack bar receive for the milk?",
+  "choices": {
+   "A": "$33.60",
+   "B": "$34.00",
+   "C": "$35.00",
+   "D": "$32.20"
+  }
+ },
+ {
+  "id": "AR-007",
+  "prompt": "A square measures 9 feet on a side. If each side of the square is increased by 3 feet, how many square feet are added to the area?",
+  "choices": {
+   "A": "144 square feet",
+   "B": "81 square feet",
+   "C": "60 square feet",
+   "D": "63 square feet"
+  }
+ },
+ {
+  "id": "AR-008",
+  "prompt": "What is the average of 1/4 and 1/6?",
+  "choices": {
+   "A": "5/24",
+   "B": "7/24",
+   "C": "5/12",
+   "D": "1/5"
+  }
+ },
+ {
+  "id": "AR-009",
+  "prompt": "Travis’ salary was increased from $260 per week to $290 per week. What was the increase in his salary to the nearest percent?",
+  "choices": {
+   "A": "12%",
+   "B": "11%",
+   "C": "10%",
+   "D": "9%"
+  }
+ },
+ {
+  "id": "AR-010",
+  "prompt": "If 1 pound, 12 ounces of fish costs $2.24, what is the cost of the fish per pound?",
+  "choices": {
+   "A": "$1.20",
+   "B": "$1.28",
+   "C": "$1.24",
+   "D": "$1.40"
+  }
+ },
+ {
+  "id": "AR-011",
+  "prompt": "A front lawn measures 25 feet in length and 15 feet in width. The back lawn of the same house measures 50 feet in length and 30 feet in width. What is the ratio of the area of the front lawn to the area of the back lawn?",
+  "choices": {
+   "A": "1:2",
+   "B": "2:3",
+   "C": "3:4",
+   "D": "1:4"
+  }
+ },
+ {
+  "id": "AR-012",
+  "prompt": "The price of a used car was increased from $6,400 to $7,200. What was the percentage increase?",
+  "choices": {
+   "A": "10%",
+   "B": "11.25%",
+   "C": "12.5%",
+   "D": "15%"
+  }
+ },
+ {
+  "id": "AR-013",
+  "prompt": "What is the next term in this series: 3 1/2, 2 1/4, 13 1/4, 12, _______?",
+  "choices": {
+   "A": "1 1/4",
+   "B": "10 3/4",
+   "C": "23",
+   "D": "14 1/2"
+  }
+ },
+ {
+  "id": "AR-014",
+  "prompt": "A movie theater opens at 10:00 A.M. and closes at 11:30 P.M. If a complete showing of a movie takes 2 hours and 15 minutes, how many complete showings are given at the movie theater each day?",
+  "choices": {
+   "A": "5",
+   "B": "6",
+   "C": "7",
+   "D": "8"
+  }
+ },
+ {
+  "id": "AR-015",
+  "prompt": "At a concert, orchestra seats sell for $20 each, and balcony seats sell for $10 each. If 324 orchestra seats were occupied, and the box office collected $10,000, how many balcony seats were sold?",
+  "choices": {
+   "A": "375",
+   "B": "352",
+   "C": "330",
+   "D": "310"
+  }
+ },
+ {
+  "id": "AR-016",
+  "prompt": "In a certain city, taxicab fare is $0.80 for the first 1/4 mile, and $0.20 for each additional 1/4 mile. How far, in miles, can a passenger travel for $5.00?",
+  "choices": {
+   "A": "5 miles",
+   "B": "4 1/4 miles",
+   "C": "5 1/2 miles",
+   "D": "5 3/4 miles"
+  }
+ },
+ {
+  "id": "AR-017",
+  "prompt": "A scale blueprint drawing of a building has a scale of 1 inch to 40 feet. How many inches on the drawing represent an actual distance of 175 feet?",
+  "choices": {
+   "A": "4 1/8",
+   "B": "4 3/8",
+   "C": "4 1/2",
+   "D": "4 3/4"
+  }
+ },
+ {
+  "id": "AR-018",
+  "prompt": "The wholesale list price of a watch is $50. A dealer bought a shipment of watches at a discount of 20 percent and sold the watches at 10 percent above the wholesale list price. What was the profit on each watch?",
+  "choices": {
+   "A": "$8",
+   "B": "$10",
+   "C": "$12",
+   "D": "$15"
+  }
+ },
+ {
+  "id": "AR-019",
+  "prompt": "The minute hand of a clock is missing, but the hour hand is on the 11-minute mark. What time was it when the clock broke?",
+  "choices": {
+   "A": "5 minutes after 11",
+   "B": "11 minutes after 12",
+   "C": "12 minutes after 2",
+   "D": "20 minutes after 1"
+  }
+ },
+ {
+  "id": "AR-020",
+  "prompt": "During a season a professional basketball player tried 320 shots and made 272 of them. What percentage of the shots tried were successful?",
+  "choices": {
+   "A": "85%",
+   "B": "80%",
+   "C": "75%",
+   "D": "70%"
+  }
+ },
+ {
+  "id": "AR-021",
+  "prompt": "A painter and a helper spent 3 days painting a house. The painter received twice as much as the helper. If the two men were paid $375 total for the job, how much did the painter receive?",
+  "choices": {
+   "A": "$175",
+   "B": "$200",
+   "C": "$225",
+   "D": "$250"
+  }
+ },
+ {
+  "id": "AR-022",
+  "prompt": "What is the difference between a 50% discount and a discount of 33 1/3%?",
+  "choices": {
+   "A": "0.17",
+   "B": "1/3",
+   "C": "0.25",
+   "D": "1/6"
+  }
+ },
+ {
+  "id": "AR-023",
+  "prompt": "What is the value of 3a^2 − 2a + 5 when a = 4?",
+  "choices": {
+   "A": "43",
+   "B": "45",
+   "C": "61",
+   "D": "21"
+  }
+ },
+ {
+  "id": "AR-024",
+  "prompt": "The following table gives the annual premiums for a life insurance policy based on the age of the holder when the policy is taken out.\nAge in Years | Premium per $1,000\n22 | $18\n30 | $22\n38 | $28\n46 | $38\nOver 20 years, how much is saved by taking out a $1,000 policy at age 30, rather than at age 46?",
+  "choices": {
+   "A": "$16",
+   "B": "$32",
+   "C": "$320",
+   "D": "$400"
+  }
+ },
+ {
+  "id": "AR-025",
+  "prompt": "A chair was marked for sale at $240. This sale price was 25 percent less than the original price. What was the original price?",
+  "choices": {
+   "A": "$300",
+   "B": "$280",
+   "C": "$320",
+   "D": "$60"
+  }
+ },
+ {
+  "id": "AR-026",
+  "prompt": "What is the quotient when 0.675 is divided by 0.9?",
+  "choices": {
+   "A": "7.5",
+   "B": "0.075",
+   "C": "75",
+   "D": "0.75"
+  }
+ },
+ {
+  "id": "AR-027",
+  "prompt": "On May 15, an electric meter read 5,472 kilowatt-hours. The following month, on June 15, the meter read 5,687 kilowatt-hours. The utility charges the following rates for electric service.\nFirst 10 kilowatt-hours—$2.48\nNext 45 kilowatt-hours—$0.16 per kilowatt-hour\nNext 55 kilowatt-hours—$0.12 per kilowatt-hour\nMore than 110 kilowatt-hours—$0.07 per kilowatt-hour\nWhat was the total charge for the kilowatt-hours consumed during the month from May 15 to June 15?",
+  "choices": {
+   "A": "$22.53",
+   "B": "$23.63",
+   "C": "$22.63",
+   "D": "$24.43"
+  }
+ },
+ {
+  "id": "AR-028",
+  "prompt": "What is the difference between the square of 49 and the square of 31?",
+  "choices": {
+   "A": "18",
+   "B": "1.4322",
+   "C": "1,440",
+   "D": "2,056"
+  }
+ },
+ {
+  "id": "AR-029",
+  "prompt": "A rectangular auditorium contains x rows, with y seats in each row. What is the number of seats in the auditorium?",
+  "choices": {
+   "A": "xy",
+   "B": "x + y",
+   "C": "x − y",
+   "D": "y − x"
+  }
+ },
+ {
+  "id": "AR-030",
+  "prompt": "When a certain number is divided by 15, the quotient is 8 and the remainder is 7. What is the number?",
+  "choices": {
+   "A": "127",
+   "B": "8 1/2",
+   "C": "3 3/5",
+   "D": "77"
+  }
+ },
+ {
+  "id": "AR-031",
+  "prompt": "You need 8 barrels of water to sprinkle 1/2 mile of roadway. How many barrels of water do you need to sprinkle 3 1/2 miles of roadway?",
+  "choices": {
+   "A": "7",
+   "B": "15",
+   "C": "50",
+   "D": "56"
+  }
+ },
+ {
+  "id": "AR-032",
+  "prompt": "A snapshot 8 inches long and 6 inches wide is to be enlarged so that its length will be 12 inches. How many inches wide will the enlarged snapshot be?",
+  "choices": {
+   "A": "8 inches",
+   "B": "6 inches",
+   "C": "9 inches",
+   "D": "10 inches"
+  }
+ },
+ {
+  "id": "AR-033",
+  "prompt": "Travis Lee has an ordinary life insurance policy with a face value of $10,000. At his age, the annual premium is $24.00 per $1,000. What is the total premium paid for this policy every 6 months?",
+  "choices": {
+   "A": "$100",
+   "B": "$120",
+   "C": "$240",
+   "D": "$400"
+  }
+ },
+ {
+  "id": "AR-034",
+  "prompt": "If 2 lbs. of cottage cheese cost $3.20, what is the cost of a 3-ounce portion of cottage cheese?",
+  "choices": {
+   "A": "$0.30",
+   "B": "$0.20",
+   "C": "$0.25",
+   "D": "$0.15"
+  }
+ },
+ {
+  "id": "AR-035",
+  "prompt": "Mr. Green drove for 12 hours at a speed of 55 miles per hour. If his car covered 22 miles for each gallon of gas used, how many gallons of gas did he use?",
+  "choices": {
+   "A": "32 gallons",
+   "B": "34 gallons",
+   "C": "36 gallons",
+   "D": "30 gallons"
+  }
+ },
+ {
+  "id": "AR-036",
+  "prompt": "Max earns $7.50 per hour. If he works from 8:45 A.M. until 5:15 P.M., with one hour off for lunch, how much does he earn in one day?",
+  "choices": {
+   "A": "$58.50",
+   "B": "$56.25",
+   "C": "$55.00",
+   "D": "$53.75"
+  }
+ },
+ {
+  "id": "AR-037",
+  "prompt": "If 5 shirts and 3 ties cost $52 and each tie costs $4, what is the cost of a shirt?",
+  "choices": {
+   "A": "$6",
+   "B": "$8",
+   "C": "$10",
+   "D": "$7.50"
+  }
+ },
+ {
+  "id": "AR-038",
+  "prompt": "What is the fifth term in the series: 5; 2; 9; 6; ____?",
+  "choices": {
+   "A": "16",
+   "B": "15",
+   "C": "14",
+   "D": "13"
+  }
+ },
+ {
+  "id": "AR-039",
+  "prompt": "In a theater audience of 500 people, 80 percent were adults. How many children were in the audience?",
+  "choices": {
+   "A": "20",
+   "B": "50",
+   "C": "100",
+   "D": "125"
+  }
+ },
+ {
+  "id": "AR-040",
+  "prompt": "A table usually sells for $240, but because it is slightly damaged, the store manager lets it go for $210. What is the percentage of reduction?",
+  "choices": {
+   "A": "12 1/2%",
+   "B": "14 2/7%",
+   "C": "16 2/3%",
+   "D": "18 3/4%"
+  }
+ },
+ {
+  "id": "AR-041",
+  "prompt": "Mr. and Mrs. Clifton bought a home for $55,000. It was assessed at 80 percent of the purchase price. If the real estate tax was $4.74 per $100, how much realty tax did the Cliftons pay?",
+  "choices": {
+   "A": "$2,085.60",
+   "B": "$1,985.60",
+   "C": "$2,607.00",
+   "D": "$285.60"
+  }
+ },
+ {
+  "id": "AR-042",
+  "prompt": "A scale on a map is 1 inch to 50 miles. On the map, two cities are 2 1/2 inches apart. What is the actual distance between the two cities?",
+  "choices": {
+   "A": "75 miles",
+   "B": "100 miles",
+   "C": "225 miles",
+   "D": "125 miles"
+  }
+ },
+ {
+  "id": "AR-043",
+  "prompt": "A shipment of 2,200 pounds of fertilizer is packed in 40-ounce bags. How many bags are needed for the shipment?",
+  "choices": {
+   "A": "800",
+   "B": "880",
+   "C": "780",
+   "D": "640"
+  }
+ },
+ {
+  "id": "AR-044",
+  "prompt": "A television priced at $400 was reduced 25 percent during a weekend sale. In addition, there was a 10 percent discount for paying cash. What was the cash price of the set during the sale?",
+  "choices": {
+   "A": "$130",
+   "B": "$260",
+   "C": "$270",
+   "D": "$320"
+  }
+ },
+ {
+  "id": "AR-045",
+  "prompt": "In a store four clerks each receive $255.00 per week, while two part-timers each earn $120.00. What is the average weekly salary paid these six workers?",
+  "choices": {
+   "A": "$200.00",
+   "B": "$210.00",
+   "C": "$187.50",
+   "D": "$190.00"
+  }
+ },
+ {
+  "id": "AR-046",
+  "prompt": "The perimeter of a rectangle is 40 feet. If the length is 15 feet, 6 inches, what is the width of the rectangle?",
+  "choices": {
+   "A": "4 feet, 6 inches",
+   "B": "9 feet, 6 inches",
+   "C": "5 feet, 6 inches",
+   "D": "5 feet"
+  }
+ },
+ {
+  "id": "AR-047",
+  "prompt": "What is the result of dividing 0.675 by 0.9?",
+  "choices": {
+   "A": "7.5",
+   "B": "0.075",
+   "C": "75",
+   "D": "0.75"
+  }
+ },
+ {
+  "id": "AR-048",
+  "prompt": "Two planes leave the same airport traveling in opposite directions. One is flying at the rate of 340 miles per hour, the other at 260 miles per hour. In how many hours will the two planes be 3,000 miles apart?",
+  "choices": {
+   "A": "5 hours",
+   "B": "4 hours",
+   "C": "6 hours",
+   "D": "10 hours"
+  }
+ },
+ {
+  "id": "AR-049",
+  "prompt": "What is the cost of 5 feet, 3 inches of plastic material that sells for $8.00 per foot?",
+  "choices": {
+   "A": "$14.00",
+   "B": "$42.00",
+   "C": "$23.00",
+   "D": "$21.12"
+  }
+ },
+ {
+  "id": "AR-050",
+  "prompt": "If one gallon of milk costs $3.84, what is the cost of three pints?",
+  "choices": {
+   "A": "$1.44",
+   "B": "$2.82",
+   "C": "$2.04",
+   "D": "$1.96"
+  }
+ },
+ {
+  "id": "AR-051",
+  "prompt": "A man left $72,000 to his wife and son. The ratio of the wife’s share to the son’s share was 5:3. How much did his wife receive?",
+  "choices": {
+   "A": "$27,000",
+   "B": "$14,000",
+   "C": "$45,000",
+   "D": "$54,000"
+  }
+ },
+ {
+  "id": "AR-052",
+  "prompt": "A recipe calls for 2 1/2 ounces of chocolate and 1/2 cup of corn syrup. If only 2 ounces of chocolate are available, how much corn syrup should be used?",
+  "choices": {
+   "A": "1/2 cup",
+   "B": "1/3 cup",
+   "C": "2/5 cup",
+   "D": "3/10 cup"
+  }
+ },
+ {
+  "id": "AR-053",
+  "prompt": "A ship sails x miles the first day, y miles the second day, and z miles the third day. What was the average distance covered per day?",
+  "choices": {
+   "A": "xyz/3",
+   "B": "(x + y + z)/3",
+   "C": "3xyz",
+   "D": "none of these"
+  }
+ },
+ {
+  "id": "AR-054",
+  "prompt": "A man invests $6,000 at 5 percent annual interest. How much more must he invest at 6 percent annual interest so that his annual income from both investments is $900?",
+  "choices": {
+   "A": "$3,000",
+   "B": "$5,000",
+   "C": "$8,000",
+   "D": "$10,000"
+  }
+ },
+ {
+  "id": "AR-055",
+  "prompt": "Which of these is an example of similar figures?",
+  "choices": {
+   "A": "a plane and a scale model of that plane",
+   "B": "a pen and a pencil",
+   "C": "a motorcycle and a car",
+   "D": "an equilateral triangle and a right triangle"
+  }
+ },
+ {
+  "id": "AR-056",
+  "prompt": "Find the numerical value of 5a^2b − 3ab^2 if a = 7 and b = 4.",
+  "choices": {
+   "A": "846",
+   "B": "644",
+   "C": "488",
+   "D": "224"
+  }
+ },
+ {
+  "id": "AR-057",
+  "prompt": "If the circumference of a circle is divided by the length of its diameter, what is the result?",
+  "choices": {
+   "A": "2",
+   "B": "27",
+   "C": "π",
+   "D": "7"
+  }
+ },
+ {
+  "id": "AR-058",
+  "prompt": "A businesswoman spends 1/5 of her income for office rent, and 3/8 of the remainder of her income for salaries. What part of her income does she spend for salaries?",
+  "choices": {
+   "A": "23/40",
+   "B": "3/10",
+   "C": "1/2",
+   "D": "3/4"
+  }
+ },
+ {
+  "id": "AR-059",
+  "prompt": "Using the following formula, find the value of C when F = 50.\nC = (5/9)(F − 32)",
+  "choices": {
+   "A": "10",
+   "B": "18",
+   "C": "90",
+   "D": "40"
+  }
+ },
+ {
+  "id": "AR-060",
+  "prompt": "What is the average of these temperature readings, taken on a cold day last winter?\n6:00 A.M. | −12 degrees\n7:00 A.M. | −7 degrees\n8:00 A.M. | −2 degrees\n9:00 A.M. | 0 degrees\n10:00 A.M. | 16 degrees",
+  "choices": {
+   "A": "0 degrees",
+   "B": "2 degrees",
+   "C": "−1 degree",
+   "D": "−3 degrees"
+  }
+ },
+ {
+  "id": "AR-061",
+  "prompt": "Mr. Winter bought a $500 TV that was marked at a 15 percent discount. He made a down payment of $65 and agreed to pay the balance in 12 equal monthly installments. How much was each installment?",
+  "choices": {
+   "A": "$25.00",
+   "B": "$30.00",
+   "C": "$42.50",
+   "D": "$360.00"
+  }
+ },
+ {
+  "id": "AR-062",
+  "prompt": "A farmer uses two gallons of insecticide concentrate to spray each 1/4 acre of his land. How many gallons of the concentrate will he need to spray 10 1/2 acres?",
+  "choices": {
+   "A": "80",
+   "B": "80 1/4",
+   "C": "82",
+   "D": "84"
+  }
+ },
+ {
+  "id": "AR-063",
+  "prompt": "An engineering drawing on a sheet of paper that measures 12 inches wide by 18 inches long is to be enlarged so that the length is 45 inches. How many inches wide will the enlarged drawing be?",
+  "choices": {
+   "A": "30 inches",
+   "B": "39 inches",
+   "C": "66 inches",
+   "D": "33 inches"
+  }
+ },
+ {
+  "id": "AR-064",
+  "prompt": "In a quality control test at a factory, of 280 products inspected at random, 266 were found to be acceptable. What percentage of the items inspected were found acceptable?",
+  "choices": {
+   "A": "66%",
+   "B": "95%",
+   "C": "5%",
+   "D": "86%"
+  }
+ },
+ {
+  "id": "AR-065",
+  "prompt": "A candy store sells 3 lbs. of a candy mix for $4.80. What is the price of a 5-oz. bag of this mix?",
+  "choices": {
+   "A": "$1.00",
+   "B": "$2.40",
+   "C": "$0.25",
+   "D": "$0.50"
+  }
+ },
+ {
+  "id": "AR-066",
+  "prompt": "The perimeter of a square is 13 feet, 8 inches. What is the length of one side of the square?",
+  "choices": {
+   "A": "3 feet, 2 inches",
+   "B": "3 feet, 5 inches",
+   "C": "3 feet, 3 inches",
+   "D": "3 feet, 6 inches"
+  }
+ },
+ {
+  "id": "AR-067",
+  "prompt": "A military unit has 360 members, and 20 percent are officers. How many members of the unit are enlisted personnel?",
+  "choices": {
+   "A": "90",
+   "B": "270",
+   "C": "72",
+   "D": "288"
+  }
+ },
+ {
+  "id": "AR-068",
+  "prompt": "Kate earns $8.50 per hour with time and a half paid for overtime in excess of 8 hours on any one day. One day she worked 10 hours. How much did she earn on that day?",
+  "choices": {
+   "A": "$85.00",
+   "B": "$117.50",
+   "C": "$97.75",
+   "D": "$93.50"
+  }
+ },
+ {
+  "id": "AR-069",
+  "prompt": "What is the next term in the series: 2 1/4, 3 3/4, 3 1/4, 4 3/4, ____?",
+  "choices": {
+   "A": "4 1/4",
+   "B": "6 1/4",
+   "C": "5 1/4",
+   "D": "3 1/4"
+  }
+ },
+ {
+  "id": "AR-070",
+  "prompt": "Tickets for movie admission for adults are $4.00 each, but half-price is charged for children. If 265 adult tickets were sold and the box office collected $1,200, how many children’s tickets were sold?",
+  "choices": {
+   "A": "70",
+   "B": "35",
+   "C": "280",
+   "D": "140"
+  }
+ },
+ {
+  "id": "AR-071",
+  "prompt": "A woman budgets her income so that she spends 1/4 of it for rent and 2/5 of the remainder for food. What part of the total income does she budget for food?",
+  "choices": {
+   "A": "1/10",
+   "B": "1/5",
+   "C": "3/20",
+   "D": "3/10"
+  }
+ },
+ {
+  "id": "AR-072",
+  "prompt": "A survey of a small group of people found that 3 of them each watched 2 hours of TV per day. Two of them watched 1 hour per day, and 1 watched 4 hours per day. What is the average number of hours of TV watched by members of this group?",
+  "choices": {
+   "A": "1 1/3 hours",
+   "B": "2 2/3 hours",
+   "C": "2 hours",
+   "D": "3 hours"
+  }
+ },
+ {
+  "id": "AR-073",
+  "prompt": "What is the cost of 3 yards, 2 feet of an upholstery edging material that costs $9 per yard?",
+  "choices": {
+   "A": "$30",
+   "B": "$36",
+   "C": "$29",
+   "D": "$33"
+  }
+ },
+ {
+  "id": "AR-074",
+  "prompt": "A partnership agreement calls for the two partners to share the profits of their business in the ratio 4:5. If the profit for the year is $63,000, what is the share paid to the partner who gets the smaller portion?",
+  "choices": {
+   "A": "$28,000",
+   "B": "$7,000",
+   "C": "$35,000",
+   "D": "$15,750"
+  }
+ },
+ {
+  "id": "AR-075",
+  "prompt": "A courier leaves an office driving at an average rate of 30 miles per hour but forgets part of the material he was supposed to take with him. An hour later, a second courier is dispatched with the missing material and is instructed to overtake the first courier in 2 hours more. How fast must the second courier travel?",
+  "choices": {
+   "A": "90 miles per hour",
+   "B": "60 miles per hour",
+   "C": "45 miles per hour",
+   "D": "40 miles per hour"
+  }
+ },
+ {
+  "id": "AR-076",
+  "prompt": "A merchant buys radios listed wholesale for $60 a piece at a 25 percent discount. He sells these radios at a 20 percent markup above the original wholesale price. What is his profit on each radio?",
+  "choices": {
+   "A": "$9.00",
+   "B": "$27.00",
+   "C": "$12.00",
+   "D": "$18.00"
+  }
+ },
+ {
+  "id": "AR-077",
+  "prompt": "An airplane travels a distance of x miles in y hours. What is its average rate of speed in miles per hour?",
+  "choices": {
+   "A": "xy/y",
+   "B": "x/y",
+   "C": "y/x",
+   "D": "(x + y)/2"
+  }
+ },
+ {
+  "id": "AR-078",
+  "prompt": "The cost of sending a telegram is $1.50 for the first 10 words and $0.05 for each additional word. How many words can be sent by telegram for $4.00?",
+  "choices": {
+   "A": "50",
+   "B": "60",
+   "C": "81",
+   "D": "90"
+  }
+ },
+ {
+  "id": "AR-079",
+  "prompt": "A mapmaker is told to prepare a map with a scale of 1 inch to 40 miles. If the actual distance between two points is 110 miles, how far apart should the mapmaker show them on the map?",
+  "choices": {
+   "A": "7 inches",
+   "B": "3 1/2 inches",
+   "C": "2 1/2 inches",
+   "D": "2 3/4 inches"
+  }
+ },
+ {
+  "id": "AR-080",
+  "prompt": "In the town of Hampshire, houses are assessed at 75 percent of the purchase price. If Mr. Johnson buys a house in Hampshire for $80,000 and real estate taxes are $4.83 per $100 of assessed valuation, how much realty tax must he pay?",
+  "choices": {
+   "A": "$2,898",
+   "B": "$3,864",
+   "C": "$600",
+   "D": "$604.83"
+  }
+ },
+ {
+  "id": "AR-081",
+  "prompt": "The ingredients in a cake recipe include 4 1/2 cups of flour and 3/4 cup of sugar. It is desired to make a cake that will require only 1/4 cup of sugar. How much flour should be used?",
+  "choices": {
+   "A": "1 1/4 cups",
+   "B": "1 1/2 cups",
+   "C": "4 cups",
+   "D": "1 3/4 cups"
+  }
+ },
+ {
+  "id": "AR-082",
+  "prompt": "When the tolls on a bridge were increased, the traffic declined from 1,200 cars crossing per day to 1,044. What was the percentage of the decline in traffic?",
+  "choices": {
+   "A": "87%",
+   "B": "156%",
+   "C": "13%",
+   "D": "15%"
+  }
+ },
+ {
+  "id": "AR-083",
+  "prompt": "If a two-gallon bucket of liquid floor polish costs $19.20, how much should a one-quart can cost?",
+  "choices": {
+   "A": "$4.80",
+   "B": "$2.40",
+   "C": "$1.20",
+   "D": "$0.60"
+  }
+ },
+ {
+  "id": "AR-084",
+  "prompt": "A man takes a trip in which he first drives for 3 hours at 50 miles per hour. He then drives for 2 hours more at 55 miles per hour. If his car gets 20 miles per gallon, how many gallons of gas did he use for the trip?",
+  "choices": {
+   "A": "10 gallons",
+   "B": "9.5 gallons",
+   "C": "26 gallons",
+   "D": "13 gallons"
+  }
+ },
+ {
+  "id": "AR-085",
+  "prompt": "A woman has $5,000 invested at 8 percent annual interest. At what rate must she invest an additional $10,000 so that her annual income from both investments is equivalent to 9 percent of her total investment?",
+  "choices": {
+   "A": "10%",
+   "B": "10.5%",
+   "C": "9%",
+   "D": "9.5%"
+  }
+ },
+ {
+  "id": "AR-086",
+  "prompt": "The fuel tank of a gasoline generator contains sufficient capacity to operate the generator for 1 hour and 20 minutes. How many times must the fuel tank be filled to run the generator from 9:15 A.M. to 3:55 P.M.?",
+  "choices": {
+   "A": "5",
+   "B": "6",
+   "C": "4 1/2",
+   "D": "4"
+  }
+ },
+ {
+  "id": "AR-087",
+  "prompt": "A nursery employee mixes 10 pounds of hardy grass seed worth $1.20 per pound with 8 pounds of premium grass seed worth $3.00 per pound. At what price per pound should she sell the mixture?",
+  "choices": {
+   "A": "$2.10",
+   "B": "$2.00",
+   "C": "$1.90",
+   "D": "$2.50"
+  }
+ },
+ {
+  "id": "AR-088",
+  "prompt": "What is the value of (0.02 × 3) / 0.001?",
+  "choices": {
+   "A": "60",
+   "B": "6",
+   "C": "0.6",
+   "D": "0.06"
+  }
+ },
+ {
+  "id": "AR-089",
+  "prompt": "Find the numerical value of 1 + 5xy^2 − 3x^2y if x = 3 and y = 2.",
+  "choices": {
+   "A": "25",
+   "B": "18",
+   "C": "739",
+   "D": "7"
+  }
+ },
+ {
+  "id": "AR-090",
+  "prompt": "Using the formula I = √(P/R), find the value of I when P = 48 and R = 3.",
+  "choices": {
+   "A": "12",
+   "B": "8",
+   "C": "4",
+   "D": "4/3"
+  }
+ },
+ {
+  "id": "AR-091",
+  "prompt": "At Chez Marie, one-fifth of the patrons are male and one-fourth of the patrons are from out of town. What proportion would you expect to be both male and from out of town?",
+  "choices": {
+   "A": "1/4",
+   "B": "1/9",
+   "C": "1/20",
+   "D": "1/25"
+  }
+ },
+ {
+  "id": "AR-092",
+  "prompt": "There are 124 certified nursing assistants and 36 registered nurses working at a hospital. What percentage of the workforce are registered nurses?",
+  "choices": {
+   "A": "18.7%",
+   "B": "22.5%",
+   "C": "36.0%",
+   "D": "41.3%"
+  }
+ },
+ {
+  "id": "AR-093",
+  "prompt": "Of a thousand dogs at a dog show, 54 percent were male. Among these males, 4 out of 5 were over the age of 3. How many of the dogs were males 3 years old or older?",
+  "choices": {
+   "A": "216",
+   "B": "332",
+   "C": "432",
+   "D": "540"
+  }
+ },
+ {
+  "id": "AR-094",
+  "prompt": "A mail carrier can deliver mail to 800 addresses in one day. In the city of Woodway, there are 36,800 residents. How many mail carriers must be hired to deliver mail to all of the Woodway citizens each day?",
+  "choices": {
+   "A": "36",
+   "B": "46",
+   "C": "92",
+   "D": "138"
+  }
+ },
+ {
+  "id": "AR-095",
+  "prompt": "A heart attack victim can be saved 90 percent of the time if a defibrillator is used within 5 minutes of the heart attack’s onset. Of the people who have heart attacks, defibrillators are nearby 40 percent of the time, but they are only used 60 percent of the time even when they are available. How many people who suffer a heart attack are saved because of the use of a defibrillator?",
+  "choices": {
+   "A": "20%",
+   "B": "22%",
+   "C": "42%",
+   "D": "30%"
+  }
+ },
+ {
+  "id": "AR-096",
+  "prompt": "A college student scored 74, 97, 88, 83, and 86 on his physics tests during the course of the semester. His professor will drop the lowest test grade to compute each student’s average for the semester. What is the student’s final average in the class?",
+  "choices": {
+   "A": "82.0%",
+   "B": "85.6%",
+   "C": "86.0%",
+   "D": "88.5%"
+  }
+ },
+ {
+  "id": "AR-097",
+  "prompt": "The manufacturer’s suggested retail price of the new Guzzler 300 SEV (Sport Everything Vehicle) went from $22,399 last year to $23,999 for this year’s model. About what percentage increase was this?",
+  "choices": {
+   "A": "2.07%",
+   "B": "7.1%",
+   "C": "9.3%",
+   "D": "11.4%"
+  }
+ },
+ {
+  "id": "AR-098",
+  "prompt": "The Midway Panthers high school football quarterback attempted 82 passes and completed 57 of them while the team ran up a 8-1 record. What was his completion percentage?",
+  "choices": {
+   "A": "30.4%",
+   "B": "69.5%",
+   "C": "43.8%",
+   "D": "81.7%"
+  }
+ },
+ {
+  "id": "AR-099",
+  "prompt": "Mackenzie has a 20-year term life insurance policy for $100,000. The annual premium is $12.00 per thousand. What is the total premium paid for this policy every 6 months?",
+  "choices": {
+   "A": "$600",
+   "B": "$1,200",
+   "C": "$100",
+   "D": "$2,400"
+  }
+ },
+ {
+  "id": "AR-100",
+  "prompt": "The deli in the local super grocery store sells 2 pounds of smoked deli turkey breast for $13.98. What would the cost be of a 5-ounce portion?",
+  "choices": {
+   "A": "$0.44",
+   "B": "$0.87",
+   "C": "$1.40",
+   "D": "$2.20"
+  }
+ },
+ {
+  "id": "AR-101",
+  "prompt": "Jonathan gets a bonus check and goes to the haberdasher’s outlet. He finds that five shirts and four ties cost $173 and each tie costs $12. What is the cost of one shirt?",
+  "choices": {
+   "A": "$15.00",
+   "B": "$22.60",
+   "C": "$19.22",
+   "D": "$25.00"
+  }
+ },
+ {
+  "id": "AR-102",
+  "prompt": "A regional waste disposal expediter company wants to calculate a price to charge for their new Super-Duper Dumpster. In order to do that, the operations manager needs to calculate the volume of the new container. What is the volume of the container if it is 23 feet long, 15 feet wide, and 11 feet high?",
+  "choices": {
+   "A": "2,530 square feet",
+   "B": "3,450 cubic feet",
+   "C": "3,795 square feet",
+   "D": "3,795 cubic feet"
+  }
+ },
+ {
+  "id": "AR-103",
+  "prompt": "A college football player’s parents spent $119 on tickets for family and friends to attend a conference playoff game. If the general admission tickets were $7 and $10, and they bought an equal number of both kinds of tickets, how many $7 tickets did they buy?",
+  "choices": {
+   "A": "4",
+   "B": "5",
+   "C": "7",
+   "D": "11"
+  }
+ },
+ {
+  "id": "AR-104",
+  "prompt": "While working her way through college, Amanda earns an average of $22 an hour in tips as a supervising waitress at the best steak restaurant in town. If her hourly wage is $2.50 and she has to pay a 10 percent tip share to the hostesses and busboys, how much does she take home at the end of a day where she worked from 10:30 A.M. to 5:30 P.M.?",
+  "choices": {
+   "A": "$32.90",
+   "B": "$121.11",
+   "C": "$138.60",
+   "D": "$156.10"
+  }
+ },
+ {
+  "id": "AR-105",
+  "prompt": "The local performing arts troupe saw, before the curtain went up, that 76 percent of a 500-seat theater was occupied, and that three-quarters of those attending were adults. How many children were seated in the theater?",
+  "choices": {
+   "A": "95",
+   "B": "100",
+   "C": "76",
+   "D": "285"
+  }
+ },
+ {
+  "id": "AR-106",
+  "prompt": "While home one weekend from college, Jonathan spent 4 hours studying, 1 hour playing with the dogs, 30 minutes doing his laundry, and 2 hours watching TV. What percentage of his time was spent studying?",
+  "choices": {
+   "A": "46.6%",
+   "B": "50.0%",
+   "C": "53.3%",
+   "D": "57.1%"
+  }
+ },
+ {
+  "id": "AR-107",
+  "prompt": "Mrs. D. found a chandelier for the dining room for $1,400. However, since the model had been discontinued and the display had no factory packaging material, the store manager discounted the price to $1,150. What was the percentage of the reduction?",
+  "choices": {
+   "A": "1.78%",
+   "B": "13.0%",
+   "C": "15.0%",
+   "D": "17.9%"
+  }
+ },
+ {
+  "id": "AR-108",
+  "prompt": "To complete the decoration of her new home, Kate bought a rectangular Persian rug that measured 45 feet around its outer edge. If the long sides measure 15 feet each, how long is each short side of the rug?",
+  "choices": {
+   "A": "7.5 feet",
+   "B": "10 feet",
+   "C": "12.5 feet",
+   "D": "15 feet"
+  }
+ },
+ {
+  "id": "AR-109",
+  "prompt": "While working in the Floors ‘R’ Us suburban store, four customer service representatives each receive $320 a week, while two sales managers each earn $12 per hour plus an average $100 per day commission. What is the total weekly compensation paid to these six employees for a 5-day, 40-hour work week?",
+  "choices": {
+   "A": "$2,420",
+   "B": "$3,240",
+   "C": "$2,260",
+   "D": "$4,520"
+  }
+ },
+ {
+  "id": "AR-110",
+  "prompt": "The USS Texas (SSN 775) sails x miles the first day, y miles the second day, and z miles the third day. What is the formula for the average number of miles sailed per day?",
+  "choices": {
+   "A": "3xyz",
+   "B": "3 · (x + y + z)",
+   "C": "(x + y + z) ÷ 3",
+   "D": "(x + y + z)"
+  }
+ },
+ {
+  "id": "AR-111",
+  "prompt": "If a train can travel 500 miles in 5 hours, how far can it travel in 15 minutes?",
+  "choices": {
+   "A": "25 miles",
+   "B": "30 miles",
+   "C": "57 miles",
+   "D": "125 miles"
+  }
+ },
+ {
+  "id": "AR-112",
+  "prompt": "Which one of these pairs of objects is an example of similar figures, mathematically speaking?",
+  "choices": {
+   "A": "a right triangle and an isosceles triangle",
+   "B": "a motorcycle and a sidecar",
+   "C": "a bicycle and a motorcycle",
+   "D": "an airplane and a scale model of that airplane"
+  }
+ },
+ {
+  "id": "AR-113",
+  "prompt": "Upon his death, a man’s life insurance policies paid $750,000 to his wife and three children. The policies were set up to pay the wife and children in the ratio of 5:1:1:1. How much did the children receive altogether?",
+  "choices": {
+   "A": "$150,000",
+   "B": "$200,000",
+   "C": "$250,000",
+   "D": "$281,250"
+  }
+ },
+ {
+  "id": "AR-114",
+  "prompt": "Although the table of organization and equipment specifies that an infantry rifle company has a total 131 soldiers authorized, B Company (Bulldogs), 3rd Battalion, 144th Infantry Regiment has only 125 total soldiers assigned, of whom 4 percent are officers. How many enlisted soldiers are assigned to the company?",
+  "choices": {
+   "A": "114",
+   "B": "123",
+   "C": "120",
+   "D": "121"
+  }
+ },
+ {
+  "id": "AR-115",
+  "prompt": "James, the high-tech electronics store owner, makes a deal to buy 20 DVD players for the listed wholesale price of $80 apiece, but receives a 25 percent discount because he is a frequent customer of the wholesale dealer. Being a shrewd entrepreneur, he then sells these DVD players at a 20 percent markup above the original wholesale price. What is his profit on each DVD player?",
+  "choices": {
+   "A": "$16",
+   "B": "$720",
+   "C": "$20",
+   "D": "$36"
+  }
+ },
+ {
+  "id": "AR-116",
+  "prompt": "A mapmaker is told to prepare a map with a scale of 1 inch = 50 miles. If the actual ground distance between two points is 120 miles, how far apart should the mapmaker show them on the map?",
+  "choices": {
+   "A": "0.4 inch",
+   "B": "2.4 inches",
+   "C": "1.2 inches",
+   "D": "4.8 inches"
+  }
+ },
+ {
+  "id": "AR-117",
+  "prompt": "In the city of Hewitt, houses are assessed for tax purposes at 80 percent of the purchase price. If Mr. Thomas buys a house in Hewitt for $120,000 and real estate taxes are $4.75 per $100 of assessed valuation, how much property tax must he pay per year?",
+  "choices": {
+   "A": "$3,648",
+   "B": "$5,472",
+   "C": "$4,560",
+   "D": "$4,845"
+  }
+ },
+ {
+  "id": "AR-118",
+  "prompt": "Travis’ hunting lodge does not have electrical lines run to it, but it does have a gasoline generator that powers the lights, heater, and stove. The fuel tank of the generator holds enough to run the generator for 75 minutes. About how many times must the fuel tank be filled to run the generator from 6:15 P.M. to 7:00 A.M.?",
+  "choices": {
+   "A": "9.4",
+   "B": "10.2",
+   "C": "10.8",
+   "D": "11.5"
+  }
+ },
+ {
+  "id": "AR-119",
+  "prompt": "When a stretch of Loop 1 was converted from non-paid to a toll road, the traffic declined from 11,200 cars per day to 10,044. What was the percent of the decline in traffic?",
+  "choices": {
+   "A": "10.3%",
+   "B": "11.5%",
+   "C": "10.1%",
+   "D": "8.9%"
+  }
+ },
+ {
+  "id": "AR-120",
+  "prompt": "Mr. Lee is a high-tech cutlery salesman. On a sales trip, he first drives for two hours at 70 miles per hour. He then drives for another one and a half hours at 65 miles per hour. If his car gets 25 miles per gallon on the highway in this speed range, how many gallons of gas did he use for the trip?",
+  "choices": {
+   "A": "5.4 gallons",
+   "B": "8.2 gallons",
+   "C": "8.4 gallons",
+   "D": "9.5 gallons"
+  }
+ }
+]

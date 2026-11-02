@@ -10,6 +10,8 @@
  * Setup (one-time):
  *   1. Create a new Google Sheet (e.g. "Florence EST Results").
  *   2. Extensions > Apps Script. Delete the boilerplate, paste this file.
+ *      Then Files > + > Script, name it "qrcode", and paste
+ *      apps-script/qrcode.gs into it (draws the email's QR codes).
  *   3. Deploy > New deployment > type "Web app".
  *        Execute as: Me
  *        Who has access: Anyone
@@ -63,7 +65,37 @@
 
 var SHEET_NAME = "Results";
 var NOTIFY_EMAIL = "joshua.t.shirley@army.mil";
-var SHEET_URL = "https://docs.google.com/spreadsheets/d/1BftqXMNaw7WurUHmzGtQiUQvFmgnaGe-1Qm_CtW1Tjc/edit";
+
+// Each per-test email also goes to the recruiter the applicant picked on
+// the kiosk. Keys must match the kiosk's EST_CONFIG.recruiters names
+// exactly ("Lastname RANK"). Leave an address "" until you have it; that
+// recruiter's results then go to NOTIFY_EMAIL only. Use official
+// (army.mil) addresses: these emails carry applicant names and phones.
+// The emails have no link to the Sheet, so a recruiter only sees the
+// results sent to them.
+var RECRUITER_EMAILS = {
+  "Curless SSG": "",
+  "Gatling SFC": "",
+  "Guiler SFC": "",
+  "Recendez SFC": "",
+  "Schultz SFC": "",
+  "Shirley SFC": "joshua.t.shirley@army.mil"
+  // NEW RECRUITER ("Aquaman" template): add a comma after the line above,
+  // copy this line, remove the //, and set the same "Lastname RANK" you
+  // used in index.html's EST_CONFIG.recruiters, plus their email.
+  // , "Aquaman SGT": "first.m.last.mil@army.mil"
+};
+
+// Recruiter follow-up codes in each per-test email (followUpCodes):
+// one saves the applicant as a contact, the other opens a text to them
+// from the recruiter's phone. PRACTICE_SITE_URL is the public GitHub
+// Pages address of the kiosk ("?practice" is added to it); leave it ""
+// until the site is up. In the template, {recruiter} = "SFC Shirley",
+// {score} = projected AFQT, {link} = the practice link, {weakest} = their
+// lowest section (Arithmetic Reasoning when it's in a tie).
+var PRACTICE_SITE_URL = "";
+var APPLICANT_TEXT_TEMPLATE = "Hey this is {recruiter}. You got a {score}. Check this link to practice " +
+  "on your own {link} You needed help with {weakest} the most. Focus on that in March2Success.com.";
 
 var SECTION_NAMES = {
   WK: "Word Knowledge",
@@ -85,7 +117,10 @@ var HEADER_ROW = [
   "Last Name", "First Name",
   "Test Number",
   "Next Action", "Notes",
-  "Test Key"
+  "Test Key",
+  // End-of-test readiness questions (kiosk renderReadiness). Older kiosks
+  // and Florence_Practice_Test don't send them, so these stay blank.
+  "Ready (1-10)", "Not-10 Reasons", "What Would Make It 10"
 ];
 
 // Practice drills (the take-home practice page) log here, NOT to the
@@ -181,10 +216,25 @@ function appendResultRow(data) {
     // Next Action / Notes are filled in later by updateResultNote; left
     // blank here so Test Key lands in its own column after them.
     "", "",
-    data.test_key || ""
+    data.test_key || "",
+    data.ready === undefined ? "" : data.ready,
+    sheetText(data.not_ten_reasons),
+    sheetText(data.make_it_ten)
   ]);
 
   notifyResult(data);
+}
+
+// Applicant-typed text: a leading =, +, - or @ would make Sheets read
+// the cell as a formula (and show #ERROR!), so prefix those with ' to
+// store them as plain text.
+function sheetText(value) {
+  var text = value == null ? "" : String(value);
+  return /^[=+\-@]/.test(text) ? "'" + text : text;
+}
+
+function hasReady(data) {
+  return data.ready !== undefined && data.ready !== null && data.ready !== "";
 }
 
 // No per-drill email -- drills are frequent and low-stakes, so they only
@@ -208,8 +258,20 @@ function appendPracticeRow(data) {
 // Best-effort: the row is already saved by the time this runs, so a
 // notify failure (e.g. MailApp's daily quota) must not surface as a
 // save failure back to the kiosk.
+// NOTIFY_EMAIL plus the applicant's recruiter, without sending anyone
+// two copies.
+function notifyRecipients(recruiter) {
+  var list = [];
+  [NOTIFY_EMAIL, RECRUITER_EMAILS[recruiter] || ""].forEach(function (addr) {
+    addr = String(addr).trim();
+    if (addr && list.indexOf(addr.toLowerCase()) === -1) list.push(addr.toLowerCase());
+  });
+  return list.join(",");
+}
+
 function notifyResult(data) {
-  if (!NOTIFY_EMAIL) return;
+  var to = notifyRecipients(data.recruiter || "");
+  if (!to) return;
   try {
     var when = Utilities.formatDate(
       data.timestamp ? new Date(data.timestamp) : new Date(),
@@ -225,20 +287,27 @@ function notifyResult(data) {
     var sections = data.sections || {};
 
     var subject = "EST " + recruiter + " " + lastName + " " + firstName +
-      " AFQT " + afqt + " " + phone;
+      " Test " + testNumber + " AFQT " + afqt + " " + phone +
+      (hasReady(data) ? " Ready " + data.ready + "/10" : "");
 
-    var plainLines = [when, lastName + ", " + firstName, "AFQT: " + afqt, phone, recruiter];
-    if (testNumber > 1) plainLines.push("Test " + testNumber);
+    var plainLines = [when, lastName + ", " + firstName, "Test " + testNumber, "AFQT: " + afqt, phone, recruiter];
+    if (hasReady(data)) {
+      plainLines.push("Ready to join: " + data.ready + "/10");
+      if (data.not_ten_reasons) plainLines.push("Why not a 10: " + data.not_ten_reasons);
+      if (data.make_it_ten) plainLines.push("What would make it a 10: " + data.make_it_ten);
+    }
     SECTION_ORDER.forEach(function (code) {
       var s = sections[code];
       if (!s) return;
       plainLines.push(SECTION_NAMES[code] + ": " + s.correct + "/" + s.total + " (" + statusBand(s).label + ")");
     });
-    plainLines.push(SHEET_URL);
+    var codes = followUpCodes(data, testNumber);
+    if (codes.text) plainLines.push("", "Text to send: " + codes.text);
     var body = plainLines.join("\n");
 
-    MailApp.sendEmail(NOTIFY_EMAIL, subject, body, {
-      htmlBody: buildHtmlReport(data, when, testNumber),
+    MailApp.sendEmail(to, subject, body, {
+      htmlBody: buildHtmlReport(data, when, testNumber) + codes.html,
+      inlineImages: codes.images,
       name: "Florence EST Kiosk"
     });
   } catch (err) {
@@ -305,7 +374,7 @@ function buildHtmlReport(data, when, testNumber) {
   return "" +
     "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"max-width:480px;background:#ffffff;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;\"><tr><td style=\"padding:8px 4px;\">" +
 
-    "<p style=\"margin:0 0 4px;font-size:13px;color:#555;\">" + esc(when) + (testNumber > 1 ? " &middot; Test " + testNumber : "") + "</p>" +
+    "<p style=\"margin:0 0 4px;font-size:13px;color:#555;\">" + esc(when) + " &middot; Test " + esc(testNumber) + "</p>" +
     "<h2 style=\"margin:0 0 4px;font-size:22px;\">" + lastName + ", " + firstName + "</h2>" +
     "<p style=\"margin:0 0 20px;font-size:14px;color:#555;\">" + recruiter + (phone ? " &middot; " + phone : "") + "</p>" +
 
@@ -317,6 +386,7 @@ function buildHtmlReport(data, when, testNumber) {
     "</td></tr></table>" +
 
     "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\">" + meterRows + "</table>" +
+    readinessHtml(data) +
 
     "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-top:1px solid #eee;margin-top:4px;\"><tr>" +
     "<td align=\"center\" style=\"padding:16px 0 4px;\">" +
@@ -324,9 +394,124 @@ function buildHtmlReport(data, when, testNumber) {
     "<div style=\"font-size:11px;color:#555;text-transform:uppercase;letter-spacing:1px;margin-top:2px;\">Overall</div>" +
     "</td></tr></table>" +
 
-    "<p style=\"margin:22px 0 0;font-size:14px;\"><a href=\"" + SHEET_URL + "\" style=\"color:#1e4d8c;\">View full results sheet &#8599;</a></p>" +
 
     "</td></tr></table>";
+}
+
+// The applicant's answers to the end-of-test readiness questions, if the
+// kiosk sent them. All of it is applicant-typed, so every value is escaped.
+function readinessHtml(data) {
+  if (!hasReady(data)) return "";
+  var html = "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"margin:8px 0 4px;background:#f1e4c7;\"><tr>" +
+    "<td style=\"padding:14px 16px;font-size:14px;\">" +
+    "<div style=\"font-size:12px;color:#555;text-transform:uppercase;\">Ready to join the Army</div>" +
+    "<div style=\"font-size:26px;font-weight:700;margin:2px 0 6px;\">" + esc(data.ready) + " / 10</div>";
+  if (data.not_ten_reasons) html += "<p style=\"margin:4px 0;\"><b>Why not a 10:</b> " + esc(data.not_ten_reasons) + "</p>";
+  if (data.make_it_ten) html += "<p style=\"margin:4px 0;\"><b>What would make it a 10:</b> " + esc(data.make_it_ten) + "</p>";
+  return html + "</td></tr></table>";
+}
+
+// ---------- Recruiter follow-up codes (email only) ----------
+// "Lastname RANK" -> "RANK Lastname", like the kiosk's
+// formatRecruiterDisplay().
+function recruiterDisplay(value) {
+  var parts = String(value || "").trim().split(/\s+/);
+  if (parts.length < 2) return parts.join(" ");
+  var rank = parts[parts.length - 1];
+  if (rank !== rank.toUpperCase() || !/[A-Z]/.test(rank)) return parts.join(" ");
+  return rank + " " + parts.slice(0, -1).join(" ");
+}
+
+// 10 digits or "" (named apart from weekly-report.gs's phoneDigits, which
+// can share this project).
+function tenDigitPhone(phone) {
+  var digits = String(phone || "").replace(/\D/g, "");
+  if (digits.length === 11 && digits.charAt(0) === "1") digits = digits.slice(1);
+  return digits.length === 10 ? digits : "";
+}
+
+// Lowest percent-correct section; on a tie, Arithmetic Reasoning if it's
+// one of them, else the first in test order. Same pick as the kiosk's
+// weakestSectionCode(); keep the two in sync.
+function weakestSectionForText(sections) {
+  var worst = null, tied = [];
+  SECTION_ORDER.forEach(function (code) {
+    var s = sections[code];
+    if (!s || !s.total) return;
+    var pct = s.correct / s.total;
+    if (worst === null || pct < worst) { worst = pct; tied = [code]; }
+    else if (pct === worst) tied.push(code);
+  });
+  var code = tied.indexOf("AR") !== -1 ? "AR" : (tied[0] || "AR");
+  return SECTION_NAMES[code];
+}
+
+function applicantTextMessage(data) {
+  var link = PRACTICE_SITE_URL
+    ? PRACTICE_SITE_URL.split("?")[0].split("#")[0] + "?practice."
+    : "(practice link not set up yet).";
+  return APPLICANT_TEXT_TEMPLATE
+    .replace("{recruiter}", recruiterDisplay(data.recruiter))
+    .replace("{score}", String(data.afqt))
+    .replace("{link}", link)
+    .replace("{weakest}", weakestSectionForText(data.sections || {}));
+}
+
+function vcardValue(value) {
+  return String(value || "").replace(/\\/g, "\\\\").replace(/([,;])/g, "\\$1").replace(/\r?\n/g, " ");
+}
+
+function applicantVcard(data, testNumber) {
+  var first = data.first_name || "", last = data.last_name || "";
+  var digits = tenDigitPhone(data.phone);
+  var note = "Practice ASVAB Test " + testNumber + ", AFQT " + data.afqt +
+    (hasReady(data) ? ", ready " + data.ready + "/10" : "") +
+    ", recruiter " + recruiterDisplay(data.recruiter);
+  var lines = ["BEGIN:VCARD", "VERSION:3.0",
+    "N:" + vcardValue(last) + ";" + vcardValue(first) + ";;;",
+    "FN:" + vcardValue((first + " " + last).trim())];
+  if (digits) lines.push("TEL;TYPE=CELL:+1" + digits);
+  lines.push("NOTE:" + vcardValue(note), "END:VCARD");
+  return lines.join("\r\n");
+}
+
+// qrcode.gs draws the code as a GIF, all in Apps Script.
+function qrImage(text, name) {
+  var qr = qrcode(0, "M");
+  qrcode.stringToBytes = qrcode.stringToBytesFuncs["UTF-8"];
+  qr.addData(text, "Byte");
+  qr.make();
+  var dataUrl = qr.createDataURL(4, 4);
+  return Utilities.newBlob(Utilities.base64Decode(dataUrl.split(",")[1]), "image/gif", name + ".gif");
+}
+
+// The codes for this result as inline email images, plus the text
+// message on its own for the plain-text body. Empty (and logged) if
+// qrcode.gs wasn't added to the project.
+function followUpCodes(data, testNumber) {
+  var digits = tenDigitPhone(data.phone);
+  var text = digits ? applicantTextMessage(data) : "";
+  if (typeof qrcode === "undefined") {
+    Logger.log("qrcode.gs is missing from this project; emails go out without QR codes.");
+    return { html: "", images: {}, text: text };
+  }
+  var images = { qrSave: qrImage(applicantVcard(data, testNumber), "save-applicant") };
+  if (text) images.qrText = qrImage("SMSTO:+1" + digits + ":" + text, "text-applicant");
+
+  function cell(cid, label, sub) {
+    return "<td align=\"center\" valign=\"top\" style=\"padding:8px;width:50%;\">" +
+      "<img src=\"cid:" + cid + "\" width=\"180\" height=\"180\" alt=\"" + esc(label) + " QR code\" style=\"display:block;\">" +
+      "<div style=\"font-size:14px;font-weight:700;margin-top:6px;\">" + esc(label) + "</div>" +
+      "<div style=\"font-size:12px;color:#555;\">" + esc(sub) + "</div></td>";
+  }
+  var html = "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"max-width:480px;margin-top:20px;border-top:1px solid #eee;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a;\">" +
+    "<tr><td colspan=\"2\" style=\"padding:14px 4px 0;font-size:16px;font-weight:700;\">Recruiter follow-up</td></tr>" +
+    "<tr><td colspan=\"2\" style=\"padding:2px 4px 6px;font-size:13px;color:#555;\">Scan with your phone camera.</td></tr><tr>" +
+    cell("qrSave", "Save applicant", digits ? formatPhone(digits) : "No phone number given") +
+    (text ? cell("qrText", "Text the applicant", "Opens a text with their score and practice link")
+          : "<td style=\"width:50%;\"></td>") +
+    "</tr></table>";
+  return { html: html, images: images, text: text };
 }
 
 function esc(value) {

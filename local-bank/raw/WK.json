@@ -1,0 +1,2242 @@
+[
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 1,
+  "prompt": "Subsume most nearly means",
+  "choices": {
+   "A": "understate.",
+   "B": "absorb.",
+   "C": "include.",
+   "D": "belong."
+  },
+  "correct": "C",
+  "explanation": "To subsume means to include within a larger class or order.",
+  "after_choices": [],
+  "id": "WK-001"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 2,
+  "prompt": "Our committee reached consensus.",
+  "choices": {
+   "A": "accord",
+   "B": "abridgment",
+   "C": "presumption",
+   "D": "quota"
+  },
+  "correct": "A",
+  "explanation": "Consensus, like accord, means agreement.",
+  "after_choices": [],
+  "id": "WK-002"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 3,
+  "prompt": "Altercation most nearly means",
+  "choices": {
+   "A": "defeat.",
+   "B": "concurrence.",
+   "C": "quarrel.",
+   "D": "vexation."
+  },
+  "correct": "C",
+  "explanation": "Altercation, like quarrel, means a disagreement.",
+  "after_choices": [],
+  "id": "WK-003"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 4,
+  "prompt": "Don’t accuse him of being irresolute.",
+  "choices": {
+   "A": "wavering",
+   "B": "insubordinate",
+   "C": "impudent",
+   "D": "unobservant"
+  },
+  "correct": "A",
+  "explanation": "Irresolute, like wavering, means to hesitate between choices.",
+  "after_choices": [],
+  "id": "WK-004"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 5,
+  "prompt": "Laconic most nearly means",
+  "choices": {
+   "A": "slothful.",
+   "B": "concise.",
+   "C": "punctual.",
+   "D": "melancholy."
+  },
+  "correct": "B",
+  "explanation": "Laconic, like concise, means to express much in a few words.",
+  "after_choices": [],
+  "id": "WK-005"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 6,
+  "prompt": "Audition most nearly means",
+  "choices": {
+   "A": "reception.",
+   "B": "contest.",
+   "C": "hearing.",
+   "D": "display."
+  },
+  "correct": "C",
+  "explanation": "Audition, like hearing, means an opportunity to be heard.",
+  "after_choices": [],
+  "id": "WK-006"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 7,
+  "prompt": "The job was filled by a novice.",
+  "choices": {
+   "A": "volunteer",
+   "B": "expert",
+   "C": "beginner",
+   "D": "amateur"
+  },
+  "correct": "C",
+  "explanation": "Novice designates one who has no training or experience in a specific field or activity, and hence is a beginner.",
+  "after_choices": [],
+  "id": "WK-007"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 8,
+  "prompt": "A conciliatory attitude sometimes helps.",
+  "choices": {
+   "A": "pacific",
+   "B": "contentious",
+   "C": "obligatory",
+   "D": "offensive"
+  },
+  "correct": "A",
+  "explanation": "Pacific, like conciliatory, implies trying to preserve or obtain peace.",
+  "after_choices": [],
+  "id": "WK-008"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 9,
+  "prompt": "The drug will counteract any effect.",
+  "choices": {
+   "A": "undermine",
+   "B": "censure",
+   "C": "preserve",
+   "D": "neutralize"
+  },
+  "correct": "D",
+  "explanation": "To neutralize, as to counteract, means to render ineffective.",
+  "after_choices": [],
+  "id": "WK-009"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 10,
+  "prompt": "Precedent most nearly means",
+  "choices": {
+   "A": "example.",
+   "B": "theory.",
+   "C": "law.",
+   "D": "conformity."
+  },
+  "correct": "A",
+  "explanation": "Precedent, like example, refers to an individual instance (e.g., act, statement, case) taken as representative of a type.",
+  "after_choices": [],
+  "id": "WK-010"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 11,
+  "prompt": "Diaphanous most nearly means",
+  "choices": {
+   "A": "transparent.",
+   "B": "opaque.",
+   "C": "diaphragmatic.",
+   "D": "diffusive."
+  },
+  "correct": "A",
+  "explanation": "Diaphanous (dia- is a Greek prefix meaning “through, across”), like transparent, describes material that light can pass through.",
+  "after_choices": [],
+  "id": "WK-011"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 12,
+  "prompt": "We deferred our judgment.",
+  "choices": {
+   "A": "reversed",
+   "B": "accelerated",
+   "C": "rejected",
+   "D": "delayed"
+  },
+  "correct": "D",
+  "explanation": "Deferred, like delayed, means postponed.",
+  "after_choices": [],
+  "id": "WK-012"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 13,
+  "prompt": "To accentuate most nearly means to",
+  "choices": {
+   "A": "modify.",
+   "B": "hasten.",
+   "C": "sustain.",
+   "D": "intensify."
+  },
+  "correct": "D",
+  "explanation": "Accentuate, like intensify, means to emphasize or increase in degree.",
+  "after_choices": [],
+  "id": "WK-013"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 14,
+  "prompt": "Authentic most nearly means",
+  "choices": {
+   "A": "detailed.",
+   "B": "genuine.",
+   "C": "valuable.",
+   "D": "practical."
+  },
+  "correct": "B",
+  "explanation": "Authentic (from the Greek for “warranted”), like reliable, means entitled to acceptance or belief.",
+  "after_choices": [],
+  "id": "WK-014"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 15,
+  "prompt": "Unanimity most nearly means",
+  "choices": {
+   "A": "emphasis.",
+   "B": "namelessness.",
+   "C": "disagreement.",
+   "D": "concurrence."
+  },
+  "correct": "D",
+  "explanation": "Unanimity, like concurrence, means complete accord.",
+  "after_choices": [],
+  "id": "WK-015"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 16,
+  "prompt": "Their actions made them notorious.",
+  "choices": {
+   "A": "condemned",
+   "B": "unpleasant",
+   "C": "vexatious",
+   "D": "infamous"
+  },
+  "correct": "D",
+  "explanation": "Notorious, like infamous, means to be known widely but regarded unfavorably.",
+  "after_choices": [],
+  "id": "WK-016"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 17,
+  "prompt": "Previous most nearly means",
+  "choices": {
+   "A": "abandoned.",
+   "B": "former.",
+   "C": "timely.",
+   "D": "younger."
+  },
+  "correct": "B",
+  "explanation": "Former means “preceding in time” and is synonymous with previous.",
+  "after_choices": [],
+  "id": "WK-017"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 18,
+  "prompt": "Use a flexible metal.",
+  "choices": {
+   "A": "breakable",
+   "B": "flammable",
+   "C": "pliable",
+   "D": "weak"
+  },
+  "correct": "C",
+  "explanation": "Both pliable and flexible mean to be easily bent or yielding, usually without breaking.",
+  "after_choices": [],
+  "id": "WK-018"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 19,
+  "prompt": "Option most nearly means",
+  "choices": {
+   "A": "use.",
+   "B": "choice.",
+   "C": "value.",
+   "D": "preference."
+  },
+  "correct": "B",
+  "explanation": "The opportunity to make a choice is equivalent to freedom to select or exercise an option.",
+  "after_choices": [],
+  "id": "WK-019"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 20,
+  "prompt": "You should verify the facts.",
+  "choices": {
+   "A": "examine",
+   "B": "explain",
+   "C": "confirm",
+   "D": "guarantee"
+  },
+  "correct": "C",
+  "explanation": "Confirm, like verify, means to make certain, to corroborate, or authenticate.",
+  "after_choices": [],
+  "id": "WK-020"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 21,
+  "prompt": "Pert most nearly means",
+  "choices": {
+   "A": "ill.",
+   "B": "lazy.",
+   "C": "slow.",
+   "D": "saucy."
+  },
+  "correct": "D",
+  "explanation": "Saucy, like pert, means bold or impudent.",
+  "after_choices": [],
+  "id": "WK-021"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 22,
+  "prompt": "Aesthetic most nearly means",
+  "choices": {
+   "A": "sentient.",
+   "B": "sensitive.",
+   "C": "tasteful.",
+   "D": "inartistic."
+  },
+  "correct": "C",
+  "explanation": "Tasteful, similar to aesthetic (from the Greek for “perceptive”), means having the ability to appreciate what is beautiful.",
+  "after_choices": [],
+  "id": "WK-022"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 23,
+  "prompt": "Decimation most nearly means",
+  "choices": {
+   "A": "severe damage or injury.",
+   "B": "complete annihilation.",
+   "C": "truce.",
+   "D": "brawl."
+  },
+  "correct": "A",
+  "explanation": "Decimation means to remove a large part of a group (literally, a tenth), causing severe damage or injury.",
+  "after_choices": [],
+  "id": "WK-023"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 24,
+  "prompt": "She made an indignant response.",
+  "choices": {
+   "A": "angry",
+   "B": "poor",
+   "C": "indigent",
+   "D": "lazy"
+  },
+  "correct": "A",
+  "explanation": "Angry, like indignant (from the Latin for “deeming unworthy”), implies deep and strong feelings aroused by injury, injustice, or wrong.",
+  "after_choices": [],
+  "id": "WK-024"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 25,
+  "prompt": "Cliché most nearly means",
+  "choices": {
+   "A": "commonplace.",
+   "B": "banality.",
+   "C": "hackney.",
+   "D": "platitude."
+  },
+  "correct": "D",
+  "explanation": "Platitude, like cliché (originally, to pattern in clay), refers to a remark or an idea that has become trite through overuse and lost its original freshness and force.",
+  "after_choices": [],
+  "id": "WK-025"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 26,
+  "prompt": "Harmony most nearly means",
+  "choices": {
+   "A": "rhythm.",
+   "B": "pleasure.",
+   "C": "discord.",
+   "D": "agreement."
+  },
+  "correct": "D",
+  "explanation": "Agreement means harmony among people, thoughts, or ideas.",
+  "after_choices": [],
+  "id": "WK-026"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 27,
+  "prompt": "Indolent most nearly means",
+  "choices": {
+   "A": "moderate.",
+   "B": "hopeless.",
+   "C": "lazy.",
+   "D": "idle."
+  },
+  "correct": "C",
+  "explanation": "Lazy, like indolent, applies to one who is not active.",
+  "after_choices": [],
+  "id": "WK-027"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 28,
+  "prompt": "His respiration was impaired.",
+  "choices": {
+   "A": "recovery",
+   "B": "breathing",
+   "C": "pulsation",
+   "D": "sweating"
+  },
+  "correct": "B",
+  "explanation": "Breathing, like respiration, means inhalation and exhalation of air.",
+  "after_choices": [],
+  "id": "WK-028"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 29,
+  "prompt": "The job requires a vigilant attitude.",
+  "choices": {
+   "A": "sensible",
+   "B": "watchful",
+   "C": "suspicious",
+   "D": "restless"
+  },
+  "correct": "B",
+  "explanation": "Watchful, like vigilant, means alert.",
+  "after_choices": [],
+  "id": "WK-029"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 30,
+  "prompt": "Incidental most nearly means",
+  "choices": {
+   "A": "independent.",
+   "B": "needless.",
+   "C": "infrequent.",
+   "D": "casual."
+  },
+  "correct": "D",
+  "explanation": "Casual, similar to incidental, means happening by chance or without definite intention.",
+  "after_choices": [],
+  "id": "WK-030"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 31,
+  "prompt": "To succumb most nearly means to",
+  "choices": {
+   "A": "aid.",
+   "B": "oppose.",
+   "C": "yield.",
+   "D": "check."
+  },
+  "correct": "C",
+  "explanation": "To succumb is to cease to resist or contend before a superior force, hence to yield.",
+  "after_choices": [],
+  "id": "WK-031"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 32,
+  "prompt": "That solution is not feasible.",
+  "choices": {
+   "A": "capable",
+   "B": "harmful",
+   "C": "beneficial",
+   "D": "practicable"
+  },
+  "correct": "D",
+  "explanation": "Feasible describes that which is possible to bring about, and is therefore practicable.",
+  "after_choices": [],
+  "id": "WK-032"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 33,
+  "prompt": "Versatile most nearly means",
+  "choices": {
+   "A": "well-known.",
+   "B": "up-to-date.",
+   "C": "many-sided.",
+   "D": "ambidextrous."
+  },
+  "correct": "C",
+  "explanation": "Many-sided, like versatile (from the Latin for “turning about”), means capable of turning with ease from one task to another.",
+  "after_choices": [],
+  "id": "WK-033"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 34,
+  "prompt": "His imperturbability helps in a crisis.",
+  "choices": {
+   "A": "obstinacy",
+   "B": "calmness",
+   "C": "sagacity",
+   "D": "confusion"
+  },
+  "correct": "B",
+  "explanation": "Imperturbability or calmness—the ability to not be bothered by what’s going on around you.",
+  "after_choices": [],
+  "id": "WK-034"
+ },
+ {
+  "section": "WK",
+  "source": "Diagnostic",
+  "n": 35,
+  "prompt": "Strident most nearly means",
+  "choices": {
+   "A": "swaggering.",
+   "B": "domineering.",
+   "C": "angry.",
+   "D": "harsh."
+  },
+  "correct": "D",
+  "explanation": "Strident (from the Latin for “creaking”) means having an irritating or unpleasant—hence harsh—sound.",
+  "after_choices": [],
+  "id": "WK-035"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 1,
+  "prompt": "Opulence most nearly means",
+  "choices": {
+   "A": "affluence.",
+   "B": "generosity.",
+   "C": "poverty.",
+   "D": "luxury."
+  },
+  "correct": "D",
+  "explanation": "Luxury, like opulence (from the Latin for “rich, wealthy”), is conducive to sumptuous living.",
+  "after_choices": [],
+  "id": "WK-036"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 2,
+  "prompt": "Mimesis most nearly means",
+  "choices": {
+   "A": "impersonation.",
+   "B": "pretense.",
+   "C": "cartoon.",
+   "D": "imitation."
+  },
+  "correct": "D",
+  "explanation": "Mimesis (from the Greek for “imitation”) means reproduction of the supposed words of another, usually in order to represent his or her character.",
+  "after_choices": [],
+  "id": "WK-037"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 3,
+  "prompt": "Her languid appearance was revealing.",
+  "choices": {
+   "A": "sad",
+   "B": "energetic",
+   "C": "healthy",
+   "D": "listless"
+  },
+  "correct": "D",
+  "explanation": "Languid means weak, indifferent, weary, or exhausted, implying a listless person.",
+  "after_choices": [],
+  "id": "WK-038"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 4,
+  "prompt": "Inherent most nearly means",
+  "choices": {
+   "A": "essential.",
+   "B": "intrinsic.",
+   "C": "accidental.",
+   "D": "necessity."
+  },
+  "correct": "B",
+  "explanation": "Inherence (from the Latin for “sticking in or to”) means the state of existing in something as a permanent and inseparable element, quality, or attribute, and thus, like intrinsic, implies belonging to the nature of a thing itself.",
+  "after_choices": [],
+  "id": "WK-039"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 5,
+  "prompt": "Anomie most nearly means",
+  "choices": {
+   "A": "essential.",
+   "B": "vacuum.",
+   "C": "control.",
+   "D": "anonym."
+  },
+  "correct": "B",
+  "explanation": "Anomie (from the Greek for “lawlessness”) describes a social condition marked by the absence of social norms or values, and therefore, like vacuum, implies the absence of components from an area.",
+  "after_choices": [],
+  "id": "WK-040"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 6,
+  "prompt": "Tenuous most nearly means",
+  "choices": {
+   "A": "tensile.",
+   "B": "tentative.",
+   "C": "ethereal.",
+   "D": "substantial."
+  },
+  "correct": "C",
+  "explanation": "Ethereal describes something that is light and airy and thus may be unsubstantial, as implied by tenuous (from the Latin for “thin”).",
+  "after_choices": [],
+  "id": "WK-041"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 7,
+  "prompt": "Most letters require a salutation.",
+  "choices": {
+   "A": "offering",
+   "B": "greeting",
+   "C": "discussion",
+   "D": "appeasement"
+  },
+  "correct": "B",
+  "explanation": "Like salutation, greeting means to address with some expression of pleasure.",
+  "after_choices": [],
+  "id": "WK-042"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 8,
+  "prompt": "Mesmerize most nearly means",
+  "choices": {
+   "A": "hypnotize.",
+   "B": "hypostatize.",
+   "C": "metabolize.",
+   "D": "change."
+  },
+  "correct": "A",
+  "explanation": "Hypnotize, like mesmerize, means to put in a condition or state allied to sleep.",
+  "after_choices": [],
+  "id": "WK-043"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 9,
+  "prompt": "A panoply of flowers covered the shelf.",
+  "choices": {
+   "A": "pansophy",
+   "B": "display",
+   "C": "resistance",
+   "D": "parry"
+  },
+  "correct": "B",
+  "explanation": "Display, similar to panoply, means an impressive array of assembled persons or things.",
+  "after_choices": [],
+  "id": "WK-044"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 10,
+  "prompt": "Syntactic most nearly means",
+  "choices": {
+   "A": "morphological.",
+   "B": "grammatical.",
+   "C": "standard.",
+   "D": "inflexional."
+  },
+  "correct": "B",
+  "explanation": "Like syntactic (from the Greek for “arrangement”), which pertains to patterns of formation of sentences and phrases in a particular language, grammatical pertains to the sound, formation, and arrangement of words.",
+  "after_choices": [],
+  "id": "WK-045"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 11,
+  "prompt": "Umbrage most nearly means",
+  "choices": {
+   "A": "resentment.",
+   "B": "umbo.",
+   "C": "impertinence.",
+   "D": "pleasure."
+  },
+  "correct": "A",
+  "explanation": "Resentment, like umbrage, describes a feeling of indignation at something regarded as an injury or insult.",
+  "after_choices": [],
+  "id": "WK-046"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 12,
+  "prompt": "Raucous most nearly means",
+  "choices": {
+   "A": "ravenous.",
+   "B": "harsh.",
+   "C": "pleasing.",
+   "D": "rankling."
+  },
+  "correct": "B",
+  "explanation": "Harsh means rough to any of the senses, while raucous denotes hoarseness or harshness of voice or sound.",
+  "after_choices": [],
+  "id": "WK-047"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 13,
+  "prompt": "Prosecution most nearly means",
+  "choices": {
+   "A": "protection.",
+   "B": "imprisonment.",
+   "C": "trial.",
+   "D": "punishment."
+  },
+  "correct": "C",
+  "explanation": "Trial, like prosecution, means determining a person’s guilt or innocence by due process of law.",
+  "after_choices": [],
+  "id": "WK-048"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 14,
+  "prompt": "The miasma of modern cities causes discomfort.",
+  "choices": {
+   "A": "pollution",
+   "B": "fumes",
+   "C": "exhalations",
+   "D": "stench"
+  },
+  "correct": "A",
+  "explanation": "Pollution, which means defiling, making foul, unclean, or dirty, is closely related to miasma (from the Greek for “pollution”).",
+  "after_choices": [],
+  "id": "WK-049"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 15,
+  "prompt": "Paragon most nearly means",
+  "choices": {
+   "A": "paradox.",
+   "B": "model.",
+   "C": "prototype.",
+   "D": "ideal."
+  },
+  "correct": "B",
+  "explanation": "Model, like paragon, is a pattern of excellence for exact imitation.",
+  "after_choices": [],
+  "id": "WK-050"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 16,
+  "prompt": "She has innate talent.",
+  "choices": {
+   "A": "eternal",
+   "B": "well-developed",
+   "C": "temporary",
+   "D": "native"
+  },
+  "correct": "D",
+  "explanation": "Innate, like native, means belonging by birth.",
+  "after_choices": [],
+  "id": "WK-051"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 17,
+  "prompt": "Urbanity most nearly means",
+  "choices": {
+   "A": "loyalty.",
+   "B": "refinement.",
+   "C": "weakness.",
+   "D": "barbarism."
+  },
+  "correct": "B",
+  "explanation": "Urbanity indicates elegant courtesy or politeness, and hence refinement.",
+  "after_choices": [],
+  "id": "WK-052"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 18,
+  "prompt": "We all encounter difficulties.",
+  "choices": {
+   "A": "recall",
+   "B": "overcome",
+   "C": "retreat from",
+   "D": "meet"
+  },
+  "correct": "D",
+  "explanation": "To encounter means to come upon, hence to meet.",
+  "after_choices": [],
+  "id": "WK-053"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 19,
+  "prompt": "Banal most nearly means",
+  "choices": {
+   "A": "commonplace.",
+   "B": "forceful.",
+   "C": "tranquil.",
+   "D": "indifferent."
+  },
+  "correct": "A",
+  "explanation": "Banal, like commonplace, characterizes as lifeless and uninteresting.",
+  "after_choices": [],
+  "id": "WK-054"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 20,
+  "prompt": "Small most nearly means",
+  "choices": {
+   "A": "sturdy.",
+   "B": "round.",
+   "C": "cheap.",
+   "D": "little."
+  },
+  "correct": "D",
+  "explanation": "Little, like small, means not much in comparison to other things.",
+  "after_choices": [],
+  "id": "WK-055"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 21,
+  "prompt": "The accountant discovered an error.",
+  "choices": {
+   "A": "searched",
+   "B": "found",
+   "C": "enlarged",
+   "D": "entered"
+  },
+  "correct": "B",
+  "explanation": "Found, like discover, means to unearth something hidden or lost.",
+  "after_choices": [],
+  "id": "WK-056"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 22,
+  "prompt": "You must inform us.",
+  "choices": {
+   "A": "ask",
+   "B": "turn",
+   "C": "tell",
+   "D": "ignore"
+  },
+  "correct": "C",
+  "explanation": "Tell, like inform, means to communicate knowledge or give information.",
+  "after_choices": [],
+  "id": "WK-057"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 23,
+  "prompt": "The wind is variable today.",
+  "choices": {
+   "A": "shifting",
+   "B": "chilling",
+   "C": "steady",
+   "D": "mild"
+  },
+  "correct": "A",
+  "explanation": "Shifting, like variable, means subject to change.",
+  "after_choices": [],
+  "id": "WK-058"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 24,
+  "prompt": "Cease most nearly means",
+  "choices": {
+   "A": "start.",
+   "B": "change.",
+   "C": "continue.",
+   "D": "stop."
+  },
+  "correct": "D",
+  "explanation": "Stop, like cease, means to end.",
+  "after_choices": [],
+  "id": "WK-059"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 25,
+  "prompt": "Drinking can impair your judgment.",
+  "choices": {
+   "A": "direct",
+   "B": "improve",
+   "C": "weaken",
+   "D": "stimulate"
+  },
+  "correct": "C",
+  "explanation": "Weaken, like impair, means to worsen or to damage.",
+  "after_choices": [],
+  "id": "WK-060"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 26,
+  "prompt": "We knew the rudiments of the program.",
+  "choices": {
+   "A": "basic methods and procedures",
+   "B": "politics",
+   "C": "promotion opportunities",
+   "D": "minute details"
+  },
+  "correct": "A",
+  "explanation": "Rudiments are fundamental skills or basic principles, like basic methods and procedures.",
+  "after_choices": [],
+  "id": "WK-061"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 27,
+  "prompt": "Imprudent most nearly means",
+  "choices": {
+   "A": "reckless.",
+   "B": "unexcitable.",
+   "C": "poor.",
+   "D": "domineering."
+  },
+  "correct": "A",
+  "explanation": "Reckless, like imprudent, means lacking discretion.",
+  "after_choices": [],
+  "id": "WK-062"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 28,
+  "prompt": "Dissension stimulated the discussion.",
+  "choices": {
+   "A": "friction",
+   "B": "analysis",
+   "C": "injury",
+   "D": "slyness"
+  },
+  "correct": "A",
+  "explanation": "Friction, like dissension, refers to quarreling.",
+  "after_choices": [],
+  "id": "WK-063"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 29,
+  "prompt": "Disconnect most nearly means",
+  "choices": {
+   "A": "separate.",
+   "B": "cripple.",
+   "C": "lesson.",
+   "D": "dismiss."
+  },
+  "correct": "A",
+  "explanation": "Separate, like disconnect, means to become detached.",
+  "after_choices": [],
+  "id": "WK-064"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 30,
+  "prompt": "Rudimentary most nearly means",
+  "choices": {
+   "A": "discourteous.",
+   "B": "brutal.",
+   "C": "displeasing.",
+   "D": "elementary."
+  },
+  "correct": "D",
+  "explanation": "Elementary, like rudimentary, refers to something fundamental or imperfectly developed.",
+  "after_choices": [],
+  "id": "WK-065"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 31,
+  "prompt": "The commission made autonomous decisions.",
+  "choices": {
+   "A": "self-improvement",
+   "B": "self-educated",
+   "C": "self-explanatory",
+   "D": "self-governing"
+  },
+  "correct": "D",
+  "explanation": "Self-governing, like autonomous, means governing without control.",
+  "after_choices": [],
+  "id": "WK-066"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 32,
+  "prompt": "Meander most nearly means",
+  "choices": {
+   "A": "grumble.",
+   "B": "wander aimlessly.",
+   "C": "come between.",
+   "D": "weigh carefully."
+  },
+  "correct": "B",
+  "explanation": "Wander aimlessly, like meander, means to follow a winding course without a definite destination.",
+  "after_choices": [],
+  "id": "WK-067"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 33,
+  "prompt": "Destitution most nearly means",
+  "choices": {
+   "A": "fate.",
+   "B": "lack of practice.",
+   "C": "extreme poverty.",
+   "D": "recovery."
+  },
+  "correct": "C",
+  "explanation": "Extreme poverty, like destitution, characterizes the state of lacking resources and possessions.",
+  "after_choices": [],
+  "id": "WK-068"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 34,
+  "prompt": "Do not malign his name.",
+  "choices": {
+   "A": "slander",
+   "B": "prophesy",
+   "C": "entreat",
+   "D": "praise"
+  },
+  "correct": "A",
+  "explanation": "Slander, like malign, means to speak misleading or false reports about someone.",
+  "after_choices": [],
+  "id": "WK-069"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam One",
+  "n": 35,
+  "prompt": "Impotent most nearly means",
+  "choices": {
+   "A": "unwise.",
+   "B": "lacking strength.",
+   "C": "free of sin.",
+   "D": "commanding."
+  },
+  "correct": "B",
+  "explanation": "Lacking strength, like impotent, means lacking power or vigor.",
+  "after_choices": [],
+  "id": "WK-070"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 1,
+  "prompt": "Inform most nearly means",
+  "choices": {
+   "A": "ask.",
+   "B": "heed.",
+   "C": "tell.",
+   "D": "ignore."
+  },
+  "correct": "C",
+  "explanation": "Tell, like inform, means to communicate knowledge or give information.",
+  "after_choices": [],
+  "id": "WK-071"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 2,
+  "prompt": "The dress was crimson.",
+  "choices": {
+   "A": "crisp",
+   "B": "neatly pressed",
+   "C": "reddish",
+   "D": "colorful"
+  },
+  "correct": "C",
+  "explanation": "Crimson is a vivid reddish color.",
+  "after_choices": [],
+  "id": "WK-072"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 3,
+  "prompt": "Caution most nearly means",
+  "choices": {
+   "A": "signals.",
+   "B": "care.",
+   "C": "traffic.",
+   "D": "haste."
+  },
+  "correct": "B",
+  "explanation": "Caution means forethought to avoid danger or harm; carefulness.",
+  "after_choices": [],
+  "id": "WK-073"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 4,
+  "prompt": "Rain fell intermittently.",
+  "choices": {
+   "A": "constantly",
+   "B": "annually",
+   "C": "using intermediaries (to stay)",
+   "D": "at irregular intervals"
+  },
+  "correct": "D",
+  "explanation": "Intermittently means starting and stopping, as in rain starting and stopping at irregular intervals.",
+  "after_choices": [],
+  "id": "WK-074"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 5,
+  "prompt": "Occurrence most nearly means",
+  "choices": {
+   "A": "event.",
+   "B": "place.",
+   "C": "occupation.",
+   "D": "opinion."
+  },
+  "correct": "A",
+  "explanation": "Event, like occurrence, means a happening or incident.",
+  "after_choices": [],
+  "id": "WK-075"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 6,
+  "prompt": "The disguise was a clever deception.",
+  "choices": {
+   "A": "secret",
+   "B": "fraud",
+   "C": "mistrust",
+   "D": "hatred"
+  },
+  "correct": "B",
+  "explanation": "Fraud, like deception, means the use of deceit.",
+  "after_choices": [],
+  "id": "WK-076"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 7,
+  "prompt": "Cease most nearly means",
+  "choices": {
+   "A": "start.",
+   "B": "change.",
+   "C": "continue.",
+   "D": "stop."
+  },
+  "correct": "D",
+  "explanation": "Stop, like cease, means to end.",
+  "after_choices": [],
+  "id": "WK-077"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 8,
+  "prompt": "Acclaim most nearly means",
+  "choices": {
+   "A": "amazement.",
+   "B": "laughter.",
+   "C": "booing.",
+   "D": "applause."
+  },
+  "correct": "D",
+  "explanation": "Applause, like acclaim, means enthusiastic approval.",
+  "after_choices": [],
+  "id": "WK-078"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 9,
+  "prompt": "The city plans to erect a civic center.",
+  "choices": {
+   "A": "paint",
+   "B": "design",
+   "C": "destroy",
+   "D": "construct"
+  },
+  "correct": "D",
+  "explanation": "Construct, like erect, means to raise upright, as to erect or construct a building.",
+  "after_choices": [],
+  "id": "WK-079"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 10,
+  "prompt": "Relish most nearly means",
+  "choices": {
+   "A": "care.",
+   "B": "speed.",
+   "C": "amusement.",
+   "D": "enjoy."
+  },
+  "correct": "D",
+  "explanation": "Enjoy, like relish, means to take pleasure in.",
+  "after_choices": [],
+  "id": "WK-080"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 11,
+  "prompt": "Sufficient most nearly means",
+  "choices": {
+   "A": "durable.",
+   "B": "substitution.",
+   "C": "expendable.",
+   "D": "appropriate."
+  },
+  "correct": "D",
+  "explanation": "Sufficient means enough, adequate. Of the words given, sufficient most nearly means appropriate, as in a sufficient or appropriate amount.",
+  "after_choices": [],
+  "id": "WK-081"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 12,
+  "prompt": "Fortnight most nearly means",
+  "choices": {
+   "A": "two weeks.",
+   "B": "one week.",
+   "C": "two months.",
+   "D": "one month."
+  },
+  "correct": "A",
+  "explanation": "Fortnight means two weeks.",
+  "after_choices": [],
+  "id": "WK-082"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 13,
+  "prompt": "That action was a blemish on his record.",
+  "choices": {
+   "A": "defect",
+   "B": "mixture",
+   "C": "accusation",
+   "D": "decoration"
+  },
+  "correct": "A",
+  "explanation": "A defect, like a blemish, is an imperfection or fault.",
+  "after_choices": [],
+  "id": "WK-083"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 14,
+  "prompt": "Rules impose order on the group.",
+  "choices": {
+   "A": "disguise",
+   "B": "escape",
+   "C": "require",
+   "D": "purchase"
+  },
+  "correct": "C",
+  "explanation": "To impose or require means to make compulsory.",
+  "after_choices": [],
+  "id": "WK-084"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 15,
+  "prompt": "Jeer most nearly means",
+  "choices": {
+   "A": "peek.",
+   "B": "scoff.",
+   "C": "turn.",
+   "D": "judge."
+  },
+  "correct": "B",
+  "explanation": "Scoff, like jeer, means to mock or poke fun at.",
+  "after_choices": [],
+  "id": "WK-085"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 16,
+  "prompt": "Alias most nearly means",
+  "choices": {
+   "A": "enemy.",
+   "B": "sidekick.",
+   "C": "hero.",
+   "D": "assumed name."
+  },
+  "correct": "D",
+  "explanation": "An assumed name is an alias.",
+  "after_choices": [],
+  "id": "WK-086"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 17,
+  "prompt": "Impair most nearly means",
+  "choices": {
+   "A": "direct.",
+   "B": "improve.",
+   "C": "weaken.",
+   "D": "stimulate."
+  },
+  "correct": "C",
+  "explanation": "Weaken, like impair, means to worsen or to damage.",
+  "after_choices": [],
+  "id": "WK-087"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 18,
+  "prompt": "Itinerant most nearly means",
+  "choices": {
+   "A": "traveling.",
+   "B": "shrewd.",
+   "C": "insurance.",
+   "D": "aggressive."
+  },
+  "correct": "A",
+  "explanation": "Itinerant means traveling, as in an itinerant salesperson.",
+  "after_choices": [],
+  "id": "WK-088"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 19,
+  "prompt": "I don’t often abandon a good idea.",
+  "choices": {
+   "A": "relinquish",
+   "B": "encompass",
+   "C": "infiltrate",
+   "D": "quarantine"
+  },
+  "correct": "A",
+  "explanation": "Relinquish, like abandon, means to give up possession.",
+  "after_choices": [],
+  "id": "WK-089"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 20,
+  "prompt": "The association met to resolve the issue.",
+  "choices": {
+   "A": "end",
+   "B": "understand",
+   "C": "recall",
+   "D": "forget"
+  },
+  "correct": "A",
+  "explanation": "Resolve means to bring to a conclusion or end.",
+  "after_choices": [],
+  "id": "WK-090"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 21,
+  "prompt": "Ample most nearly means",
+  "choices": {
+   "A": "plentiful.",
+   "B": "enthusiastic.",
+   "C": "well-shaped.",
+   "D": "fat."
+  },
+  "correct": "A",
+  "explanation": "Plentiful, like ample, means existing in great quantity.",
+  "after_choices": [],
+  "id": "WK-091"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 22,
+  "prompt": "The chemical spill left a stench.",
+  "choices": {
+   "A": "puddle of slimy water",
+   "B": "pile of debris",
+   "C": "foul odor",
+   "D": "dead animal"
+  },
+  "correct": "C",
+  "explanation": "A stench is a foul odor, a stink.",
+  "after_choices": [],
+  "id": "WK-092"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 23,
+  "prompt": "Sullen most nearly means",
+  "choices": {
+   "A": "grayish-yellow.",
+   "B": "soaking wet.",
+   "C": "very dirty.",
+   "D": "angrily silent."
+  },
+  "correct": "D",
+  "explanation": "Angrily silent, means about the same as sullen.",
+  "after_choices": [],
+  "id": "WK-093"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 24,
+  "prompt": "Rudiments most nearly means",
+  "choices": {
+   "A": "basic methods and procedures.",
+   "B": "politics.",
+   "C": "promotion opportunities.",
+   "D": "minute details."
+  },
+  "correct": "A",
+  "explanation": "Rudiments are basic methods and procedures.",
+  "after_choices": [],
+  "id": "WK-094"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 25,
+  "prompt": "Clash most nearly means",
+  "choices": {
+   "A": "applaud.",
+   "B": "fasten.",
+   "C": "conflict.",
+   "D": "punish."
+  },
+  "correct": "C",
+  "explanation": "To conflict, or clash, means to disagree or to be in opposition.",
+  "after_choices": [],
+  "id": "WK-095"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 26,
+  "prompt": "Camaraderie most nearly means",
+  "choices": {
+   "A": "interest in photography.",
+   "B": "close friendship.",
+   "C": "petty jealousies.",
+   "D": "arts and crafts projects."
+  },
+  "correct": "B",
+  "explanation": "Camaraderie means goodwill and rapport among friends.",
+  "after_choices": [],
+  "id": "WK-096"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 27,
+  "prompt": "The report was superficial.",
+  "choices": {
+   "A": "excellent",
+   "B": "official",
+   "C": "profound",
+   "D": "cursory"
+  },
+  "correct": "D",
+  "explanation": "Cursory, like superficial, means hasty, not thorough.",
+  "after_choices": [],
+  "id": "WK-097"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 28,
+  "prompt": "Tapestry most nearly means",
+  "choices": {
+   "A": "fabric of woven designs.",
+   "B": "tent.",
+   "C": "piece of elaborate jewelry.",
+   "D": "exquisite painting."
+  },
+  "correct": "A",
+  "explanation": "A tapestry is a fabric with multicolored woven designs.",
+  "after_choices": [],
+  "id": "WK-098"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 29,
+  "prompt": "The response was terse.",
+  "choices": {
+   "A": "pointed",
+   "B": "trivial",
+   "C": "oral",
+   "D": "lengthy"
+  },
+  "correct": "A",
+  "explanation": "Terse, or pointed, as in a terse or pointed comment, means brief but expressing a great deal.",
+  "after_choices": [],
+  "id": "WK-099"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 30,
+  "prompt": "We had never seen such a concoction.",
+  "choices": {
+   "A": "combination of ingredients",
+   "B": "appetizer",
+   "C": "drink made of wine and spices",
+   "D": "relish tray"
+  },
+  "correct": "A",
+  "explanation": "A combination of ingredients, as in cooking, is a concoction.",
+  "after_choices": [],
+  "id": "WK-100"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 31,
+  "prompt": "Brevity most nearly means",
+  "choices": {
+   "A": "boldness.",
+   "B": "shortness.",
+   "C": "nearness.",
+   "D": "length."
+  },
+  "correct": "B",
+  "explanation": "Shortness, or brevity, means briefness of duration.",
+  "after_choices": [],
+  "id": "WK-101"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 32,
+  "prompt": "Clemency most nearly means",
+  "choices": {
+   "A": "justice.",
+   "B": "punishment.",
+   "C": "mercy.",
+   "D": "dismissal."
+  },
+  "correct": "C",
+  "explanation": "Mercy, like clemency, means leniency, especially toward an offender or enemy.",
+  "after_choices": [],
+  "id": "WK-102"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 33,
+  "prompt": "That was an act of insubordination.",
+  "choices": {
+   "A": "humiliation",
+   "B": "rejection",
+   "C": "disobedience",
+   "D": "carelessness"
+  },
+  "correct": "C",
+  "explanation": "Disobedience, like insubordination, means failure to recognize or accept authority.",
+  "after_choices": [],
+  "id": "WK-103"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 34,
+  "prompt": "She advised against preferential treatment.",
+  "choices": {
+   "A": "weekly",
+   "B": "constant",
+   "C": "unlimited",
+   "D": "special"
+  },
+  "correct": "D",
+  "explanation": "Preferential means having or obtaining an advantage, as in receiving special treatment.",
+  "after_choices": [],
+  "id": "WK-104"
+ },
+ {
+  "section": "WK",
+  "source": "Practice Exam Two",
+  "n": 35,
+  "prompt": "Doldrums most nearly means",
+  "choices": {
+   "A": "fearful.",
+   "B": "diseased.",
+   "C": "low spirits.",
+   "D": "embarrassment."
+  },
+  "correct": "C",
+  "explanation": "Low spirits, like doldrums, are marked by listlessness, inactivity, or depression.",
+  "after_choices": [],
+  "id": "WK-105"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 1,
+  "prompt": "The retired first sergeant moved with surprising alacrity to pick up the child’s fallen tricycle.",
+  "choices": {
+   "A": "slow, painful progress",
+   "B": "brisk willingness",
+   "C": "indecision",
+   "D": "clumsiness"
+  },
+  "correct": "B",
+  "explanation": "Alacrity means brisk willingness.",
+  "after_choices": [],
+  "id": "WK-106"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 2,
+  "prompt": "Infraction most nearly means",
+  "choices": {
+   "A": "protection from external dangers.",
+   "B": "the bending of light through a lens.",
+   "C": "violation of a rule or law.",
+   "D": "quiet, uninterrupted thought."
+  },
+  "correct": "C",
+  "explanation": "Infraction most nearly means violation of a rule or law.",
+  "after_choices": [],
+  "id": "WK-107"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 3,
+  "prompt": "Beseech most nearly means",
+  "choices": {
+   "A": "to beg or plead.",
+   "B": "insult or degrade.",
+   "C": "give to upon one’s death.",
+   "D": "underneath something else."
+  },
+  "correct": "A",
+  "explanation": "Beseech most nearly means to beg or plead.",
+  "after_choices": [],
+  "id": "WK-108"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 4,
+  "prompt": "He was articulate and well-mannered.",
+  "choices": {
+   "A": "able to express one’s self clearly",
+   "B": "bending at the joints",
+   "C": "austere, self-denying",
+   "D": "having to do with beauty"
+  },
+  "correct": "A",
+  "explanation": "Articulate most nearly means able to express one’s self clearly.",
+  "after_choices": [],
+  "id": "WK-109"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 5,
+  "prompt": "Imperative most nearly means",
+  "choices": {
+   "A": "curious.",
+   "B": "having to do with a vital requirement.",
+   "C": "rudely bold.",
+   "D": "accidental."
+  },
+  "correct": "B",
+  "explanation": "Imperative most nearly means having to do with a vital requirement.",
+  "after_choices": [],
+  "id": "WK-110"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 6,
+  "prompt": "Shear most nearly means",
+  "choices": {
+   "A": "see-through.",
+   "B": "to cut with a sharp instrument such as scissors.",
+   "C": "unmitigated.",
+   "D": "to reinforce or prop up."
+  },
+  "correct": "B",
+  "explanation": "Shear most nearly means to cut with a sharp instrument such as scissors.",
+  "after_choices": [],
+  "id": "WK-111"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 7,
+  "prompt": "“The change of milieu,” he said to his sick daughter, “will do you good.”",
+  "choices": {
+   "A": "context",
+   "B": "orientation",
+   "C": "despairing sickness",
+   "D": "surroundings"
+  },
+  "correct": "D",
+  "explanation": "Milieu most nearly means surroundings.",
+  "after_choices": [],
+  "id": "WK-112"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 8,
+  "prompt": "Curtail most nearly means",
+  "choices": {
+   "A": "work with someone else.",
+   "B": "to cause to curl (e.g., hair).",
+   "C": "cut short or reduce.",
+   "D": "travel quickly."
+  },
+  "correct": "C",
+  "explanation": "Curtail most nearly means to cut short or reduce.",
+  "after_choices": [],
+  "id": "WK-113"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 9,
+  "prompt": "Deride most nearly means",
+  "choices": {
+   "A": "to ridicule contemptuously.",
+   "B": "to transform into something else.",
+   "C": "to keep something from someone else.",
+   "D": "to simplify."
+  },
+  "correct": "A",
+  "explanation": "Deride most nearly means to ridicule contemptuously.",
+  "after_choices": [],
+  "id": "WK-114"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 10,
+  "prompt": "Intimidate most nearly means",
+  "choices": {
+   "A": "to frighten by being threatening.",
+   "B": "having an extremely close relationship.",
+   "C": "to imply a hidden meaning.",
+   "D": "to make more complicated."
+  },
+  "correct": "A",
+  "explanation": "Intimidate most nearly means to frighten by being threatening.",
+  "after_choices": [],
+  "id": "WK-115"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 11,
+  "prompt": "Deportment most nearly means",
+  "choices": {
+   "A": "category.",
+   "B": "behavior.",
+   "C": "location.",
+   "D": "punctuality."
+  },
+  "correct": "B",
+  "explanation": "Deportment most nearly means behavior.",
+  "after_choices": [],
+  "id": "WK-116"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 12,
+  "prompt": "The message will be conveyed by an ambassador at large.",
+  "choices": {
+   "A": "punctuated",
+   "B": "translated",
+   "C": "spoken",
+   "D": "carried"
+  },
+  "correct": "D",
+  "explanation": "Conveyed most nearly means carried.",
+  "after_choices": [],
+  "id": "WK-117"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 13,
+  "prompt": "The commander gave his tacit approval.",
+  "choices": {
+   "A": "silent",
+   "B": "lethargic",
+   "C": "absolute",
+   "D": "effusive"
+  },
+  "correct": "A",
+  "explanation": "Tacit most nearly means silent.",
+  "after_choices": [],
+  "id": "WK-118"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 14,
+  "prompt": "“What do the omens portend?” the oracle was asked.",
+  "choices": {
+   "A": "feign",
+   "B": "give warning beforehand",
+   "C": "develop pores or holes",
+   "D": "assume a pose"
+  },
+  "correct": "B",
+  "explanation": "Portend most nearly means give warning beforehand.",
+  "after_choices": [],
+  "id": "WK-119"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 15,
+  "prompt": "Itinerary most nearly means",
+  "choices": {
+   "A": "migrant.",
+   "B": "not permanent.",
+   "C": "invention.",
+   "D": "schedule."
+  },
+  "correct": "D",
+  "explanation": "Itinerary most nearly means schedule.",
+  "after_choices": [],
+  "id": "WK-120"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 16,
+  "prompt": "The new student was vexatious.",
+  "choices": {
+   "A": "annoying",
+   "B": "contagious",
+   "C": "at a high volume",
+   "D": "insatiably hungry"
+  },
+  "correct": "A",
+  "explanation": "Vexatious most nearly means annoying.",
+  "after_choices": [],
+  "id": "WK-121"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 17,
+  "prompt": "Equivalent most nearly means",
+  "choices": {
+   "A": "complicated.",
+   "B": "inferior.",
+   "C": "evident.",
+   "D": "equal."
+  },
+  "correct": "D",
+  "explanation": "Equivalent most nearly means equal.",
+  "after_choices": [],
+  "id": "WK-122"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 18,
+  "prompt": "Criterion most nearly means",
+  "choices": {
+   "A": "standard.",
+   "B": "disaster.",
+   "C": "environment.",
+   "D": "excerpt."
+  },
+  "correct": "A",
+  "explanation": "Criterion most nearly means a standard against which something is judged.",
+  "after_choices": [],
+  "id": "WK-123"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 19,
+  "prompt": "Mercurial most nearly means",
+  "choices": {
+   "A": "having compassion.",
+   "B": "specious.",
+   "C": "unpredictably changeable.",
+   "D": "metallic."
+  },
+  "correct": "C",
+  "explanation": "Mercurial most nearly means unpredictably changeable.",
+  "after_choices": [],
+  "id": "WK-124"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 20,
+  "prompt": "This is a critical task.",
+  "choices": {
+   "A": "conversational",
+   "B": "influencing",
+   "C": "less worthy",
+   "D": "highly important"
+  },
+  "correct": "D",
+  "explanation": "Critical most nearly means highly important.",
+  "after_choices": [],
+  "id": "WK-125"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 21,
+  "prompt": "Telemetry most nearly means",
+  "choices": {
+   "A": "mental communication.",
+   "B": "rashness, audacity.",
+   "C": "transmission of measurements by automatic instruments.",
+   "D": "study of climactic variations."
+  },
+  "correct": "C",
+  "explanation": "Telemetry most nearly means transmission of measurements by automatic instruments.",
+  "after_choices": [],
+  "id": "WK-126"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 22,
+  "prompt": "His antagonist caught up with him.",
+  "choices": {
+   "A": "ally",
+   "B": "main character",
+   "C": "soothing to the stomach",
+   "D": "adversary"
+  },
+  "correct": "D",
+  "explanation": "Antagonist most nearly means adversary.",
+  "after_choices": [],
+  "id": "WK-127"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 23,
+  "prompt": "Diagnose most nearly means",
+  "choices": {
+   "A": "predict the outcome.",
+   "B": "cut in two.",
+   "C": "identify a situation.",
+   "D": "speak about."
+  },
+  "correct": "C",
+  "explanation": "Diagnose most nearly means identify a situation.",
+  "after_choices": [],
+  "id": "WK-128"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 24,
+  "prompt": "There is usually a kinetic solution to any problem.",
+  "choices": {
+   "A": "relating to the motion of material bodies",
+   "B": "referring to motion pictures",
+   "C": "moving at a high speed",
+   "D": "referring to a relative"
+  },
+  "correct": "A",
+  "explanation": "Kinetic most nearly means relating to the motion of material bodies.",
+  "after_choices": [],
+  "id": "WK-129"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 25,
+  "prompt": "Rectify most nearly means",
+  "choices": {
+   "A": "dealing with the digestive system.",
+   "B": "cause trouble or havoc.",
+   "C": "correct.",
+   "D": "give new life to."
+  },
+  "correct": "C",
+  "explanation": "Rectify most nearly means to correct.",
+  "after_choices": [],
+  "id": "WK-130"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 26,
+  "prompt": "He tried to camouflage himself and his equipment.",
+  "choices": {
+   "A": "substitute",
+   "B": "conceal",
+   "C": "redeem",
+   "D": "divide"
+  },
+  "correct": "B",
+  "explanation": "Camouflage most nearly means conceal.",
+  "after_choices": [],
+  "id": "WK-131"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 27,
+  "prompt": "Equivocal most nearly means",
+  "choices": {
+   "A": "equal.",
+   "B": "poised.",
+   "C": "open to question.",
+   "D": "removed."
+  },
+  "correct": "C",
+  "explanation": "Equivocal most nearly means open to question.",
+  "after_choices": [],
+  "id": "WK-132"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 28,
+  "prompt": "In such a situation, centripetal force must be taken into account.",
+  "choices": {
+   "A": "away from a center or axis",
+   "B": "relating to the feet",
+   "C": "having more than 100 petals",
+   "D": "toward a center or axis"
+  },
+  "correct": "D",
+  "explanation": "Centripetal most nearly means toward a center or axis.",
+  "after_choices": [],
+  "id": "WK-133"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 29,
+  "prompt": "Disconsolate most nearly means",
+  "choices": {
+   "A": "hopelessly sad.",
+   "B": "cease using.",
+   "C": "rearrange sloppily.",
+   "D": "recognize mentally."
+  },
+  "correct": "A",
+  "explanation": "Disconsolate most nearly means hopelessly sad.",
+  "after_choices": [],
+  "id": "WK-134"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 30,
+  "prompt": "His outlandish outfit was somewhat anachronistic.",
+  "choices": {
+   "A": "seemingly from a different time",
+   "B": "cursed",
+   "C": "dealing with organism structure",
+   "D": "attributing conscious thought to inanimate objects or animals"
+  },
+  "correct": "A",
+  "explanation": "Anachronistic most nearly means seemingly from a different time.",
+  "after_choices": [],
+  "id": "WK-135"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 31,
+  "prompt": "Modulate most nearly means",
+  "choices": {
+   "A": "speak.",
+   "B": "decay.",
+   "C": "dry out.",
+   "D": "adjust."
+  },
+  "correct": "D",
+  "explanation": "Modulate most nearly means adjust.",
+  "after_choices": [],
+  "id": "WK-136"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 32,
+  "prompt": "The student waited an hour just to ask one picayune question.",
+  "choices": {
+   "A": "unnoticed",
+   "B": "insignificant",
+   "C": "intense",
+   "D": "hot"
+  },
+  "correct": "B",
+  "explanation": "Picayune most nearly means insignificant.",
+  "after_choices": [],
+  "id": "WK-137"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 33,
+  "prompt": "Tenacious most nearly means",
+  "choices": {
+   "A": "annoying.",
+   "B": "persistent.",
+   "C": "religious.",
+   "D": "hot-tempered."
+  },
+  "correct": "B",
+  "explanation": "Tenacious most nearly means persistent.",
+  "after_choices": [],
+  "id": "WK-138"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 34,
+  "prompt": "Entente most nearly means",
+  "choices": {
+   "A": "relaxation of tensions.",
+   "B": "volition.",
+   "C": "agreement providing for joint action.",
+   "D": "freedom of entry or access."
+  },
+  "correct": "C",
+  "explanation": "Entente most nearly means an agreement providing for joint action.",
+  "after_choices": [],
+  "id": "WK-139"
+ },
+ {
+  "section": "WK",
+  "source": "AFQT Focus Exam",
+  "n": 35,
+  "prompt": "“Don’t be redundant,” he told his protégé.",
+  "choices": {
+   "A": "brilliant",
+   "B": "held back",
+   "C": "repetitive",
+   "D": "unruly"
+  },
+  "correct": "C",
+  "explanation": "Redundant most nearly means repetitive.",
+  "after_choices": [],
+  "id": "WK-140"
+ }
+]

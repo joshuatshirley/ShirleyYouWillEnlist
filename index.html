@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Practice ASVAB (EST)</title>
 <link rel="manifest" href="./manifest.json">
-<meta name="theme-color" content="#0b1b2b">
+<meta name="theme-color" content="#221f20">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Florence EST">
@@ -36,17 +36,26 @@
        to one Google account and can't be shared across stations.
    ============================================================ */
 window.EST_CONFIG = {
-  // Shown in the Recruiting Station dropdown (labeled that way in this
-  // deployment, not "Recruiter", since it holds station names). This
-  // deployment is shared across
-  // multiple stations (each station's own commander picks their station
-  // name here instead of an individual recruiter), so usage can be told
-  // apart by station in the results Sheet/dashboard without needing a
-  // separate backend per station. formatRecruiterDisplay() below expects
-  // single-recruiter entries as "Lastname RANK" (so results read "RANK
-  // Lastname") but passes plain single-word values like these through
-  // unchanged, so station names display exactly as typed here.
-  recruiters: ["Florence", "Sumter", "Georgetown", "Myrtle Beach"],
+  // The Recruiter dropdown. "name" is "Lastname RANK" (sorts by surname;
+  // screens and texts show it as "RANK Lastname"). It must match the
+  // recruiter's entry in apps-script/results-webhook.gs RECRUITER_EMAILS
+  // exactly, or their per-test email won't go out. "phone" shows on the
+  // hand-back screen with a scan-to-save contact code; leave it as the
+  // XXX placeholder until you have the real number and the screen just
+  // shows the name.
+  recruiters: [
+    { name: "Curless SSG", phone: "XXX-XXX-XXXX" },
+    { name: "Gatling SFC", phone: "XXX-XXX-XXXX" },
+    { name: "Guiler SFC", phone: "XXX-XXX-XXXX" },
+    { name: "Recendez SFC", phone: "XXX-XXX-XXXX" },
+    { name: "Schultz SFC", phone: "XXX-XXX-XXXX" },
+    { name: "Shirley SFC", phone: "XXX-XXX-XXXX" }
+    // NEW RECRUITER ("Aquaman" template): add a comma after the line
+    // above, copy this line, remove the //, and set the real "Lastname
+    // RANK" and phone. Then add the same name and their email in
+    // apps-script/results-webhook.gs (search for "Aquaman" there too).
+    // , { name: "Aquaman SGT", phone: "843-555-0100" }
+  ],
 
   // This station's Google Apps Script web app (/exec URL) that appends
   // each result to its Sheet -- see apps-script/results-webhook.gs for
@@ -59,15 +68,6 @@ window.EST_CONFIG = {
   // URL is what ties a student signup back to a specific recruiter).
   // See the assets/m2s_qr.png note above the object.
   m2sSignupUrl: "https://march2success.com/register?params=mID164667516%7CShirley",
-
-  // Presets for the optional recruiter next-steps note on the Results
-  // screen. Adjust the wording to match actual station workflow.
-  nextStepsOptions: [
-    "Refer to March2Success",
-    "Schedule ASVAB",
-    "Discuss opportunities with recruiter",
-    "Schedule enlistment"
-  ],
 
   // Typing this exact last/first name combo on the Start screen opens
   // the private on-device Saved Scores viewer instead of starting a
@@ -83,23 +83,47 @@ window.EST_CONFIG = {
 };
 </script>
 <style>
+/* Station fonts, kept in the git-ignored local-fonts/ (licensed: G.I. is
+   Army-only, STAR7 is all rights reserved). On the public
+   copy these 404 and everything falls back to Arial. */
+@font-face { font-family: "G.I."; src: url("./local-fonts/GI-400.woff") format("woff"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "STAR7"; src: url("./local-fonts/STAR7.ttf") format("truetype"); font-display: swap; }
+
 :root {
-  --bg: #0b1b2b;
-  --panel: #ffffff;
-  --ink: #1a1a1a;
-  --muted: #555;
-  --accent: #1e4d8c;
-  --accent-dark: #123059;
-  --ok: #1a7d3c;
-  --warn: #b8860b;
-  --stop-bg: #d9d9d9;
-  --answered-bg: #d7f0d7;
-  --font-ui: "Segoe UI", Arial, Helvetica, sans-serif;
-  --font-serif: Georgia, "Times New Roman", Cambria, serif;
-  --font-mono: "SF Mono", "Consolas", "Menlo", monospace;
-  --status-good: #0ca30c;
-  --status-warning: #fab219;
-  --status-critical: #d03b3b;
+  /* U.S. Army brand, from the station's "U.S. Army" design system (Brand
+     Guidelines V1.0). Army Black page, white cards, Army Gold accents on
+     black only (gold type fails on white), square corners, no shadows. The
+     brand face is G.I.; Arial stands in wherever it isn't installed. */
+  --army-black: #221f20;
+  --army-gold: #ffcc01;
+  --white: #ffffff;
+  --tan: #f1e4c7;
+  --field-01: #727365;
+  --field-02: #bfb8a6;
+  --gray-01: #565557;
+  --gray-02: #d5d5d7;
+  --highlight-orange: #f16521;
+  --highlight-green: #2daa27;
+  --highlight-red: #cf0000;
+
+  --bg: var(--army-black);
+  --panel: var(--white);
+  --ink: var(--army-black);
+  --muted: var(--gray-01);
+  --accent: var(--army-black);
+  --accent-dark: var(--army-black);
+  --ok: var(--army-black);
+  --warn: var(--highlight-orange);
+  --stop-bg: var(--gray-02);
+  --answered-bg: var(--army-gold);
+  --font-ui: "G.I.", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* Titles and headings in STAR7, everything else in G.I. */
+  --font-title: "STAR7", var(--font-ui);
+  --font-serif: var(--font-ui);
+  --font-mono: var(--font-ui);
+  --status-good: var(--highlight-green);
+  --status-warning: var(--highlight-orange);
+  --status-critical: var(--highlight-red);
 }
 
 * { box-sizing: border-box; }
@@ -109,7 +133,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: var(--bg);
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: var(--font-ui);
   color: var(--ink);
   overflow-x: hidden;
 }
@@ -122,19 +146,34 @@ html, body {
   padding: clamp(4px, 1.2vh, 24px) 16px clamp(6px, 1.8vh, 64px);
 }
 
+/* Start screen: the Army logo (reverse version, on Army Black) sits above
+   the card, top left, as the brand's foundational mark. 24px is the
+   brand's digital minimum height. */
+.brand-bar {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 0 clamp(2px, 0.6vh, 10px);
+}
+.brand-bar img {
+  display: block;
+  height: clamp(24px, 4vh, 40px);
+  width: auto;
+}
+
 .card {
   background: var(--panel);
-  border-radius: 10px;
+  border-radius: 0;
   max-width: 900px;
   width: 100%;
   padding: clamp(8px, 1.7vh, 28px) clamp(18px, 4vw, 32px);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
 }
 
 h1 {
+  font-family: var(--font-title);
+  font-weight: 400;
   text-align: center;
   font-size: clamp(1.3rem, min(6vw, 5.5vh), 2.4rem);
-  letter-spacing: 2px;
+  letter-spacing: 0;
   margin: 0 0 4px;
 }
 
@@ -144,18 +183,19 @@ h1 {
    one. Same reasoning for every other rule below marked vh-scaled, down
    through the form fields and section list. */
 h2.subtitle {
+  font-family: var(--font-title);
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: underline;
-  font-size: clamp(0.8rem, 2.2vh, 1.1rem);
+  font-size: clamp(0.95rem, 2.6vh, 1.3rem);
   margin: 0 0 clamp(4px, 1.2vh, 24px);
   color: var(--muted);
 }
 
 .instructions-box {
-  background: #f2f2f2;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  background: var(--gray-02);
+  border: 1px solid var(--gray-02);
+  border-radius: 0;
   font-size: clamp(0.75rem, 1.6vh, 1rem);
   padding: clamp(6px, 1.4vh, 16px) clamp(10px, 2.5vw, 20px);
   margin: clamp(4px, 1vh, 16px) 0;
@@ -172,7 +212,7 @@ h2.subtitle {
 }
 .section-item {
   padding: clamp(3px, 0.8vh, 12px) 2px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--gray-02);
 }
 .section-item:nth-last-child(-n+2) {
   border-bottom: none;
@@ -195,8 +235,8 @@ input[type=text], input[type=tel], select, textarea {
   width: 100%;
   font-size: clamp(0.95rem, 1.8vh, 1.1rem);
   padding: clamp(4px, 0.85vh, 10px) 12px;
-  border: 1px solid #999;
-  border-radius: 6px;
+  border: 1px solid var(--field-01);
+  border-radius: 0;
   font-family: inherit;
   background: #fff;
   color: var(--ink);
@@ -204,8 +244,8 @@ input[type=text], input[type=tel], select, textarea {
 textarea { resize: vertical; }
 input[type=text]:focus, input[type=tel]:focus, select:focus, textarea:focus {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(30, 77, 140, 0.15);
+  border-color: var(--army-black);
+  box-shadow: 0 0 0 1px var(--army-black);
 }
 select {
   -webkit-appearance: none;
@@ -221,11 +261,11 @@ select {
 select::-ms-expand { display: none; }
 
 input.input-error, select.input-error {
-  border-color: #b00020;
+  border-color: var(--highlight-red);
 }
 .field-error {
   display: none;
-  color: #b00020;
+  color: var(--highlight-red);
   font-size: 0.85rem;
   margin-top: 6px;
 }
@@ -240,10 +280,12 @@ input.input-error, select.input-error {
 
 .btn {
   display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 6px;
+  background: var(--army-black);
+  color: var(--army-gold);
+  border: 2px solid var(--army-black);
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 0;
   /* 12px floor, not lower -- this is the most-tapped control in the app
      (Next/Start/Begin), and needs to stay a safe touch target even when
      vh-shrunk. */
@@ -252,16 +294,19 @@ input.input-error, select.input-error {
   cursor: pointer;
   transition: background 0.15s;
 }
-.btn:hover { background: var(--accent-dark); }
-.btn:disabled { background: #999; cursor: not-allowed; }
+.btn:hover { background: var(--gray-01); border-color: var(--gray-01); }
+.btn:disabled { background: var(--gray-02); border-color: var(--gray-02); color: var(--gray-01); cursor: not-allowed; }
 .btn-row { text-align: center; margin-top: clamp(8px, 1.6vh, 28px); }
 
 .section-header {
-  background: #f5e642;
-  border: 1px solid #c9bf30;
-  border-radius: 6px;
+  font-family: var(--font-title);
+  background: var(--army-gold);
+  border: 1px solid var(--army-gold);
+  color: var(--army-black);
+  border-radius: 0;
   padding: 10px 16px;
-  font-weight: 700;
+  font-size: 1.45rem;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 14px;
 }
@@ -277,9 +322,10 @@ input.input-error, select.input-error {
   margin-bottom: 14px;
 }
 .topbar-inner {
-  background: var(--panel);
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  background: var(--army-black);
+  color: var(--white);
+  border: 1px solid var(--field-01);
+  border-radius: 0;
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -293,8 +339,9 @@ input.input-error, select.input-error {
   font-size: 1.4rem;
   font-weight: 700;
   flex: 0 0 auto;
+  color: var(--army-gold);
 }
-.timer.low { color: #b00020; }
+.timer.low { color: var(--highlight-orange); }
 
 .progress-wrap {
   flex: 1 1 auto;
@@ -309,28 +356,28 @@ input.input-error, select.input-error {
   font-variant-numeric: tabular-nums;
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--white);
   margin-bottom: 6px;
   white-space: nowrap;
   overflow: hidden;
 }
 .progress-remaining {
   font-weight: 400;
-  color: var(--muted);
+  color: var(--field-02);
   font-size: 0.8rem;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .progress-bar-outer {
   height: 6px;
-  background: #e6e6e6;
-  border-radius: 3px;
+  background: var(--gray-01);
+  border-radius: 0;
   overflow: hidden;
 }
 .progress-bar-inner {
   height: 100%;
-  background: var(--accent);
-  border-radius: 3px;
+  background: var(--army-gold);
+  border-radius: 0;
   transition: width 0.2s ease;
 }
 
@@ -359,13 +406,13 @@ input.input-error, select.input-error {
   align-items: center;
   gap: 12px;
   padding: 14px 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid var(--field-01);
+  border-radius: 0;
   cursor: pointer;
   font-size: 1.1rem;
 }
-.choice:hover { background: #f0f4fa; border-color: var(--accent); }
-.choice input { transform: scale(1.3); }
+.choice:hover { background: var(--tan); border-color: var(--army-black); }
+.choice input { transform: scale(1.3); accent-color: var(--army-black); }
 .choice.selected { background: var(--answered-bg); border-color: var(--ok); }
 .choice-letter { font-weight: 700; width: 20px; }
 
@@ -377,10 +424,14 @@ input.input-error, select.input-error {
 }
 .stop-box {
   background: var(--stop-bg);
-  border: 1px solid #999;
-  border-radius: 8px;
+  border: 1px solid var(--gray-02);
+  border-radius: 0;
   padding: 30px;
   text-align: center;
+}
+.stop-box .instructions-box {
+  background: var(--white);
+  border-color: var(--field-01);
 }
 .stop-sign-outer {
   width: 130px;
@@ -395,15 +446,15 @@ input.input-error, select.input-error {
 .stop-sign {
   width: 120px;
   height: 120px;
-  background: #c8102e;
+  background: var(--highlight-red);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-ui);
-  font-weight: 800;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .stop-msg {
@@ -416,9 +467,9 @@ input.input-error, select.input-error {
   margin: 4px 0 20px;
 }
 .stop-upnext {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--field-01);
+  border-radius: 0;
   padding: 16px 20px;
   margin: 0 auto 4px;
   max-width: 360px;
@@ -426,7 +477,8 @@ input.input-error, select.input-error {
 }
 .stop-upnext-label {
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0;
+  font-weight: 700;
   font-size: 0.75rem;
   color: var(--muted);
   margin-bottom: 4px;
@@ -443,7 +495,7 @@ input.input-error, select.input-error {
    which the light stop-box panel isn't, so it gets its own dark tile. */
 .army-logo-wrap {
   background: var(--bg);
-  border-radius: 8px;
+  border-radius: 0;
   max-width: 280px;
   margin: 4px auto 18px;
   padding: 16px 20px;
@@ -454,14 +506,82 @@ input.input-error, select.input-error {
   height: auto;
 }
 
-.note-form {
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid #ccc;
-  text-align: left;
+/* Scan-to-save / scan-to-text codes (buildQr). White quiet zone is part
+   of the code, so it reads on any background. */
+.qr-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-.note-form-title {
+.qr-item { width: 200px; text-align: center; }
+.qr-item svg { display: block; width: 180px; height: 180px; margin: 0 auto 8px; background: var(--white); }
+.qr-label { font-weight: 700; }
+.qr-sub { color: var(--muted); font-size: 0.85rem; margin-top: 2px; }
+.recruiter-card {
+  margin: 0 auto 18px;
+  padding: 14px 18px;
+  max-width: 420px;
+  background: var(--white);
+  border: 1px solid var(--field-01);
+}
+.recruiter-name { font-size: 1.3rem; font-weight: 700; }
+.recruiter-phone { font-size: 1.15rem; margin: 2px 0 10px; }
+
+/* End-of-test readiness questions (renderReadiness and the screens after it). */
+.survey-hint { text-align: center; color: var(--muted); margin: 4px 0 18px; }
+.ready-scale {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+}
+.ready-btn {
+  padding: 16px 0;
+  border: 2px solid var(--field-01);
+  border-radius: 0;
+  background: var(--white);
+  color: var(--army-black);
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.ready-btn:hover { border-color: var(--army-black); background: var(--tan); }
+.ready-btn.selected { border-color: var(--army-black); background: var(--army-gold); font-weight: 700; }
+.ready-ends {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+@media (max-width: 600px) {
+  .ready-scale { grid-template-columns: repeat(5, 1fr); }
+}
+.verify-list { margin: 0 0 8px; }
+.verify-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gray-02);
   font-size: 1.15rem;
+}
+.verify-row span:first-child { color: var(--muted); }
+.verify-row span:last-child { font-weight: 700; text-align: right; overflow-wrap: anywhere; }
+.readiness-card {
+  margin: 8px 0 24px;
+  padding: 16px 20px;
+  border: 1px solid var(--field-01);
+  border-radius: 0;
+  background: var(--white);
+}
+.readiness-score { font-size: 1.6rem; font-weight: 700; margin: 4px 0 8px; }
+.readiness-card p { margin: 6px 0; }
+
+.note-form-title {
+  font-family: var(--font-title);
+  font-size: 1.35rem;
   margin-bottom: 4px;
 }
 .note-intro {
@@ -477,18 +597,20 @@ input.input-error, select.input-error {
 }
 .note-option {
   padding: 13px 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fff;
+  border: 1px solid var(--field-01);
+  border-radius: 0;
+  background: var(--white);
+  color: var(--army-black);
+  font-family: inherit;
   font-size: 0.95rem;
   cursor: pointer;
   text-align: left;
 }
-.note-option:hover { border-color: var(--accent); background: #f0f4fa; }
+.note-option:hover { border-color: var(--army-black); background: var(--tan); }
 .note-option.selected {
   border-color: var(--accent);
-  background: #e8f0fb;
-  color: var(--accent-dark);
+  background: var(--army-gold);
+  color: var(--army-black);
   font-weight: 700;
 }
 
@@ -505,7 +627,7 @@ input.input-error, select.input-error {
   text-align: center;
   padding: 18px 0 24px;
   margin-bottom: 8px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--gray-02);
 }
 .hero-value {
   font-family: var(--font-ui);
@@ -519,7 +641,7 @@ input.input-error, select.input-error {
   font-size: 0.95rem;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 .hero-sub {
   margin-top: 4px;
@@ -548,13 +670,14 @@ input.input-error, select.input-error {
 }
 .meter-track {
   height: 12px;
-  border-radius: 6px;
-  background: #eee;
+  border-radius: 0;
+  background: var(--white);
+  border: 1px solid var(--field-01);
   overflow: hidden;
 }
 .meter-fill {
   height: 100%;
-  border-radius: 6px;
+  border-radius: 0;
   transition: width 0.3s ease;
 }
 .meter-foot {
@@ -569,7 +692,7 @@ input.input-error, select.input-error {
   display: inline-block;
   width: 9px;
   height: 9px;
-  border-radius: 50%;
+  border-radius: 0;
   flex: 0 0 auto;
 }
 .status-fill-good { background: var(--status-good); }
@@ -595,16 +718,16 @@ input.input-error, select.input-error {
   font-size: 0.85rem;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   margin-top: 2px;
 }
 
 .m2s-card {
   margin: 8px 0 24px;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background: #f7faff;
+  border: 1px solid var(--tan);
+  border-radius: 0;
+  background: var(--tan);
   text-align: center;
 }
 .m2s-title {
@@ -621,9 +744,9 @@ input.input-error, select.input-error {
   height: 150px;
   display: block;
   margin: 0 auto 14px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  background: #fff;
+  border: 1px solid var(--field-02);
+  border-radius: 0;
+  background: var(--white);
   padding: 6px;
 }
 .m2s-link-row {
@@ -631,23 +754,25 @@ input.input-error, select.input-error {
 }
 .btn-outline {
   display: inline-block;
-  background: #fff;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 6px;
+  background: var(--white);
+  color: var(--army-black);
+  border: 2px solid var(--army-black);
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 0;
   padding: 12px 24px;
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
   transition: background 0.15s;
 }
-.btn-outline:hover { background: #eef3fb; }
+.btn-outline:hover { background: var(--gray-02); }
 
 .scores-table-wrap {
   overflow-x: auto;
   margin: 18px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid var(--field-01);
+  border-radius: 0;
 }
 .scores-table {
   width: 100%;
@@ -658,17 +783,18 @@ input.input-error, select.input-error {
   padding: 10px 14px;
   text-align: left;
   white-space: nowrap;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--gray-02);
 }
 .scores-table thead th {
-  background: #f2f2f2;
+  background: var(--army-black);
+  color: var(--white);
   font-weight: 700;
 }
 .scores-table tbody tr:last-child td {
   border-bottom: none;
 }
 .scores-table tbody tr:hover {
-  background: #f7faff;
+  background: var(--tan);
 }
 .scores-table-num {
   font-family: var(--font-mono);
@@ -712,28 +838,46 @@ input.input-error, select.input-error {
 .practice-section-btn {
   display: flex; justify-content: space-between; align-items: center;
   width: 100%; text-align: left;
-  background: #fff; color: var(--ink);
-  border: 1px solid #ccd6e4; border-radius: 8px;
+  background: var(--white); color: var(--ink); font-family: inherit;
+  border: 1px solid var(--field-01); border-radius: 0;
   padding: 16px 18px; font-size: 1.1rem; cursor: pointer;
 }
-.practice-section-btn:hover { background: #f0f4fa; border-color: var(--accent); }
-.practice-section-btn.suggested { border: 2px solid var(--accent); background: #eef3fb; }
+.practice-section-btn:hover { background: var(--tan); border-color: var(--army-black); }
+.practice-section-btn.suggested { border: 2px solid var(--army-black); background: var(--army-gold); }
 .practice-section-meta { color: var(--muted); font-size: 0.9rem; }
 .choice.practice-choice { cursor: pointer; }
 .choice.practice-locked { cursor: default; }
-.choice.practice-locked:hover { background: inherit; border-color: #ddd; }
-.choice.practice-correct, .choice.practice-correct:hover { background: #e3f5e3; border-color: var(--status-good); }
-.choice.practice-wrong, .choice.practice-wrong:hover { background: #fbe6e6; border-color: var(--status-critical); }
-.practice-verdict { font-weight: 700; font-size: 1.15rem; margin: 18px 0 6px; }
-.practice-verdict.right { color: var(--status-good); }
-.practice-verdict.wrong { color: var(--status-critical); }
+.choice.practice-locked:hover { background: inherit; border-color: var(--field-01); }
+.choice.practice-correct, .choice.practice-correct:hover { background: var(--highlight-green); border-color: var(--highlight-green); color: var(--army-black); }
+.choice.practice-wrong, .choice.practice-wrong:hover { background: var(--highlight-red); border-color: var(--highlight-red); color: var(--white); }
+/* Chips, not colored text: green type on white is under 4.5:1. The
+   words say right or wrong, so color is never the only signal. */
+.practice-verdict { display: inline-block; font-weight: 700; font-size: 1.15rem; margin: 18px 0 8px; padding: 6px 12px; }
+.practice-verdict.right { background: var(--highlight-green); color: var(--army-black); }
+.practice-verdict.wrong { background: var(--highlight-red); color: var(--white); }
 .explain-box {
-  background: #f6f8fb; border-left: 4px solid var(--accent); border-radius: 6px;
+  background: var(--tan); border-radius: 0;
   padding: 14px 16px; font-size: 1.05rem; line-height: 1.5; white-space: pre-line;
 }
-.practice-review-item { border-top: 1px solid #eee; padding: 14px 0; }
+.practice-review-item { border-top: 1px solid var(--gray-02); padding: 14px 0; }
 .practice-review-prompt { white-space: pre-line; font-family: var(--font-serif); margin-bottom: 6px; }
-.practice-review-answer { font-weight: 700; color: var(--status-good); margin-bottom: 6px; }
+.practice-review-answer { font-weight: 700; color: var(--army-black); margin-bottom: 6px; }
+.nav-row .btn-outline { flex: 0 0 auto; }
+.btn-outline.btn-small { padding: 6px 14px; font-size: 0.9rem; margin-top: 8px; }
+
+/* ---------- Test-taking tips ---------- */
+.tips-heading { font-family: var(--font-title); font-size: 1.4rem; margin: 22px 0 6px; color: var(--army-black); text-transform: uppercase; font-weight: 400; }
+.tips-text { margin: 6px 0; line-height: 1.5; }
+.tips-list { margin: 6px 0 10px; padding-left: 22px; line-height: 1.5; }
+.tips-list li { margin-bottom: 6px; }
+.tips-clock { text-align: center; font-size: 1.8rem; font-weight: 700; margin: 12px 0 0; font-variant-numeric: tabular-nums; }
+.times-wrap { overflow-x: auto; margin: 14px 0; }
+.times-table { border-collapse: collapse; margin: 0 auto; font-variant-numeric: tabular-nums; }
+.times-table th, .times-table td { border: 1px solid var(--field-02); padding: 4px 6px; text-align: center; min-width: 2.2em; }
+.times-table th { background: var(--army-black); color: var(--white); border-color: var(--army-black); }
+@media (max-width: 500px) {
+  .times-table th, .times-table td { padding: 3px 1px; min-width: 1.6em; font-size: 0.8rem; }
+}
 </style>
 </head>
 <body>
@@ -743,12 +887,10 @@ input.input-error, select.input-error {
      out keeps this file to markup, styles, and app logic. See that
      file's own header for how it's regenerated. -->
 <script src="./question-data.js"></script>
-<!-- Practice-question bank (licensed Barron's content with explanations).
-     Local-only: local-bank/ is git-ignored and never pushed, so on the
-     public GitHub Pages copy this request 404s, window.__EST_PRACTICE__
-     stays undefined, and every practice button simply doesn't render.
-     Rebuilt by local-bank/build_practice.py. -->
+<script src="./assets/qrcode.js"></script>
 <script src="./local-bank/practice-data.js"></script>
+<!-- Extra test-taking tips, same local-only arrangement. -->
+<script src="./local-bank/tips-data.js"></script>
 <script>
 (function () {
   "use strict";
@@ -765,11 +907,14 @@ input.input-error, select.input-error {
   // Optional local-only practice bank; null on the public deployment.
   var PRACTICE = window.__EST_PRACTICE__ || null;
 
-  var RECRUITERS = CONFIG.recruiters;
-
-  // Presets for the optional recruiter next-steps note on the Results
-  // screen.
-  var NEXT_ACTION_OPTIONS = CONFIG.nextStepsOptions;
+  // Plain strings (older configs) still work: they become names with no phone.
+  var RECRUITERS = CONFIG.recruiters.map(function (r) {
+    return typeof r === "string" ? { name: r, phone: "" } : r;
+  });
+  function recruiterInfo(name) {
+    for (var i = 0; i < RECRUITERS.length; i++) if (RECRUITERS[i].name === name) return RECRUITERS[i];
+    return { name: name || "", phone: "" };
+  }
 
   var SCORES_ACCESS_LAST = CONFIG.scoresAccessLastName;
   var SCORES_ACCESS_FIRST = CONFIG.scoresAccessFirstName;
@@ -797,16 +942,27 @@ input.input-error, select.input-error {
   // would silently discard a test-taker's in-progress answers. This is a
   // kiosk left unattended after a completed test, not a distraction-mid-
   // question guard (the per-section timer already forces progress there).
+  // Practice screens pass a shorter limit (see PRACTICE_IDENTITY_TTL_MS).
   var IDLE_TIMEOUT_MS = CONFIG.idleTimeoutMinutes * 60 * 1000;
   var idleTimeoutHandle = null;
   var idleTimeoutArmed = false;
+  var idleTimeoutMs = IDLE_TIMEOUT_MS;
 
+  // An idle reset means the kiosk was walked away from, so it also drops
+  // the remembered practice name/phone before the next person walks up.
+  // A test-taker who walked off mid-way through the readiness questions
+  // still gets their result sent, with whatever they'd answered.
   function resetIdleTimeout() {
     if (idleTimeoutHandle) clearTimeout(idleTimeoutHandle);
-    idleTimeoutHandle = setTimeout(function () { renderStart(); }, IDLE_TIMEOUT_MS);
+    idleTimeoutHandle = setTimeout(function () {
+      postFinalResult();
+      lastPracticeIdentity = null;
+      renderStart();
+    }, idleTimeoutMs);
   }
 
-  function armIdleTimeout() {
+  function armIdleTimeout(ms) {
+    idleTimeoutMs = ms || IDLE_TIMEOUT_MS;
     if (!idleTimeoutArmed) {
       idleTimeoutArmed = true;
       document.addEventListener("click", resetIdleTimeout);
@@ -838,8 +994,14 @@ input.input-error, select.input-error {
     timerHandle: null,
     secondsLeft: 0,
     finalResults: null, // set once the last section ends; see renderStop/renderResults
-    finalPayload: null  // buildResultPayload(finalResults), sent to the webhook and reused by renderResults
+    finalPayload: null, // buildResultPayload(finalResults), sent to the webhook and reused by renderResults
+    survey: null,       // end-of-test readiness answers; see renderReadiness
+    resultPosted: false // finalPayload sent (postFinalResult), so it's never sent twice
   };
+
+  function emptySurvey() {
+    return { ready: null, reasons: [], other: "", makeTen: "" };
+  }
 
   function el(tag, attrs, children) {
     var e = document.createElement(tag);
@@ -928,6 +1090,9 @@ input.input-error, select.input-error {
     clear(app);
     setKeyHandler(null);
     disarmIdleTimeout();
+    app.appendChild(el("div", { class: "brand-bar" }, [
+      el("img", { src: "./assets/army_logo_horiz.svg", alt: "U.S. Army" })
+    ]));
     var card = el("div", { class: "card" });
     card.appendChild(el("h1", {}, ["PRACTICE ASVAB"]));
     card.appendChild(el("h2", { class: "subtitle" }, ["Practice test for the Armed Services Vocational Aptitude Battery"]));
@@ -969,14 +1134,14 @@ input.input-error, select.input-error {
     var phoneInput = el("input", { type: "tel", id: "phone", placeholder: "Phone number" });
     card.appendChild(phoneInput);
 
-    card.appendChild(el("label", { class: "field-label" }, ["Recruiting Station: *"]));
+    card.appendChild(el("label", { class: "field-label" }, ["Recruiter: *"]));
     var recruiterSelect = el("select", { id: "recruiterSelect" });
-    recruiterSelect.appendChild(el("option", { value: "", disabled: "disabled", selected: "selected" }, ["Select Recruiting Station"]));
+    recruiterSelect.appendChild(el("option", { value: "", disabled: "disabled", selected: "selected" }, ["Select Recruiter"]));
     RECRUITERS.forEach(function (r) {
-      recruiterSelect.appendChild(el("option", { value: r }, [r]));
+      recruiterSelect.appendChild(el("option", { value: r.name }, [formatRecruiterDisplay(r.name)]));
     });
     card.appendChild(recruiterSelect);
-    var recruiterError = el("div", { class: "field-error" }, ["Recruiting Station is required."]);
+    var recruiterError = el("div", { class: "field-error" }, ["Recruiter is required."]);
     card.appendChild(recruiterError);
 
     // Only shown once more than one variant exists -- a single-option
@@ -1037,11 +1202,14 @@ input.input-error, select.input-error {
       state.answers = {};
       state.finalResults = null;
       state.finalPayload = null;
+      state.survey = emptySurvey();
+      state.resultPosted = false;
       QUESTIONS.sections.forEach(function (s) { state.answers[s.code] = {}; });
       renderPreTestHandoff();
     });
-    card.appendChild(el("div", { class: "btn-row" }, [startBtn]));
-
+    // One row for all three buttons, so the start screen still fits a
+    // landscape iPad without scrolling now the Army logo sits above it.
+    var extraRow = el("div", { class: "btn-row" }, [startBtn, document.createTextNode(" ")]);
     if (PRACTICE) {
       var practiceBtn = el("button", { class: "btn-outline" }, ["Practice Questions"]);
       practiceBtn.addEventListener("click", function () {
@@ -1052,8 +1220,13 @@ input.input-error, select.input-error {
           recruiter: recruiterSelect.value
         }, null);
       });
-      card.appendChild(el("div", { class: "btn-row" }, [practiceBtn]));
+      extraRow.appendChild(practiceBtn);
+      extraRow.appendChild(document.createTextNode(" "));
     }
+    var tipsBtn = el("button", { class: "btn-outline" }, ["Test-Taking Tips"]);
+    tipsBtn.addEventListener("click", function () { renderTestTips(renderStart); });
+    extraRow.appendChild(tipsBtn);
+    card.appendChild(extraRow);
 
     app.appendChild(card);
   }
@@ -1125,8 +1298,7 @@ input.input-error, select.input-error {
     var card = el("div", { class: "card test-card" });
     card.appendChild(el("div", { class: "section-header" }, [
       parsedTitle.part + " - ",
-      boldedName(parsedTitle.name),
-      " - You will have " + sec.minutes + " Minutes"
+      boldedName(parsedTitle.name)
     ]));
 
     var answerError = el("div", { class: "field-error question-error" }, ["Please select an answer to continue."]);
@@ -1272,19 +1444,17 @@ input.input-error, select.input-error {
       box.appendChild(el("p", { class: "stop-break" }, ["Take a short break if you need one."]));
       box.appendChild(buildUpNextBox(QUESTIONS.sections[state.sectionIndex + 1]));
     } else {
-      box.appendChild(el("div", { class: "army-logo-wrap" }, [
-        el("img", { src: "./assets/army_logo_horiz.svg", alt: "U.S. Army", class: "army-logo" })
-      ]));
+      // The result isn't sent yet: the readiness questions and name check
+      // come first, so the Sheet row and email carry them (renderHandBack).
       box.appendChild(el("p", { class: "stop-break" }, [
-        "Please return this device to your recruiter to review your scores."
+        "Before your scores, a few quick questions."
       ]));
-      postResultsToWebhook(state.finalPayload);
     }
 
-    var nextBtn = el("button", { class: "btn" }, [isLast ? "Continue to Results" : "Continue"]);
+    var nextBtn = el("button", { class: "btn" }, ["Continue"]);
     nextBtn.addEventListener("click", function () {
       if (isLast) {
-        renderResults();
+        renderReadiness();
       } else {
         startSection(state.sectionIndex + 1);
       }
@@ -1317,6 +1487,12 @@ input.input-error, select.input-error {
     box.appendChild(el("p", { class: "stop-break" }, [
       "Hand the device to the test-taker now — the timer starts as soon as you tap Begin."
     ]));
+    box.appendChild(el("div", { class: "instructions-box" }, [
+      el("strong", {}, ["The clock isn't running yet. "]),
+      "Before you tap Begin, write your times table and the formulas you know on your scratch paper, " +
+      "so during the test you can look them up instead of working them out. Do the same during the " +
+      "untimed instructions on the real ASVAB."
+    ]));
     box.appendChild(buildUpNextBox(QUESTIONS.sections[0]));
 
     var beginBtn = el("button", { class: "btn" }, ["Begin"]);
@@ -1324,6 +1500,335 @@ input.input-error, select.input-error {
     box.appendChild(el("div", { class: "btn-row" }, [beginBtn]));
     card.appendChild(box);
     app.appendChild(card);
+  }
+
+  // ---------- Screens: Readiness questions + name check ----------
+  // Between the last section and the results, so the recruiter (Sheet row,
+  // per-test email, Results screen, weekly report) sees where the
+  // applicant's head is before the scores color the answer. The 1-10
+  // rating is required; everything after it can be skipped. A 10 goes
+  // straight to the name check. The idle timeout stays armed throughout,
+  // and an idle reset sends whatever was answered (postFinalResult).
+  var READY_REASONS = [
+    "Family or parents' opinion",
+    "Want to finish school first",
+    "Not sure what job I'd get",
+    "Time away from home",
+    "Length of the commitment",
+    "Fitness or medical worries",
+    "Safety or deployment",
+    "Pay and benefits unclear",
+    "Looking at other branches",
+    "Need to talk to someone first"
+  ];
+  // Kept short: answers ride in the pending-sync cookie when offline.
+  var SURVEY_OTHER_MAX = 80;
+  var SURVEY_TEXT_MAX = 200;
+
+  function renderReadiness() {
+    clear(app);
+    setKeyHandler(null);
+    armIdleTimeout();
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["Are you ready to join the Army?"]));
+    card.appendChild(el("p", { class: "survey-hint" }, [
+      "Pick a number. There's no wrong answer, and it doesn't change your score."
+    ]));
+
+    var nextBtn = el("button", { class: "btn" }, ["Next"]);
+    nextBtn.disabled = state.survey.ready === null;
+
+    var scale = el("div", { class: "ready-scale", role: "group", "aria-label": "Ready to join, 1 to 10" });
+    var buttons = [];
+    for (var n = 1; n <= 10; n++) {
+      (function (value) {
+        var b = el("button", { type: "button", class: "ready-btn", "aria-pressed": "false" }, [String(value)]);
+        if (state.survey.ready === value) { b.classList.add("selected"); b.setAttribute("aria-pressed", "true"); }
+        b.addEventListener("click", function () {
+          state.survey.ready = value;
+          buttons.forEach(function (o) { o.classList.remove("selected"); o.setAttribute("aria-pressed", "false"); });
+          b.classList.add("selected");
+          b.setAttribute("aria-pressed", "true");
+          nextBtn.disabled = false;
+        });
+        buttons.push(b);
+        scale.appendChild(b);
+      })(n);
+    }
+    card.appendChild(scale);
+    card.appendChild(el("div", { class: "ready-ends" }, [
+      el("span", {}, ["1 = Not at all"]),
+      el("span", {}, ["10 = Ready now"])
+    ]));
+
+    nextBtn.addEventListener("click", function () {
+      if (state.survey.ready === 10) {
+        state.survey.reasons = [];
+        state.survey.other = "";
+        state.survey.makeTen = "";
+        renderVerifyInfo();
+      } else {
+        renderReadinessReasons();
+      }
+    });
+    card.appendChild(el("div", { class: "btn-row" }, [nextBtn]));
+    app.appendChild(card);
+  }
+
+  function renderReadinessReasons() {
+    clear(app);
+    setKeyHandler(null);
+    armIdleTimeout();
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["Why not a 10?"]));
+    card.appendChild(el("p", { class: "survey-hint" }, [
+      "You picked " + state.survey.ready + ". Tap anything that's holding you back. Skip if you'd rather not say."
+    ]));
+
+    var chips = el("div", { class: "note-options" });
+    READY_REASONS.forEach(function (reason) {
+      var chip = el("button", { type: "button", class: "note-option", "aria-pressed": "false" }, [reason]);
+      if (state.survey.reasons.indexOf(reason) !== -1) {
+        chip.classList.add("selected");
+        chip.setAttribute("aria-pressed", "true");
+      }
+      chip.addEventListener("click", function () {
+        var i = state.survey.reasons.indexOf(reason);
+        if (i === -1) state.survey.reasons.push(reason);
+        else state.survey.reasons.splice(i, 1);
+        chip.classList.toggle("selected", i === -1);
+        chip.setAttribute("aria-pressed", i === -1 ? "true" : "false");
+      });
+      chips.appendChild(chip);
+    });
+    card.appendChild(chips);
+
+    card.appendChild(el("label", { class: "field-label", for: "readyOther" }, ["Something else?"]));
+    var otherInput = el("input", {
+      type: "text", id: "readyOther", maxlength: String(SURVEY_OTHER_MAX), placeholder: "Other reason"
+    });
+    otherInput.value = state.survey.other;
+    card.appendChild(otherInput);
+
+    card.appendChild(el("label", { class: "field-label", for: "readyMakeTen" }, ["What would make it a 10?"]));
+    var makeTenInput = el("textarea", {
+      id: "readyMakeTen", rows: "3", maxlength: String(SURVEY_TEXT_MAX), placeholder: "Optional"
+    });
+    makeTenInput.value = state.survey.makeTen;
+    card.appendChild(makeTenInput);
+
+    function keep() {
+      state.survey.other = otherInput.value.trim();
+      state.survey.makeTen = makeTenInput.value.trim();
+    }
+    otherInput.addEventListener("input", keep);
+    makeTenInput.addEventListener("input", keep);
+
+    var backBtn = el("button", { class: "btn-outline" }, ["Back"]);
+    backBtn.addEventListener("click", function () { keep(); renderReadiness(); });
+    var nextBtn = el("button", { class: "btn" }, ["Next"]);
+    nextBtn.addEventListener("click", function () { keep(); renderVerifyInfo(); });
+    card.appendChild(el("div", { class: "btn-row" }, [backBtn, document.createTextNode(" "), nextBtn]));
+    app.appendChild(card);
+  }
+
+  // Confirm-only: blanks are allowed, as on the Start screen, except last
+  // name, which every result row is keyed on.
+  function renderVerifyInfo() {
+    clear(app);
+    setKeyHandler(null);
+    armIdleTimeout();
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["Is this you?"]));
+    card.appendChild(el("p", { class: "survey-hint" }, [
+      "Your recruiter will use this to follow up with you."
+    ]));
+
+    var body = el("div");
+    card.appendChild(body);
+    var btnRow = el("div", { class: "btn-row" });
+    card.appendChild(btnRow);
+
+    function showConfirm() {
+      clear(body);
+      clear(btnRow);
+      var list = el("div", { class: "verify-list" });
+      [["First name", state.firstName], ["Last name", state.lastName], ["Phone", state.phone]].forEach(function (row) {
+        list.appendChild(el("div", { class: "verify-row" }, [
+          el("span", {}, [row[0]]),
+          el("span", {}, [row[1] || "(blank)"])
+        ]));
+      });
+      body.appendChild(list);
+
+      var editBtn = el("button", { class: "btn-outline" }, ["Edit"]);
+      editBtn.addEventListener("click", showEdit);
+      var yesBtn = el("button", { class: "btn" }, ["Yes, that's right"]);
+      yesBtn.addEventListener("click", renderHandBack);
+      btnRow.appendChild(editBtn);
+      btnRow.appendChild(document.createTextNode(" "));
+      btnRow.appendChild(yesBtn);
+    }
+
+    function showEdit() {
+      clear(body);
+      clear(btnRow);
+      body.appendChild(el("label", { class: "field-label", for: "verifyFirst" }, ["First Name:"]));
+      var firstInput = el("input", { type: "text", id: "verifyFirst", placeholder: "First name" });
+      firstInput.value = state.firstName;
+      body.appendChild(firstInput);
+      body.appendChild(el("label", { class: "field-label", for: "verifyLast" }, ["Last Name: *"]));
+      var lastInput = el("input", { type: "text", id: "verifyLast", placeholder: "Last name" });
+      lastInput.value = state.lastName;
+      body.appendChild(lastInput);
+      var lastError = el("div", { class: "field-error" }, ["Last name is required."]);
+      body.appendChild(lastError);
+      body.appendChild(el("label", { class: "field-label", for: "verifyPhone" }, ["Phone Number:"]));
+      var phoneInput = el("input", { type: "tel", id: "verifyPhone", placeholder: "Phone number" });
+      phoneInput.value = state.phone;
+      body.appendChild(phoneInput);
+
+      var saveBtn = el("button", { class: "btn" }, ["Save"]);
+      saveBtn.addEventListener("click", function () {
+        var last = lastInput.value.trim();
+        if (!last) {
+          lastInput.classList.add("input-error");
+          lastError.classList.add("visible");
+          lastInput.focus();
+          return;
+        }
+        state.firstName = firstInput.value.trim();
+        state.lastName = last;
+        state.phone = phoneInput.value.trim();
+        showConfirm();
+      });
+      btnRow.appendChild(saveBtn);
+      firstInput.focus();
+    }
+
+    var backBtn = el("button", { class: "btn-outline" }, ["Back"]);
+    backBtn.addEventListener("click", function () {
+      if (state.survey.ready === 10) renderReadiness(); else renderReadinessReasons();
+    });
+
+    showConfirm();
+    card.appendChild(el("div", { class: "btn-row" }, [backBtn]));
+    app.appendChild(card);
+  }
+
+  // Where the result is finally sent -- the old last-STOP hand-back, moved
+  // after the readiness questions.
+  function renderHandBack() {
+    clear(app);
+    setKeyHandler(null);
+    postFinalResult();
+    var card = el("div", { class: "card" });
+    var box = el("div", { class: "stop-box" });
+    box.appendChild(el("div", { class: "army-logo-wrap" }, [
+      el("img", { src: "./assets/army_logo_horiz.svg", alt: "U.S. Army", class: "army-logo" })
+    ]));
+    box.appendChild(el("p", { class: "stop-msg" }, ["Thanks" + (state.firstName ? ", " + state.firstName : "") + "."]));
+    box.appendChild(el("p", { class: "stop-break" }, [
+      "Please return this device to your recruiter to review your scores."
+    ]));
+    box.appendChild(renderRecruiterContact());
+    var resultsBtn = el("button", { class: "btn" }, ["Continue to Results"]);
+    resultsBtn.addEventListener("click", renderResults);
+    box.appendChild(el("div", { class: "btn-row" }, [resultsBtn]));
+    card.appendChild(box);
+    app.appendChild(card);
+    armIdleTimeout();
+  }
+
+  // ---------- QR codes ----------
+  // assets/qrcode.js (qrcode-generator, MIT) draws them on the device, so
+  // nothing about the applicant leaves the kiosk. Byte mode in UTF-8 so
+  // names with accents survive.
+  function buildQr(text, label, sub) {
+    var qr = qrcode(0, "M");
+    qrcode.stringToBytes = qrcode.stringToBytesFuncs["UTF-8"];
+    qr.addData(text, "Byte");
+    qr.make();
+    var holder = el("div", { role: "img", "aria-label": label + " QR code" });
+    holder.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 4, scalable: true });
+    var item = el("div", { class: "qr-item" }, [holder, el("div", { class: "qr-label" }, [label])]);
+    if (sub) item.appendChild(el("div", { class: "qr-sub" }, [sub]));
+    return item;
+  }
+
+  function phoneDigits(phone) {
+    var digits = String(phone || "").replace(/\D/g, "");
+    if (digits.length === 11 && digits.charAt(0) === "1") digits = digits.slice(1);
+    return digits.length === 10 ? digits : "";
+  }
+
+  function formatPhone(phone) {
+    var d = phoneDigits(phone);
+    return d ? "(" + d.slice(0, 3) + ") " + d.slice(3, 6) + "-" + d.slice(6) : String(phone || "");
+  }
+
+  // vCard field values: escape the characters vCard treats as separators.
+  function vcardText(value) {
+    return String(value || "").replace(/\\/g, "\\\\").replace(/([,;])/g, "\\$1").replace(/\r?\n/g, " ");
+  }
+
+  function vcard(fields) {
+    var lines = ["BEGIN:VCARD", "VERSION:3.0",
+      "N:" + vcardText(fields.last) + ";" + vcardText(fields.first) + ";;" + vcardText(fields.prefix) + ";",
+      "FN:" + vcardText(fields.full)];
+    if (fields.org) lines.push("ORG:" + vcardText(fields.org));
+    if (fields.title) lines.push("TITLE:" + vcardText(fields.title));
+    if (fields.phone) lines.push("TEL;TYPE=CELL:+1" + fields.phone);
+    if (fields.note) lines.push("NOTE:" + vcardText(fields.note));
+    lines.push("END:VCARD");
+    return lines.join("\r\n");
+  }
+
+  // Hand-back screen: who the applicant's recruiter is, with a code to
+  // save them as a contact. Shows just the name while the phone in
+  // EST_CONFIG is still the XXX placeholder.
+  function renderRecruiterContact() {
+    var info = recruiterInfo(state.recruiter);
+    var display = formatRecruiterDisplay(info.name);
+    var digits = phoneDigits(info.phone);
+    var wrap = el("div", { class: "recruiter-card" });
+    wrap.appendChild(el("div", { class: "qr-sub" }, ["Your recruiter"]));
+    wrap.appendChild(el("div", { class: "recruiter-name" }, [display]));
+    if (digits) {
+      wrap.appendChild(el("div", { class: "recruiter-phone" }, [formatPhone(digits)]));
+      var parts = info.name.split(/\s+/);
+      var rank = parts.length > 1 ? parts[parts.length - 1] : "";
+      var last = parts.length > 1 ? parts.slice(0, -1).join(" ") : info.name;
+      wrap.appendChild(el("div", { class: "qr-grid" }, [buildQr(vcard({
+        last: last, first: "", prefix: rank, full: display,
+        org: "U.S. Army", title: "Recruiter", phone: digits
+      }), "Save my number", "Scan with your phone camera")]));
+    }
+    return wrap;
+  }
+
+  function readinessReasonsText(survey) {
+    var list = survey.reasons.slice();
+    if (survey.other) list.push("Other: " + survey.other);
+    return list.join("; ");
+  }
+
+  // Sends the finished test once, with the checked name/phone and the
+  // readiness answers. Called from renderHandBack, or from an idle reset
+  // if the test-taker walked off before getting there.
+  function postFinalResult() {
+    if (!state.finalPayload || state.resultPosted) return;
+    state.resultPosted = true;
+    var p = state.finalPayload;
+    var survey = state.survey || emptySurvey();
+    p.last_name = state.lastName;
+    p.first_name = state.firstName;
+    p.phone = state.phone;
+    p.ready = survey.ready === null ? "" : survey.ready;
+    p.not_ten_reasons = readinessReasonsText(survey);
+    p.make_it_ten = survey.makeTen;
+    updateHistoryIdentity(p);
+    postResultsToWebhook(p);
   }
 
   // ---------- Scoring ----------
@@ -1456,6 +1961,22 @@ input.input-error, select.input-error {
     setCookie(RESULTS_COOKIE, serialized, RESULTS_COOKIE_MAX_DAYS);
   }
 
+  // The name check runs after the result is already in the history, so
+  // correct that entry in place. The readiness answers stay out of the
+  // cookie; they only go to the Sheet.
+  function updateHistoryIdentity(payload) {
+    var history = getResultsHistory();
+    for (var i = history.length - 1; i >= 0; i--) {
+      if (history[i].timestamp === payload.timestamp) {
+        history[i].last_name = payload.last_name;
+        history[i].first_name = payload.first_name;
+        history[i].phone = payload.phone;
+        setCookie(RESULTS_COOKIE, JSON.stringify(history), RESULTS_COOKIE_MAX_DAYS);
+        return;
+      }
+    }
+  }
+
   // Results that failed to sync to the webhook (offline, or the server
   // errored) are queued here and retried automatically -- on the browser's
   // "online" event, on a periodic safety-net interval (in case "online"
@@ -1484,6 +2005,13 @@ input.input-error, select.input-error {
   function savePendingSyncQueue(queue) {
     while (queue.length > PENDING_SYNC_MAX_ENTRIES) queue.shift();
     var serialized = JSON.stringify(queue);
+    // Over the size limit: drop the oldest entries' free-text readiness
+    // answers before dropping anyone's scores.
+    for (var i = 0; serialized.length > PENDING_SYNC_MAX_BYTES && i < queue.length - 1; i++) {
+      delete queue[i].not_ten_reasons;
+      delete queue[i].make_it_ten;
+      serialized = JSON.stringify(queue);
+    }
     while (serialized.length > PENDING_SYNC_MAX_BYTES && queue.length > 1) {
       queue.shift();
       serialized = JSON.stringify(queue);
@@ -1571,49 +2099,17 @@ input.input-error, select.input-error {
     });
   }
 
-  // ---------- Recruiter next-steps note (Results screen only) ----------
-  // Lives on the Results screen -- not the STOP screen before it -- so the
-  // recruiter can see the actual score before deciding what's next. Saves
-  // silently in the background (blur the text box, pick an option, or move
-  // on to a new test) rather than needing an explicit Save button -- same
-  // best-effort, no-feedback treatment as the main results sync.
-  function renderRecruiterNoteForm() {
-    var wrap = el("div", { class: "note-form" });
-    wrap.appendChild(el("div", { class: "note-form-title" }, ["Review next steps"]));
-    wrap.appendChild(el("p", { class: "note-intro" }, [
-      "Now that you can see the score, tap what it'll take to get to the next benchmark."
-    ]));
-
-    var selectedValue = "";
-    var optionButtons = [];
-
-    function saveNow() {
-      saveRecruiterNote(selectedValue, noteInput.value.trim());
-    }
-
-    var optionsWrap = el("div", { class: "note-options" });
-    NEXT_ACTION_OPTIONS.forEach(function (opt) {
-      var optBtn = el("button", { type: "button", class: "note-option" }, [opt]);
-      optBtn.addEventListener("click", function () {
-        var wasSelected = optBtn.classList.contains("selected");
-        optionButtons.forEach(function (b) { b.classList.remove("selected"); });
-        selectedValue = wasSelected ? "" : opt;
-        if (!wasSelected) optBtn.classList.add("selected");
-        saveNow();
-      });
-      optionButtons.push(optBtn);
-      optionsWrap.appendChild(optBtn);
-    });
-    wrap.appendChild(optionsWrap);
-
-    var noteInput = el("textarea", {
-      rows: "3",
-      placeholder: "Add any additional notes..."
-    });
-    noteInput.addEventListener("blur", saveNow);
-    wrap.appendChild(noteInput);
-
-    wrap.saveNow = saveNow;
+  // The applicant's own answers from the readiness questions, for the
+  // recruiter going over the results with them.
+  function renderReadinessCard() {
+    var survey = state.survey;
+    if (!survey || survey.ready === null) return null;
+    var wrap = el("div", { class: "readiness-card" });
+    wrap.appendChild(el("div", { class: "note-form-title" }, ["Ready to join"]));
+    wrap.appendChild(el("div", { class: "readiness-score" }, [survey.ready + " / 10"]));
+    var reasons = readinessReasonsText(survey);
+    if (reasons) wrap.appendChild(el("p", {}, [el("strong", {}, ["Why not a 10: "]), reasons]));
+    if (survey.makeTen) wrap.appendChild(el("p", {}, [el("strong", {}, ["What would make it a 10: "]), survey.makeTen]));
     return wrap;
   }
 
@@ -1640,39 +2136,6 @@ input.input-error, select.input-error {
     ]));
 
     return wrap;
-  }
-
-  // Fire-and-forget, like postResultsToWebhook -- blank is fine (nothing
-  // chosen, nothing typed is a no-op, not an error), and there's no on-screen
-  // feedback to manage, so a failed/timed-out save just goes nowhere rather
-  // than getting retried. The abort timeout here is only to keep a stray
-  // request from lingering, not to drive any UI.
-  function saveRecruiterNote(nextAction, noteText) {
-    if (!nextAction && !noteText) return;
-    if (!RESULTS_WEBHOOK_URL || !state.finalPayload) return;
-
-    var payload = {
-      type: "note",
-      result_timestamp: state.finalPayload.timestamp,
-      last_name: state.lastName,
-      first_name: state.firstName,
-      recruiter: state.recruiter,
-      next_action: nextAction,
-      note_text: noteText
-    };
-
-    var hasAbort = "AbortController" in window;
-    var controller = hasAbort ? new AbortController() : null;
-    var timeoutId = hasAbort ? setTimeout(function () { controller.abort(); }, 10000) : null;
-
-    fetch(RESULTS_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify(payload),
-      signal: hasAbort ? controller.signal : undefined
-    }).catch(function () {}).then(function () {
-      if (timeoutId) clearTimeout(timeoutId);
-    });
   }
 
   // Results saved before the 2026-11 renumbering carry no test_key and use
@@ -1705,7 +2168,7 @@ input.input-error, select.input-error {
     var card = el("div", { class: "card" });
     card.appendChild(el("h1", {}, ["Saved Scores"]));
     card.appendChild(el("p", { class: "byline" }, [
-      showAll ? "All recruiting stations" : "Recruiting Station: " + formatRecruiterDisplay(recruiter)
+      showAll ? "All recruiters" : "Recruiter: " + formatRecruiterDisplay(recruiter)
     ]));
     card.appendChild(el("p", { class: "byline" }, [
       entries.length + (entries.length === 1 ? " result" : " results") + " saved on this device"
@@ -1713,7 +2176,7 @@ input.input-error, select.input-error {
 
     if (!entries.length) {
       card.appendChild(el("div", { class: "instructions-box" }, [
-        "No saved scores yet" + (showAll ? "." : " for this recruiting station.")
+        "No saved scores yet" + (showAll ? "." : " for this recruiter.")
       ]));
     } else {
       // Section codes/order come from QUESTIONS itself (WK, AR, PC, MK) so
@@ -1727,7 +2190,7 @@ input.input-error, select.input-error {
         el("th", {}, ["Last Name"]),
         el("th", {}, ["First Name"]),
         el("th", {}, ["Phone"]),
-        el("th", {}, ["Recruiting Station"]),
+        el("th", {}, ["Recruiter"]),
         el("th", {}, ["Date & Time"]),
         el("th", {}, ["AFQT"])
       ];
@@ -1769,6 +2232,142 @@ input.input-error, select.input-error {
     card.appendChild(el("div", { class: "btn-row" }, [backBtn]));
 
     app.appendChild(card);
+  }
+
+  // ---------- Screen: Test-taking tips ----------
+  // The built-in tips are station-written, not book content, so unlike
+  // practice mode they ship on the public copy too; EXTRA_TIPS adds the
+  // local-only ones. onBack returns to whichever screen opened it.
+  var TIPS_BRAIN_DUMP = [
+    "Times table, 1 through 12 (practice below)",
+    "Rectangle: area = length × width, perimeter = 2 × length + 2 × width",
+    "Triangle: area = ½ × base × height",
+    "Circle: area = π × r², circumference = 2 × π × r (π ≈ 3.14)",
+    "Box: volume = length × width × height",
+    "Right triangle: a² + b² = c² (3-4-5 and 5-12-13 come up a lot)",
+    "Distance = rate × time",
+    "Simple interest = principal × rate × time",
+    "Percent: part = percent × whole; percent change = change ÷ original",
+    "Average = total ÷ number of items",
+    "Squares past the table: 13² = 169, 14² = 196, 15² = 225",
+    "½ = 0.5 = 50%, ¼ = 0.25 = 25%, ⅕ = 0.2 = 20%, ⅛ = 0.125 = 12.5%, ⅓ ≈ 0.333",
+    "1 ft = 12 in, 1 yd = 3 ft, 1 square yard = 9 square feet, 1 hr = 60 min"
+  ];
+  var TIPS_DURING = [
+    "Answer every question. On the real computer test you can't go back to a question once you move on, " +
+    "and leaving questions blank at the end of a section costs more than guessing. If time is almost up, guess.",
+    "Take extra care on the first few questions of each section. The computer uses them to decide how " +
+    "hard the rest of your questions will be.",
+    "Cross off choices you know are wrong, then pick from what's left.",
+    "Math word problems: before you calculate, write down what the question is actually asking for. " +
+    "When you have an answer, check that it makes sense.",
+    "Don't get stuck. Work it on paper, pick your best answer, and keep moving."
+  ];
+  var TIPS_WK = ["Use the word in a sentence you know, then try each choice in its place."];
+  var TIPS_PC = [
+    "Read the question first, then the paragraph. The answer has to come from the paragraph, not from " +
+    "what you already know."
+  ];
+  // Optional local-only extras (local-bank/tips-data.js); null on the
+  // public copy, which then shows just the tips above.
+  var EXTRA_TIPS = window.__EST_TIPS__ || null;
+
+  function renderTestTips(onBack) {
+    clear(app);
+    setKeyHandler(null);
+    armIdleTimeout(PRACTICE_IDENTITY_TTL_MS);
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["Test-Taking Tips"]));
+
+    var heading = 0;
+    function addHeading(text) {
+      card.appendChild(el("h2", { class: "tips-heading" }, [++heading + ". " + text]));
+    }
+    function addList(items) {
+      card.appendChild(el("ul", { class: "tips-list" }, items.map(function (t) {
+        return el("li", {}, [t]);
+      })));
+    }
+
+    addHeading("Use the time before the clock starts");
+    card.appendChild(el("p", { class: "tips-text" }, [
+      "The instructions at the start of the ASVAB aren't timed. Use that time to write everything you " +
+      "might blank on under pressure onto your scratch paper. Then, during the test, you look it up " +
+      "instead of trying to remember it."
+    ]));
+    card.appendChild(el("p", { class: "tips-text" }, [el("strong", {}, ["What to write down:"])]));
+    addList(TIPS_BRAIN_DUMP);
+
+    addHeading("Times table challenge");
+    card.appendChild(el("p", { class: "tips-text" }, [
+      "Get fast at writing a 12 × 12 times table from memory. Write 1 to 12 across the top and down the " +
+      "side, then fill each row by adding that row's number again and again (the 7 row goes 7, 14, 21, 28...). " +
+      "Start the clock, write it on scratch paper, tap Done, then check it against the table. Aim for under 5 minutes."
+    ]));
+    var clock = el("div", { class: "tips-clock" }, ["0:00"]);
+    var tableWrap = el("div", { class: "times-wrap", style: "display:none" }, [buildTimesTable()]);
+    var startedAt = null, clockHandle = null;
+    function stopClock() {
+      if (clockHandle) { clearInterval(clockHandle); clockHandle = null; }
+    }
+    var clockBtn = el("button", { class: "btn" }, ["Start the Clock"]);
+    clockBtn.addEventListener("click", function () {
+      if (clockHandle) {
+        stopClock();
+        var secs = Math.round((Date.now() - startedAt) / 1000);
+        clock.textContent = fmtTime(secs) + "  ·  " + (secs < 300 ? "Nice work!" : "Keep practicing until it's under 5:00.");
+        clockBtn.textContent = "Try Again";
+        tableWrap.style.display = "";
+        return;
+      }
+      startedAt = Date.now();
+      clock.textContent = "0:00";
+      tableWrap.style.display = "none";
+      clockBtn.textContent = "Done";
+      clockHandle = setInterval(function () {
+        // Leaving the screen removes the clock; stop ticking then.
+        if (!document.body.contains(clock)) { stopClock(); return; }
+        clock.textContent = fmtTime(Math.floor((Date.now() - startedAt) / 1000));
+      }, 1000);
+    });
+    var showBtn = el("button", { class: "btn-outline" }, ["Show the Table"]);
+    showBtn.addEventListener("click", function () {
+      tableWrap.style.display = tableWrap.style.display === "none" ? "" : "none";
+    });
+    card.appendChild(clock);
+    card.appendChild(el("div", { class: "btn-row" }, [clockBtn, " ", showBtn]));
+    card.appendChild(tableWrap);
+
+    var extra = EXTRA_TIPS || {};
+    addHeading("During the test");
+    addList(TIPS_DURING.concat(extra.answering || []));
+    addHeading("Word Knowledge");
+    addList(TIPS_WK.concat(extra.wordKnowledge || []));
+    addHeading("Paragraph Comprehension");
+    addList(TIPS_PC.concat(extra.paragraph || []));
+    (extra.sections || []).forEach(function (sec) {
+      addHeading(sec.title);
+      addList(sec.items);
+    });
+
+    var back = el("button", { class: "btn-outline" }, ["Back"]);
+    back.addEventListener("click", function () { stopClock(); onBack(); });
+    card.appendChild(el("div", { class: "btn-row" }, [back]));
+    app.appendChild(card);
+  }
+
+  function buildTimesTable() {
+    var table = el("table", { class: "times-table" });
+    for (var r = 0; r <= 12; r++) {
+      var tr = el("tr");
+      for (var c = 0; c <= 12; c++) {
+        if (r === 0 && c === 0) tr.appendChild(el("th", {}, ["×"]));
+        else if (r === 0 || c === 0) tr.appendChild(el("th", {}, [String(r || c)]));
+        else tr.appendChild(el("td", {}, [String(r * c)]));
+      }
+      table.appendChild(tr);
+    }
+    return table;
   }
 
   // ---------- Practice mode ----------
@@ -1822,13 +2421,43 @@ input.input-error, select.input-error {
   }
 
   // Lowest-scoring section on a just-finished test (ties go to test order).
+  // Lowest percent-correct section that has practice questions. On a tie,
+  // Arithmetic Reasoning if it's one of the tied sections, else the first
+  // in test order. results-webhook.gs weakestSectionCode() picks the same
+  // way for the recruiter's text; keep the two in sync.
   function weakestSectionCode(results) {
-    var worst = null;
+    var worst = null, tied = [];
     QUESTIONS.sections.forEach(function (sec) {
-      var r = results.byCode[sec.code];
-      if (PRACTICE.sections[sec.code] && (!worst || r.pct < worst.pct)) worst = { code: sec.code, pct: r.pct };
+      if (!PRACTICE.sections[sec.code]) return;
+      var pct = results.byCode[sec.code].pct;
+      if (worst === null || pct < worst) { worst = pct; tied = [sec.code]; }
+      else if (pct === worst) tied.push(sec.code);
     });
-    return worst && worst.code;
+    if (tied.indexOf("AR") !== -1) return "AR";
+    return tied[0] || null;
+  }
+
+  // The last practice name/phone, kept in memory only (never in storage)
+  // so it can prefill the Practice screen for the same person coming back
+  // for another round. It's forgotten PRACTICE_IDENTITY_TTL_MS after their
+  // last tap, and practice screens idle back to Start after the same
+  // stretch, so whoever picks the kiosk up next never sees it.
+  var PRACTICE_IDENTITY_TTL_MS = 15 * 60 * 1000;
+  var lastPracticeIdentity = null;
+
+  function rememberPracticeIdentity(identity) {
+    if (!identity.lastName && !identity.phone) return;
+    lastPracticeIdentity = {
+      lastName: identity.lastName || "", firstName: identity.firstName || "",
+      phone: identity.phone || "", recruiter: identity.recruiter || "", at: Date.now()
+    };
+  }
+
+  function recentPracticeIdentity() {
+    if (lastPracticeIdentity && Date.now() - lastPracticeIdentity.at >= PRACTICE_IDENTITY_TTL_MS) {
+      lastPracticeIdentity = null;
+    }
+    return lastPracticeIdentity;
   }
 
   function practiceIdentityFromState() {
@@ -1858,7 +2487,7 @@ input.input-error, select.input-error {
   function renderPracticeHome(identity, suggestedCode) {
     clear(app);
     setKeyHandler(null);
-    armIdleTimeout();
+    armIdleTimeout(PRACTICE_IDENTITY_TTL_MS);
     var card = el("div", { class: "card" });
     card.appendChild(el("h1", {}, ["Practice Questions"]));
     card.appendChild(el("p", { class: "byline" }, [
@@ -1866,16 +2495,42 @@ input.input-error, select.input-error {
     ]));
 
     // Name/phone are optional here -- they only label the practice log for
-    // the weekly report. Prefilled when coming from the Start or Results
-    // screen.
-    var phoneInput = null, lastInput = null;
-    if (!identity.phone && !identity.lastName) {
-      card.appendChild(el("label", { class: "field-label" }, ["Last Name (optional):"]));
-      lastInput = el("input", { type: "text", placeholder: "Last name" });
-      card.appendChild(lastInput);
-      card.appendChild(el("label", { class: "field-label" }, ["Phone Number (optional):"]));
-      phoneInput = el("input", { type: "tel", placeholder: "Phone number" });
-      card.appendChild(phoneInput);
+    // the weekly report. Whatever the previous screen (Start, Results, or a
+    // finished round) had wins; with nothing there, fall back to the last
+    // practice name/phone if it's still under 15 minutes old.
+    var prefill = (identity.lastName || identity.phone) ? identity : (recentPracticeIdentity() || {});
+    card.appendChild(el("label", { class: "field-label" }, ["Last Name (optional):"]));
+    var lastInput = el("input", { type: "text", placeholder: "Last name" });
+    lastInput.value = prefill.lastName || "";
+    card.appendChild(lastInput);
+    card.appendChild(el("label", { class: "field-label" }, ["Phone Number (optional):"]));
+    var phoneInput = el("input", { type: "tel", placeholder: "Phone number" });
+    phoneInput.value = prefill.phone || "";
+    card.appendChild(phoneInput);
+    if (prefill.lastName || prefill.phone) {
+      var notYou = el("button", { class: "btn-outline btn-small" }, ["Not you? Clear"]);
+      notYou.addEventListener("click", function () {
+        lastPracticeIdentity = null;
+        prefill = {};
+        lastInput.value = "";
+        phoneInput.value = "";
+        notYou.style.display = "none";
+        lastInput.focus();
+      });
+      card.appendChild(el("div", {}, [notYou]));
+    }
+
+    // First name and station aren't on this screen, so they only carry
+    // over while the last name still matches the prefilled person.
+    function identityFromInputs() {
+      var last = lastInput.value.trim();
+      var same = last && last.toLowerCase() === String(prefill.lastName || "").toLowerCase();
+      return {
+        lastName: last,
+        phone: phoneInput.value.trim(),
+        firstName: same ? prefill.firstName || "" : "",
+        recruiter: same ? prefill.recruiter || "" : ""
+      };
     }
 
     var seen = getPracticeSeen();
@@ -1889,9 +2544,7 @@ input.input-error, select.input-error {
         el("span", { class: "practice-section-meta" }, [done + " of " + sec.questions.length + " seen"])
       ]);
       btn.addEventListener("click", function () {
-        if (lastInput) identity.lastName = lastInput.value.trim();
-        if (phoneInput) identity.phone = phoneInput.value.trim();
-        startPracticeDrill(identity, code);
+        startPracticeDrill(identityFromInputs(), code);
       });
       list.appendChild(btn);
     });
@@ -1899,11 +2552,17 @@ input.input-error, select.input-error {
 
     var back = el("button", { class: "btn-outline" }, ["Back to Start"]);
     back.addEventListener("click", renderStart);
-    card.appendChild(el("div", { class: "btn-row" }, [back]));
+    var tips = el("button", { class: "btn-outline" }, ["Test-Taking Tips"]);
+    tips.addEventListener("click", function () {
+      var current = identityFromInputs();
+      renderTestTips(function () { renderPracticeHome(current, suggestedCode); });
+    });
+    card.appendChild(el("div", { class: "btn-row" }, [back, " ", tips]));
     app.appendChild(card);
   }
 
   function startPracticeDrill(identity, code) {
+    rememberPracticeIdentity(identity);
     var drill = { identity: identity, code: code, questions: pickPracticeDrill(code), index: 0, picks: {} };
     markPracticeSeen(drill.questions.map(function (q) { return q.id; }));
     renderPracticeQuestion(drill);
@@ -1911,7 +2570,7 @@ input.input-error, select.input-error {
 
   function renderPracticeQuestion(drill) {
     clear(app);
-    armIdleTimeout();
+    armIdleTimeout(PRACTICE_IDENTITY_TTL_MS);
     var q = drill.questions[drill.index];
     var total = drill.questions.length;
     var isLast = drill.index === total - 1;
@@ -1934,6 +2593,14 @@ input.input-error, select.input-error {
     function choose(letter) {
       if (drill.picks[q.id]) return;
       drill.picks[q.id] = letter;
+      rememberPracticeIdentity(drill.identity); // restarts the 15-minute window
+      showAnswer(letter);
+      nextBtn.focus();
+    }
+
+    // Also used on re-render, e.g. coming back from the tips screen to a
+    // question that was already answered.
+    function showAnswer(letter) {
       Object.keys(rows).forEach(function (l) {
         rows[l].classList.add("practice-locked");
         if (l === q.correct) rows[l].classList.add("practice-correct");
@@ -1945,7 +2612,6 @@ input.input-error, select.input-error {
       ]));
       feedback.appendChild(el("div", { class: "explain-box" }, [q.explanation]));
       nextBtn.style.display = "";
-      nextBtn.focus();
     }
 
     ["A", "B", "C", "D"].forEach(function (letter) {
@@ -1970,8 +2636,13 @@ input.input-error, select.input-error {
         renderPracticeQuestion(drill);
       }
     });
-    card.appendChild(el("div", { class: "nav-row" }, [nextBtn]));
+    var tipsBtn = el("button", { class: "btn-outline" }, ["Tips"]);
+    tipsBtn.addEventListener("click", function () {
+      renderTestTips(function () { renderPracticeQuestion(drill); });
+    });
+    card.appendChild(el("div", { class: "nav-row" }, [tipsBtn, nextBtn]));
     app.appendChild(card);
+    if (drill.picks[q.id]) showAnswer(drill.picks[q.id]);
 
     var numberToLetter = { "1": "A", "2": "B", "3": "C", "4": "D" };
     setKeyHandler(function (e) {
@@ -1990,10 +2661,14 @@ input.input-error, select.input-error {
   function renderPracticeSummary(drill) {
     clear(app);
     setKeyHandler(null);
-    armIdleTimeout();
+    armIdleTimeout(PRACTICE_IDENTITY_TTL_MS);
     var missed = drill.questions.filter(function (q) { return drill.picks[q.id] !== q.correct; });
     var correct = drill.questions.length - missed.length;
-    logPracticeDrill(drill, correct);
+    // Once per round, though the tips screen can bring this screen back.
+    if (!drill.logged) {
+      drill.logged = true;
+      logPracticeDrill(drill, correct);
+    }
 
     var card = el("div", { class: "card" });
     card.appendChild(el("h1", {}, ["Practice Results"]));
@@ -2018,13 +2693,17 @@ input.input-error, select.input-error {
     again.addEventListener("click", function () { startPracticeDrill(drill.identity, drill.code); });
     var pick = el("button", { class: "btn-outline" }, ["Choose a section"]);
     pick.addEventListener("click", function () { renderPracticeHome(drill.identity, drill.code); });
+    var tips = el("button", { class: "btn-outline" }, ["Test-Taking Tips"]);
+    tips.addEventListener("click", function () {
+      renderTestTips(function () { renderPracticeSummary(drill); });
+    });
     var done = el("button", { class: "btn-outline" }, ["Done"]);
     done.addEventListener("click", renderStart);
-    card.appendChild(el("div", { class: "btn-row" }, [again, " ", pick, " ", done]));
+    card.appendChild(el("div", { class: "btn-row" }, [again, " ", pick, " ", tips, " ", done]));
     app.appendChild(card);
   }
 
-  // Fire-and-forget like saveRecruiterNote: an unsent practice log isn't
+  // Fire-and-forget: an unsent practice log isn't
   // worth queueing or retrying. Skipped when the drill is anonymous, since
   // an unnamed row tells the weekly report nothing.
   function logPracticeDrill(drill, correct) {
@@ -2060,7 +2739,7 @@ input.input-error, select.input-error {
     card.appendChild(el("h1", {}, ["Results"]));
     card.appendChild(el("p", { class: "byline" }, [displayName()]));
     card.appendChild(el("p", { class: "byline" }, [
-      "Recruiting Station: " + formatRecruiterDisplay(state.recruiter) +
+      "Recruiter: " + formatRecruiterDisplay(state.recruiter) +
       (TEST_VARIANTS.length > 1 ? " · Test " + state.testNumber : "")
     ]));
 
@@ -2109,14 +2788,16 @@ input.input-error, select.input-error {
     ]);
     card.appendChild(overallStat);
 
+    var readiness = renderReadinessCard();
+    if (readiness) card.appendChild(readiness);
+    // The recruiter's follow-up codes (save the applicant, text them) go
+    // in the recruiter's email instead; this one is for the applicant.
+    card.appendChild(renderRecruiterContact());
     if (PRACTICE) card.appendChild(renderPracticeSuggestion(results));
     card.appendChild(renderM2SCard());
-    var noteForm = renderRecruiterNoteForm();
-    card.appendChild(noteForm);
 
     var restartBtn = el("button", { class: "btn" }, ["Start New Test"]);
     restartBtn.addEventListener("click", function () {
-      noteForm.saveNow();
       renderStart();
     });
     card.appendChild(el("div", { class: "btn-row" }, [restartBtn]));
@@ -2125,7 +2806,12 @@ input.input-error, select.input-error {
   }
 
   // ---------- Boot ----------
-  loadData(renderStart);
+  // "?practice" (the link in the applicant text) opens Practice Questions
+  // directly when this copy has a practice bank.
+  loadData(function () {
+    if (PRACTICE && /[?&]practice\b/.test(location.search)) renderPracticeHome({}, null);
+    else renderStart();
+  });
 
   // This is used as a home-screen app on an iPad -- an edge-swipe "back"
   // gesture (or a stray back button) would otherwise navigate away from
