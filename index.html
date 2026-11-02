@@ -2633,11 +2633,7 @@ input.input-error, select.input-error {
         renderPracticeQuestion(drill);
       }
     });
-    var tipsBtn = el("button", { class: "btn-outline" }, ["Tips"]);
-    tipsBtn.addEventListener("click", function () {
-      renderTestTips(function () { renderPracticeQuestion(drill); });
-    });
-    card.appendChild(el("div", { class: "nav-row" }, [tipsBtn, nextBtn]));
+    card.appendChild(el("div", { class: "nav-row" }, [nextBtn]));
     app.appendChild(card);
     if (drill.picks[q.id]) showAnswer(drill.picks[q.id]);
 
