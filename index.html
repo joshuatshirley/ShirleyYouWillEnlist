@@ -517,13 +517,28 @@ input.input-error, select.input-error {
 .qr-sub { color: var(--muted); font-size: 0.85rem; margin-top: 2px; }
 .recruiter-card {
   margin: 0 auto 18px;
-  padding: 14px 18px;
+  padding: 16px 18px;
   max-width: 420px;
   background: var(--white);
   border: 1px solid var(--field-01);
+  text-align: center;
 }
-.recruiter-name { font-size: 1.3rem; font-weight: 700; }
-.recruiter-phone { font-size: 1.15rem; margin: 2px 0 10px; }
+.recruiter-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 4px;
+}
+.recruiter-phone {
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+  margin: 4px 0 14px;
+  text-align: center;
+  color: var(--army-black);
+}
+.recruiter-card .qr-sub { text-align: center; }
+.recruiter-card .qr-grid { justify-content: center; margin: 0 auto; }
+.recruiter-card .qr-item { margin: 0 auto; text-align: center; }
 
 /* End-of-test readiness questions (renderReadiness and the screens after it). */
 .survey-hint { text-align: center; color: var(--muted); margin: 4px 0 18px; }
@@ -559,6 +574,7 @@ input.input-error, select.input-error {
 .verify-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 12px;
   padding: 12px 0;
   border-bottom: 1px solid var(--gray-02);
@@ -566,6 +582,13 @@ input.input-error, select.input-error {
 }
 .verify-row span:first-child { color: var(--muted); }
 .verify-row span:last-child { font-weight: 700; text-align: right; overflow-wrap: anywhere; }
+.verify-phone-val {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--army-black);
+}
 .readiness-card {
   margin: 8px 0 24px;
   padding: 16px 20px;
@@ -1127,9 +1150,23 @@ input.input-error, select.input-error {
     var firstNameInput = el("input", { type: "text", id: "firstName", placeholder: "First name" });
     card.appendChild(firstNameInput);
 
-    card.appendChild(el("label", { class: "field-label" }, ["Phone Number:"]));
-    var phoneInput = el("input", { type: "tel", id: "phone", placeholder: "Phone number" });
+    card.appendChild(el("label", { class: "field-label" }, ["Phone Number: *"]));
+    var phoneInput = el("input", { type: "tel", id: "phone", placeholder: "(XXX) XXX-XXXX" });
     card.appendChild(phoneInput);
+    var phoneError = el("div", { class: "field-error" }, ["A valid 10-digit phone number is required."]);
+    card.appendChild(phoneError);
+
+    phoneInput.addEventListener("blur", function () {
+      var d = phoneDigits(phoneInput.value);
+      if (d.length === 10) phoneInput.value = formatPhone(d);
+    });
+    phoneInput.addEventListener("input", function () {
+      var d = phoneDigits(phoneInput.value);
+      if (d.length === 10) {
+        phoneInput.classList.remove("input-error");
+        phoneError.classList.remove("visible");
+      }
+    });
 
     card.appendChild(el("label", { class: "field-label" }, ["Recruiter: *"]));
     var recruiterSelect = el("select", { id: "recruiterSelect" });
@@ -1156,17 +1193,9 @@ input.input-error, select.input-error {
     var startBtn = el("button", { class: "btn" }, ["Start Test"]);
     startBtn.addEventListener("click", function () {
       var last = lastNameInput.value.trim();
-      if (!last) {
-        lastNameInput.classList.add("input-error");
-        lastNameError.classList.add("visible");
-        lastNameInput.focus();
-        return;
-      }
-      lastNameInput.classList.remove("input-error");
-      lastNameError.classList.remove("visible");
-
       var first = firstNameInput.value.trim();
       var recruiter = recruiterSelect.value;
+      var d = phoneDigits(phoneInput.value);
 
       // Name/recruiter fields double as the scores-viewer entry point: typing
       // last="check", first="scores" opens the saved-results screen instead
@@ -1178,21 +1207,42 @@ input.input-error, select.input-error {
         return;
       }
 
+      var hasError = false;
+      if (!last) {
+        lastNameInput.classList.add("input-error");
+        lastNameError.classList.add("visible");
+        if (!hasError) { lastNameInput.focus(); hasError = true; }
+      } else {
+        lastNameInput.classList.remove("input-error");
+        lastNameError.classList.remove("visible");
+      }
+
+      if (d.length !== 10) {
+        phoneInput.classList.add("input-error");
+        phoneError.classList.add("visible");
+        if (!hasError) { phoneInput.focus(); hasError = true; }
+      } else {
+        phoneInput.classList.remove("input-error");
+        phoneError.classList.remove("visible");
+      }
+
       if (!recruiter) {
         recruiterSelect.classList.add("input-error");
         recruiterError.classList.add("visible");
-        recruiterSelect.focus();
-        return;
+        if (!hasError) { recruiterSelect.focus(); hasError = true; }
+      } else {
+        recruiterSelect.classList.remove("input-error");
+        recruiterError.classList.remove("visible");
       }
-      recruiterSelect.classList.remove("input-error");
-      recruiterError.classList.remove("visible");
+
+      if (hasError) return;
 
       var testNumber = testNumberSelect ? parseInt(testNumberSelect.value, 10) : 1;
       QUESTIONS = TEST_VARIANTS[testNumber - 1];
 
       state.lastName = last;
       state.firstName = first;
-      state.phone = phoneInput.value.trim();
+      state.phone = formatPhone(d);
       state.recruiter = recruiter;
       state.testNumber = testNumber;
       state.sectionIndex = 0;
@@ -1629,8 +1679,6 @@ input.input-error, select.input-error {
     app.appendChild(card);
   }
 
-  // Confirm-only: blanks are allowed, as on the Start screen, except last
-  // name, which every result row is keyed on.
   function renderVerifyInfo() {
     clear(app);
     setKeyHandler(null);
@@ -1649,11 +1697,21 @@ input.input-error, select.input-error {
     function showConfirm() {
       clear(body);
       clear(btnRow);
+      var d = phoneDigits(state.phone);
+      if (d.length !== 10) {
+        showEdit();
+        return;
+      }
       var list = el("div", { class: "verify-list" });
-      [["First name", state.firstName], ["Last name", state.lastName], ["Phone", state.phone]].forEach(function (row) {
+      var rows = [
+        ["First name", state.firstName || "(blank)", false],
+        ["Last name", state.lastName || "(blank)", false],
+        ["Phone", formatSpacedPhone(state.phone), true]
+      ];
+      rows.forEach(function (row) {
         list.appendChild(el("div", { class: "verify-row" }, [
           el("span", {}, [row[0]]),
-          el("span", {}, [row[1] || "(blank)"])
+          el("span", row[2] ? { class: "verify-phone-val" } : {}, [row[1]])
         ]));
       });
       body.appendChild(list);
@@ -1661,7 +1719,13 @@ input.input-error, select.input-error {
       var editBtn = el("button", { class: "btn-outline" }, ["Edit"]);
       editBtn.addEventListener("click", showEdit);
       var yesBtn = el("button", { class: "btn" }, ["Yes, that's right"]);
-      yesBtn.addEventListener("click", renderHandBack);
+      yesBtn.addEventListener("click", function () {
+        if (phoneDigits(state.phone).length !== 10) {
+          showEdit();
+          return;
+        }
+        renderHandBack();
+      });
       btnRow.appendChild(editBtn);
       btnRow.appendChild(document.createTextNode(" "));
       btnRow.appendChild(yesBtn);
@@ -1674,33 +1738,66 @@ input.input-error, select.input-error {
       var firstInput = el("input", { type: "text", id: "verifyFirst", placeholder: "First name" });
       firstInput.value = state.firstName;
       body.appendChild(firstInput);
+
       body.appendChild(el("label", { class: "field-label", for: "verifyLast" }, ["Last Name: *"]));
       var lastInput = el("input", { type: "text", id: "verifyLast", placeholder: "Last name" });
       lastInput.value = state.lastName;
       body.appendChild(lastInput);
       var lastError = el("div", { class: "field-error" }, ["Last name is required."]);
       body.appendChild(lastError);
-      body.appendChild(el("label", { class: "field-label", for: "verifyPhone" }, ["Phone Number:"]));
-      var phoneInput = el("input", { type: "tel", id: "verifyPhone", placeholder: "Phone number" });
-      phoneInput.value = state.phone;
+
+      body.appendChild(el("label", { class: "field-label", for: "verifyPhone" }, ["Phone Number: *"]));
+      var phoneInput = el("input", { type: "tel", id: "verifyPhone", placeholder: "(XXX) XXX-XXXX" });
+      phoneInput.value = formatPhone(state.phone);
       body.appendChild(phoneInput);
+      var phoneError = el("div", { class: "field-error" }, ["A valid 10-digit phone number is required."]);
+      body.appendChild(phoneError);
+
+      phoneInput.addEventListener("blur", function () {
+        var d = phoneDigits(phoneInput.value);
+        if (d.length === 10) phoneInput.value = formatPhone(d);
+      });
+      phoneInput.addEventListener("input", function () {
+        var d = phoneDigits(phoneInput.value);
+        if (d.length === 10) {
+          phoneInput.classList.remove("input-error");
+          phoneError.classList.remove("visible");
+        }
+      });
 
       var saveBtn = el("button", { class: "btn" }, ["Save"]);
       saveBtn.addEventListener("click", function () {
         var last = lastInput.value.trim();
+        var d = phoneDigits(phoneInput.value);
+        var hasError = false;
+
         if (!last) {
           lastInput.classList.add("input-error");
           lastError.classList.add("visible");
-          lastInput.focus();
-          return;
+          if (!hasError) { lastInput.focus(); hasError = true; }
+        } else {
+          lastInput.classList.remove("input-error");
+          lastError.classList.remove("visible");
         }
+
+        if (d.length !== 10) {
+          phoneInput.classList.add("input-error");
+          phoneError.classList.add("visible");
+          if (!hasError) { phoneInput.focus(); hasError = true; }
+        } else {
+          phoneInput.classList.remove("input-error");
+          phoneError.classList.remove("visible");
+        }
+
+        if (hasError) return;
+
         state.firstName = firstInput.value.trim();
         state.lastName = last;
-        state.phone = phoneInput.value.trim();
+        state.phone = formatPhone(d);
         showConfirm();
       });
       btnRow.appendChild(saveBtn);
-      firstInput.focus();
+      (state.lastName ? phoneInput : firstInput).focus();
     }
 
     var backBtn = el("button", { class: "btn-outline" }, ["Back"]);
@@ -1762,6 +1859,11 @@ input.input-error, select.input-error {
   function formatPhone(phone) {
     var d = phoneDigits(phone);
     return d ? "(" + d.slice(0, 3) + ") " + d.slice(3, 6) + "-" + d.slice(6) : String(phone || "");
+  }
+
+  function formatSpacedPhone(phone) {
+    var d = phoneDigits(phone);
+    return d ? "(" + d.slice(0, 3) + ")   " + d.slice(3, 6) + "  -  " + d.slice(6) : String(phone || "(blank)");
   }
 
   // vCard field values: escape the characters vCard treats as separators.
