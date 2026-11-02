@@ -34,7 +34,7 @@
 
 // Its own copy of the Sheet ID (not roster-dashboard.gs's SHEET_ID), so
 // this file works pasted into either Apps Script project.
-var REPORT_SHEET_ID = "1BftqXMNaw7WurUHmzGtQiUQvFmgnaGe-1Qm_CtW1Tjc";
+var REPORT_SHEET_ID = "1ERX4wPOGAHg5NQ7Sci36z_iWaZtGqWAe-MbkbQbcguo";
 var REPORT_EMAIL = "joshua.t.shirley@army.mil";
 var REPORT_DAYS = 7;
 var PRACTICE_SHEET_NAME = "Practice";
