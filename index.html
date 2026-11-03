@@ -1022,6 +1022,123 @@ input.input-error, select.input-error {
   margin-top: 2px;
 }
 
+/* ---------- Tactic & Strategy Cards ---------- */
+.tactic-intro {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  background: #fbfbf9;
+  border-left: 4px solid var(--army-black);
+  padding: 12px 14px;
+  border-radius: 0 4px 4px 0;
+}
+.tactic-section-title {
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  color: var(--army-black);
+  text-transform: uppercase;
+  margin: 22px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid var(--field-02);
+  padding-bottom: 4px;
+}
+.tactic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 10px 0 20px;
+}
+.tactic-card {
+  background: var(--white);
+  border: 1px solid var(--field-01);
+  border-left: 5px solid var(--army-black);
+  border-radius: 4px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tactic-card.gold-border { border-left-color: var(--army-gold); }
+.tactic-card.blue-border { border-left-color: #2563eb; }
+.tactic-card.green-border { border-left-color: #15803d; }
+.tactic-card.red-border { border-left-color: #dc2626; }
+
+.tactic-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--gray-02);
+}
+.tactic-title {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  color: var(--army-black);
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tactic-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: var(--tan);
+  color: var(--army-black);
+  white-space: nowrap;
+}
+.tactic-badge.badge-gold { background: #fef3c7; color: #92400e; }
+.tactic-badge.badge-red { background: #fee2e2; color: #991b1b; }
+.tactic-badge.badge-blue { background: #dbeafe; color: #1e40af; }
+.tactic-badge.badge-green { background: #dcfce7; color: #166534; }
+
+.tactic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.tactic-item {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #2d3748;
+}
+.tactic-item::before {
+  content: "▸";
+  position: absolute;
+  left: 2px;
+  top: 0;
+  color: var(--army-black);
+  font-weight: 700;
+}
+.tactic-lead {
+  font-weight: 700;
+  color: var(--army-black);
+}
+.tactic-callout {
+  background: #fbfbf9;
+  border-left: 3px solid var(--field-02);
+  padding: 7px 10px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.84rem;
+  color: #4b5563;
+  margin-top: auto;
+}
+.tactic-callout strong {
+  color: var(--army-black);
+}
+
 .tips-heading { font-family: var(--font-title); font-size: 1.4rem; margin: 22px 0 6px; color: var(--army-black); text-transform: uppercase; font-weight: 400; }
 .tips-text { margin: 6px 0; line-height: 1.5; }
 .tips-list { margin: 6px 0 10px; padding-left: 22px; line-height: 1.5; }
@@ -2742,22 +2859,6 @@ input.input-error, select.input-error {
   }
 
   // ---------- Screen: Test-taking tips & Cheat Sheet ----------
-  // Built-in tips and scratch-paper formulas. onBack returns to whichever screen opened it.
-  var TIPS_DURING = [
-    "Answer every question. On the real computer test you can't go back to a question once you move on, " +
-    "and leaving questions blank at the end of a section costs more than guessing. If time is almost up, guess.",
-    "Take extra care on the first few questions of each section. The computer uses them to decide how " +
-    "hard the rest of your questions will be.",
-    "Cross off choices you know are wrong, then pick from what's left.",
-    "Math word problems: before you calculate, write down what the question is actually asking for. " +
-    "When you have an answer, check that it makes sense.",
-    "Don't get stuck. Work it on paper, pick your best answer, and keep moving."
-  ];
-  var TIPS_WK = ["Use the word in a sentence you know, then try each choice in its place."];
-  var TIPS_PC = [
-    "Read the question first, then the paragraph. The answer has to come from the paragraph, not from " +
-    "what you already know."
-  ];
   var EXTRA_TIPS = window.__EST_TIPS__ || null;
 
   function renderTestTips(onBack, initialTab) {
@@ -2921,28 +3022,154 @@ input.input-error, select.input-error {
     panelCheatsheet.appendChild(grid);
     contentWrap.appendChild(panelCheatsheet);
 
-    // Panel 2: Pacing & Strategy
+    // Panel 2: Pacing & Strategy Cards
     var panelStrategy = el("div", { style: activeTab === "strategy" ? "" : "display:none;" });
-    var heading = 0;
-    function addHeading(text) {
-      panelStrategy.appendChild(el("h2", { class: "tips-heading" }, [++heading + ". " + text]));
-    }
-    function addList(items) {
-      panelStrategy.appendChild(el("ul", { class: "tips-list" }, items.map(function (t) {
-        return el("li", {}, [t]);
-      })));
-    }
-    addHeading("During the test");
-    addList(TIPS_DURING.concat((EXTRA_TIPS && EXTRA_TIPS.answering) || []));
-    addHeading("Word Knowledge");
-    addList(TIPS_WK.concat((EXTRA_TIPS && EXTRA_TIPS.wordKnowledge) || []));
-    addHeading("Paragraph Comprehension");
-    addList(TIPS_PC.concat((EXTRA_TIPS && EXTRA_TIPS.paragraph) || []));
-    if (EXTRA_TIPS && EXTRA_TIPS.sections) {
-      EXTRA_TIPS.sections.forEach(function (sec) {
-        addHeading(sec.title);
-        addList(sec.items);
+    panelStrategy.appendChild(el("div", { class: "tactic-intro" }, [
+      el("strong", {}, ["Tactical Test Execution: "]),
+      "The ASVAB is a game of probability, pacing, and algorithm discipline. Apply these visual rule cards to avoid careless mistakes and protect your AFQT score."
+    ]));
+
+    function makeTacticCard(opts) {
+      var card = el("div", { class: "tactic-card " + (opts.borderClass || "") });
+      var header = el("div", { class: "tactic-header" });
+      header.appendChild(el("div", { class: "tactic-title" }, [opts.title]));
+      if (opts.badge) {
+        header.appendChild(el("span", { class: "tactic-badge " + (opts.badgeClass || "") }, [opts.badge]));
+      }
+      card.appendChild(header);
+
+      var list = el("ul", { class: "tactic-list" });
+      (opts.items || []).forEach(function (it) {
+        var li = el("li", { class: "tactic-item" });
+        if (it.lead) {
+          li.appendChild(el("span", { class: "tactic-lead" }, [it.lead + ": "]));
+        }
+        li.appendChild(document.createTextNode(it.text));
+        list.appendChild(li);
       });
+      card.appendChild(list);
+
+      if (opts.callout) {
+        var callout = el("div", { class: "tactic-callout" });
+        callout.appendChild(el("strong", {}, [opts.calloutTitle ? opts.calloutTitle + " " : "Pro Tip: "]));
+        callout.appendChild(document.createTextNode(opts.callout));
+        card.appendChild(callout);
+      }
+      return card;
+    }
+
+    panelStrategy.appendChild(el("div", { class: "tactic-section-title" }, ["⚙️ CAT-ASVAB Scoring Mechanics"]));
+    var catGrid = el("div", { class: "tactic-grid" });
+
+    catGrid.appendChild(makeTacticCard({
+      title: "🚫 Never Leave Blanks",
+      badge: "Critical Penalty",
+      badgeClass: "badge-red",
+      borderClass: "red-border",
+      items: [
+        { lead: "Harsh CAT Penalty", text: "Leaving unanswered questions at the end drops your percentile score far more severely than wrong guesses." },
+        { lead: "The 60-Second Drill", text: "If the timer hits 1 minute, stop calculating and immediately select an answer for every remaining question." },
+        { lead: "No Backtracking", text: "Once you confirm an answer on the computer, you cannot go back. Commit and keep moving." }
+      ],
+      callout: "A 25% random guess always beats a blank question. Never surrender questions to the clock."
+    }));
+
+    catGrid.appendChild(makeTacticCard({
+      title: "🎯 First 5 Questions",
+      badge: "Difficulty Seeding",
+      badgeClass: "badge-gold",
+      borderClass: "gold-border",
+      items: [
+        { lead: "Algorithm Calibration", text: "The computer uses your first few questions to establish your starting difficulty band." },
+        { lead: "Invest Extra Time", text: "Spend an extra 15–20 seconds on questions 1 through 5 to ensure you don't make careless reading or math mistakes." },
+        { lead: "Higher Score Ceiling", text: "Starting strong keeps you in the upper AFQT percentiles even if later questions get more difficult." }
+      ],
+      callout: "Be deliberate early. A strong start sets the foundation for a 50+ AFQT."
+    }));
+
+    catGrid.appendChild(makeTacticCard({
+      title: "⏳ 45-Second Check",
+      badge: "Pacing Discipline",
+      badgeClass: "badge-blue",
+      borderClass: "blue-border",
+      items: [
+        { lead: "Don't Get Bogged Down", text: "If you haven't set up your equation within 45 seconds, you are spinning your wheels." },
+        { lead: "Eliminate & Guess", text: "Cross off the 2 most obvious wrong answers (too high, too low, or negative), guess between the remaining 2, and move on." },
+        { lead: "Protect Easy Points", text: "Wasting 3 minutes on 1 tough question robs you of answering 3 easy questions waiting at the end." }
+      ],
+      callout: "Every question is worth score value. Never sacrifice multiple easy questions for one hard one."
+    }));
+    panelStrategy.appendChild(catGrid);
+
+    panelStrategy.appendChild(el("div", { class: "tactic-section-title" }, ["🎯 Section-by-Section Battle Tactics"]));
+    var secGrid = el("div", { class: "tactic-grid" });
+
+    secGrid.appendChild(makeTacticCard({
+      title: "🧮 Arithmetic Reasoning",
+      badge: "AR Strategy",
+      badgeClass: "badge-gold",
+      borderClass: "gold-border",
+      items: [
+        { lead: "Read the Last Sentence First", text: "Before reading the word problem story, skip to the question to see what unit is asked for (hours, minutes, feet, profit?)." },
+        { lead: "Jot Given Numbers", text: "Write the values with units on your scratch paper (e.g. Rate = 55 mph, Time = 3.5 hrs)." },
+        { lead: "Estimate & Ballpark", text: "Round numbers (e.g. 49 × 21 ≈ 50 × 20 = 1000) to instantly eliminate 2 or 3 choices before exact arithmetic." }
+      ],
+      callout: "Sanity check every answer: does the number make physical sense in real life?"
+    }));
+
+    secGrid.appendChild(makeTacticCard({
+      title: "📖 Word Knowledge",
+      badge: "WK Tactics",
+      badgeClass: "badge-green",
+      borderClass: "green-border",
+      items: [
+        { lead: "Sentence-Swap Test", text: "Place the target word in a familiar sentence, then swap each choice in to see which fits the tone naturally." },
+        { lead: "Prefix & Root Clues", text: "Look for clues: MAL-/MIS- (bad), BENE-/PRO- (good), SUB- (under), SUPER- (above), CHRON- (time)." },
+        { lead: "Opposite Clustering", text: "If two answer choices are exact opposites, one of them is frequently the correct answer." }
+      ],
+      callout: "Spend no more than 15–20 seconds per WK question. Save mental stamina for math."
+    }));
+
+    secGrid.appendChild(makeTacticCard({
+      title: "📑 Paragraph Comprehension",
+      badge: "PC Strategy",
+      badgeClass: "badge-blue",
+      borderClass: "blue-border",
+      items: [
+        { lead: "Questions Before Passage", text: "Read the question stem and answer choices before reading the paragraph so you know what clue to scan for." },
+        { lead: "Direct Evidence Only", text: "The correct answer MUST be directly supported by the text. Never bring outside knowledge or personal assumptions." },
+        { lead: "Beware Extreme Words", text: "Watch out for choices with absolute words like 'always', 'never', 'only', or 'must'—they are almost always wrong." }
+      ],
+      callout: "Main idea questions: look at the first sentence and the concluding sentence."
+    }));
+
+    secGrid.appendChild(makeTacticCard({
+      title: "📐 Math Knowledge",
+      badge: "MK Shortcuts",
+      badgeClass: "badge-gold",
+      borderClass: "gold-border",
+      items: [
+        { lead: "Backsolve from Choices", text: "When an algebraic equation looks intimidating, plug choice B or C into the equation and test it." },
+        { lead: "Plug In Easy Numbers", text: "If variables (x, y) have no numbers, test x = 2 or 3. For percent questions, always test starting with 100." },
+        { lead: "Watch Negative Signs", text: "Keep signs straight on scratch paper: (-3)² = 9, but -3² = -9." }
+      ],
+      callout: "Backsolving turns complicated algebra into simple arithmetic testing."
+    }));
+    panelStrategy.appendChild(secGrid);
+
+    if (EXTRA_TIPS && EXTRA_TIPS.sections) {
+      panelStrategy.appendChild(el("div", { class: "tactic-section-title" }, ["📌 Additional Station Prep"]));
+      var extraGrid = el("div", { class: "tactic-grid" });
+      EXTRA_TIPS.sections.forEach(function (sec) {
+        extraGrid.appendChild(makeTacticCard({
+          title: sec.title,
+          badge: "Station Note",
+          badgeClass: "badge-blue",
+          borderClass: "blue-border",
+          items: sec.items.map(function (it) { return { text: it }; })
+        }));
+      });
+      panelStrategy.appendChild(extraGrid);
     }
     contentWrap.appendChild(panelStrategy);
 
