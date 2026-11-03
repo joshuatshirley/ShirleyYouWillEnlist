@@ -3644,6 +3644,10 @@ input.input-error, select.input-error {
     btn.addEventListener("click", function () {
       startPracticeDrill(practiceIdentityFromState(), code);
     });
+    var other = el("button", { class: "btn-outline" }, ["Choose a section"]);
+    other.addEventListener("click", function () {
+      renderPracticeHome(practiceIdentityFromState(), code);
+    });
     var buttons = [btn, " ", other];
     if (code === "AR" || code === "MK") {
       var flashBtn = el("button", { class: "btn-outline" }, ["⚡ Flashcards"]);
@@ -3928,6 +3932,34 @@ input.input-error, select.input-error {
     // Already computed and saved to history in finishSection when the last
     // section ended, so a refresh on the STOP screen in between can't lose it.
     var results = state.finalResults;
+    if (!results) {
+      try {
+        results = state.finalResults = computeResults();
+      } catch (e) {
+        var hist = getResultsHistory();
+        if (hist && hist.length) {
+          var last = hist[hist.length - 1];
+          results = state.finalResults = {
+            aqft: last.afqt,
+            overallPct: 0,
+            byCode: {}
+          };
+          QUESTIONS.sections.forEach(function (sec) {
+            var s = last.sections && last.sections[sec.code];
+            results.byCode[sec.code] = {
+              pct: s && s.total ? (100 * s.correct / s.total) : 0,
+              correct: s ? s.correct : 0,
+              total: s ? s.total : sec.questions.length,
+              unanswered: 0
+            };
+          });
+        }
+      }
+    }
+    if (!results) {
+      renderStart();
+      return;
+    }
 
     var card = el("div", { class: "card" });
     card.appendChild(el("h1", {}, ["Results"]));
@@ -3947,7 +3979,7 @@ input.input-error, select.input-error {
 
     var meters = el("div", { class: "meter-list" });
     QUESTIONS.sections.forEach(function (sec) {
-      var r = results.byCode[sec.code];
+      var r = results.byCode[sec.code] || { pct: 0, correct: 0, total: sec.questions.length, unanswered: 0 };
       var name = parseSectionTitle(sec.title).name;
       var band = statusBand(r.pct);
 
@@ -3977,18 +4009,27 @@ input.input-error, select.input-error {
     card.appendChild(meters);
 
     var overallStat = el("div", { class: "overall-stat" }, [
-      el("div", { class: "overall-stat-value" }, [Math.round(results.overallPct) + "%"]),
+      el("div", { class: "overall-stat-value" }, [Math.round(results.overallPct || 0) + "%"]),
       el("div", { class: "overall-stat-label" }, ["Overall"])
     ]);
     card.appendChild(overallStat);
 
-    var readiness = renderReadinessCard();
-    if (readiness) card.appendChild(readiness);
-    // The recruiter's follow-up codes (save the applicant, text them) go
-    // in the recruiter's email instead; this one is for the applicant.
-    card.appendChild(renderRecruiterContact());
-    if (PRACTICE) card.appendChild(renderPracticeSuggestion(results));
-    card.appendChild(renderM2SCard());
+    try {
+      var readiness = renderReadinessCard();
+      if (readiness) card.appendChild(readiness);
+    } catch (e) { console.error("Error rendering readiness:", e); }
+
+    try {
+      card.appendChild(renderRecruiterContact());
+    } catch (e) { console.error("Error rendering recruiter contact:", e); }
+
+    try {
+      if (PRACTICE) card.appendChild(renderPracticeSuggestion(results));
+    } catch (e) { console.error("Error rendering practice suggestion:", e); }
+
+    try {
+      card.appendChild(renderM2SCard());
+    } catch (e) { console.error("Error rendering M2S card:", e); }
 
     var restartBtn = el("button", { class: "btn" }, ["Start New Test"]);
     restartBtn.addEventListener("click", function () {
