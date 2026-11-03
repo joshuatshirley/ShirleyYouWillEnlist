@@ -44,14 +44,15 @@ window.EST_CONFIG = {
   // XXX placeholder until you have the real number and the screen just
   // shows the name.
   recruiters: [
-    { name: "Curless SSG", phone: "843-591-6980" },
-    { name: "Gatling SFC", phone: "854-580-9271" },
-    { name: "Guiler SFC", phone: "803-467-2088" },
-    { name: "Recendez SFC", phone: "803-466-0053" },
-    { name: "Schultz SFC", phone: "803-439-7278" },
-    { name: "Shirley SFC", phone: "864-897-9494" }
-    // apps-script/results-webhook.gs (search for "Aquaman" there too).
-    // , { name: "Aquaman SGT", phone: "843-555-0100" }
+    { name: "Curless SSG", phone: "843-591-6980", hiHelloUrl: "" },
+    { name: "Gatling SFC", phone: "854-580-9271", hiHelloUrl: "" },
+    { name: "Guiler SFC", phone: "803-467-2088", hiHelloUrl: "" },
+    { name: "Recendez SFC", phone: "803-466-0053", hiHelloUrl: "" },
+    { name: "Schultz SFC", phone: "803-439-7278", hiHelloUrl: "" },
+    { name: "Shirley SFC", phone: "864-897-9494", hiHelloUrl: "" }
+    // hiHelloUrl: optional HiHello card URL. When provided, the QR code
+    // encodes and links directly to their HiHello profile. When blank, it
+    // encodes and saves a vCard directly to phone contacts.
   ],
 
   // This station's Google Apps Script web app (/exec URL) that appends
@@ -539,6 +540,28 @@ input.input-error, select.input-error {
 .recruiter-card .qr-sub { text-align: center; }
 .recruiter-card .qr-grid { justify-content: center; margin: 0 auto; }
 .recruiter-card .qr-item { margin: 0 auto; text-align: center; }
+.qr-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.qr-link:hover, .qr-link:active {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+.qr-tap-btn {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--army-black);
+  cursor: pointer;
+  font-weight: 700;
+}
+.qr-tap-btn:hover {
+  background: var(--army-gold);
+  border-color: var(--army-black);
+}
 
 /* End-of-test readiness questions (renderReadiness and the screens after it). */
 .survey-hint { text-align: center; color: var(--muted); margin: 4px 0 18px; }
@@ -929,11 +952,14 @@ input.input-error, select.input-error {
 
   // Plain strings (older configs) still work: they become names with no phone.
   var RECRUITERS = CONFIG.recruiters.map(function (r) {
-    return typeof r === "string" ? { name: r, phone: "" } : r;
+    return typeof r === "string" ? { name: r, phone: "", hiHelloUrl: "" } : r;
   });
   function recruiterInfo(name) {
-    for (var i = 0; i < RECRUITERS.length; i++) if (RECRUITERS[i].name === name) return RECRUITERS[i];
-    return { name: name || "", phone: "" };
+    if (name) {
+      for (var i = 0; i < RECRUITERS.length; i++) if (RECRUITERS[i].name === name) return RECRUITERS[i];
+    }
+    for (var j = 0; j < RECRUITERS.length; j++) if (/Shirley/i.test(RECRUITERS[j].name)) return RECRUITERS[j];
+    return RECRUITERS[0] || { name: name || "", phone: "", hiHelloUrl: "" };
   }
 
   var SCORES_ACCESS_LAST = CONFIG.scoresAccessLastName;
@@ -1837,16 +1863,48 @@ input.input-error, select.input-error {
   // ---------- QR codes ----------
   // assets/qrcode.js (qrcode-generator, MIT) draws them on the device, so
   // nothing about the applicant leaves the kiosk. Byte mode in UTF-8 so
-  // names with accents survive.
-  function buildQr(text, label, sub) {
+  // names with accents survive. If linkUrl is provided, clicking or tapping
+  // the QR code opens the link (e.g. HiHello) or downloads the vCard on mobile.
+  function buildQr(text, label, sub, linkUrl, downloadName) {
     var qr = qrcode(0, "M");
     qrcode.stringToBytes = qrcode.stringToBytesFuncs["UTF-8"];
     qr.addData(text, "Byte");
     qr.make();
-    var holder = el("div", { role: "img", "aria-label": label + " QR code" });
-    holder.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 4, scalable: true });
-    var item = el("div", { class: "qr-item" }, [holder, el("div", { class: "qr-label" }, [label])]);
+    var svgHolder = el("div", { role: "img", "aria-label": label + " QR code" });
+    svgHolder.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 4, scalable: true });
+
+    var graphicEl = svgHolder;
+    if (linkUrl) {
+      var linkProps = {
+        class: "qr-link",
+        href: linkUrl,
+        title: label || "Save contact"
+      };
+      if (downloadName) linkProps.download = downloadName;
+      if (/^https?:\/\//i.test(linkUrl)) {
+        linkProps.target = "_blank";
+        linkProps.rel = "noopener noreferrer";
+      }
+      graphicEl = el("a", linkProps, [svgHolder]);
+    }
+
+    var item = el("div", { class: "qr-item" }, [graphicEl, el("div", { class: "qr-label" }, [label])]);
     if (sub) item.appendChild(el("div", { class: "qr-sub" }, [sub]));
+
+    if (linkUrl) {
+      var btnProps = {
+        class: "btn-outline btn-small qr-tap-btn",
+        href: linkUrl
+      };
+      if (downloadName) btnProps.download = downloadName;
+      if (/^https?:\/\//i.test(linkUrl)) {
+        btnProps.target = "_blank";
+        btnProps.rel = "noopener noreferrer";
+      }
+      var isWeb = /^https?:\/\//i.test(linkUrl);
+      var btnText = isWeb ? "Open Contact Card" : "Save Contact";
+      item.appendChild(el("div", {}, [el("a", btnProps, [btnText])]));
+    }
     return item;
   }
 
@@ -1883,25 +1941,51 @@ input.input-error, select.input-error {
     return lines.join("\r\n");
   }
 
-  // Hand-back screen: who the applicant's recruiter is, with a code to
-  // save them as a contact. Shows just the name while the phone in
-  // EST_CONFIG is still the XXX placeholder.
-  function renderRecruiterContact() {
-    var info = recruiterInfo(state.recruiter);
+  // Hand-back screen & practice screens: who the applicant's recruiter is,
+  // with a code to save them as a contact (or open their HiHello card).
+  // Clicking the QR code or the tap button saves the contact or opens HiHello
+  // directly on mobile devices where scanning the screen isn't possible.
+  function renderRecruiterContact(customRecruiter) {
+    var info = recruiterInfo(customRecruiter || state.recruiter);
     var display = formatRecruiterDisplay(info.name);
     var digits = phoneDigits(info.phone);
+    var hiHello = info.hiHelloUrl ? String(info.hiHelloUrl).trim() : "";
     var wrap = el("div", { class: "recruiter-card" });
     wrap.appendChild(el("div", { class: "qr-sub" }, ["Your recruiter"]));
     wrap.appendChild(el("div", { class: "recruiter-name" }, [display]));
-    if (digits) {
-      wrap.appendChild(el("div", { class: "recruiter-phone" }, [formatPhone(digits)]));
+    if (digits || hiHello) {
+      if (digits) {
+        wrap.appendChild(el("div", { class: "recruiter-phone" }, [formatPhone(digits)]));
+      }
       var parts = info.name.split(/\s+/);
       var rank = parts.length > 1 ? parts[parts.length - 1] : "";
       var last = parts.length > 1 ? parts.slice(0, -1).join(" ") : info.name;
-      wrap.appendChild(el("div", { class: "qr-grid" }, [buildQr(vcard({
-        last: last, first: "", prefix: rank, full: display,
-        org: "U.S. Army", title: "Recruiter", phone: digits
-      }), "Save my number", "Scan with your phone camera")]));
+
+      var qrContent = "";
+      var linkUrl = "";
+      var downloadName = "";
+      var subText = "";
+
+      if (hiHello) {
+        qrContent = hiHello;
+        linkUrl = hiHello;
+        downloadName = "";
+        subText = "Scan with phone camera or tap to open";
+      } else {
+        var vcardData = vcard({
+          last: last, first: "", prefix: rank, full: display,
+          org: "U.S. Army", title: "Recruiter", phone: digits
+        });
+        qrContent = vcardData;
+        linkUrl = "data:text/vcard;charset=utf-8," + encodeURIComponent(vcardData);
+        var safeName = (rank ? rank + "_" : "") + last;
+        downloadName = safeName.replace(/[^a-zA-Z0-9_-]/g, "_") + ".vcf";
+        subText = "Scan with phone camera or tap to save";
+      }
+
+      wrap.appendChild(el("div", { class: "qr-grid" }, [
+        buildQr(qrContent, "Save my number", subText, linkUrl, downloadName)
+      ]));
     }
     return wrap;
   }
@@ -2597,7 +2681,7 @@ input.input-error, select.input-error {
     // the weekly report. Whatever the previous screen (Start, Results, or a
     // finished round) had wins; with nothing there, fall back to the last
     // practice name/phone if it's still under 15 minutes old.
-    var prefill = (identity.lastName || identity.phone) ? identity : (recentPracticeIdentity() || {});
+    var prefill = (identity && (identity.lastName || identity.phone || identity.recruiter)) ? identity : (recentPracticeIdentity() || {});
     card.appendChild(el("label", { class: "field-label" }, ["Last Name (optional):"]));
     var lastInput = el("input", { type: "text", placeholder: "Last name" });
     lastInput.value = prefill.lastName || "";
@@ -2628,7 +2712,7 @@ input.input-error, select.input-error {
         lastName: last,
         phone: phoneInput.value.trim(),
         firstName: same ? prefill.firstName || "" : "",
-        recruiter: same ? prefill.recruiter || "" : ""
+        recruiter: same ? prefill.recruiter || "" : (prefill.recruiter || state.recruiter || "")
       };
     }
 
@@ -2648,6 +2732,8 @@ input.input-error, select.input-error {
       list.appendChild(btn);
     });
     card.appendChild(list);
+
+    card.appendChild(renderRecruiterContact(prefill && prefill.recruiter));
 
     var back = el("button", { class: "btn-outline" }, ["Back to Start"]);
     back.addEventListener("click", renderStart);
@@ -2784,6 +2870,8 @@ input.input-error, select.input-error {
       });
     }
 
+    card.appendChild(renderRecruiterContact(drill.identity && drill.identity.recruiter));
+
     var again = el("button", { class: "btn" }, ["Another Round"]);
     again.addEventListener("click", function () { startPracticeDrill(drill.identity, drill.code); });
     var pick = el("button", { class: "btn-outline" }, ["Choose a section"]);
@@ -2904,8 +2992,29 @@ input.input-error, select.input-error {
   // "?practice" (the link in the applicant text) opens Practice Questions
   // directly when this copy has a practice bank.
   loadData(function () {
-    if (PRACTICE && /[?&]practice\b/.test(location.search)) renderPracticeHome({}, null);
-    else renderStart();
+    if (PRACTICE && /[?&]practice\b/.test(location.search)) {
+      var search = location.search || "";
+      var params = {};
+      var qs = search.replace(/^\?/, "").split("&");
+      qs.forEach(function (pair) {
+        var parts = pair.split("=");
+        if (parts[0]) {
+          params[decodeURIComponent(parts[0].replace(/\+/g, " "))] =
+            decodeURIComponent((parts.slice(1).join("=") || "").replace(/\+/g, " "));
+        }
+      });
+      var initIdentity = {};
+      if (params.recruiter) {
+        initIdentity.recruiter = params.recruiter;
+        state.recruiter = params.recruiter;
+      }
+      if (params.phone) initIdentity.phone = params.phone;
+      if (params.last) initIdentity.lastName = params.last;
+      if (params.first) initIdentity.firstName = params.first;
+      renderPracticeHome(initIdentity, null);
+    } else {
+      renderStart();
+    }
   });
 
   // This is used as a home-screen app on an iPad -- an edge-swipe "back"

@@ -458,7 +458,9 @@ function weakestSectionForText(sections) {
 function applicantTextMessage(data) {
   var baseUrl = PRACTICE_SITE_URL ? PRACTICE_SITE_URL.split("?")[0].split("#")[0].trim() : "";
   if (baseUrl && !baseUrl.endsWith("/")) baseUrl += "/";
-  var link = baseUrl ? (baseUrl + "?practice") : "(practice link not set up yet)";
+  var link = baseUrl
+    ? (baseUrl + "?practice&recruiter=" + encodeURIComponent(data.recruiter || ""))
+    : "(practice link not set up yet)";
   return APPLICANT_TEXT_TEMPLATE
     .replace("{recruiter}", recruiterDisplay(data.recruiter))
     .replace("{score}", String(data.afqt))
