@@ -43,13 +43,21 @@ window.EST_CONFIG = {
   // hand-back screen with a scan-to-save contact code; leave it as the
   // XXX placeholder until you have the real number and the screen just
   // shows the name.
+  // Station physical address included in recruiter vCards and displayed on contact cards.
+  stationAddress: {
+    street: "2600 S Irby St, Ste A",
+    city: "Florence",
+    state: "SC",
+    zip: "29505"
+  },
+
   recruiters: [
-    { name: "Curless SSG", phone: "843-591-6980", hiHelloUrl: "" },
-    { name: "Gatling SFC", phone: "854-580-9271", hiHelloUrl: "" },
-    { name: "Guiler SFC", phone: "803-467-2088", hiHelloUrl: "" },
-    { name: "Recendez SFC", phone: "803-466-0053", hiHelloUrl: "" },
-    { name: "Schultz SFC", phone: "803-439-7278", hiHelloUrl: "" },
-    { name: "Shirley SFC", phone: "864-897-9494", hiHelloUrl: "" }
+    { name: "Curless SSG", phone: "843-591-6980", email: "james.e.curless.mil@army.mil", hiHelloUrl: "" },
+    { name: "Gatling SFC", phone: "854-580-9271", email: "lakisha.r.gatling.mil@army.mil", hiHelloUrl: "" },
+    { name: "Guiler SFC", phone: "803-467-2088", email: "christopher.guiler.mil@army.mil", hiHelloUrl: "" },
+    { name: "Recendez SFC", phone: "803-466-0053", email: "alex.recendez.mil@army.mil", hiHelloUrl: "" },
+    { name: "Schultz SFC", phone: "803-439-7278", email: "nicholas.k.schultz.mil@army.mil", hiHelloUrl: "" },
+    { name: "Shirley SFC", phone: "864-897-9494", email: "joshua.t.shirley4.mil@army.mil", hiHelloUrl: "" }
     // hiHelloUrl: optional HiHello card URL. When provided, the QR code
     // encodes and links directly to their HiHello profile. When blank, it
     // encodes and saves a vCard directly to phone contacts.
@@ -533,13 +541,31 @@ input.input-error, select.input-error {
 .recruiter-phone {
   font-size: 1.15rem;
   font-variant-numeric: tabular-nums;
-  margin: 4px 0 14px;
+  margin: 4px 0 2px;
   text-align: center;
   color: var(--army-black);
 }
+.recruiter-email {
+  font-size: 0.95rem;
+  margin: 2px 0 3px;
+  text-align: center;
+  word-break: break-all;
+}
+.recruiter-email a {
+  color: var(--navy);
+  text-decoration: underline;
+}
+.recruiter-address {
+  font-size: 0.88rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 2px 0 14px;
+  line-height: 1.35;
+}
 .recruiter-card .qr-sub { text-align: center; }
 .recruiter-card .qr-grid { justify-content: center; margin: 0 auto; }
-.recruiter-card .qr-item { margin: 0 auto; text-align: center; }
+.recruiter-card .qr-item { width: 220px; margin: 0 auto; text-align: center; }
+.recruiter-card .qr-item svg { width: 200px; height: 200px; }
 .qr-link {
   display: block;
   text-decoration: none;
@@ -950,16 +976,48 @@ input.input-error, select.input-error {
   // Optional local-only practice bank; null on the public deployment.
   var PRACTICE = window.__EST_PRACTICE__ || null;
 
+  function formatStationAddress(addr) {
+    if (!addr) return null;
+    if (typeof addr === "string") {
+      var parts = addr.split(",").map(function (s) { return s.trim(); });
+      if (parts.length >= 3) {
+        var stateZip = parts[parts.length - 1].split(/\s+/);
+        var state = stateZip[0] || "";
+        var zip = stateZip.slice(1).join(" ") || "";
+        var city = parts[parts.length - 2];
+        var street = parts.slice(0, parts.length - 2).join(", ");
+        return { street: street, city: city, state: state, zip: zip, text: addr };
+      }
+      return { street: addr, city: "", state: "", zip: "", text: addr };
+    }
+    var street = addr.street || "";
+    var city = addr.city || "";
+    var state = addr.state || "";
+    var zip = addr.zip || "";
+    var cityStateZip = (city + (city && state ? ", " : "") + state + (zip ? " " + zip : "")).trim();
+    var text = [street, cityStateZip].filter(Boolean).join(", ");
+    return { street: street, city: city, state: state, zip: zip, text: text };
+  }
+
   // Plain strings (older configs) still work: they become names with no phone.
   var RECRUITERS = CONFIG.recruiters.map(function (r) {
-    return typeof r === "string" ? { name: r, phone: "", hiHelloUrl: "" } : r;
+    if (typeof r === "string") {
+      return { name: r, phone: "", email: "", hiHelloUrl: "", address: CONFIG.stationAddress || null };
+    }
+    return {
+      name: r.name || "",
+      phone: r.phone || "",
+      email: r.email || "",
+      hiHelloUrl: r.hiHelloUrl || "",
+      address: r.address || CONFIG.stationAddress || null
+    };
   });
   function recruiterInfo(name) {
     if (name) {
       for (var i = 0; i < RECRUITERS.length; i++) if (RECRUITERS[i].name === name) return RECRUITERS[i];
     }
     for (var j = 0; j < RECRUITERS.length; j++) if (/Shirley/i.test(RECRUITERS[j].name)) return RECRUITERS[j];
-    return RECRUITERS[0] || { name: name || "", phone: "", hiHelloUrl: "" };
+    return RECRUITERS[0] || { name: name || "", phone: "", email: "", hiHelloUrl: "", address: CONFIG.stationAddress || null };
   }
 
   var SCORES_ACCESS_LAST = CONFIG.scoresAccessLastName;
@@ -1936,6 +1994,16 @@ input.input-error, select.input-error {
     if (fields.org) lines.push("ORG:" + vcardText(fields.org));
     if (fields.title) lines.push("TITLE:" + vcardText(fields.title));
     if (fields.phone) lines.push("TEL;TYPE=CELL:+1" + fields.phone);
+    if (fields.email) lines.push("EMAIL;TYPE=INTERNET:" + vcardText(fields.email));
+    if (fields.address) {
+      var a = fields.address;
+      if (typeof a === "object") {
+        lines.push("ADR;TYPE=WORK:;;" + vcardText(a.street || "") + ";" + vcardText(a.city || "") + ";" +
+          vcardText(a.state || "") + ";" + vcardText(a.zip || "") + ";USA");
+      } else {
+        lines.push("ADR;TYPE=WORK:;;" + vcardText(String(a)) + ";;;;");
+      }
+    }
     if (fields.note) lines.push("NOTE:" + vcardText(fields.note));
     lines.push("END:VCARD");
     return lines.join("\r\n");
@@ -1943,20 +2011,32 @@ input.input-error, select.input-error {
 
   // Hand-back screen & practice screens: who the applicant's recruiter is,
   // with a code to save them as a contact (or open their HiHello card).
+  // Includes recruiter phone, official email, and station address.
   // Clicking the QR code or the tap button saves the contact or opens HiHello
   // directly on mobile devices where scanning the screen isn't possible.
   function renderRecruiterContact(customRecruiter) {
     var info = recruiterInfo(customRecruiter || state.recruiter);
     var display = formatRecruiterDisplay(info.name);
     var digits = phoneDigits(info.phone);
+    var email = (info.email || "").trim();
+    var addrObj = formatStationAddress(info.address || CONFIG.stationAddress);
     var hiHello = info.hiHelloUrl ? String(info.hiHelloUrl).trim() : "";
+
     var wrap = el("div", { class: "recruiter-card" });
     wrap.appendChild(el("div", { class: "qr-sub" }, ["Your recruiter"]));
     wrap.appendChild(el("div", { class: "recruiter-name" }, [display]));
-    if (digits || hiHello) {
-      if (digits) {
-        wrap.appendChild(el("div", { class: "recruiter-phone" }, [formatPhone(digits)]));
-      }
+    if (digits) {
+      wrap.appendChild(el("div", { class: "recruiter-phone" }, [formatPhone(digits)]));
+    }
+    if (email) {
+      var emailLink = el("a", { href: "mailto:" + email }, [email]);
+      wrap.appendChild(el("div", { class: "recruiter-email" }, [emailLink]));
+    }
+    if (addrObj && addrObj.text) {
+      wrap.appendChild(el("div", { class: "recruiter-address" }, [addrObj.text]));
+    }
+
+    if (digits || hiHello || email) {
       var parts = info.name.split(/\s+/);
       var rank = parts.length > 1 ? parts[parts.length - 1] : "";
       var last = parts.length > 1 ? parts.slice(0, -1).join(" ") : info.name;
@@ -1974,7 +2054,8 @@ input.input-error, select.input-error {
       } else {
         var vcardData = vcard({
           last: last, first: "", prefix: rank, full: display,
-          org: "U.S. Army", title: "Recruiter", phone: digits
+          org: "U.S. Army", title: "Recruiter", phone: digits,
+          email: email, address: addrObj
         });
         qrContent = vcardData;
         linkUrl = "data:text/vcard;charset=utf-8," + encodeURIComponent(vcardData);
