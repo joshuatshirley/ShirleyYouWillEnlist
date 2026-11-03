@@ -4063,6 +4063,7 @@ input.input-error, select.input-error {
       if (params.phone) initIdentity.phone = params.phone;
       if (params.last) initIdentity.lastName = params.last;
       if (params.first) initIdentity.firstName = params.first;
+      rememberPracticeIdentity(initIdentity);
       renderPracticeHome(initIdentity, null);
     } else {
       renderStart();

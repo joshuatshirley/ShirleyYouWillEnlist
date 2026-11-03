@@ -458,8 +458,15 @@ function weakestSectionForText(sections) {
 function applicantTextMessage(data) {
   var baseUrl = PRACTICE_SITE_URL ? PRACTICE_SITE_URL.split("?")[0].split("#")[0].trim() : "";
   if (baseUrl && !baseUrl.endsWith("/")) baseUrl += "/";
+  var queryParts = ["practice"];
+  if (data.recruiter) queryParts.push("recruiter=" + encodeURIComponent(data.recruiter));
+  if (data.last_name) queryParts.push("last=" + encodeURIComponent(data.last_name));
+  if (data.first_name) queryParts.push("first=" + encodeURIComponent(data.first_name));
+  var formattedPhone = formatPhone(data.phone);
+  if (formattedPhone) queryParts.push("phone=" + encodeURIComponent(formattedPhone));
+
   var link = baseUrl
-    ? (baseUrl + "?practice&recruiter=" + encodeURIComponent(data.recruiter || ""))
+    ? (baseUrl + "?" + queryParts.join("&"))
     : "(practice link not set up yet)";
   return APPLICANT_TEXT_TEMPLATE
     .replace("{recruiter}", recruiterDisplay(data.recruiter))
