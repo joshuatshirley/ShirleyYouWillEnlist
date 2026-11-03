@@ -934,7 +934,94 @@ input.input-error, select.input-error {
 .nav-row .btn-outline { flex: 0 0 auto; }
 .btn-outline.btn-small { padding: 6px 14px; font-size: 0.9rem; margin-top: 8px; }
 
-/* ---------- Test-taking tips ---------- */
+/* ---------- Test-taking tips & Cheat Sheet Tabs ---------- */
+.tips-tab-bar {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0 18px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+.tips-tab-btn {
+  padding: 10px 16px;
+  border: 2px solid var(--field-01);
+  background: var(--white);
+  color: var(--army-black);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+.tips-tab-btn:hover {
+  border-color: var(--army-black);
+  background: var(--tan);
+}
+.tips-tab-btn.active {
+  background: var(--army-gold);
+  border-color: var(--army-black);
+  color: var(--army-black);
+}
+.cheatsheet-intro {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  background: #fbfbf9;
+  border-left: 4px solid var(--army-gold);
+  padding: 12px 14px;
+  border-radius: 0 4px 4px 0;
+}
+.cheatsheet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 16px 0 20px;
+}
+.cheatsheet-card {
+  background: var(--white);
+  border: 1px solid var(--field-01);
+  border-left: 5px solid var(--army-black);
+  border-radius: 4px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.cheatsheet-card.gold-card {
+  border-left-color: var(--army-gold);
+}
+.cheatsheet-title {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  color: var(--army-black);
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--gray-02);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cheatsheet-entry {
+  margin-bottom: 8px;
+  line-height: 1.45;
+  font-size: 0.92rem;
+}
+.cheatsheet-entry:last-child {
+  margin-bottom: 0;
+}
+.cheatsheet-math {
+  font-weight: 700;
+  color: var(--army-black);
+  font-variant-numeric: tabular-nums;
+}
+.cheatsheet-note {
+  color: var(--muted);
+  font-size: 0.84rem;
+  margin-top: 2px;
+}
+
 .tips-heading { font-family: var(--font-title); font-size: 1.4rem; margin: 22px 0 6px; color: var(--army-black); text-transform: uppercase; font-weight: 400; }
 .tips-text { margin: 6px 0; line-height: 1.5; }
 .tips-list { margin: 6px 0 10px; padding-left: 22px; line-height: 1.5; }
@@ -946,6 +1033,162 @@ input.input-error, select.input-error {
 .times-table th { background: var(--army-black); color: var(--white); border-color: var(--army-black); }
 @media (max-width: 500px) {
   .times-table th, .times-table td { padding: 3px 1px; min-width: 1.6em; font-size: 0.8rem; }
+}
+
+/* ---------- Flashcards ---------- */
+.flashcards-banner {
+  background: linear-gradient(135deg, var(--white) 0%, #f6f3e8 100%);
+  border: 2px solid var(--army-gold);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin: 16px 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.flashcards-banner-title {
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  color: var(--army-black);
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flashcards-banner-desc {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+.flashcard-arena {
+  margin: 16px auto 20px;
+  max-width: 480px;
+  text-align: center;
+}
+.flashcard {
+  min-height: 220px;
+  background: var(--white);
+  border: 2px solid var(--field-01);
+  border-radius: 8px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  user-select: none;
+}
+.flashcard:hover, .flashcard:focus {
+  border-color: var(--army-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.11);
+}
+.flashcard-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: var(--tan);
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.flashcard-q {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--army-black);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.flashcard-prompt {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.flashcard-a {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #1b5e20;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.flashcard-tip {
+  font-size: 0.92rem;
+  color: var(--muted);
+  max-width: 360px;
+  line-height: 1.4;
+}
+.flashcard-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 18px;
+}
+.flashcard-actions .btn-review {
+  background: var(--white);
+  border: 2px solid #d32f2f;
+  color: #d32f2f;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+}
+.flashcard-actions .btn-review:hover {
+  background: #ffebee;
+}
+.flashcard-actions .btn-gotit {
+  background: #2e7d32;
+  border: 2px solid #2e7d32;
+  color: var(--white);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+}
+.flashcard-actions .btn-gotit:hover {
+  background: #1b5e20;
+}
+.flashcard-progress {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.flashcard-filter-row {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  margin: 10px 0 16px;
+  -webkit-overflow-scrolling: touch;
+}
+.flashcard-filter-btn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  border: 1px solid var(--field-01);
+  background: var(--white);
+  cursor: pointer;
+  border-radius: 3px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.flashcard-filter-btn.active {
+  background: var(--army-black);
+  color: var(--white);
+  border-color: var(--army-black);
 }
 </style>
 </head>
@@ -2498,25 +2741,8 @@ input.input-error, select.input-error {
     app.appendChild(card);
   }
 
-  // ---------- Screen: Test-taking tips ----------
-  // The built-in tips are station-written, not book content, so unlike
-  // practice mode they ship on the public copy too; EXTRA_TIPS adds the
-  // local-only ones. onBack returns to whichever screen opened it.
-  var TIPS_BRAIN_DUMP = [
-    "Times table, 1 through 12 (practice below)",
-    "Rectangle: area = length × width, perimeter = 2 × length + 2 × width",
-    "Triangle: area = ½ × base × height",
-    "Circle: area = π × r², circumference = 2 × π × r (π ≈ 3.14)",
-    "Box: volume = length × width × height",
-    "Right triangle: a² + b² = c² (3-4-5 and 5-12-13 come up a lot)",
-    "Distance = rate × time",
-    "Simple interest = principal × rate × time",
-    "Percent: part = percent × whole; percent change = change ÷ original",
-    "Average = total ÷ number of items",
-    "Squares past the table: 13² = 169, 14² = 196, 15² = 225",
-    "½ = 0.5 = 50%, ¼ = 0.25 = 25%, ⅕ = 0.2 = 20%, ⅛ = 0.125 = 12.5%, ⅓ ≈ 0.333",
-    "1 ft = 12 in, 1 yd = 3 ft, 1 square yard = 9 square feet, 1 hr = 60 min"
-  ];
+  // ---------- Screen: Test-taking tips & Cheat Sheet ----------
+  // Built-in tips and scratch-paper formulas. onBack returns to whichever screen opened it.
   var TIPS_DURING = [
     "Answer every question. On the real computer test you can't go back to a question once you move on, " +
     "and leaving questions blank at the end of a section costs more than guessing. If time is almost up, guess.",
@@ -2532,44 +2758,203 @@ input.input-error, select.input-error {
     "Read the question first, then the paragraph. The answer has to come from the paragraph, not from " +
     "what you already know."
   ];
-  // Optional local-only extras (local-bank/tips-data.js); null on the
-  // public copy, which then shows just the tips above.
   var EXTRA_TIPS = window.__EST_TIPS__ || null;
 
-  function renderTestTips(onBack) {
+  function renderTestTips(onBack, initialTab) {
     clear(app);
     setKeyHandler(null);
     armIdleTimeout(PRACTICE_IDENTITY_TTL_MS);
-    var card = el("div", { class: "card" });
-    card.appendChild(el("h1", {}, ["Test-Taking Tips"]));
+    var activeTab = initialTab || "cheatsheet";
 
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["ASVAB Test Prep & Tips"]));
+    card.appendChild(el("p", { class: "byline" }, [
+      "High-yield formulas, time-management strategies, and mental speed drills."
+    ]));
+
+    var tabBar = el("div", { class: "tips-tab-bar", role: "tablist" });
+    var tabCheatsheet = el("button", {
+      class: "tips-tab-btn" + (activeTab === "cheatsheet" ? " active" : ""),
+      type: "button"
+    }, ["📐 Scratch-Paper Formulas"]);
+    var tabStrategy = el("button", {
+      class: "tips-tab-btn" + (activeTab === "strategy" ? " active" : ""),
+      type: "button"
+    }, ["⏱️ Pacing & Tactics"]);
+    var tabChallenge = el("button", {
+      class: "tips-tab-btn" + (activeTab === "challenge" ? " active" : ""),
+      type: "button"
+    }, ["⚡ 12×12 Challenge"]);
+
+    tabBar.appendChild(tabCheatsheet);
+    tabBar.appendChild(tabStrategy);
+    tabBar.appendChild(tabChallenge);
+    card.appendChild(tabBar);
+
+    var contentWrap = el("div", { class: "tips-tab-content" });
+
+    // Panel 1: Scratch-Paper Cheat Sheet
+    var panelCheatsheet = el("div", { style: activeTab === "cheatsheet" ? "" : "display:none;" });
+    panelCheatsheet.appendChild(el("div", { class: "cheatsheet-intro" }, [
+      el("strong", {}, ["The Scratch-Paper Brain Dump: "]),
+      "The instructions before the ASVAB starts are NOT timed. Use that quiet time to write these formulas onto your scratch paper so you can look them up during the test instead of blanking under time pressure."
+    ]));
+
+    var grid = el("div", { class: "cheatsheet-grid" });
+
+    var geoCard = el("div", { class: "cheatsheet-card gold-card" });
+    geoCard.appendChild(el("div", { class: "cheatsheet-title" }, ["🔷 Geometry & Shapes"]));
+    geoCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Rectangle Area: "]), "length × width"
+    ]));
+    geoCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Rectangle Perimeter: "]), "2 × length + 2 × width"
+    ]));
+    geoCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Triangle Area: "]), "½ × base × height"
+    ]));
+    geoCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Circle Area: "]), "π × r² (π ≈ 3.14)"
+    ]));
+    geoCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Circle Circumference: "]), "2 × π × r (or π × diameter)"
+    ]));
+    geoCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Box Volume: "]), "length × width × height"
+    ]));
+    grid.appendChild(geoCard);
+
+    var triCard = el("div", { class: "cheatsheet-card" });
+    triCard.appendChild(el("div", { class: "cheatsheet-title" }, ["📐 Right Triangles"]));
+    triCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Pythagorean Theorem: "]), "a² + b² = c²"
+    ]));
+    triCard.appendChild(el("div", { class: "cheatsheet-note" }, ["c is always the hypotenuse (opposite the 90° angle)"]));
+    triCard.appendChild(el("div", { class: "cheatsheet-entry", style: "margin-top:8px;" }, [
+      el("span", { class: "cheatsheet-math" }, ["★ 3 - 4 - 5 Triple: "]), "3² (9) + 4² (16) = 5² (25)"
+    ]));
+    triCard.appendChild(el("div", { class: "cheatsheet-note" }, ["Multiples: 6-8-10, 9-12-15, 30-40-50"]));
+    triCard.appendChild(el("div", { class: "cheatsheet-entry", style: "margin-top:8px;" }, [
+      el("span", { class: "cheatsheet-math" }, ["★ 5 - 12 - 13 Triple: "]), "5² (25) + 12² (144) = 13² (169)"
+    ]));
+    grid.appendChild(triCard);
+
+    var rateCard = el("div", { class: "cheatsheet-card" });
+    rateCard.appendChild(el("div", { class: "cheatsheet-title" }, ["🚗 Distance, Rate & Money"]));
+    rateCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Distance: "]), "Rate × Time (D = R × T)"
+    ]));
+    rateCard.appendChild(el("div", { class: "cheatsheet-note" }, ["Rate = Distance ÷ Time | Time = Distance ÷ Rate"]));
+    rateCard.appendChild(el("div", { class: "cheatsheet-entry", style: "margin-top:8px;" }, [
+      el("span", { class: "cheatsheet-math" }, ["Simple Interest: "]), "Principal × Rate × Time (I = P × R × T)"
+    ]));
+    rateCard.appendChild(el("div", { class: "cheatsheet-entry", style: "margin-top:8px;" }, [
+      el("span", { class: "cheatsheet-math" }, ["Percent: "]), "Part = Percent × Whole"
+    ]));
+    rateCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Percent Change: "]), "(Change ÷ Original) × 100%"
+    ]));
+    rateCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Average: "]), "Total Sum ÷ Number of Items"
+    ]));
+    grid.appendChild(rateCard);
+
+    var fracCard = el("div", { class: "cheatsheet-card gold-card" });
+    fracCard.appendChild(el("div", { class: "cheatsheet-title" }, ["🍕 Fractions & Percents"]));
+    fracCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["½ = 0.50 = 50%"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["¼ = 0.25 = 25%"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["¾ = 0.75 = 75%"])
+    ]));
+    fracCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["⅕ = 0.20 = 20%"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["⅖ = 40%"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["⅗ = 60%"])
+    ]));
+    fracCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["★ ⅛ = 0.125 = 12.5%"]), " (half of 25%)"
+    ]));
+    fracCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["★ ⅜ = 0.375 = 37.5%"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["⅝ = 0.625 = 62.5%"])
+    ]));
+    fracCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["⅓ ≈ 0.333 = 33⅓%"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["⅔ ≈ 0.667 = 66⅔%"])
+    ]));
+    grid.appendChild(fracCard);
+
+    var sqCard = el("div", { class: "cheatsheet-card" });
+    sqCard.appendChild(el("div", { class: "cheatsheet-title" }, ["🔢 Squares Past the Table"]));
+    sqCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["11² = 121"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["12² = 144"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["13² = 169"])
+    ]));
+    sqCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["★ 14² = 196"]), " (hint: flip 169 to 196)", " · ",
+      el("span", { class: "cheatsheet-math" }, ["15² = 225"])
+    ]));
+    sqCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["16² = 256"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["20² = 400"]), " · ",
+      el("span", { class: "cheatsheet-math" }, ["25² = 625"])
+    ]));
+    grid.appendChild(sqCard);
+
+    var convCard = el("div", { class: "cheatsheet-card" });
+    convCard.appendChild(el("div", { class: "cheatsheet-title" }, ["📏 Unit Conversions"]));
+    convCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Length: "]), "1 ft = 12 in · 1 yd = 3 ft = 36 in · 1 mi = 5,280 ft"
+    ]));
+    convCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["★ Area: "]), "1 square yard = 9 square feet (3 ft × 3 ft)"
+    ]));
+    convCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Time: "]), "1 hr = 60 min = 3,600 sec · 1 day = 24 hr"
+    ]));
+    convCard.appendChild(el("div", { class: "cheatsheet-entry" }, [
+      el("span", { class: "cheatsheet-math" }, ["Weight & Volume: "]), "1 lb = 16 oz · 1 gal = 4 qt"
+    ]));
+    grid.appendChild(convCard);
+
+    panelCheatsheet.appendChild(grid);
+    contentWrap.appendChild(panelCheatsheet);
+
+    // Panel 2: Pacing & Strategy
+    var panelStrategy = el("div", { style: activeTab === "strategy" ? "" : "display:none;" });
     var heading = 0;
     function addHeading(text) {
-      card.appendChild(el("h2", { class: "tips-heading" }, [++heading + ". " + text]));
+      panelStrategy.appendChild(el("h2", { class: "tips-heading" }, [++heading + ". " + text]));
     }
     function addList(items) {
-      card.appendChild(el("ul", { class: "tips-list" }, items.map(function (t) {
+      panelStrategy.appendChild(el("ul", { class: "tips-list" }, items.map(function (t) {
         return el("li", {}, [t]);
       })));
     }
+    addHeading("During the test");
+    addList(TIPS_DURING.concat((EXTRA_TIPS && EXTRA_TIPS.answering) || []));
+    addHeading("Word Knowledge");
+    addList(TIPS_WK.concat((EXTRA_TIPS && EXTRA_TIPS.wordKnowledge) || []));
+    addHeading("Paragraph Comprehension");
+    addList(TIPS_PC.concat((EXTRA_TIPS && EXTRA_TIPS.paragraph) || []));
+    if (EXTRA_TIPS && EXTRA_TIPS.sections) {
+      EXTRA_TIPS.sections.forEach(function (sec) {
+        addHeading(sec.title);
+        addList(sec.items);
+      });
+    }
+    contentWrap.appendChild(panelStrategy);
 
-    addHeading("Use the time before the clock starts");
-    card.appendChild(el("p", { class: "tips-text" }, [
-      "The instructions at the start of the ASVAB aren't timed. Use that time to write everything you " +
-      "might blank on under pressure onto your scratch paper. Then, during the test, you look it up " +
-      "instead of trying to remember it."
-    ]));
-    card.appendChild(el("p", { class: "tips-text" }, [el("strong", {}, ["What to write down:"])]));
-    addList(TIPS_BRAIN_DUMP);
-
-    addHeading("Times table challenge");
-    card.appendChild(el("p", { class: "tips-text" }, [
+    // Panel 3: 12x12 Challenge
+    var panelChallenge = el("div", { style: activeTab === "challenge" ? "" : "display:none;" });
+    panelChallenge.appendChild(el("p", { class: "tips-text" }, [
       "Get fast at writing a 12 × 12 times table from memory. Write 1 to 12 across the top and down the " +
       "side, then fill each row by adding that row's number again and again (the 7 row goes 7, 14, 21, 28...). " +
       "Start the clock, write it on scratch paper, tap Done, then check it against the table. Aim for under 5 minutes."
     ]));
     var clock = el("div", { class: "tips-clock" }, ["0:00"]);
-    var tableWrap = el("div", { class: "times-wrap", style: "display:none" }, [buildTimesTable()]);
+    var tableWrap = el("div", { class: "times-wrap", style: "display:none;" }, [buildTimesTable()]);
     var startedAt = null, clockHandle = null;
     function stopClock() {
       if (clockHandle) { clearInterval(clockHandle); clockHandle = null; }
@@ -2589,7 +2974,6 @@ input.input-error, select.input-error {
       tableWrap.style.display = "none";
       clockBtn.textContent = "Done";
       clockHandle = setInterval(function () {
-        // Leaving the screen removes the clock; stop ticking then.
         if (!document.body.contains(clock)) { stopClock(); return; }
         clock.textContent = fmtTime(Math.floor((Date.now() - startedAt) / 1000));
       }, 1000);
@@ -2598,21 +2982,25 @@ input.input-error, select.input-error {
     showBtn.addEventListener("click", function () {
       tableWrap.style.display = tableWrap.style.display === "none" ? "" : "none";
     });
-    card.appendChild(clock);
-    card.appendChild(el("div", { class: "btn-row" }, [clockBtn, " ", showBtn]));
-    card.appendChild(tableWrap);
+    panelChallenge.appendChild(clock);
+    panelChallenge.appendChild(el("div", { class: "btn-row" }, [clockBtn, " ", showBtn]));
+    panelChallenge.appendChild(tableWrap);
+    contentWrap.appendChild(panelChallenge);
 
-    var extra = EXTRA_TIPS || {};
-    addHeading("During the test");
-    addList(TIPS_DURING.concat(extra.answering || []));
-    addHeading("Word Knowledge");
-    addList(TIPS_WK.concat(extra.wordKnowledge || []));
-    addHeading("Paragraph Comprehension");
-    addList(TIPS_PC.concat(extra.paragraph || []));
-    (extra.sections || []).forEach(function (sec) {
-      addHeading(sec.title);
-      addList(sec.items);
-    });
+    function setTab(tab) {
+      activeTab = tab;
+      tabCheatsheet.className = "tips-tab-btn" + (tab === "cheatsheet" ? " active" : "");
+      tabStrategy.className = "tips-tab-btn" + (tab === "strategy" ? " active" : "");
+      tabChallenge.className = "tips-tab-btn" + (tab === "challenge" ? " active" : "");
+      panelCheatsheet.style.display = tab === "cheatsheet" ? "" : "none";
+      panelStrategy.style.display = tab === "strategy" ? "" : "none";
+      panelChallenge.style.display = tab === "challenge" ? "" : "none";
+    }
+    tabCheatsheet.addEventListener("click", function () { setTab("cheatsheet"); });
+    tabStrategy.addEventListener("click", function () { setTab("strategy"); });
+    tabChallenge.addEventListener("click", function () { setTab("challenge"); });
+
+    card.appendChild(contentWrap);
 
     var back = el("button", { class: "btn-outline" }, ["Back"]);
     back.addEventListener("click", function () { stopClock(); onBack(); });
@@ -2632,6 +3020,225 @@ input.input-error, select.input-error {
       table.appendChild(tr);
     }
     return table;
+  }
+
+  // ---------- Rapid Mental Math Flashcards ----------
+  var FLASHCARDS_DATA = [
+    // Fractions & Percents
+    { cat: "Fractions & %", q: "½ as a percent", a: "50% (0.50)", tip: "Half of 100%" },
+    { cat: "Fractions & %", q: "¼ as a percent", a: "25% (0.25)", tip: "Half of 50%" },
+    { cat: "Fractions & %", q: "¾ as a percent", a: "75% (0.75)", tip: "3 × 25%" },
+    { cat: "Fractions & %", q: "⅕ as a percent", a: "20% (0.20)", tip: "100 ÷ 5 = 20%" },
+    { cat: "Fractions & %", q: "⅖ as a percent", a: "40% (0.40)", tip: "2 × 20%" },
+    { cat: "Fractions & %", q: "⅗ as a percent", a: "60% (0.60)", tip: "3 × 20%" },
+    { cat: "Fractions & %", q: "⅘ as a percent", a: "80% (0.80)", tip: "4 × 20%" },
+    { cat: "Fractions & %", q: "★ ⅛ as a percent", a: "12.5% (0.125)", tip: "Half of 25%" },
+    { cat: "Fractions & %", q: "★ ⅜ as a percent", a: "37.5% (0.375)", tip: "3 × 12.5% = 37.5%" },
+    { cat: "Fractions & %", q: "★ ⅝ as a percent", a: "62.5% (0.625)", tip: "5 × 12.5% = 62.5%" },
+    { cat: "Fractions & %", q: "★ ⅞ as a percent", a: "87.5% (0.875)", tip: "100% - 12.5% = 87.5%" },
+    { cat: "Fractions & %", q: "⅓ as a percent", a: "33.3% (0.333...)", tip: "100 ÷ 3 = 33⅓%" },
+    { cat: "Fractions & %", q: "⅔ as a percent", a: "66.7% (0.667...)", tip: "2 × 33.3% = 66⅔%" },
+
+    // Squares & Powers
+    { cat: "Squares & Powers", q: "11²", a: "121", tip: "11 × 11 = 121" },
+    { cat: "Squares & Powers", q: "12²", a: "144", tip: "12 × 12 = 144 (gross)" },
+    { cat: "Squares & Powers", q: "13²", a: "169", tip: "13 × 13 = 169" },
+    { cat: "Squares & Powers", q: "14²", a: "196", tip: "Memory trick: reverse 169 to 196!" },
+    { cat: "Squares & Powers", q: "15²", a: "225", tip: "15 × 15 = 225" },
+    { cat: "Squares & Powers", q: "16²", a: "256", tip: "16 × 16 = 256 (2⁸)" },
+    { cat: "Squares & Powers", q: "20²", a: "400", tip: "20 × 20 = 400" },
+    { cat: "Squares & Powers", q: "25²", a: "625", tip: "25 × 25 = 625" },
+
+    // Formulas & Geometry
+    { cat: "Formulas & Geometry", q: "Area of a Rectangle", a: "Length × Width", tip: "Perimeter = 2L + 2W" },
+    { cat: "Formulas & Geometry", q: "Area of a Triangle", a: "½ × Base × Height", tip: "Half of a rectangle" },
+    { cat: "Formulas & Geometry", q: "Area of a Circle", a: "π × r²", tip: "r = radius (half the diameter)" },
+    { cat: "Formulas & Geometry", q: "Circumference of a Circle", a: "2 × π × r  (or π × d)", tip: "Distance around the outside" },
+    { cat: "Formulas & Geometry", q: "Volume of a Rectangular Box", a: "Length × Width × Height", tip: "Base area × height" },
+    { cat: "Formulas & Geometry", q: "Pythagorean Theorem", a: "a² + b² = c²", tip: "c is the hypotenuse opposite 90°" },
+    { cat: "Formulas & Geometry", q: "Most common Right Triangle Triple", a: "3 - 4 - 5", tip: "Multiples: 6-8-10, 9-12-15" },
+    { cat: "Formulas & Geometry", q: "Second common Right Triangle Triple", a: "5 - 12 - 13", tip: "5² (25) + 12² (144) = 13² (169)" },
+    { cat: "Formulas & Geometry", q: "Distance Formula", a: "Distance = Rate × Time (D = R × T)", tip: "Rate = D ÷ T · Time = D ÷ R" },
+    { cat: "Formulas & Geometry", q: "Simple Interest Formula", a: "I = P × R × T", tip: "Principal × Rate × Time" },
+    { cat: "Formulas & Geometry", q: "Percent Change Formula", a: "(Change ÷ Original) × 100%", tip: "Always divide by the starting value" },
+    { cat: "Formulas & Geometry", q: "Average Formula", a: "Total Sum ÷ Number of Items", tip: "Sum = Average × Count" },
+
+    // Conversions
+    { cat: "Conversions", q: "1 square yard = ? square feet", a: "9 sq ft", tip: "3 ft × 3 ft = 9 sq ft" },
+    { cat: "Conversions", q: "1 yard = ? feet = ? inches", a: "3 feet = 36 inches", tip: "1 ft = 12 in" },
+    { cat: "Conversions", q: "1 pound (lb) = ? ounces (oz)", a: "16 ounces", tip: "Weight conversion" },
+    { cat: "Conversions", q: "1 gallon = ? quarts", a: "4 quarts", tip: "1 quart = 2 pints = 4 cups" },
+    { cat: "Conversions", q: "1 hour = ? seconds", a: "3,600 seconds", tip: "60 minutes × 60 seconds" },
+    { cat: "Conversions", q: "1 mile = ? feet", a: "5,280 feet", tip: "Memory trick: 'five tomato' (5-two-eight-0)" }
+  ];
+
+  function renderFlashcards(identity, initialFilter, onBack) {
+    clear(app);
+    setKeyHandler(null);
+    armIdleTimeout(PRACTICE_IDENTITY_TTL_MS);
+
+    var currentFilter = initialFilter || "sprint10";
+
+    function getCardsForFilter(filter) {
+      if (filter === "sprint10") {
+        return shuffle(FLASHCARDS_DATA.slice()).slice(0, 10);
+      }
+      if (filter === "all") {
+        return shuffle(FLASHCARDS_DATA.slice());
+      }
+      return shuffle(FLASHCARDS_DATA.filter(function (c) {
+        if (filter === "fractions") return c.cat === "Fractions & %";
+        if (filter === "squares") return c.cat === "Squares & Powers";
+        if (filter === "formulas") return c.cat === "Formulas & Geometry";
+        if (filter === "conversions") return c.cat === "Conversions";
+        return true;
+      }));
+    }
+
+    var cards = getCardsForFilter(currentFilter);
+    var index = 0;
+    var flipped = false;
+    var mastered = [];
+    var needReview = [];
+
+    var card = el("div", { class: "card" });
+    card.appendChild(el("h1", {}, ["⚡ Rapid Mental Math Flashcards"]));
+    card.appendChild(el("p", { class: "byline" }, ["Master the numbers and formulas that speed up your ASVAB score."]));
+
+    var filterRow = el("div", { class: "flashcard-filter-row" });
+    var filters = [
+      { id: "sprint10", label: "Sprint (10 Random)" },
+      { id: "all", label: "All (" + FLASHCARDS_DATA.length + " Cards)" },
+      { id: "fractions", label: "Fractions & %" },
+      { id: "squares", label: "Squares" },
+      { id: "formulas", label: "Formulas" },
+      { id: "conversions", label: "Conversions" }
+    ];
+    filters.forEach(function (f) {
+      var btn = el("button", {
+        class: "flashcard-filter-btn" + (f.id === currentFilter ? " active" : ""),
+        type: "button"
+      }, [f.label]);
+      btn.addEventListener("click", function () {
+        renderFlashcards(identity, f.id, onBack);
+      });
+      filterRow.appendChild(btn);
+    });
+    card.appendChild(filterRow);
+
+    var arena = el("div", { class: "flashcard-arena" });
+    card.appendChild(arena);
+
+    var backBtn = el("button", { class: "btn-outline", style: "margin-top:14px;" }, ["Back to Practice"]);
+    backBtn.addEventListener("click", onBack);
+    card.appendChild(el("div", { class: "btn-row" }, [backBtn]));
+    app.appendChild(card);
+
+    function renderCurrentCard() {
+      clear(arena);
+      if (index >= cards.length) {
+        renderFlashcardSummary();
+        return;
+      }
+      var c = cards[index];
+      flipped = false;
+
+      var progress = el("div", { class: "flashcard-progress" }, [
+        el("span", {}, ["Card " + (index + 1) + " of " + cards.length]),
+        el("span", {}, [mastered.length + " Mastered  ·  " + needReview.length + " Review"])
+      ]);
+      arena.appendChild(progress);
+
+      var flashEl = el("div", { class: "flashcard", role: "button", tabindex: "0" });
+      var badge = el("div", { class: "flashcard-badge" }, [c.cat]);
+      flashEl.appendChild(badge);
+
+      var qEl = el("div", { class: "flashcard-q" }, [c.q]);
+      flashEl.appendChild(qEl);
+
+      var aEl = el("div", { class: "flashcard-a", style: "display:none;" }, [c.a]);
+      var tipEl = el("div", { class: "flashcard-tip", style: "display:none;" }, [c.tip || ""]);
+      var promptEl = el("div", { class: "flashcard-prompt" }, ["(Tap card or button to reveal answer)"]);
+      flashEl.appendChild(aEl);
+      if (c.tip) flashEl.appendChild(tipEl);
+      flashEl.appendChild(promptEl);
+
+      var actions = el("div", { class: "flashcard-actions" });
+      var revealBtn = el("button", { class: "btn", style: "width:100%;", type: "button" }, ["Reveal Answer"]);
+      var reviewBtn = el("button", { class: "btn-review", style: "display:none;", type: "button" }, ["❌ Review Again"]);
+      var gotitBtn = el("button", { class: "btn-gotit", style: "display:none;", type: "button" }, ["✅ Got It!"]);
+
+      actions.appendChild(revealBtn);
+      actions.appendChild(reviewBtn);
+      actions.appendChild(gotitBtn);
+
+      function doFlip() {
+        if (flipped) return;
+        flipped = true;
+        aEl.style.display = "";
+        if (c.tip) tipEl.style.display = "";
+        promptEl.style.display = "none";
+        revealBtn.style.display = "none";
+        reviewBtn.style.display = "";
+        gotitBtn.style.display = "";
+      }
+
+      flashEl.addEventListener("click", doFlip);
+      flashEl.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); doFlip(); }
+      });
+      revealBtn.addEventListener("click", doFlip);
+
+      reviewBtn.addEventListener("click", function () {
+        needReview.push(c);
+        index++;
+        renderCurrentCard();
+      });
+
+      gotitBtn.addEventListener("click", function () {
+        mastered.push(c);
+        index++;
+        renderCurrentCard();
+      });
+
+      arena.appendChild(flashEl);
+      arena.appendChild(actions);
+    }
+
+    function renderFlashcardSummary() {
+      clear(arena);
+      var pct = cards.length ? Math.round((100 * mastered.length) / cards.length) : 0;
+      var hero = el("div", { class: "hero" });
+      hero.appendChild(el("div", { class: "hero-value" }, [mastered.length + " / " + cards.length]));
+      hero.appendChild(el("div", { class: "hero-label" }, ["Mastered (" + pct + "%)"]));
+      arena.appendChild(hero);
+
+      var msg = pct >= 80
+        ? "Outstanding speed! You have these key mental math reflexes locked in."
+        : (pct >= 50 ? "Solid progress. Keep running another sprint until these are second nature."
+        : "Keep drilling! Mastering these numbers saves critical minutes on the real ASVAB.");
+      arena.appendChild(el("p", { style: "margin: 12px 0 20px; font-size:1.05rem;" }, [msg]));
+
+      logPracticeDrill({
+        identity: identity,
+        code: "AR",
+        questions: cards
+      }, mastered.length);
+
+      var againBtn = el("button", { class: "btn" }, ["Another Round"]);
+      againBtn.addEventListener("click", function () {
+        renderFlashcards(identity, currentFilter, onBack);
+      });
+
+      var switchBtn = el("button", { class: "btn-outline" }, ["Try Different Category"]);
+      switchBtn.addEventListener("click", function () {
+        renderFlashcards(identity, currentFilter === "sprint10" ? "all" : "sprint10", onBack);
+      });
+
+      arena.appendChild(el("div", { class: "btn-row" }, [againBtn, " ", switchBtn]));
+    }
+
+    renderCurrentCard();
   }
 
   // ---------- Practice mode ----------
@@ -2740,11 +3347,15 @@ input.input-error, select.input-error {
     btn.addEventListener("click", function () {
       startPracticeDrill(practiceIdentityFromState(), code);
     });
-    var other = el("button", { class: "btn-outline" }, ["Choose a section"]);
-    other.addEventListener("click", function () {
-      renderPracticeHome(practiceIdentityFromState(), code);
-    });
-    wrap.appendChild(el("div", { class: "btn-row" }, [btn, " ", other]));
+    var buttons = [btn, " ", other];
+    if (code === "AR" || code === "MK") {
+      var flashBtn = el("button", { class: "btn-outline" }, ["⚡ Flashcards"]);
+      flashBtn.addEventListener("click", function () {
+        renderFlashcards(practiceIdentityFromState(), "sprint10", renderResults);
+      });
+      buttons.push(" ", flashBtn);
+    }
+    wrap.appendChild(el("div", { class: "btn-row" }, buttons));
     return wrap;
   }
 
@@ -2796,6 +3407,22 @@ input.input-error, select.input-error {
         recruiter: same ? prefill.recruiter || "" : (prefill.recruiter || state.recruiter || "")
       };
     }
+
+    var flashBanner = el("div", { class: "flashcards-banner" });
+    flashBanner.appendChild(el("div", { class: "flashcards-banner-title" }, ["⚡ Rapid Mental Math Flashcards"]));
+    flashBanner.appendChild(el("div", { class: "flashcards-banner-desc" }, [
+      "Speed drills on fractions, squares, geometry, and conversions. Tap to flip and build fast mental reflexes for the math sections."
+    ]));
+    var flashBtn = el("button", { class: "btn", style: "align-self:flex-start; margin-top:4px;", type: "button" }, ["Start Flashcard Drill"]);
+    flashBtn.addEventListener("click", function () {
+      renderFlashcards(identityFromInputs(), "sprint10", function () {
+        renderPracticeHome(identityFromInputs(), suggestedCode);
+      });
+    });
+    flashBanner.appendChild(flashBtn);
+    card.appendChild(flashBanner);
+
+    card.appendChild(el("h2", { class: "subtitle", style: "margin: 18px 0 8px;" }, ["Practice Questions by Section"]));
 
     var seen = getPracticeSeen();
     var list = el("div", { class: "practice-sections" });
@@ -2957,13 +3584,19 @@ input.input-error, select.input-error {
     again.addEventListener("click", function () { startPracticeDrill(drill.identity, drill.code); });
     var pick = el("button", { class: "btn-outline" }, ["Choose a section"]);
     pick.addEventListener("click", function () { renderPracticeHome(drill.identity, drill.code); });
+    var flash = el("button", { class: "btn-outline" }, ["⚡ Flashcards"]);
+    flash.addEventListener("click", function () {
+      renderFlashcards(drill.identity, "sprint10", function () {
+        renderPracticeSummary(drill);
+      });
+    });
     var tips = el("button", { class: "btn-outline" }, ["Test-Taking Tips"]);
     tips.addEventListener("click", function () {
       renderTestTips(function () { renderPracticeSummary(drill); });
     });
     var done = el("button", { class: "btn-outline" }, ["Done"]);
     done.addEventListener("click", renderStart);
-    card.appendChild(el("div", { class: "btn-row" }, [again, " ", pick, " ", tips, " ", done]));
+    card.appendChild(el("div", { class: "btn-row" }, [again, " ", pick, " ", flash, " ", tips, " ", done]));
     app.appendChild(card);
   }
 
