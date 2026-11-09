@@ -65,7 +65,7 @@
 
 var SHEET_NAME = "Results";
 var SHEET_ID = "1ERX4wPOGAHg5NQ7Sci36z_iWaZtGqWAe-MbkbQbcguo";
-var NOTIFY_EMAIL = "joshua.t.shirley4.mil@army.mil";
+var NOTIFY_EMAIL = "joshua.t.shirley@army.mil";
 
 // Each per-test email also goes to the recruiter the applicant picked on
 // the kiosk. Keys must match the kiosk's EST_CONFIG.recruiters names
@@ -124,7 +124,10 @@ var HEADER_ROW = [
   "Test Key",
   // End-of-test readiness questions (kiosk renderReadiness). Older kiosks
   // and Florence_Practice_Test don't send them, so these stay blank.
-  "Ready (1-10)", "Not-10 Reasons", "What Would Make It 10"
+  "Ready (1-10)", "Not-10 Reasons", "What Would Make It 10",
+  // A unique ID per saved test, so the station workbook can link a test to a
+  // person even when two rows share a timestamp.
+  "Result ID"
 ];
 
 // Practice drills (the take-home practice page) log here, NOT to the
@@ -135,7 +138,7 @@ var HEADER_ROW = [
 var PRACTICE_SHEET_NAME = "Practice";
 var PRACTICE_HEADER_ROW = [
   "Timestamp", "Phone", "Last Name", "First Name", "Recruiter",
-  "Section", "Correct", "Total"
+  "Section", "Correct", "Total", "Drill ID"
 ];
 
 // Two payload shapes hit this same endpoint: a full result (appendResultRow,
@@ -223,7 +226,8 @@ function appendResultRow(data) {
     data.test_key || "",
     data.ready === undefined ? "" : data.ready,
     sheetText(data.not_ten_reasons),
-    sheetText(data.make_it_ten)
+    sheetText(data.make_it_ten),
+    Utilities.getUuid()
   ]);
 
   notifyResult(data);
@@ -247,6 +251,11 @@ function appendPracticeRow(data) {
   var ss = getSpreadsheet();
   var sheet = ss.getSheetByName(PRACTICE_SHEET_NAME) || ss.insertSheet(PRACTICE_SHEET_NAME);
   if (sheet.getLastRow() === 0) sheet.appendRow(PRACTICE_HEADER_ROW);
+  else if (sheet.getLastColumn() < PRACTICE_HEADER_ROW.length) {
+    var have = sheet.getLastColumn();
+    sheet.getRange(1, have + 1, 1, PRACTICE_HEADER_ROW.length - have)
+      .setValues([PRACTICE_HEADER_ROW.slice(have)]);
+  }
   sheet.appendRow([
     data.timestamp || new Date().toISOString(),
     data.phone || "",
@@ -255,7 +264,8 @@ function appendPracticeRow(data) {
     data.recruiter || "",
     data.section || "",
     data.correct,
-    data.total
+    data.total,
+    Utilities.getUuid()
   ]);
 }
 
