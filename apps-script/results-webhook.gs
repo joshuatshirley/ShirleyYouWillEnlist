@@ -81,7 +81,7 @@ var RECRUITER_EMAILS = {
   "Lucas SSG": "thomisa.n.lucas-robinson.mil@army.mil",
   "Recendez SFC": "alex.recendez.mil@army.mil",
   "Schultz SFC": "nicholas.k.schultz.mil@army.mil",
-  "Shirley SFC": "joshua.t.shirley4.mil@army.mil"
+  "Shirley SFC": "joshua.t.shirley@army.mil"
   // NEW RECRUITER ("Aquaman" template): add a comma after the line above,
   // copy this line, remove the //, and set the same "Lastname RANK" you
   // used in index.html's EST_CONFIG.recruiters, plus their email.
