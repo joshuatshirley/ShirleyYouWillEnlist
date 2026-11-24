@@ -78,6 +78,7 @@ var RECRUITER_EMAILS = {
   "Curless SSG": "james.e.curless.mil@army.mil",
   "Gatling SFC": "lakisha.r.gatling.mil@army.mil",
   "Guiler SFC": "christopher.guiler.mil@army.mil",
+  "Lucas SSG": "thomisa.n.lucas-robinson.mil@army.mil",
   "Recendez SFC": "alex.recendez.mil@army.mil",
   "Schultz SFC": "nicholas.k.schultz.mil@army.mil",
   "Shirley SFC": "joshua.t.shirley4.mil@army.mil"
